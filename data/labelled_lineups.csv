@@ -1,0 +1,224 @@
+year,team,days,lineup,igl,awp,worst_conf,status
+2015,CLG,197,FNS|hazed|jdm64|reltuC|tarik,FNS,jdm64,high,ok
+2015,CSGL,71,Loord|MICHU|SZPERO|innocent|oskarish,,,,"NO_IGL,NO_AWP"
+2015,Cloud9,210,Skadoodle|fREAKAZOiD|n0thing|sgares|shroud,sgares,Skadoodle,high,ok
+2015,Conquest,63,NAF|RUSH|ShahZaM|daps|stanislaw,daps,ShahZaM,high,ok
+2015,Dignitas,174,Kjaerbye|MSL|Nico|Pimp|aizy,MSL,,high,NO_AWP
+2015,E-frag.net,166,bubble|dream3r|nkl|spyleadeR|v1c7oR,,,,"NO_IGL,NO_AWP"
+2015,Envy,169,Happy|NBK-|SmithZz|kioShiMa|shox,Happy,SmithZz,high,ok
+2015,FlipSid3,150,B1ad3|WorldEdit|bondik|markeloff|s1mple,B1ad3,WorldEdit|markeloff,medium,ok
+2015,G2,103,MICHU|MINISE|SZPERO|innocent|mouz,,,,"NO_IGL,NO_AWP"
+2015,HellRaisers,166,ANGE1|AdreN|Dosia|kUcheR|mou,ANGE1,,high,NO_AWP
+2015,Kinguin,73,Maikelele|ScreaM|dennis|fox|rain,fox,Maikelele|fox,medium,ok
+2015,Liquid,119,EliGE|FugLy|Hiko|adreN|nitr0,,,,"NO_IGL,NO_AWP"
+2015,Luminosity,117,FalleN|boltz|coldzera|fer|steel,FalleN,FalleN,high,ok
+2015,MOUZ,107,NiKo|chrisJ|denis|gob b|nex,gob b,chrisJ,medium,ok
+2015,Natus Vincere,288,Edward|GuardiaN|Zeus|flamie|seized,Zeus,GuardiaN,high,ok
+2015,Ninjas in Pyjamas,264,GeT_RiGhT|Xizt|allu|f0rest|friberg,Xizt,allu,high,ok
+2015,SK,33,AcilioN|BERRY|Friis|SandeN|tenzki,AcilioN,,medium,NO_AWP
+2015,Titan,200,Ex6TenZ|Maniac|RpK|apEX|kennyS,Ex6TenZ,kennyS,high,ok
+2015,Vexed,85,Furlan|GruBy|Hyper|peet|rallen,GruBy,,medium,NO_AWP
+2015,Virtus.pro,365,NEO|Snax|TaZ|byali|pashaBiceps,TaZ,pashaBiceps,medium,ok
+2015,fnatic,315,JW|KRIMZ|flusha|olofmeister|pronax,pronax,JW,high,ok
+2016,Astralis,145,Kjaerbye|Xyp9x|dev1ce|dupreeh|karrigan,karrigan,dev1ce,high,ok
+2016,CLG,133,Subroza|hazed|koosta|nahtE|reltuC,hazed,koosta,medium,ok
+2016,Cloud9,116,Skadoodle|Slemmy|Stewie2K|n0thing|shroud,Slemmy,Skadoodle,high,ok
+2016,Dignitas,169,MSL|Magiskb0Y|RUBINO|cajunb|k0nfig,MSL,Magiskb0Y,medium,ok
+2016,Envy,177,DEVIL|Happy|NBK-|apEX|kennyS,Happy,kennyS,high,ok
+2016,FaZe,128,aizy|fox|jkaem|kioShiMa|rain,fox,fox,medium,ok
+2016,FlipSid3,153,B1ad3|Shara|WorldEdit|markeloff|wayLander,B1ad3,WorldEdit|markeloff,medium,ok
+2016,G2,266,RpK|ScreaM|SmithZz|bodyy|shox,,SmithZz,high,NO_IGL
+2016,GODSENT,133,Lekr0|pauf|pronax|twist|znajder,pronax,znajder,medium,ok
+2016,Gambit,159,AdreN|Dosia|hooch|mou|spaze,,,,"NO_IGL,NO_AWP"
+2016,HellRaisers,108,ANGE1|DeadFox|STYKO|Zero|bondik,ANGE1,DeadFox,low,ok
+2016,Immortals,58,HEN1|LUCAS1|boltz|felps|steel,steel,HEN1,high,ok
+2016,Liquid,200,EliGE|Hiko|Pimp|jdm64|nitr0,,jdm64,high,NO_IGL
+2016,Luminosity,183,FalleN|TACO|coldzera|fer|fnx,FalleN,FalleN,high,ok
+2016,MOUZ,234,NiKo|Spiidi|chrisJ|denis|nex,chrisJ,chrisJ,medium,ok
+2016,Natus Vincere,216,Edward|GuardiaN|Zeus|flamie|seized,Zeus,GuardiaN,high,ok
+2016,Ninjas in Pyjamas,297,GeT_RiGhT|Xizt|f0rest|friberg|pyth,Xizt,,high,NO_AWP
+2016,OpTic,128,NAF|RUSH|daps|mixwell|stanislaw,stanislaw,mixwell,medium,ok
+2016,Tempo Storm,113,HEN1|LUCAS1|SHOOWTiME|boltz|felps,,HEN1,high,NO_IGL
+2016,Virtus.pro,366,NEO|Snax|TaZ|byali|pashaBiceps,TaZ,pashaBiceps,medium,ok
+2016,fnatic,98,JW|KRIMZ|dennis|flusha|olofmeister,dennis,JW,medium,ok
+2017,Astralis,365,Kjaerbye|Xyp9x|dev1ce|dupreeh|gla1ve,gla1ve,dev1ce,high,ok
+2017,BIG,364,LEGIJA|gob b|keev|nex|tabseN,gob b,keev,medium,ok
+2017,CLG,270,FNS|Rickeh|koosta|nahtE|reltuC,FNS,Rickeh|koosta,medium,ok
+2017,Cloud9,226,Skadoodle|Stewie2K|autimatic|n0thing|shroud,Stewie2K,Skadoodle,medium,ok
+2017,Envy,314,Happy|RpK|SIXER|ScreaM|xms,Happy,SIXER,medium,ok
+2017,FaZe,165,NiKo|allu|karrigan|kioShiMa|rain,karrigan,allu,high,ok
+2017,G2,331,NBK-|apEX|bodyy|kennyS|shox,shox,kennyS,low,ok
+2017,Gambit,220,AdreN|Dosia|Hobbit|Zeus|mou,Zeus,,high,NO_AWP
+2017,HEROIC,209,JUGi|MODDII|Snappi|es3tag|niko,Snappi,JUGi,high,ok
+2017,HellRaisers,220,ANGE1|DeadFox|STYKO|Zero|bondik,ANGE1,DeadFox,low,ok
+2017,Liquid,213,EliGE|Twistzz|jdm64|nitr0|stanislaw,stanislaw,jdm64,high,ok
+2017,MOUZ,145,STYKO|chrisJ|oskar|ropz|suNny,chrisJ,chrisJ|oskar,medium,ok
+2017,Natus Vincere,209,Edward|GuardiaN|flamie|s1mple|seized,seized,GuardiaN,medium,ok
+2017,Ninjas in Pyjamas,153,GeT_RiGhT|REZ|Xizt|draken|f0rest,Xizt,draken,high,ok
+2017,North,1,MSL|Magisk|RUBINO|aizy|cajunb,MSL,Magisk,medium,ok
+2017,OpTic,121,HS|Magisk|allu|friberg|mixwell,,Magisk|allu|mixwell,medium,NO_IGL
+2017,Renegades,127,AZR|Nifty|USTILO|jks|nexa,AZR,Nifty,medium,ok
+2017,SK,267,FalleN|TACO|coldzera|felps|fer,FalleN,FalleN,high,ok
+2017,Virtus.pro,365,NEO|Snax|TaZ|byali|pashaBiceps,NEO,pashaBiceps,low,ok
+2017,fnatic,196,JW|KRIMZ|dennis|flusha|olofmeister,dennis,JW,medium,ok
+2018,AGO,214,Furlan|GruBy|TOAO|phr|snatchie,GruBy,snatchie,medium,ok
+2018,Astralis,328,Magisk|Xyp9x|dev1ce|dupreeh|gla1ve,gla1ve,dev1ce,high,ok
+2018,BIG,246,gob b|nex|smooya|tabseN|tiziaN,gob b,smooya,high,ok
+2018,Cloud9,89,RUSH|Skadoodle|Stewie2K|autimatic|tarik,Stewie2K,Skadoodle,high,ok
+2018,ENCE,272,Aerial|Aleksib|allu|sergej|xseveN,Aleksib,allu,high,ok
+2018,FaZe,259,GuardiaN|NiKo|karrigan|olofmeister|rain,karrigan,GuardiaN,high,ok
+2018,G2,174,Ex6TenZ|SmithZz|bodyy|kennyS|shox,Ex6TenZ,SmithZz|kennyS,high,ok
+2018,GODSENT,38,Brollan|disco doplan|freddieb|hampus|twist,hampus,freddieb,medium,ok
+2018,Gambit,125,AdreN|Dosia|Hobbit|mir|mou,,,,"NO_IGL,NO_AWP"
+2018,HEROIC,94,AcilioN|MODDII|es3tag|friberg|mertz,AcilioN,mertz,medium,ok
+2018,HellRaisers,294,ANGE1|DeadFox|ISSAA|bondik|woxic,ANGE1,DeadFox|woxic,low,ok
+2018,Liquid,258,EliGE|NAF|TACO|Twistzz|nitr0,nitr0,,high,NO_AWP
+2018,MIBR,159,FalleN|Stewie2K|coldzera|fer|tarik,FalleN,FalleN|coldzera,low,ok
+2018,MOUZ,254,STYKO|chrisJ|oskar|ropz|suNny,chrisJ,chrisJ|oskar,medium,ok
+2018,NRG,350,Brehze|CeRq|Ethan|FugLy|daps,daps,CeRq,high,ok
+2018,Natus Vincere,365,Edward|Zeus|electroNic|flamie|s1mple,Zeus,s1mple,high,ok
+2018,Ninjas in Pyjamas,197,GeT_RiGhT|Lekr0|REZ|dennis|f0rest,Lekr0,,medium,NO_AWP
+2018,North,158,Kjaerbye|MSL|aizy|mertz|valde,MSL,mertz,medium,ok
+2018,OpTic,156,JUGi|Snappi|cajunb|gade|k0nfig,Snappi,JUGi,high,ok
+2018,Renegades,233,AZR|Nifty|USTILO|jkaem|jks,AZR,Nifty,medium,ok
+2018,Space Soldiers,1,Calyx|MAJ3R|XANTARES|ngiN|paz,MAJ3R,,high,NO_AWP
+2018,TYLOO,306,BnTeT|DD|captainMo|somebody|xccurate,BnTeT,xccurate,medium,ok
+2018,Virtus.pro,139,MICHU|NEO|Snax|byali|pashaBiceps,NEO,pashaBiceps,low,ok
+2018,fnatic,144,Golden|JW|KRIMZ|Lekr0|flusha,Golden,JW,high,ok
+2019,AVANGAR,175,AdreN|Jame|SANJI|buster|qikert,Jame,Jame,high,ok
+2019,Astralis,365,Magisk|Xyp9x|dev1ce|dupreeh|gla1ve,gla1ve,dev1ce,high,ok
+2019,CR4ZY,273,EspiranTo|LETN1|huNter-|nexa|ottoNd,nexa,EspiranTo,medium,ok
+2019,ENCE,234,Aerial|Aleksib|allu|sergej|xseveN,Aleksib,allu,high,ok
+2019,Evil Geniuses,97,Brehze|CeRq|Ethan|stanislaw|tarik,stanislaw,CeRq,high,ok
+2019,FORZE,365,FL1T|Jerry|almazer|facecrack|xsepower,almazer,Jerry|xsepower,medium,ok
+2019,FURIA,265,KSCERATO|VINI|ableJ|arT|yuurih,arT,,high,NO_AWP
+2019,FaZe,127,AdreN|GuardiaN|NiKo|olofmeister|rain,,GuardiaN,high,NO_IGL
+2019,G2,203,AMANEK|JACKZ|Lucky|kennyS|shox,,Lucky|kennyS,medium,NO_IGL
+2019,HEROIC,102,NaToSaphiX|blameF|es3tag|friberg|stavn,blameF,,medium,NO_AWP
+2019,Liquid,365,EliGE|NAF|Stewie2K|Twistzz|nitr0,nitr0,,high,NO_AWP
+2019,MIBR,163,FalleN|TACO|coldzera|felps|fer,FalleN,FalleN|coldzera,low,ok
+2019,MOUZ,292,chrisJ|frozen|karrigan|ropz|woxic,karrigan,chrisJ|woxic,medium,ok
+2019,Natus Vincere,148,Edward|Zeus|electroNic|flamie|s1mple,Zeus,s1mple,high,ok
+2019,Ninjas in Pyjamas,138,GeT_RiGhT|Lekr0|REZ|dennis|f0rest,Lekr0,,medium,NO_AWP
+2019,OpTic,86,JUGi|Snappi|cajunb|k0nfig|refrezh,Snappi,JUGi,high,ok
+2019,Renegades,304,AZR|Gratisfaction|Liazz|jkaem|jks,AZR,,high,NO_AWP
+2019,Tricked,127,Bubzkji|HUNDEN|acoR|b0RUP|sjuush,HUNDEN,acoR,medium,ok
+2019,Valiance,273,EspiranTo|LETN1|huNter-|nexa|ottoNd,nexa,EspiranTo,medium,ok
+2019,Vitality,250,ALEX|NBK-|RpK|ZywOo|apEX,apEX,ZywOo,high,ok
+2019,fnatic,233,Brollan|JW|KRIMZ|Xizt|twist,Xizt,JW,high,ok
+2020,Astralis,131,Magisk|Xyp9x|dev1ce|dupreeh|gla1ve,gla1ve,dev1ce,high,ok
+2020,BIG,365,XANTARES|k1to|syrsoN|tabseN|tiziaN,tabseN,syrsoN,high,ok
+2020,Complexity,266,RUSH|blameF|k0nfig|oBo|poizon,blameF,,high,NO_AWP
+2020,Evil Geniuses,366,Brehze|CeRq|Ethan|stanislaw|tarik,,CeRq,high,NO_IGL
+2020,FURIA,366,HEN1|KSCERATO|VINI|arT|yuurih,arT,HEN1,high,ok
+2020,FaZe,145,NiKo|broky|coldzera|olofmeister|rain,NiKo,broky,medium,ok
+2020,G2,301,AMANEK|JACKZ|huNter-|kennyS|nexa,nexa,kennyS,high,ok
+2020,GODSENT,177,STYKO|farlig|kRYSTAL|maden|zehN,kRYSTAL,farlig|maden,medium,ok
+2020,Gen.G,255,BnTeT|autimatic|daps|koosta|s0m,daps,koosta,high,ok
+2020,HEROIC,256,TeSeS|b0RUP|cadiaN|niko|stavn,cadiaN,cadiaN|niko,medium,ok
+2020,Liquid,214,EliGE|NAF|Stewie2K|Twistzz|nitr0,nitr0,,high,NO_AWP
+2020,MOUZ,222,chrisJ|frozen|karrigan|ropz|woxic,karrigan,chrisJ|woxic,medium,ok
+2020,Natus Vincere,330,Boombl4|Perfecto|electroNic|flamie|s1mple,Boombl4,s1mple,high,ok
+2020,Ninjas in Pyjamas,226,Plopski|REZ|hampus|nawwk|twist,hampus,nawwk,medium,ok
+2020,OG,366,Aleksib|ISSAA|NBK-|mantuu|valde,Aleksib,mantuu,high,ok
+2020,Spirit,366,chopper|iDISBALANCE|magixx|mir|sdy,chopper,,high,NO_AWP
+2020,Vitality,225,RpK|ZywOo|apEX|misutaaa|shox,apEX,ZywOo,high,ok
+2020,fnatic,365,Brollan|Golden|JW|KRIMZ|flusha,Golden,JW,high,ok
+2021,Astralis,99,Bubzkji|Magisk|Xyp9x|dupreeh|gla1ve,gla1ve,Bubzkji,medium,ok
+2021,BIG,211,XANTARES|k1to|syrsoN|tabseN|tiziaN,tabseN,syrsoN,high,ok
+2021,Copenhagen Flames,227,HooXi|Jabbi|Zyphon|nicoodoz|roeJ,HooXi,nicoodoz,high,ok
+2021,ENCE,198,Snappi|Spinx|doto|dycha|hades,Snappi,,high,NO_AWP
+2021,Entropiq,235,El1an|Forester|Krad|Lack1|NickelBack,Lack1,El1an|Forester,medium,ok
+2021,Evil Geniuses,200,Brehze|CeRq|MICHU|oBo|stanislaw,,CeRq,high,NO_IGL
+2021,FORZE,249,FL1T|Jerry|KENSi|almazer|zorte,almazer,Jerry,medium,ok
+2021,FURIA,94,KSCERATO|VINI|arT|drop|yuurih,arT,,high,NO_AWP
+2021,FaZe,213,Twistzz|broky|karrigan|olofmeister|rain,karrigan,broky,high,ok
+2021,G2,302,AMANEK|JACKZ|NiKo|huNter-|nexa,nexa,,high,NO_AWP
+2021,Gambit,365,Ax1Le|HObbit|interz|nafany|sh1ro,nafany,sh1ro,high,ok
+2021,HEROIC,308,TeSeS|cadiaN|refrezh|sjuush|stavn,cadiaN,cadiaN,medium,ok
+2021,Liquid,347,EliGE|FalleN|Grim|NAF|Stewie2K,FalleN,FalleN,high,ok
+2021,MOUZ,317,Bymas|acoR|dexter|frozen|ropz,dexter,acoR,high,ok
+2021,Natus Vincere,264,Boombl4|Perfecto|b1t|electroNic|s1mple,Boombl4,s1mple,high,ok
+2021,Ninjas in Pyjamas,168,LNZ|Plopski|REZ|dev1ce|hampus,hampus,dev1ce,medium,ok
+2021,OG,267,Aleksib|flameZ|mantuu|niko|valde,Aleksib,mantuu,high,ok
+2021,Spirit,221,chopper|degster|magixx|mir|sdy,chopper,degster,high,ok
+2021,Virtus.pro,294,Jame|Qikert|SANJI|YEKINDAR|buster,Jame,Jame,high,ok
+2021,Vitality,251,Kyojin|ZywOo|apEX|misutaaa|shox,apEX,ZywOo,high,ok
+2021,fnatic,100,Brollan|Golden|JW|Jackinho|KRIMZ,Golden,JW,high,ok
+2022,Astralis,230,Xyp9x|blameF|farlig|gla1ve|k0nfig,gla1ve,farlig,high,ok
+2022,BIG,144,Krimbo|faveN|k1to|syrsoN|tabseN,tabseN,syrsoN,high,ok
+2022,Cloud9,252,Ax1Le|HObbit|interz|nafany|sh1ro,nafany,sh1ro,high,ok
+2022,Copenhagen Flames,152,HooXi|Jabbi|Zyphon|nicoodoz|roeJ,HooXi,nicoodoz,high,ok
+2022,ENCE,197,Snappi|Spinx|dycha|hades|maden,Snappi,maden,medium,ok
+2022,Entropiq,158,El1an|Forester|Krad|Lack1|NickelBack,Lack1,El1an|Forester,medium,ok
+2022,FORZE,289,Jerry|KENSi|Norwi|shalfey|zorte,,Jerry,medium,NO_IGL
+2022,FURIA,360,KSCERATO|arT|drop|saffee|yuurih,arT,saffee,high,ok
+2022,FaZe,362,Twistzz|broky|karrigan|rain|ropz,karrigan,broky,high,ok
+2022,G2,199,Aleksib|JACKZ|NiKo|huNter-|m0NESY,Aleksib,m0NESY,high,ok
+2022,Gambit,114,Ax1Le|HObbit|interz|nafany|sh1ro,nafany,sh1ro,high,ok
+2022,Liquid,156,EliGE|NAF|nitr0|oSee|shox,nitr0,oSee,high,ok
+2022,MOUZ,160,Bymas|JDC|dexter|frozen|torzsi,dexter,torzsi,high,ok
+2022,Movistar Riders,223,DeathZz|SunPayus|alex|dav1g|mopoz,alex,SunPayus,medium,ok
+2022,Natus Vincere,210,Perfecto|b1t|electroNic|s1mple|sdy,electroNic,s1mple,medium,ok
+2022,OG,169,F1KU|NEOFRAG|degster|flameZ|nexa,nexa,degster,high,ok
+2022,Outsiders,215,FL1T|Jame|Qikert|fame|n0rb3r7,Jame,Jame,high,ok
+2022,Spirit,194,Patsi|chopper|magixx|s1ren|w0nderful,chopper,w0nderful,high,ok
+2022,Vitality,216,Magisk|ZywOo|apEX|dupreeh|misutaaa,apEX,ZywOo,high,ok
+2022,fnatic,149,FASHR|KRIMZ|mezii|nicoodoz|roeJ,roeJ,nicoodoz,medium,ok
+2023,9INE,313,Goofy|KEi|Kylar|hades|mynio,,Kylar,medium,NO_IGL
+2023,Apeks,181,STYKO|jL|jkaem|kyxsan|nawwk,kyxsan,nawwk,medium,ok
+2023,Astralis,154,Buzz|Staehr|b0RUP|blameF|dev1ce,blameF,dev1ce,high,ok
+2023,BIG,193,Krimbo|mantuu|prosus|s1n|tabseN,tabseN,mantuu,high,ok
+2023,Cloud9,177,Ax1Le|HObbit|buster|nafany|sh1ro,nafany,sh1ro,high,ok
+2023,ENCE,284,NertZ|Snappi|SunPayus|dycha|maden,Snappi,SunPayus|maden,medium,ok
+2023,FURIA,182,FalleN|KSCERATO|arT|chelo|yuurih,FalleN,FalleN,high,ok
+2023,FaZe,335,Twistzz|broky|karrigan|rain|ropz,karrigan,broky,high,ok
+2023,G2,324,HooXi|NiKo|huNter-|jks|m0NESY,HooXi,m0NESY,high,ok
+2023,GamerLegion,181,Keoz|acoR|iM|isak|siuhy,siuhy,acoR,high,ok
+2023,HEROIC,277,TeSeS|cadiaN|jabbi|sjuush|stavn,cadiaN,cadiaN,medium,ok
+2023,Liquid,155,EliGE|NAF|YEKINDAR|nitr0|oSee,nitr0,oSee,high,ok
+2023,MOUZ,179,JDC|dexter|frozen|torzsi|xertioN,dexter,torzsi,high,ok
+2023,Monte,173,DemQQ|Woro2k|br0|kRaSnaL|sdy,,Woro2k|br0,medium,NO_IGL
+2023,Natus Vincere,180,Perfecto|b1t|electroNic|npl|s1mple,npl,s1mple,medium,ok
+2023,Virtus.pro,135,FL1T|Jame|fame|mir|n0rb3r7,Jame,Jame,high,ok
+2023,fnatic,181,FASHR|KRIMZ|mezii|nicoodoz|roeJ,roeJ,nicoodoz,medium,ok
+2024,9z,346,HUASOPEEK|Martinez|buda|dgt|max,dgt,max,medium,ok
+2024,Astralis,200,Staehr|br0|dev1ce|jabbi|stavn,,br0|dev1ce,medium,NO_IGL
+2024,Complexity,346,EliGE|Grim|JT|floppy|hallzerk,JT,hallzerk,medium,ok
+2024,Eternal Fire,366,Calyx|MAJ3R|Wicadia|XANTARES|woxic,MAJ3R,woxic,high,ok
+2024,FURIA,176,FalleN|KSCERATO|chelo|skullz|yuurih,FalleN,FalleN,high,ok
+2024,FaZe,366,broky|frozen|karrigan|rain|ropz,karrigan,broky,high,ok
+2024,Falcons,185,Magisk|Snappi|SunPayus|dupreeh|maden,Snappi,SunPayus|maden,medium,ok
+2024,G2,182,NiKo|Snax|huNter-|m0NESY|malbsMd,Snax,m0NESY,high,ok
+2024,HEROIC,234,NertZ|TeSeS|degster|kyxsan|sjuush,kyxsan,degster,medium,ok
+2024,Imperial,197,HEN1|VINI|decenty|felps|noway,,HEN1|noway,medium,NO_IGL
+2024,Liquid,169,NAF|Twistzz|YEKINDAR|cadiaN|skullz,cadiaN,cadiaN,medium,ok
+2024,MIBR,267,brnz4n|drop|exit|insani|saffee,,saffee,high,NO_IGL
+2024,MOUZ,358,Brollan|Jimpphat|siuhy|torzsi|xertioN,siuhy,torzsi,high,ok
+2024,Natus Vincere,366,Aleksib|b1t|iM|jL|w0nderful,Aleksib,w0nderful,high,ok
+2024,SAW,282,MUTiRiS|arrozdoce|ewjerkz|rmn|story,,MUTiRiS,medium,NO_IGL
+2024,Spirit,366,chopper|donk|magixx|sh1ro|zont1x,chopper,sh1ro,high,ok
+2024,The MongolZ,366,910|Senzu|Techno4K|bLitz|mzinho,bLitz,Senzu|Techno4K|mzinho,medium,ok
+2024,Virtus.pro,240,FL1T|Jame|electroNic|fame|n0rb3r7,Jame,Jame,high,ok
+2024,Vitality,366,Spinx|ZywOo|apEX|flameZ|mezii,apEX,ZywOo,high,ok
+2024,paiN,242,biguzera|kauez|lux|nqz|snow,biguzera,nqz,medium,ok
+2025,3DMAX,326,Ex3rcice|Graviti|Lucky|Maka|bodyy,Maka,Graviti|Lucky,medium,ok
+2025,Astralis,121,HooXi|Magisk|Staehr|dev1ce|jabbi,HooXi,dev1ce,high,ok
+2025,Aurora,265,MAJ3R|Wicadia|XANTARES|jottAAA|woxic,MAJ3R,woxic,high,ok
+2025,B8,365,alex666|esenthial|headtr1ck|kensizor|npl,npl,headtr1ck,medium,ok
+2025,Eternal Fire,115,Calyx|EMSTAR|imoRR|jresy|lugseN,,,,"NO_IGL,NO_AWP"
+2025,FURIA,1,FalleN|KSCERATO|chelo|molodoy|skullz,FalleN,FalleN|molodoy,medium,ok
+2025,Falcons,191,NiKo|TeSeS|kyousuke|kyxsan|m0NESY,kyxsan,m0NESY,medium,ok
+2025,G2,167,HeavyGod|SunPayus|huNter-|malbsMd|matys,,HeavyGod|SunPayus,medium,NO_IGL
+2025,GamerLegion,156,PR|REZ|Tauson|sl3nd|ztr,,Tauson|sl3nd,medium,NO_IGL
+2025,HEROIC,93,Alkaren|LNZ|nilo|xfl0ud|yxngstxr,,xfl0ud,medium,NO_IGL
+2025,Legacy,363,dumau|latto|lux|n1ssim|saadzin,,dumau,high,NO_IGL
+2025,Liquid,169,NAF|NertZ|Twistzz|siuhy|ultimate,siuhy,ultimate,medium,ok
+2025,MIBR,114,Lucaozy|brnz4n|exit|insani|saffee,,saffee,high,NO_IGL
+2025,MOUZ,343,Brollan|Jimpphat|Spinx|torzsi|xertioN,,torzsi,high,NO_IGL
+2025,Natus Vincere,188,Aleksib|b1t|iM|jL|w0nderful,Aleksib,w0nderful,high,ok
+2025,Spirit,187,chopper|donk|magixx|sh1ro|zont1x,chopper,sh1ro,high,ok
+2025,The MongolZ,295,910|Senzu|Techno4K|bLitz|mzinho,bLitz,Senzu|Techno4K|mzinho,medium,ok
+2025,Virtus.pro,175,FL1T|FL4MUS|ICY|electroNic|fame,electroNic,FL4MUS|ICY,medium,ok
+2025,Vitality,356,ZywOo|apEX|flameZ|mezii|ropz,apEX,ZywOo,high,ok
+2025,paiN,230,biguzera|dav1deuS|dgt|nqz|snow,biguzera,nqz,medium,ok

@@ -1,0 +1,1041 @@
+{
+ "ANGE1": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "AZR": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "AcilioN": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "AdreN": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "Brehze": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "Brollan": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "Calyx": {
+  "field": [
+   "support"
+  ],
+  "prose": [],
+  "roles": [
+   "support"
+  ]
+ },
+ "CeRq": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "DeadFox": {
+  "field": [
+   "entry",
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "entry",
+   "awp"
+  ]
+ },
+ "Dosia": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "Edward": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "EliGE": {
+  "field": [
+   "entry"
+  ],
+  "prose": [
+   "awp",
+   "entry"
+  ],
+  "roles": [
+   "entry",
+   "awp"
+  ]
+ },
+ "Ethan": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "Ex6TenZ": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "FalleN": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "igl",
+   "rifle",
+   "awp"
+  ]
+ },
+ "FugLy": {
+  "field": [
+   "lurk"
+  ],
+  "prose": [],
+  "roles": [
+   "lurk"
+  ]
+ },
+ "Furlan": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "GeT_RiGhT": {
+  "field": [
+   "lurk"
+  ],
+  "prose": [],
+  "roles": [
+   "lurk"
+  ]
+ },
+ "Golden": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "GruBy": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "GuardiaN": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "HObbit": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "ISSAA": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl",
+   "lurk"
+  ],
+  "roles": [
+   "igl",
+   "lurk"
+  ]
+ },
+ "JUGi": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "JW": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "KRIMZ": {
+  "field": [
+   "support"
+  ],
+  "prose": [],
+  "roles": [
+   "support"
+  ]
+ },
+ "Kjaerbye": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "Lekr0": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl",
+   "awp",
+   "lurk"
+  ],
+  "roles": [
+   "igl",
+   "lurk",
+   "awp"
+  ]
+ },
+ "MAJ3R": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "MICHU": {
+  "field": [
+   "entry"
+  ],
+  "prose": [],
+  "roles": [
+   "entry"
+  ]
+ },
+ "MODDII": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "MSL": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "igl",
+   "support",
+   "awp"
+  ]
+ },
+ "Magisk": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "NAF": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "NEO": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "NiKo": {
+  "field": [
+   "entry"
+  ],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "entry",
+   "igl",
+   "awp"
+  ]
+ },
+ "Nifty": {
+  "field": [
+   "igl",
+   "awp"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "awp"
+  ]
+ },
+ "REZ": {
+  "field": [
+   "rifle",
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle",
+   "awp"
+  ]
+ },
+ "RUSH": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl",
+   "entry"
+  ],
+  "roles": [
+   "igl",
+   "support",
+   "entry"
+  ]
+ },
+ "STYKO": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "Skadoodle": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "SmithZz": {
+  "field": [
+   "support",
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "support",
+   "awp"
+  ]
+ },
+ "Snappi": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "Snax": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "Stewie2K": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "TACO": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "igl",
+   "support",
+   "awp"
+  ]
+ },
+ "TOAO": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "Twistzz": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "USTILO": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "XANTARES": {
+  "field": [
+   "entry"
+  ],
+  "prose": [
+   "entry"
+  ],
+  "roles": [
+   "entry"
+  ]
+ },
+ "Xyp9x": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "Zeus": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "aizy": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "autimatic": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "rifle",
+   "igl"
+  ]
+ },
+ "bodyy": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "bondik": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl",
+   "lurk"
+  ],
+  "roles": [
+   "igl",
+   "lurk"
+  ]
+ },
+ "byali": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "cajunb": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "chrisJ": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "support"
+  ]
+ },
+ "coldzera": {
+  "field": [
+   "lurk",
+   "awp"
+  ],
+  "prose": [
+   "igl",
+   "awp",
+   "lurk"
+  ],
+  "roles": [
+   "lurk",
+   "awp",
+   "igl"
+  ]
+ },
+ "daps": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "dennis": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "device": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "disco doplan": {
+  "field": [
+   "rifle",
+   "igl"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "rifle",
+   "igl"
+  ]
+ },
+ "dupreeh": {
+  "field": [],
+  "prose": [
+   "awp",
+   "lurk"
+  ],
+  "roles": [
+   "awp",
+   "lurk"
+  ]
+ },
+ "electroNic": {
+  "field": [
+   "entry"
+  ],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "entry",
+   "igl",
+   "awp"
+  ]
+ },
+ "es3tag": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "support"
+  ]
+ },
+ "f0rest": {
+  "field": [],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl"
+  ]
+ },
+ "fer": {
+  "field": [
+   "entry"
+  ],
+  "prose": [],
+  "roles": [
+   "entry"
+  ]
+ },
+ "flamie": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "flusha": {
+  "field": [
+   "support"
+  ],
+  "prose": [],
+  "roles": [
+   "support"
+  ]
+ },
+ "freddieb": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "friberg": {
+  "field": [],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl"
+  ]
+ },
+ "gla1ve": {
+  "field": [],
+  "prose": [
+   "igl",
+   "awp"
+  ],
+  "roles": [
+   "igl",
+   "awp"
+  ]
+ },
+ "hampus": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "lurk"
+  ]
+ },
+ "jkaem": {
+  "field": [
+   "entry"
+  ],
+  "prose": [],
+  "roles": [
+   "entry"
+  ]
+ },
+ "jks": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "k0nfig": {
+  "field": [
+   "entry",
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "entry",
+   "awp"
+  ]
+ },
+ "karrigan": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "kennyS": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "mertz": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ },
+ "mou": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "ngiN": {
+  "field": [
+   "support"
+  ],
+  "prose": [],
+  "roles": [
+   "support"
+  ]
+ },
+ "niko": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "nitr0": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "olofmeister": {
+  "field": [
+   "support",
+   "lurk"
+  ],
+  "prose": [],
+  "roles": [
+   "support",
+   "lurk"
+  ]
+ },
+ "oskar": {
+  "field": [],
+  "prose": [],
+  "roles": []
+ },
+ "pashaBiceps": {
+  "field": [
+   "rifle",
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle",
+   "awp"
+  ]
+ },
+ "paz": {
+  "field": [
+   "rifle"
+  ],
+  "prose": [],
+  "roles": [
+   "rifle"
+  ]
+ },
+ "phr": {
+  "field": [
+   "igl",
+   "rifle"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "rifle"
+  ]
+ },
+ "rain": {
+  "field": [
+   "igl",
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "entry"
+  ]
+ },
+ "ropz": {
+  "field": [
+   "lurk"
+  ],
+  "prose": [
+   "lurk"
+  ],
+  "roles": [
+   "lurk"
+  ]
+ },
+ "s1mple": {
+  "field": [
+   "rifle",
+   "awp"
+  ],
+  "prose": [
+   "awp"
+  ],
+  "roles": [
+   "rifle",
+   "awp"
+  ]
+ },
+ "seized": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl",
+   "lurk"
+  ],
+  "roles": [
+   "igl",
+   "lurk"
+  ]
+ },
+ "shox": {
+  "field": [
+   "support",
+   "lurk"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "support",
+   "lurk",
+   "igl"
+  ]
+ },
+ "snatchie": {
+  "field": [],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl"
+  ]
+ },
+ "suNny": {
+  "field": [
+   "entry"
+  ],
+  "prose": [],
+  "roles": [
+   "entry"
+  ]
+ },
+ "tarik": {
+  "field": [
+   "entry"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "entry",
+   "igl"
+  ]
+ },
+ "twist": {
+  "field": [
+   "igl",
+   "support"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "support"
+  ]
+ },
+ "valde": {
+  "field": [
+   "igl",
+   "lurk"
+  ],
+  "prose": [
+   "igl"
+  ],
+  "roles": [
+   "igl",
+   "lurk"
+  ]
+ },
+ "woxic": {
+  "field": [
+   "awp"
+  ],
+  "prose": [],
+  "roles": [
+   "awp"
+  ]
+ }
+}

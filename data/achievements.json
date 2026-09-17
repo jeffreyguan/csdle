@@ -1,0 +1,4826 @@
+{
+ "ANGE1": [
+  {
+   "date": "2018-09-21",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "HR",
+   "tier": "S-Tier",
+   "tournament": "FACEIT Major: London 2018"
+  },
+  {
+   "date": "2018-07-13",
+   "place": "1st",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "CIS Minor Championship - London 2018"
+  },
+  {
+   "date": "2018-04-08",
+   "place": "1st",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "Bets.net Masters: Season 1"
+  },
+  {
+   "date": "2018-03-25",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2018"
+  },
+  {
+   "date": "2017-12-08",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "HR",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - Finals"
+  },
+  {
+   "date": "2017-11-26",
+   "place": "1st",
+   "team": "HR",
+   "tier": "B-Tier",
+   "tournament": "FCDB Cup 2017"
+  },
+  {
+   "date": "2017-04-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "HR",
+   "tier": "S-Tier",
+   "tournament": "StarLadder i-League StarSeries Season 3"
+  },
+  {
+   "date": "2016-03-26",
+   "place": "1st",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "Copenhagen Games 2016"
+  },
+  {
+   "date": "2016-01-31",
+   "place": "1st",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - Columbus 2016"
+  },
+  {
+   "date": "2015-08-02",
+   "place": "1st",
+   "team": "HR",
+   "tier": "A-Tier",
+   "tournament": "Acer Predator Masters Season 1"
+  }
+ ],
+ "AZR": [
+  {
+   "date": "2020-09-27",
+   "place": "2nd",
+   "team": "100T",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 12: North America"
+  },
+  {
+   "date": "2019-11-10",
+   "place": "2nd",
+   "team": "100T",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - Beijing"
+  },
+  {
+   "date": "2019-09-08",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "RNG",
+   "tier": "S-Tier",
+   "tournament": "StarLadder Berlin Major 2019"
+  },
+  {
+   "date": "2019-04-06",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "RNG",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 7"
+  },
+  {
+   "date": "2019-03-01",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "RNG",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Katowice Major 2019"
+  },
+  {
+   "date": "2019-01-25",
+   "place": "1st",
+   "team": "RNG",
+   "tier": "A-Tier",
+   "tournament": "Asia Minor Championship - Katowice 2019"
+  },
+  {
+   "date": "2018-07-20",
+   "place": "1st",
+   "team": "RNG",
+   "tier": "A-Tier",
+   "tournament": "Asia Minor Championship - London 2018"
+  },
+  {
+   "date": "2017-11-05",
+   "place": "1st",
+   "team": "RNG",
+   "tier": "A-Tier",
+   "tournament": "StarLadder i-League Invitational #2"
+  },
+  {
+   "date": "2017-10-29",
+   "place": "1st",
+   "team": "RNG",
+   "tier": "A-Tier",
+   "tournament": "Asia Minor Championship - Boston 2018"
+  },
+  {
+   "date": "2017-06-04",
+   "place": "1st",
+   "team": "RNG",
+   "tier": "A-Tier",
+   "tournament": "Asia Minor Championship - Krak\u00f3w 2017"
+  }
+ ],
+ "AcilioN": [
+  {
+   "date": "2022-04-03",
+   "place": "1st",
+   "team": "Apeks",
+   "tier": "B-Tier",
+   "tournament": "Tipsport Cup Bratislava 2022"
+  },
+  {
+   "date": "2021-05-23",
+   "place": "1st",
+   "team": "CPHF",
+   "tier": "B-Tier",
+   "tournament": "BLAST Rising 2021"
+  },
+  {
+   "date": "2020-04-19",
+   "place": "1st",
+   "team": "MAD",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 1"
+  },
+  {
+   "date": "2020-01-29",
+   "place": "1st",
+   "team": "CPHF",
+   "tier": "B-Tier",
+   "tournament": "United Masters League Season 2"
+  },
+  {
+   "date": "2018-11-25",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "A-Tier",
+   "tournament": "TOYOTA Master CS:GO Bangkok 2018"
+  },
+  {
+   "date": "2018-09-30",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "A-Tier",
+   "tournament": "Games Clash Masters 2018"
+  },
+  {
+   "date": "2018-03-31",
+   "place": "1st",
+   "team": "Imperial",
+   "tier": "A-Tier",
+   "tournament": "Copenhagen Games 2018"
+  },
+  {
+   "date": "2016-05-01",
+   "place": "2nd",
+   "team": "SK",
+   "tier": "A-Tier",
+   "tournament": "CEVO Pro League Season 9"
+  },
+  {
+   "date": "2016-02-10",
+   "place": "1st",
+   "team": "SK",
+   "tier": "B-Tier",
+   "tournament": "99Damage Masters #4"
+  },
+  {
+   "date": "2015-12-06",
+   "place": "3rd",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "Fragbite Masters Season 5"
+  }
+ ],
+ "Aleksib": [
+  {
+   "date": "2026-05-17",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Atlanta 2026"
+  },
+  {
+   "date": "2026-05-03",
+   "place": "2nd",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Rivals Spring 2026"
+  },
+  {
+   "date": "2026-03-15",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 23"
+  },
+  {
+   "date": "2025-09-21",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "A-Tier",
+   "tournament": "StarLadder StarSeries Fall 2025"
+  },
+  {
+   "date": "2024-10-13",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio 2024"
+  },
+  {
+   "date": "2024-09-22",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 20"
+  },
+  {
+   "date": "2024-07-21",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2024"
+  },
+  {
+   "date": "2024-03-31",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Copenhagen 2024"
+  },
+  {
+   "date": "2019-03-03",
+   "place": "2nd",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Katowice Major 2019"
+  },
+  {
+   "date": "2018-10-14",
+   "place": "1st",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 6"
+  }
+ ],
+ "B1ad3": [
+  {
+   "date": "2017-09-24",
+   "place": "2nd",
+   "team": "F3",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 25: Global Challenge"
+  },
+  {
+   "date": "2017-01-15",
+   "place": "1st",
+   "team": "F3",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Leipzig 2017"
+  },
+  {
+   "date": "2016-10-01",
+   "place": "2nd",
+   "team": "F3",
+   "tier": "B-Tier",
+   "tournament": "Adrenaline Cyber League 2016"
+  },
+  {
+   "date": "2016-07-13",
+   "place": "11th\u00a0-\u00a014th",
+   "team": "F3",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2016-07-08",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "F3",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2016"
+  },
+  {
+   "date": "2015-11-19",
+   "place": "1st",
+   "team": "F3",
+   "tier": "B-Tier",
+   "tournament": "GameAgents League #2"
+  },
+  {
+   "date": "2015-07-12",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "F3",
+   "tier": "S-Tier",
+   "tournament": "Electronic Sports World Cup 2015"
+  },
+  {
+   "date": "2012-12-16",
+   "place": "1st",
+   "team": "kNET",
+   "tier": "A-Tier",
+   "tournament": "ASUS Final Battle of the Year 2012"
+  },
+  {
+   "date": "2008-05-25",
+   "place": "1st",
+   "team": "A-Gaming",
+   "tier": "B-Tier",
+   "tournament": "ASUS Open Spring 2008"
+  },
+  {
+   "date": "2007-10-07",
+   "place": "3rd",
+   "team": "A-Gaming",
+   "tier": "S-Tier",
+   "tournament": "World Cyber Games 2007"
+  }
+ ],
+ "BnTeT": [
+  {
+   "date": "2022-08-14",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "B-Tier",
+   "tournament": "5E Arena Asia Cup 2022"
+  },
+  {
+   "date": "2020-05-10",
+   "place": "1st",
+   "team": "Gen.G",
+   "tier": "A-Tier",
+   "tournament": "ESL One: Road to Rio - North America"
+  },
+  {
+   "date": "2020-02-23",
+   "place": "1st",
+   "team": "Gen.G",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Anaheim 2020"
+  },
+  {
+   "date": "2019-11-24",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "TYLOO",
+   "tier": "S-Tier",
+   "tournament": "CS:GO Asia Championships 2019"
+  },
+  {
+   "date": "2019-11-17",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "eXTREMESLAND 2019"
+  },
+  {
+   "date": "2018-08-06",
+   "place": "2nd",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "Intel Extreme Masters XIII - Shanghai"
+  },
+  {
+   "date": "2018-05-05",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "TYLOO",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Sydney"
+  },
+  {
+   "date": "2018-03-25",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "StarLadder & ImbaTV Invitational Chongqing 2018"
+  },
+  {
+   "date": "2017-12-10",
+   "place": "2nd",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "ROG Masters 2017"
+  },
+  {
+   "date": "2017-03-19",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "B-Tier",
+   "tournament": "China Cup 1"
+  }
+ ],
+ "Boombl4": [
+  {
+   "date": "2022-05-22",
+   "place": "2nd",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2021-12-19",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2021"
+  },
+  {
+   "date": "2021-11-28",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2021"
+  },
+  {
+   "date": "2021-11-07",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-09-12",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 14"
+  },
+  {
+   "date": "2021-09-12",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 3"
+  },
+  {
+   "date": "2021-07-18",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Cologne"
+  },
+  {
+   "date": "2021-05-09",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Spring 2021"
+  },
+  {
+   "date": "2021-01-24",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Global Final 2020"
+  },
+  {
+   "date": "2020-03-01",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - World Championship"
+  }
+ ],
+ "Ex6TenZ": [
+  {
+   "date": "2018-06-09",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 5 - Finals"
+  },
+  {
+   "date": "2017-11-03",
+   "place": "1st",
+   "team": "LDLC",
+   "tier": "B-Tier",
+   "tournament": "Esports World Convention 2017 - Paris Games Week"
+  },
+  {
+   "date": "2014-09-26",
+   "place": "1st",
+   "team": "Titan",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Invitational II"
+  },
+  {
+   "date": "2013-11-30",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "VG",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2013"
+  },
+  {
+   "date": "2013-10-27",
+   "place": "1st",
+   "team": "VG",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One - Fall 2013"
+  },
+  {
+   "date": "2013-10-13",
+   "place": "1st",
+   "team": "VG",
+   "tier": "S-Tier",
+   "tournament": "StarLadder StarSeries VII"
+  },
+  {
+   "date": "2013-06-30",
+   "place": "1st",
+   "team": "VG",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One - Summer 2013"
+  },
+  {
+   "date": "2011-10-25",
+   "place": "1st",
+   "team": "VG",
+   "tier": "S-Tier",
+   "tournament": "ESWC 2011"
+  },
+  {
+   "date": "2011-04-23",
+   "place": "1st",
+   "team": "VG",
+   "tier": "A-Tier",
+   "tournament": "Copenhagen Games 2011: Source"
+  },
+  {
+   "date": "2008-07-26",
+   "place": "1st",
+   "team": "Epsilon",
+   "tier": "A-Tier",
+   "tournament": "The eXperience 2008"
+  }
+ ],
+ "FNS": [
+  {
+   "date": "2020-04-13",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "Orgless",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 1"
+  },
+  {
+   "date": "2020-03-06",
+   "place": "1st\u00a0-\u00a02nd",
+   "team": "Orgless",
+   "tier": "B-Tier",
+   "tournament": "Flashpoint Season 1: LAN Qualifier"
+  },
+  {
+   "date": "2019-12-15",
+   "place": "2nd",
+   "team": "Riot",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 32: Global Challenge"
+  },
+  {
+   "date": "2018-06-09",
+   "place": "7th\u00a0-\u00a08th",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 5 - Finals"
+  },
+  {
+   "date": "2017-11-12",
+   "place": "7th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - North America"
+  },
+  {
+   "date": "2016-06-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "TSM",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 1 - Finals"
+  },
+  {
+   "date": "2015-12-06",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "B-Tier",
+   "tournament": "Northern Arena 2015"
+  },
+  {
+   "date": "2015-09-06",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "B-Tier",
+   "tournament": "WinOut.net CS:GO Championship"
+  },
+  {
+   "date": "2015-07-04",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 1 - Finals"
+  },
+  {
+   "date": "2015-04-15",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "A-Tier",
+   "tournament": "CEVO Season 6 Professional"
+  }
+ ],
+ "FalleN": [
+  {
+   "date": "2026-06-21",
+   "place": "2nd",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne Major 2026"
+  },
+  {
+   "date": "2025-11-09",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Chengdu 2025"
+  },
+  {
+   "date": "2025-10-19",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "A-Tier",
+   "tournament": "Thunderpick World Championship 2025"
+  },
+  {
+   "date": "2025-09-21",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2017-12-10",
+   "place": "1st",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - Finals"
+  },
+  {
+   "date": "2017-10-29",
+   "place": "1st",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2017"
+  },
+  {
+   "date": "2017-06-25",
+   "place": "1st",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 3 - Finals"
+  },
+  {
+   "date": "2016-07-10",
+   "place": "1st",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2016"
+  },
+  {
+   "date": "2016-05-15",
+   "place": "1st",
+   "team": "LG",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 3 - Finals"
+  },
+  {
+   "date": "2016-04-03",
+   "place": "1st",
+   "team": "LG",
+   "tier": "S-Tier",
+   "tournament": "MLG Major Championship: Columbus 2016"
+  }
+ ],
+ "Golden": [
+  {
+   "date": "2020-12-06",
+   "place": "3rd",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 2"
+  },
+  {
+   "date": "2020-04-12",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 11: Europe"
+  },
+  {
+   "date": "2019-12-08",
+   "place": "2nd",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 10 - Finals"
+  },
+  {
+   "date": "2019-10-27",
+   "place": "2nd",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 8"
+  },
+  {
+   "date": "2019-10-06",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Malm\u00f6 2019"
+  },
+  {
+   "date": "2018-03-18",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2017"
+  },
+  {
+   "date": "2018-03-04",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XII - World Championship"
+  },
+  {
+   "date": "2017-12-17",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 4 - Finals"
+  },
+  {
+   "date": "2017-12-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - Finals"
+  },
+  {
+   "date": "2016-12-18",
+   "place": "1st",
+   "team": "FNC.A",
+   "tier": "B-Tier",
+   "tournament": "China Top 2016"
+  }
+ ],
+ "GruBy": [
+  {
+   "date": "2021-05-30",
+   "place": "1st",
+   "team": "IG",
+   "tier": "B-Tier",
+   "tournament": "Polska Liga Esportowa S9 Grupa Mistrzowska"
+  },
+  {
+   "date": "2019-12-22",
+   "place": "1st",
+   "team": "AGO",
+   "tier": "B-Tier",
+   "tournament": "LOOT.BET/CS Season 5"
+  },
+  {
+   "date": "2019-03-17",
+   "place": "2nd",
+   "team": "AGO",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2018"
+  },
+  {
+   "date": "2018-12-15",
+   "place": "1st",
+   "team": "AGO",
+   "tier": "B-Tier",
+   "tournament": "Polska Liga Esportowa S4 Grupa Mistrzowska"
+  },
+  {
+   "date": "2018-10-14",
+   "place": "2nd",
+   "team": "AGO",
+   "tier": "B-Tier",
+   "tournament": "ESL Pro European Championship 2018"
+  },
+  {
+   "date": "2018-08-15",
+   "place": "1st",
+   "team": "AGO",
+   "tier": "B-Tier",
+   "tournament": "OGA Counter PIT Season 1"
+  },
+  {
+   "date": "2018-03-17",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "AGO",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2017"
+  },
+  {
+   "date": "2018-02-25",
+   "place": "1st",
+   "team": "AGO",
+   "tier": "B-Tier",
+   "tournament": "Play2Live Cryptomasters"
+  },
+  {
+   "date": "2018-01-07",
+   "place": "1st",
+   "team": "AGO",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 26: Global Challenge"
+  },
+  {
+   "date": "2017-11-22",
+   "place": "2nd",
+   "team": "AGO",
+   "tier": "A-Tier",
+   "tournament": "China Top Shenzhen 2017"
+  }
+ ],
+ "HUNDEN": [
+  {
+   "date": "2020-02-05",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MAD",
+   "tier": "A-Tier",
+   "tournament": "ICE Challenge 2020"
+  },
+  {
+   "date": "2020-01-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MAD",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Leipzig 2020"
+  },
+  {
+   "date": "2019-12-01",
+   "place": "2nd",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Winter 2019"
+  },
+  {
+   "date": "2019-11-17",
+   "place": "2nd",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "WePlay! Forge of Masters Season 2"
+  },
+  {
+   "date": "2019-09-22",
+   "place": "1st",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2019"
+  },
+  {
+   "date": "2019-08-22",
+   "place": "1st",
+   "team": "Tricked",
+   "tier": "B-Tier",
+   "tournament": "UCC Summer Smash"
+  },
+  {
+   "date": "2019-07-14",
+   "place": "2nd",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "Good Game League 2019"
+  },
+  {
+   "date": "2019-04-12",
+   "place": "1st",
+   "team": "Tricked",
+   "tier": "B-Tier",
+   "tournament": "LOOT.BET Hotshot Series Season 2"
+  },
+  {
+   "date": "2018-08-12",
+   "place": "1st",
+   "team": "aTTaX",
+   "tier": "B-Tier",
+   "tournament": "99Liga Season 9: Division 1"
+  },
+  {
+   "date": "2017-12-16",
+   "place": "1st",
+   "team": "aTTaX",
+   "tier": "B-Tier",
+   "tournament": "ESL Meisterschaft: Winter 2017"
+  }
+ ],
+ "Happy": [
+  {
+   "date": "2018-11-18",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Atlanta 2018"
+  },
+  {
+   "date": "2017-01-15",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2016"
+  },
+  {
+   "date": "2016-02-07",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "Global eSports Cup - Season 1"
+  },
+  {
+   "date": "2015-11-01",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Cluj\u2060-\u2060Napoca 2015"
+  },
+  {
+   "date": "2015-10-11",
+   "place": "1st",
+   "team": "FRA",
+   "tier": "S-Tier",
+   "tournament": "The World Championships 2015"
+  },
+  {
+   "date": "2015-09-27",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "Gfinity Champion of Champions"
+  },
+  {
+   "date": "2015-08-23",
+   "place": "2nd",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2015"
+  },
+  {
+   "date": "2015-08-08",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Season X - gamescom"
+  },
+  {
+   "date": "2015-06-28",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "Gfinity Masters Summer 1"
+  },
+  {
+   "date": "2014-11-29",
+   "place": "1st",
+   "team": "LDLC",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2014"
+  }
+ ],
+ "HooXi": [
+  {
+   "date": "2026-04-11",
+   "place": "2nd",
+   "team": "Astralis",
+   "tier": "A-Tier",
+   "tournament": "PGL Bucharest 2026"
+  },
+  {
+   "date": "2025-07-20",
+   "place": "2nd",
+   "team": "Astralis",
+   "tier": "A-Tier",
+   "tournament": "FISSURE Playground #1"
+  },
+  {
+   "date": "2025-05-18",
+   "place": "2nd",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "PGL Astana 2025"
+  },
+  {
+   "date": "2024-03-30",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Copenhagen 2024"
+  },
+  {
+   "date": "2023-08-19",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Gamers8 2023"
+  },
+  {
+   "date": "2023-08-06",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2023"
+  },
+  {
+   "date": "2023-02-12",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2023"
+  },
+  {
+   "date": "2023-01-26",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Groups 2023"
+  },
+  {
+   "date": "2022-12-18",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2022"
+  },
+  {
+   "date": "2022-04-22",
+   "place": "1st",
+   "team": "CPHF",
+   "tier": "A-Tier",
+   "tournament": "PGL Major Antwerp 2022: European RMR B"
+  }
+ ],
+ "JT": [
+  {
+   "date": "2026-07-30",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Summer 2026"
+  },
+  {
+   "date": "2025-04-13",
+   "place": "4th",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "PGL Bucharest 2025"
+  },
+  {
+   "date": "2024-06-16",
+   "place": "1st",
+   "team": "COL",
+   "tier": "A-Tier",
+   "tournament": "ESL Challenger at DreamHack Summer 2024"
+  },
+  {
+   "date": "2024-05-11",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 19"
+  },
+  {
+   "date": "2023-11-25",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Final 2023"
+  },
+  {
+   "date": "2023-10-22",
+   "place": "2nd",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Sydney 2023"
+  },
+  {
+   "date": "2021-04-26",
+   "place": "2nd",
+   "team": "Extra Salt",
+   "tier": "A-Tier",
+   "tournament": "Funspark ULTI 2020"
+  },
+  {
+   "date": "2021-03-14",
+   "place": "1st",
+   "team": "Extra Salt",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open March 2021: North America"
+  },
+  {
+   "date": "2020-04-14",
+   "place": "4th",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 1"
+  },
+  {
+   "date": "2017-05-07",
+   "place": "1st",
+   "team": "Bravado",
+   "tier": "B-Tier",
+   "tournament": "MettleState Samsung Galaxy Championship - Finals"
+  }
+ ],
+ "Jame": [
+  {
+   "date": "2026-07-12",
+   "place": "2nd",
+   "team": "PV",
+   "tier": "A-Tier",
+   "tournament": "XSE Pro League 2026"
+  },
+  {
+   "date": "2026-02-22",
+   "place": "2nd",
+   "team": "PV",
+   "tier": "S-Tier",
+   "tournament": "PGL Cluj-Napoca 2026"
+  },
+  {
+   "date": "2026-01-25",
+   "place": "1st",
+   "team": "PV",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Winter 2026"
+  },
+  {
+   "date": "2023-11-02",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "Roobet Cup 2023"
+  },
+  {
+   "date": "2023-07-08",
+   "place": "1st",
+   "team": "VP",
+   "tier": "Showmatch",
+   "tournament": "FiReLEAGUE Battle 2023"
+  },
+  {
+   "date": "2022-11-13",
+   "place": "1st",
+   "team": "Outsiders",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio Major 2022"
+  },
+  {
+   "date": "2021-02-28",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XV - World Championship"
+  },
+  {
+   "date": "2020-12-06",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 2"
+  },
+  {
+   "date": "2019-09-14",
+   "place": "1st",
+   "team": "AVG",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Moscow 2019"
+  },
+  {
+   "date": "2019-09-08",
+   "place": "2nd",
+   "team": "AVG",
+   "tier": "S-Tier",
+   "tournament": "StarLadder Berlin Major 2019"
+  }
+ ],
+ "Lack1": [
+  {
+   "date": "2024-07-28",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "Skyesports Championship 2024"
+  },
+  {
+   "date": "2024-04-28",
+   "place": "2nd",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "ESL Challenger at DreamHack Melbourne 2024"
+  },
+  {
+   "date": "2024-04-14",
+   "place": "1st",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "Skyesports Masters 2024"
+  },
+  {
+   "date": "2024-03-16",
+   "place": "1st",
+   "team": "Aurora",
+   "tier": "B-Tier",
+   "tournament": "Skyesports Grand Slam 2024"
+  },
+  {
+   "date": "2023-12-07",
+   "place": "2nd",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "CCT Season 1 Online Finals #5"
+  },
+  {
+   "date": "2023-05-31",
+   "place": "2nd",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "BetBoom Playlist. Freedom"
+  },
+  {
+   "date": "2022-01-24",
+   "place": "2nd",
+   "team": "Entropiq",
+   "tier": "A-Tier",
+   "tournament": "Funspark ULTI 2021"
+  },
+  {
+   "date": "2021-11-21",
+   "place": "2nd",
+   "team": "Entropiq",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2021"
+  },
+  {
+   "date": "2021-11-09",
+   "place": "1st",
+   "team": "Entropiq",
+   "tier": "A-Tier",
+   "tournament": "Pinnacle Fall Series #2"
+  },
+  {
+   "date": "2021-08-26",
+   "place": "1st",
+   "team": "Entropiq",
+   "tier": "B-Tier",
+   "tournament": "Malta Vibes Knockout Series #1"
+  }
+ ],
+ "Lekr0": [
+  {
+   "date": "2019-11-02",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Copenhagen 2019"
+  },
+  {
+   "date": "2019-03-01",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Katowice Major 2019"
+  },
+  {
+   "date": "2018-11-24",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 6 - Finals"
+  },
+  {
+   "date": "2018-11-03",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Copenhagen 2018"
+  },
+  {
+   "date": "2018-07-22",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - London 2018"
+  },
+  {
+   "date": "2018-03-18",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2017"
+  },
+  {
+   "date": "2018-03-04",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XII - World Championship"
+  },
+  {
+   "date": "2017-12-17",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 4 - Finals"
+  },
+  {
+   "date": "2017-12-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - Finals"
+  },
+  {
+   "date": "2016-11-06",
+   "place": "1st",
+   "team": "GOD",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - Atlanta 2017"
+  }
+ ],
+ "MAJ3R": [
+  {
+   "date": "2026-06-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Aurora",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne Major 2026"
+  },
+  {
+   "date": "2026-03-28",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Aurora",
+   "tier": "S-Tier",
+   "tournament": "BLAST Open Spring 2026"
+  },
+  {
+   "date": "2025-11-01",
+   "place": "1st",
+   "team": "Aurora",
+   "tier": "A-Tier",
+   "tournament": "PGL Masters Bucharest 2025"
+  },
+  {
+   "date": "2025-08-24",
+   "place": "2nd",
+   "team": "Aurora",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2025"
+  },
+  {
+   "date": "2025-05-18",
+   "place": "3rd",
+   "team": "Aurora",
+   "tier": "S-Tier",
+   "tournament": "PGL Astana 2025"
+  },
+  {
+   "date": "2025-01-26",
+   "place": "2nd",
+   "team": "EF",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Spring 2025"
+  },
+  {
+   "date": "2024-09-22",
+   "place": "2nd",
+   "team": "EF",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 20"
+  },
+  {
+   "date": "2024-09-01",
+   "place": "2nd",
+   "team": "EF",
+   "tier": "S-Tier",
+   "tournament": "BetBoom Dacha Belgrade 2024 #2"
+  },
+  {
+   "date": "2024-05-23",
+   "place": "1st",
+   "team": "EF",
+   "tier": "A-Tier",
+   "tournament": "CCT Season 1 Global Finals"
+  },
+  {
+   "date": "2018-03-18",
+   "place": "2nd",
+   "team": "SS",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2017"
+  }
+ ],
+ "MSL": [
+  {
+   "date": "2019-06-17",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Summer 2019"
+  },
+  {
+   "date": "2018-09-02",
+   "place": "1st",
+   "team": "North",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Stockholm 2018"
+  },
+  {
+   "date": "2018-07-14",
+   "place": "1st",
+   "team": "North",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Valencia 2018"
+  },
+  {
+   "date": "2018-05-21",
+   "place": "1st",
+   "team": "North",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Tours 2018"
+  },
+  {
+   "date": "2017-10-12",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "North",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Premier 2017"
+  },
+  {
+   "date": "2017-09-10",
+   "place": "1st",
+   "team": "North",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Montreal 2017"
+  },
+  {
+   "date": "2017-09-03",
+   "place": "2nd",
+   "team": "North",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Malm\u00f6 2017"
+  },
+  {
+   "date": "2017-06-04",
+   "place": "2nd",
+   "team": "North",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 5 - Finals"
+  },
+  {
+   "date": "2016-10-23",
+   "place": "1st",
+   "team": "DIG",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2016"
+  },
+  {
+   "date": "2016-02-07",
+   "place": "2nd",
+   "team": "DIG",
+   "tier": "S-Tier",
+   "tournament": "Global eSports Cup - Season 1"
+  }
+ ],
+ "Maka": [
+  {
+   "date": "2026-07-30",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "3DMAX",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Summer 2026"
+  },
+  {
+   "date": "2026-04-11",
+   "place": "4th",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "PGL Bucharest 2026"
+  },
+  {
+   "date": "2025-10-19",
+   "place": "2nd",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "CS Asia Championships 2025"
+  },
+  {
+   "date": "2025-08-31",
+   "place": "1st",
+   "team": "3DMAX",
+   "tier": "B-Tier",
+   "tournament": "Perfect World CS Challenge Series #1"
+  },
+  {
+   "date": "2025-08-21",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "3DMAX",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2025"
+  },
+  {
+   "date": "2025-07-18",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "FISSURE Playground #1"
+  },
+  {
+   "date": "2025-04-11",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "3DMAX",
+   "tier": "S-Tier",
+   "tournament": "PGL Bucharest 2025"
+  },
+  {
+   "date": "2024-11-03",
+   "place": "3rd",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "Thunderpick World Championship 2024"
+  },
+  {
+   "date": "2024-07-28",
+   "place": "1st",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "Skyesports Championship 2024"
+  },
+  {
+   "date": "2018-12-09",
+   "place": "1st",
+   "team": "3DMAX",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 29: Global Challenge"
+  }
+ ],
+ "NEO": [
+  {
+   "date": "2017-10-29",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2017"
+  },
+  {
+   "date": "2017-02-19",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Las Vegas 2017"
+  },
+  {
+   "date": "2017-01-29",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  },
+  {
+   "date": "2017-01-15",
+   "place": "3rd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2016"
+  },
+  {
+   "date": "2016-07-30",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2015-09-12",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Invitational"
+  },
+  {
+   "date": "2015-04-19",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESEA Season 18: Global Invite Division"
+  },
+  {
+   "date": "2014-03-16",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One Katowice 2014"
+  },
+  {
+   "date": "2007-03-18",
+   "place": "1st",
+   "team": "Pentagram",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters I"
+  },
+  {
+   "date": "2006-10-22",
+   "place": "1st",
+   "team": "Pentagram",
+   "tier": "S-Tier",
+   "tournament": "World Cyber Games 2006"
+  }
+ ],
+ "NiKo": [
+  {
+   "date": "2026-06-21",
+   "place": "1st",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne Major 2026"
+  },
+  {
+   "date": "2025-04-13",
+   "place": "1st",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "PGL Bucharest 2025"
+  },
+  {
+   "date": "2024-11-03",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2024"
+  },
+  {
+   "date": "2024-09-29",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Final 2024"
+  },
+  {
+   "date": "2023-08-06",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2023"
+  },
+  {
+   "date": "2023-02-12",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2023"
+  },
+  {
+   "date": "2022-12-18",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2022"
+  },
+  {
+   "date": "2021-11-07",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2017-12-17",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 4 - Finals"
+  },
+  {
+   "date": "2017-10-13",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Premier 2017"
+  }
+ ],
+ "Slemmy": [
+  {
+   "date": "2018-04-26",
+   "place": "10th",
+   "team": "coL",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 7 - North America"
+  },
+  {
+   "date": "2017-11-12",
+   "place": "11th",
+   "team": "coL",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - North America"
+  },
+  {
+   "date": "2017-05-11",
+   "place": "11th",
+   "team": "coL",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 5 - North America"
+  },
+  {
+   "date": "2016-07-21",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2016-07-17",
+   "place": "1st",
+   "team": "C9",
+   "tier": "B-Tier",
+   "tournament": "iBUYPOWER Invitational 2016 - Summer"
+  },
+  {
+   "date": "2016-06-25",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 1 - Finals"
+  },
+  {
+   "date": "2016-05-12",
+   "place": "7th\u00a0-\u00a08th",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 3 - Finals"
+  },
+  {
+   "date": "2016-05-08",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "C9",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Austin 2016"
+  },
+  {
+   "date": "2015-12-06",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "SPY",
+   "tier": "B-Tier",
+   "tournament": "Northern Arena 2015"
+  },
+  {
+   "date": "2015-11-30",
+   "place": "2nd",
+   "team": "SPY",
+   "tier": "B-Tier",
+   "tournament": "ESEA Season 20: Premier Division - North America"
+  }
+ ],
+ "Snappi": [
+  {
+   "date": "2025-09-21",
+   "place": "2nd",
+   "team": "NIP",
+   "tier": "A-Tier",
+   "tournament": "StarLadder StarSeries Fall 2025"
+  },
+  {
+   "date": "2024-02-10",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2024"
+  },
+  {
+   "date": "2023-08-20",
+   "place": "2nd",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "Gamers8 2023"
+  },
+  {
+   "date": "2023-08-06",
+   "place": "2nd",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2023"
+  },
+  {
+   "date": "2023-06-04",
+   "place": "1st",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Dallas 2023"
+  },
+  {
+   "date": "2022-06-05",
+   "place": "2nd",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVII - Dallas"
+  },
+  {
+   "date": "2022-05-21",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2022-04-10",
+   "place": "2nd",
+   "team": "ENCE",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 15"
+  },
+  {
+   "date": "2019-11-17",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Atlanta 2019"
+  },
+  {
+   "date": "2016-11-27",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "A-Tier",
+   "tournament": "International Gaming League 2016 - Grand Finals"
+  }
+ ],
+ "Snax": [
+  {
+   "date": "2025-04-13",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "PGL Bucharest 2025"
+  },
+  {
+   "date": "2024-11-03",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2024"
+  },
+  {
+   "date": "2024-09-29",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Final 2024"
+  },
+  {
+   "date": "2024-07-21",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2024"
+  },
+  {
+   "date": "2018-09-30",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "ESL One: New York 2018"
+  },
+  {
+   "date": "2017-02-19",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Las Vegas 2017"
+  },
+  {
+   "date": "2017-01-29",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  },
+  {
+   "date": "2016-07-30",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2015-09-12",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Invitational"
+  },
+  {
+   "date": "2014-03-16",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One Katowice 2014"
+  }
+ ],
+ "Stewie2K": [
+  {
+   "date": "2024-06-02",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Dallas 2024"
+  },
+  {
+   "date": "2019-07-21",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - Chicago"
+  },
+  {
+   "date": "2019-07-07",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2019"
+  },
+  {
+   "date": "2019-07-07",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 2"
+  },
+  {
+   "date": "2019-06-23",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 9 - Finals"
+  },
+  {
+   "date": "2019-06-02",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Dallas 2019"
+  },
+  {
+   "date": "2019-05-05",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - Sydney"
+  },
+  {
+   "date": "2018-08-26",
+   "place": "1st",
+   "team": "MIBR",
+   "tier": "A-Tier",
+   "tournament": "ZOTAC Cup Masters 2018"
+  },
+  {
+   "date": "2018-01-28",
+   "place": "1st",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Boston 2018"
+  },
+  {
+   "date": "2016-10-30",
+   "place": "1st",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 4 - Finals"
+  }
+ ],
+ "TaZ": [
+  {
+   "date": "2017-10-29",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2017"
+  },
+  {
+   "date": "2017-02-19",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Las Vegas 2017"
+  },
+  {
+   "date": "2017-01-29",
+   "place": "2nd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  },
+  {
+   "date": "2017-01-15",
+   "place": "3rd",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2016"
+  },
+  {
+   "date": "2016-07-30",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2015-09-12",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Invitational"
+  },
+  {
+   "date": "2015-04-19",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESEA Season 18: Global Invite Division"
+  },
+  {
+   "date": "2014-03-16",
+   "place": "1st",
+   "team": "VP",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One Katowice 2014"
+  },
+  {
+   "date": "2007-03-18",
+   "place": "1st",
+   "team": "Pentagram",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters I"
+  },
+  {
+   "date": "2006-10-22",
+   "place": "1st",
+   "team": "Pentagram",
+   "tier": "S-Tier",
+   "tournament": "World Cyber Games 2006"
+  }
+ ],
+ "Xizt": [
+  {
+   "date": "2018-05-06",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Sydney"
+  },
+  {
+   "date": "2017-11-19",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XII - Oakland"
+  },
+  {
+   "date": "2016-11-20",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XI - Oakland"
+  },
+  {
+   "date": "2016-09-11",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "StarLadder i-League StarSeries Season 2"
+  },
+  {
+   "date": "2016-04-17",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Malm\u00f6 2016"
+  },
+  {
+   "date": "2015-03-15",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Katowice 2015"
+  },
+  {
+   "date": "2014-11-29",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2014"
+  },
+  {
+   "date": "2014-08-17",
+   "place": "1st",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2014"
+  },
+  {
+   "date": "2014-03-16",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "ESL Major Series One Katowice 2014"
+  },
+  {
+   "date": "2013-11-30",
+   "place": "2nd",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2013"
+  }
+ ],
+ "Zeus": [
+  {
+   "date": "2019-04-07",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 7"
+  },
+  {
+   "date": "2018-11-03",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Copenhagen 2018"
+  },
+  {
+   "date": "2018-09-23",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "FACEIT Major: London 2018"
+  },
+  {
+   "date": "2018-07-08",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2018"
+  },
+  {
+   "date": "2018-06-18",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "A-Tier",
+   "tournament": "CS:GO Asia Championships 2018"
+  },
+  {
+   "date": "2018-06-03",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 5"
+  },
+  {
+   "date": "2017-07-23",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Krak\u00f3w 2017"
+  },
+  {
+   "date": "2016-04-03",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "MLG Major Championship: Columbus 2016"
+  },
+  {
+   "date": "2016-01-24",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Leipzig 2016"
+  },
+  {
+   "date": "2015-11-22",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters X - San Jose"
+  }
+ ],
+ "alex": [
+  {
+   "date": "2010-11-05",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "TYLOO",
+   "tier": "S-Tier",
+   "tournament": "World eSports Masters 2010"
+  },
+  {
+   "date": "2010-10-30",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "IEF 2010"
+  },
+  {
+   "date": "2009-12-18",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "TYLOO",
+   "tier": "S-Tier",
+   "tournament": "World Esports Masters 2009"
+  },
+  {
+   "date": "2009-07-26",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "TYLOO",
+   "tier": "A-Tier",
+   "tournament": "WEG e-Stars 2009 - Continental Cup"
+  },
+  {
+   "date": "2009-06-24",
+   "place": "1st",
+   "team": "TYLOO",
+   "tier": "C-Tier",
+   "tournament": "IEF 2009 - Chinese Qualifier"
+  },
+  {
+   "date": "2007-08-12",
+   "place": "1st",
+   "team": "wNv.gm",
+   "tier": "A-Tier",
+   "tournament": "IEF 2007"
+  },
+  {
+   "date": "2006-09-29",
+   "place": "2nd",
+   "team": "wNv",
+   "tier": "S-Tier",
+   "tournament": "KODE5 2006"
+  },
+  {
+   "date": "2006-05-03",
+   "place": "1st",
+   "team": "wNv",
+   "tier": "S-Tier",
+   "tournament": "WEG Masters 2006"
+  },
+  {
+   "date": "2005-12-11",
+   "place": "1st",
+   "team": "wNv",
+   "tier": "S-Tier",
+   "tournament": "WEG 2005 S03"
+  },
+  {
+   "date": "2005-08-21",
+   "place": "1st",
+   "team": "wNv",
+   "tier": "A-Tier",
+   "tournament": "China Korea Cyber Games 2005"
+  }
+ ],
+ "almazer": [
+  {
+   "date": "2021-10-10",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "B-Tier",
+   "tournament": "Gjirafa50 Masters League Season 2"
+  },
+  {
+   "date": "2021-05-05",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "Spring Sweet Spring #1"
+  },
+  {
+   "date": "2020-09-06",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "B-Tier",
+   "tournament": "Eden Arena: Malta Vibes - Week 10"
+  },
+  {
+   "date": "2020-08-30",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "B-Tier",
+   "tournament": "Eden Arena: Malta Vibes - Week 9"
+  },
+  {
+   "date": "2020-08-09",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "B-Tier",
+   "tournament": "Eden Arena: Malta Vibes - Week 6"
+  },
+  {
+   "date": "2019-12-15",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 32: Global Challenge"
+  },
+  {
+   "date": "2019-12-01",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Winter 2019"
+  },
+  {
+   "date": "2019-09-14",
+   "place": "2nd",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Moscow 2019"
+  },
+  {
+   "date": "2019-07-28",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "CIS Minor Championship - Berlin 2019"
+  },
+  {
+   "date": "2019-04-20",
+   "place": "1st",
+   "team": "forZe",
+   "tier": "A-Tier",
+   "tournament": "Copenhagen Games 2019"
+  }
+ ],
+ "apEX": [
+  {
+   "date": "2026-04-19",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "Points",
+   "tournament": "ESL Grand Slam VI"
+  },
+  {
+   "date": "2026-02-22",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "PGL Cluj-Napoca 2026"
+  },
+  {
+   "date": "2026-02-08",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Krak\u00f3w 2026"
+  },
+  {
+   "date": "2025-12-14",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "StarLadder Budapest Major 2025"
+  },
+  {
+   "date": "2025-06-22",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Austin Major 2025"
+  },
+  {
+   "date": "2025-04-27",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "Points",
+   "tournament": "ESL Grand Slam Season 5"
+  },
+  {
+   "date": "2025-02-09",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2025"
+  },
+  {
+   "date": "2023-12-17",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2023"
+  },
+  {
+   "date": "2023-05-21",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Paris Major 2023"
+  },
+  {
+   "date": "2017-01-15",
+   "place": "1st",
+   "team": "Envy",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2016"
+  }
+ ],
+ "arT": [
+  {
+   "date": "2026-09-13",
+   "place": "1st",
+   "team": "Legacy",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #3"
+  },
+  {
+   "date": "2026-08-23",
+   "place": "3rd",
+   "team": "Legacy",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2026"
+  },
+  {
+   "date": "2026-05-24",
+   "place": "1st",
+   "team": "Legacy",
+   "tier": "S-Tier",
+   "tournament": "CS Asia Championships 2026"
+  },
+  {
+   "date": "2026-05-17",
+   "place": "3rd",
+   "team": "Legacy",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Atlanta 2026"
+  },
+  {
+   "date": "2023-12-03",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "A-Tier",
+   "tournament": "Elisa Masters Espoo 2023"
+  },
+  {
+   "date": "2022-11-12",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio Major 2022"
+  },
+  {
+   "date": "2021-11-05",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2020-09-27",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 12: North America"
+  },
+  {
+   "date": "2019-09-14",
+   "place": "1st",
+   "team": "FURIA",
+   "tier": "A-Tier",
+   "tournament": "Arctic Invitational 2019"
+  },
+  {
+   "date": "2019-06-09",
+   "place": "2nd",
+   "team": "FURIA",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 7 - Finals"
+  }
+ ],
+ "bLitz": [
+  {
+   "date": "2026-04-11",
+   "place": "3rd",
+   "team": "MongolZ",
+   "tier": "A-Tier",
+   "tournament": "PGL Bucharest 2026"
+  },
+  {
+   "date": "2025-09-21",
+   "place": "2nd",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2025-08-24",
+   "place": "1st",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2025"
+  },
+  {
+   "date": "2025-08-17",
+   "place": "2nd",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Fall 2025"
+  },
+  {
+   "date": "2025-06-22",
+   "place": "2nd",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Austin Major 2025"
+  },
+  {
+   "date": "2025-05-24",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Dallas 2025"
+  },
+  {
+   "date": "2025-04-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Melbourne 2025"
+  },
+  {
+   "date": "2025-02-08",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2025"
+  },
+  {
+   "date": "2024-11-03",
+   "place": "1st",
+   "team": "MongolZ",
+   "tier": "A-Tier",
+   "tournament": "Thunderpick World Championship 2024"
+  },
+  {
+   "date": "2024-06-09",
+   "place": "1st",
+   "team": "MongolZ",
+   "tier": "S-Tier",
+   "tournament": "YaLLa Compass 2024"
+  }
+ ],
+ "biguzera": [
+  {
+   "date": "2026-07-31",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Summer 2026"
+  },
+  {
+   "date": "2026-05-15",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Atlanta 2026"
+  },
+  {
+   "date": "2026-04-05",
+   "place": "1st",
+   "team": "paiN",
+   "tier": "B-Tier",
+   "tournament": "Circuit X Mayhem S\u00e3o Paulo"
+  },
+  {
+   "date": "2025-11-15",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "BLAST Rivals Fall 2025"
+  },
+  {
+   "date": "2025-09-19",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2025-06-21",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Austin Major 2025"
+  },
+  {
+   "date": "2025-02-21",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "PGL Cluj-Napoca 2025"
+  },
+  {
+   "date": "2024-04-20",
+   "place": "1st",
+   "team": "paiN",
+   "tier": "A-Tier",
+   "tournament": "Global Esports Tour Rio de Janeiro 2024"
+  },
+  {
+   "date": "2022-10-16",
+   "place": "2nd",
+   "team": "paiN",
+   "tier": "A-Tier",
+   "tournament": "FiReLEAGUE 2022: Global Finals"
+  },
+  {
+   "date": "2022-09-04",
+   "place": "1st",
+   "team": "paiN",
+   "tier": "A-Tier",
+   "tournament": "ESL Challenger at DreamHack Melbourne 2022"
+  }
+ ],
+ "blameF": [
+  {
+   "date": "2024-07-22",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "B-Tier",
+   "tournament": "RES European Series #6"
+  },
+  {
+   "date": "2023-11-12",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "CS Asia Championships 2023"
+  },
+  {
+   "date": "2023-08-05",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2023"
+  },
+  {
+   "date": "2023-05-03",
+   "place": "2nd",
+   "team": "Astralis",
+   "tier": "A-Tier",
+   "tournament": "Brazy Party"
+  },
+  {
+   "date": "2022-07-16",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVII - Cologne"
+  },
+  {
+   "date": "2022-06-11",
+   "place": "2nd",
+   "team": "Astralis",
+   "tier": "A-Tier",
+   "tournament": "Pinnacle Cup Championship"
+  },
+  {
+   "date": "2021-11-28",
+   "place": "3rd",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2021"
+  },
+  {
+   "date": "2021-06-30",
+   "place": "1st",
+   "team": "COL",
+   "tier": "A-Tier",
+   "tournament": "Spring Sweet Spring #3"
+  },
+  {
+   "date": "2021-02-10",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Groups 2021"
+  },
+  {
+   "date": "2020-06-21",
+   "place": "1st",
+   "team": "COL",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring 2020 European Finals"
+  }
+ ],
+ "cadiaN": [
+  {
+   "date": "2025-02-23",
+   "place": "3rd",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "PGL Cluj-Napoca 2025"
+  },
+  {
+   "date": "2023-06-11",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Final 2023"
+  },
+  {
+   "date": "2023-05-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Paris Major 2023"
+  },
+  {
+   "date": "2023-02-12",
+   "place": "2nd",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2023"
+  },
+  {
+   "date": "2022-11-27",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2022"
+  },
+  {
+   "date": "2022-11-13",
+   "place": "2nd",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio Major 2022"
+  },
+  {
+   "date": "2022-06-11",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "A-Tier",
+   "tournament": "Pinnacle Cup Championship"
+  },
+  {
+   "date": "2021-11-06",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-04-11",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 13"
+  },
+  {
+   "date": "2020-08-30",
+   "place": "1st",
+   "team": "Heroic",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2020 Online - Europe"
+  }
+ ],
+ "chopper": [
+  {
+   "date": "2025-08-17",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Fall 2025"
+  },
+  {
+   "date": "2025-08-03",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2025"
+  },
+  {
+   "date": "2025-05-18",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "PGL Astana 2025"
+  },
+  {
+   "date": "2025-02-09",
+   "place": "2nd",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2025"
+  },
+  {
+   "date": "2025-01-26",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Spring 2025"
+  },
+  {
+   "date": "2024-12-15",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "Perfect World Shanghai Major 2024"
+  },
+  {
+   "date": "2024-11-03",
+   "place": "2nd",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2024"
+  },
+  {
+   "date": "2024-09-01",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "BetBoom Dacha Belgrade 2024 #2"
+  },
+  {
+   "date": "2024-06-16",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Final 2024"
+  },
+  {
+   "date": "2024-02-11",
+   "place": "1st",
+   "team": "Spirit",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2024"
+  }
+ ],
+ "chrisJ": [
+  {
+   "date": "2020-02-06",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "A-Tier",
+   "tournament": "ICE Challenge 2020"
+  },
+  {
+   "date": "2019-12-22",
+   "place": "2nd",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2019"
+  },
+  {
+   "date": "2019-12-15",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "A-Tier",
+   "tournament": "cs_summit 5"
+  },
+  {
+   "date": "2019-12-08",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 10 - Finals"
+  },
+  {
+   "date": "2019-11-24",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "CS:GO Asia Championships 2019"
+  },
+  {
+   "date": "2018-09-30",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "ESL One: New York 2018"
+  },
+  {
+   "date": "2018-03-25",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2018"
+  },
+  {
+   "date": "2018-02-25",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "StarLadder & i-League StarSeries Season 4"
+  },
+  {
+   "date": "2017-12-17",
+   "place": "2nd",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 4 - Finals"
+  },
+  {
+   "date": "2017-09-10",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "ESG Tour Mykonos 2017"
+  }
+ ],
+ "daps": [
+  {
+   "date": "2020-02-23",
+   "place": "1st",
+   "team": "Gen.G",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Anaheim 2020"
+  },
+  {
+   "date": "2019-06-22",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NRG",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 9 - Finals"
+  },
+  {
+   "date": "2019-06-08",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NRG",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 7 - Finals"
+  },
+  {
+   "date": "2019-01-26",
+   "place": "1st",
+   "team": "NRG",
+   "tier": "A-Tier",
+   "tournament": "Americas Minor Championship - Katowice 2019"
+  },
+  {
+   "date": "2018-11-04",
+   "place": "1st",
+   "team": "NRG",
+   "tier": "A-Tier",
+   "tournament": "cs_summit 3"
+  },
+  {
+   "date": "2018-08-06",
+   "place": "1st",
+   "team": "NRG",
+   "tier": "A-Tier",
+   "tournament": "Intel Extreme Masters XIII - Shanghai"
+  },
+  {
+   "date": "2018-06-10",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NRG",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 5 - Finals"
+  },
+  {
+   "date": "2018-06-03",
+   "place": "2nd",
+   "team": "NRG",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 5"
+  },
+  {
+   "date": "2016-05-22",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "A-Tier",
+   "tournament": "Americas Minor Championship - Cologne 2016"
+  },
+  {
+   "date": "2016-01-07",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "A-Tier",
+   "tournament": "ELEAGUE Road to Vegas"
+  }
+ ],
+ "dennis": [
+  {
+   "date": "2018-11-24",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NiP",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 6 - Finals"
+  },
+  {
+   "date": "2017-01-28",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  },
+  {
+   "date": "2016-07-30",
+   "place": "2nd",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2016-07-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2016"
+  },
+  {
+   "date": "2016-06-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 1 - Finals"
+  },
+  {
+   "date": "2016-03-05",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters X - World Championship"
+  },
+  {
+   "date": "2016-01-17",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "StarLadder i-League StarSeries XIV"
+  },
+  {
+   "date": "2015-12-13",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 2 - Finals"
+  },
+  {
+   "date": "2015-12-06",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Fragbite Masters Season 5"
+  },
+  {
+   "date": "2015-11-29",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "FACEIT League 2015 Stage 3 Finals"
+  }
+ ],
+ "dexter": [
+  {
+   "date": "2024-10-06",
+   "place": "1st",
+   "team": "FLY",
+   "tier": "A-Tier",
+   "tournament": "ESL Challenger at DreamHack Atlanta 2024"
+  },
+  {
+   "date": "2023-06-04",
+   "place": "2nd",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Dallas 2023"
+  },
+  {
+   "date": "2023-03-23",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 17"
+  },
+  {
+   "date": "2022-11-12",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio Major 2022"
+  },
+  {
+   "date": "2022-09-29",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 16"
+  },
+  {
+   "date": "2022-07-15",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVII - Cologne"
+  },
+  {
+   "date": "2022-06-11",
+   "place": "2nd",
+   "team": "MOUZ",
+   "tier": "A-Tier",
+   "tournament": "Global Esports Tour Dubai 2022"
+  },
+  {
+   "date": "2021-04-07",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "A-Tier",
+   "tournament": "Snow Sweet Snow #3"
+  },
+  {
+   "date": "2019-11-03",
+   "place": "1st",
+   "team": "GhG",
+   "tier": "B-Tier",
+   "tournament": "OMEN Challenger Series 2019"
+  },
+  {
+   "date": "2019-07-27",
+   "place": "1st",
+   "team": "GhG",
+   "tier": "A-Tier",
+   "tournament": "Asia Minor Championship - Berlin 2019"
+  }
+ ],
+ "dgt": [
+  {
+   "date": "2026-07-12",
+   "place": "1st",
+   "team": "9z",
+   "tier": "A-Tier",
+   "tournament": "XSE Pro League 2026"
+  },
+  {
+   "date": "2026-06-18",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "9z",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne Major 2026"
+  },
+  {
+   "date": "2026-05-15",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "9z",
+   "tier": "S-Tier",
+   "tournament": "PGL Astana 2026"
+  },
+  {
+   "date": "2026-03-01",
+   "place": "1st",
+   "team": "9z",
+   "tier": "B-Tier",
+   "tournament": "BetBoom RUSH B! Summit 2026: Part Deux"
+  },
+  {
+   "date": "2025-11-15",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "BLAST Rivals Fall 2025"
+  },
+  {
+   "date": "2025-09-19",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2025-06-21",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "paiN",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Austin Major 2025"
+  },
+  {
+   "date": "2024-06-16",
+   "place": "1st",
+   "team": "9z",
+   "tier": "A-Tier",
+   "tournament": "FiReLEAGUE Global Final 2023"
+  },
+  {
+   "date": "2023-07-08",
+   "place": "2nd",
+   "team": "9z",
+   "tier": "Showmatch",
+   "tournament": "FiReLEAGUE Battle 2023"
+  },
+  {
+   "date": "2021-11-21",
+   "place": "1st",
+   "team": "9z",
+   "tier": "B-Tier",
+   "tournament": "FiReLEAGUE 2021"
+  }
+ ],
+ "electroNic": [
+  {
+   "date": "2022-06-19",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Finals 2022"
+  },
+  {
+   "date": "2022-05-22",
+   "place": "2nd",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2021-12-19",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2021"
+  },
+  {
+   "date": "2021-11-28",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2021"
+  },
+  {
+   "date": "2021-11-07",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-09-12",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 3"
+  },
+  {
+   "date": "2021-07-18",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Cologne"
+  },
+  {
+   "date": "2021-01-24",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Global Final 2020"
+  },
+  {
+   "date": "2020-03-01",
+   "place": "1st",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - World Championship"
+  },
+  {
+   "date": "2019-04-07",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 7"
+  }
+ ],
+ "fox": [
+  {
+   "date": "2019-11-23",
+   "place": "1st",
+   "team": "Giants",
+   "tier": "B-Tier",
+   "tournament": "GameGune 21"
+  },
+  {
+   "date": "2018-12-16",
+   "place": "1st",
+   "team": "Giants",
+   "tier": "B-Tier",
+   "tournament": "ESL Masters Espa\u00f1a 2018 - Season 4"
+  },
+  {
+   "date": "2017-01-28",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  },
+  {
+   "date": "2016-12-11",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "SK",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 2 - Finals"
+  },
+  {
+   "date": "2016-07-15",
+   "place": "9th\u00a0-\u00a010th",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2016-07-07",
+   "place": "9th\u00a0-\u00a012th",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2016"
+  },
+  {
+   "date": "2015-11-22",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters X - San Jose"
+  },
+  {
+   "date": "2015-11-01",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Cluj\u2060-\u2060Napoca 2015"
+  },
+  {
+   "date": "2015-09-08",
+   "place": "1st",
+   "team": "Kinguin",
+   "tier": "A-Tier",
+   "tournament": "Gaming Paradise 2015"
+  },
+  {
+   "date": "2015-08-22",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "Kinguin",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2015"
+  }
+ ],
+ "gla1ve": [
+  {
+   "date": "2019-12-14",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "BLAST Pro Series: Global Final 2019"
+  },
+  {
+   "date": "2019-09-08",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "StarLadder Berlin Major 2019"
+  },
+  {
+   "date": "2019-03-03",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIII - Katowice Major 2019"
+  },
+  {
+   "date": "2018-12-09",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 8 - Finals"
+  },
+  {
+   "date": "2018-12-09",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 1"
+  },
+  {
+   "date": "2018-11-25",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 6 - Finals"
+  },
+  {
+   "date": "2018-09-23",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "FACEIT Major: London 2018"
+  },
+  {
+   "date": "2018-07-29",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Premier 2018"
+  },
+  {
+   "date": "2018-06-10",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 5 - Finals"
+  },
+  {
+   "date": "2017-01-29",
+   "place": "1st",
+   "team": "Astralis",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Major Atlanta 2017"
+  }
+ ],
+ "gob b": [
+  {
+   "date": "2018-09-20",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "FACEIT Major: London 2018"
+  },
+  {
+   "date": "2018-07-08",
+   "place": "2nd",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2018"
+  },
+  {
+   "date": "2018-05-13",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 27: Global Challenge"
+  },
+  {
+   "date": "2017-07-21",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Krak\u00f3w 2017"
+  },
+  {
+   "date": "2017-06-18",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - Krak\u00f3w 2017"
+  },
+  {
+   "date": "2015-11-08",
+   "place": "2nd",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "CEVO Season 8 Professional"
+  },
+  {
+   "date": "2010-01-17",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "IEM IV European Championship Finals"
+  },
+  {
+   "date": "2008-12-07",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "A-Tier",
+   "tournament": "ESL Pro Series Germany Season 13 \u2013 1.6"
+  },
+  {
+   "date": "2008-10-24",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "IEM III Global Challenge Dubai"
+  },
+  {
+   "date": "2008-03-09",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters II"
+  }
+ ],
+ "hampus": [
+  {
+   "date": "2023-07-19",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Groups 2023"
+  },
+  {
+   "date": "2022-11-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2022"
+  },
+  {
+   "date": "2022-05-19",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2022-04-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 15"
+  },
+  {
+   "date": "2021-12-12",
+   "place": "2nd",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Winter"
+  },
+  {
+   "date": "2021-11-04",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-10-10",
+   "place": "1st",
+   "team": "NIP",
+   "tier": "A-Tier",
+   "tournament": "Intel Extreme Masters XVI - Fall: Europe"
+  },
+  {
+   "date": "2021-09-22",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Groups 2021"
+  },
+  {
+   "date": "2021-04-10",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NIP",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 13"
+  },
+  {
+   "date": "2018-04-26",
+   "place": "1st",
+   "team": "GOD",
+   "tier": "B-Tier",
+   "tournament": "Qi Invitational"
+  }
+ ],
+ "hazed": [
+  {
+   "date": "2017-06-24",
+   "place": "7th\u00a0-\u00a08th",
+   "team": "OpTic",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 3 - Finals"
+  },
+  {
+   "date": "2017-06-18",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "B-Tier",
+   "tournament": "CyberPowerPC Extreme Gaming Series - Spring 2017 Invitational"
+  },
+  {
+   "date": "2017-05-06",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "OpTic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XII - Sydney"
+  },
+  {
+   "date": "2016-07-14",
+   "place": "11th\u00a0-\u00a014th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 1"
+  },
+  {
+   "date": "2016-04-01",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "MLG Major Championship: Columbus 2016"
+  },
+  {
+   "date": "2016-02-07",
+   "place": "4th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "Global eSports Cup - Season 1"
+  },
+  {
+   "date": "2015-12-06",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "B-Tier",
+   "tournament": "Northern Arena 2015"
+  },
+  {
+   "date": "2015-09-06",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "B-Tier",
+   "tournament": "WinOut.net CS:GO Championship"
+  },
+  {
+   "date": "2015-07-04",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "CLG",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 1 - Finals"
+  },
+  {
+   "date": "2015-04-15",
+   "place": "1st",
+   "team": "CLG",
+   "tier": "A-Tier",
+   "tournament": "CEVO Season 6 Professional"
+  }
+ ],
+ "kRYSTAL": [
+  {
+   "date": "2020-09-11",
+   "place": "1st",
+   "team": "GOD",
+   "tier": "B-Tier",
+   "tournament": "LOOT.BET/CS Season 7"
+  },
+  {
+   "date": "2020-02-05",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "GOD",
+   "tier": "A-Tier",
+   "tournament": "ICE Challenge 2020"
+  },
+  {
+   "date": "2019-11-17",
+   "place": "1st",
+   "team": "GOD",
+   "tier": "A-Tier",
+   "tournament": "WePlay! Forge of Masters Season 2"
+  },
+  {
+   "date": "2019-10-12",
+   "place": "1st",
+   "team": "SMASH",
+   "tier": "B-Tier",
+   "tournament": "LOOT.BET/CS Season 4"
+  },
+  {
+   "date": "2018-08-26",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Ghost",
+   "tier": "A-Tier",
+   "tournament": "ZOTAC Cup Masters 2018"
+  },
+  {
+   "date": "2018-06-18",
+   "place": "1st",
+   "team": "Imperial",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Summer 2018"
+  },
+  {
+   "date": "2017-06-18",
+   "place": "2nd",
+   "team": "PENTA",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - Krak\u00f3w 2017"
+  },
+  {
+   "date": "2017-05-14",
+   "place": "1st",
+   "team": "PENTA",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 24: Global Challenge"
+  },
+  {
+   "date": "2012-12-09",
+   "place": "1st",
+   "team": "ATN",
+   "tier": "A-Tier",
+   "tournament": "ESL Pro Series Germany Winter 2012"
+  },
+  {
+   "date": "2012-04-29",
+   "place": "1st",
+   "team": "ATN",
+   "tier": "A-Tier",
+   "tournament": "ESL Pro Series Germany Spring 2012 - CS:S Final"
+  }
+ ],
+ "karrigan": [
+  {
+   "date": "2026-06-21",
+   "place": "1st",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne Major 2026"
+  },
+  {
+   "date": "2023-11-12",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "CS Asia Championships 2023"
+  },
+  {
+   "date": "2023-03-26",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 4"
+  },
+  {
+   "date": "2022-07-17",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVII - Cologne"
+  },
+  {
+   "date": "2022-05-22",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2022-02-27",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Katowice"
+  },
+  {
+   "date": "2019-12-08",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 10 - Finals"
+  },
+  {
+   "date": "2019-11-24",
+   "place": "1st",
+   "team": "mouz",
+   "tier": "S-Tier",
+   "tournament": "CS:GO Asia Championships 2019"
+  },
+  {
+   "date": "2017-12-17",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 4 - Finals"
+  },
+  {
+   "date": "2017-10-13",
+   "place": "1st",
+   "team": "FaZe",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Premier 2017"
+  }
+ ],
+ "kyxsan": [
+  {
+   "date": "2026-04-19",
+   "place": "3rd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio 2026"
+  },
+  {
+   "date": "2026-01-25",
+   "place": "2nd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "BLAST Bounty Winter 2026"
+  },
+  {
+   "date": "2025-11-16",
+   "place": "2nd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "BLAST Rivals Fall 2025"
+  },
+  {
+   "date": "2025-11-09",
+   "place": "3rd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Chengdu 2025"
+  },
+  {
+   "date": "2025-09-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2025-08-24",
+   "place": "3rd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2025"
+  },
+  {
+   "date": "2025-04-27",
+   "place": "2nd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Melbourne 2025"
+  },
+  {
+   "date": "2025-04-13",
+   "place": "1st",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "PGL Bucharest 2025"
+  },
+  {
+   "date": "2025-02-23",
+   "place": "2nd",
+   "team": "Falcons",
+   "tier": "S-Tier",
+   "tournament": "PGL Cluj-Napoca 2025"
+  },
+  {
+   "date": "2023-05-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Apeks",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Paris Major 2023"
+  }
+ ],
+ "nafany": [
+  {
+   "date": "2023-05-03",
+   "place": "1st",
+   "team": "C9",
+   "tier": "A-Tier",
+   "tournament": "Brazy Party"
+  },
+  {
+   "date": "2023-04-04",
+   "place": "1st",
+   "team": "C9",
+   "tier": "A-Tier",
+   "tournament": "BetBoom Playlist. Urbanistic"
+  },
+  {
+   "date": "2022-06-05",
+   "place": "1st",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVII - Dallas"
+  },
+  {
+   "date": "2022-01-24",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "A-Tier",
+   "tournament": "Funspark ULTI 2021"
+  },
+  {
+   "date": "2021-12-19",
+   "place": "2nd",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2021"
+  },
+  {
+   "date": "2021-11-21",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2021"
+  },
+  {
+   "date": "2021-11-06",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-06-20",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Finals 2021"
+  },
+  {
+   "date": "2021-06-13",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Summer"
+  },
+  {
+   "date": "2021-02-28",
+   "place": "1st",
+   "team": "Gambit",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XV - World Championship"
+  }
+ ],
+ "nexa": [
+  {
+   "date": "2024-06-02",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Dallas 2024"
+  },
+  {
+   "date": "2024-03-30",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Copenhagen 2024"
+  },
+  {
+   "date": "2021-11-07",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Stockholm 2021"
+  },
+  {
+   "date": "2021-07-18",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Cologne"
+  },
+  {
+   "date": "2020-03-01",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - World Championship"
+  },
+  {
+   "date": "2020-02-16",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring 2020 Regular Season"
+  },
+  {
+   "date": "2019-12-22",
+   "place": "1st",
+   "team": "G2",
+   "tier": "A-Tier",
+   "tournament": "Champions Cup 2019"
+  },
+  {
+   "date": "2019-03-31",
+   "place": "1st",
+   "team": "Valiance",
+   "tier": "A-Tier",
+   "tournament": "United Masters League Season 1"
+  },
+  {
+   "date": "2018-06-18",
+   "place": "1st",
+   "team": "Imperial",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Summer 2018"
+  },
+  {
+   "date": "2018-03-31",
+   "place": "1st",
+   "team": "Imperial",
+   "tier": "A-Tier",
+   "tournament": "Copenhagen Games 2018"
+  }
+ ],
+ "nitr0": [
+  {
+   "date": "2022-12-18",
+   "place": "2nd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2022"
+  },
+  {
+   "date": "2019-07-21",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - Chicago"
+  },
+  {
+   "date": "2019-07-14",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "A-Tier",
+   "tournament": "BLAST Pro Series: Los Angeles 2019"
+  },
+  {
+   "date": "2019-07-07",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "Points",
+   "tournament": "Intel Grand Slam Season 2"
+  },
+  {
+   "date": "2019-07-07",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2019"
+  },
+  {
+   "date": "2019-06-23",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 9 - Finals"
+  },
+  {
+   "date": "2019-06-02",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Dallas 2019"
+  },
+  {
+   "date": "2019-05-05",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XIV - Sydney"
+  },
+  {
+   "date": "2018-07-29",
+   "place": "2nd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Premier 2018"
+  },
+  {
+   "date": "2016-07-10",
+   "place": "2nd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2016"
+  }
+ ],
+ "npl": [
+  {
+   "date": "2026-05-22",
+   "place": "5th\u00a0-\u00a06th",
+   "team": "B8",
+   "tier": "S-Tier",
+   "tournament": "CS Asia Championships 2026"
+  },
+  {
+   "date": "2026-05-13",
+   "place": "7th\u00a0-\u00a08th",
+   "team": "B8",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Atlanta 2026"
+  },
+  {
+   "date": "2026-04-09",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "B8",
+   "tier": "A-Tier",
+   "tournament": "PGL Bucharest 2026"
+  },
+  {
+   "date": "2025-10-31",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "B8",
+   "tier": "A-Tier",
+   "tournament": "PGL Masters Bucharest 2025"
+  },
+  {
+   "date": "2025-09-21",
+   "place": "3rd",
+   "team": "B8",
+   "tier": "A-Tier",
+   "tournament": "StarLadder StarSeries Fall 2025"
+  },
+  {
+   "date": "2025-05-04",
+   "place": "3rd",
+   "team": "B8",
+   "tier": "A-Tier",
+   "tournament": "MESA Nomadic Masters Spring 2025"
+  },
+  {
+   "date": "2025-04-27",
+   "place": "2nd",
+   "team": "B8",
+   "tier": "A-Tier",
+   "tournament": "CCT Season 2 Global Finals"
+  },
+  {
+   "date": "2023-04-22",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio 2023"
+  },
+  {
+   "date": "2023-03-25",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 17"
+  },
+  {
+   "date": "2023-02-11",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NAVI",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Katowice 2023"
+  }
+ ],
+ "pronax": [
+  {
+   "date": "2015-08-23",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2015"
+  },
+  {
+   "date": "2015-07-05",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 1 - Finals"
+  },
+  {
+   "date": "2015-06-15",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Summer 2015"
+  },
+  {
+   "date": "2015-05-17",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Gfinity Spring Masters 2"
+  },
+  {
+   "date": "2015-05-10",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Tours 2015"
+  },
+  {
+   "date": "2015-03-15",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Katowice 2015"
+  },
+  {
+   "date": "2014-12-07",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESEA Season 17 - Global Invite Division"
+  },
+  {
+   "date": "2014-11-02",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESWC 2014"
+  },
+  {
+   "date": "2014-08-17",
+   "place": "2nd",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2014"
+  },
+  {
+   "date": "2013-11-30",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2013"
+  }
+ ],
+ "roeJ": [
+  {
+   "date": "2023-11-19",
+   "place": "1st",
+   "team": "Preasy",
+   "tier": "A-Tier",
+   "tournament": "CCT Season 1 Online Finals #4"
+  },
+  {
+   "date": "2022-11-20",
+   "place": "1st",
+   "team": "Fnatic",
+   "tier": "A-Tier",
+   "tournament": "Elisa Masters Espoo 2022"
+  },
+  {
+   "date": "2022-11-10",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "Fnatic",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Rio Major 2022"
+  },
+  {
+   "date": "2022-06-29",
+   "place": "2nd",
+   "team": "Fnatic",
+   "tier": "A-Tier",
+   "tournament": "REPUBLEAGUE Season 3"
+  },
+  {
+   "date": "2022-05-20",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "CPHF",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Antwerp 2022"
+  },
+  {
+   "date": "2022-04-22",
+   "place": "1st",
+   "team": "CPHF",
+   "tier": "A-Tier",
+   "tournament": "PGL Major Antwerp 2022: European RMR B"
+  },
+  {
+   "date": "2021-12-09",
+   "place": "1st",
+   "team": "CPHF",
+   "tier": "B-Tier",
+   "tournament": "Malta Vibes Knockout Series #4"
+  },
+  {
+   "date": "2020-04-19",
+   "place": "1st",
+   "team": "MAD",
+   "tier": "S-Tier",
+   "tournament": "Flashpoint Season 1"
+  },
+  {
+   "date": "2019-12-01",
+   "place": "2nd",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Winter 2019"
+  },
+  {
+   "date": "2019-09-22",
+   "place": "1st",
+   "team": "Tricked",
+   "tier": "A-Tier",
+   "tournament": "V4 Future Sports Festival - Budapest 2019"
+  }
+ ],
+ "seized": [
+  {
+   "date": "2023-11-20",
+   "place": "1st",
+   "team": "9Pandas",
+   "tier": "B-Tier",
+   "tournament": "PARI, Please"
+  },
+  {
+   "date": "2018-03-18",
+   "place": "3rd",
+   "team": "RUS",
+   "tier": "S-Tier",
+   "tournament": "World Electronic Sports Games 2017"
+  },
+  {
+   "date": "2016-10-02",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "ESL One: New York 2016"
+  },
+  {
+   "date": "2016-04-17",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Malm\u00f6 2016"
+  },
+  {
+   "date": "2016-04-03",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "MLG Major Championship: Columbus 2016"
+  },
+  {
+   "date": "2016-01-24",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Leipzig 2016"
+  },
+  {
+   "date": "2015-12-13",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 2 - Finals"
+  },
+  {
+   "date": "2015-11-22",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters X - San Jose"
+  },
+  {
+   "date": "2015-11-01",
+   "place": "2nd",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Open Cluj\u2060-\u2060Napoca 2015"
+  },
+  {
+   "date": "2015-07-12",
+   "place": "1st",
+   "team": "Na`Vi",
+   "tier": "S-Tier",
+   "tournament": "Electronic Sports World Cup 2015"
+  }
+ ],
+ "sgares": [
+  {
+   "date": "2017-12-09",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MSF",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 6 - Finals"
+  },
+  {
+   "date": "2017-11-05",
+   "place": "2nd",
+   "team": "MSF",
+   "tier": "A-Tier",
+   "tournament": "Americas Minor Championship - Boston 2018"
+  },
+  {
+   "date": "2015-11-15",
+   "place": "1st",
+   "team": "C9",
+   "tier": "A-Tier",
+   "tournament": "iBUYPOWER Cup"
+  },
+  {
+   "date": "2015-07-18",
+   "place": "2nd",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "FACEIT 2015 Stage 2 Finals"
+  },
+  {
+   "date": "2015-07-12",
+   "place": "2nd",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "Electronic Sports World Cup 2015"
+  },
+  {
+   "date": "2015-07-05",
+   "place": "2nd",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 1 - Finals"
+  },
+  {
+   "date": "2015-06-22",
+   "place": "1st",
+   "team": "C9",
+   "tier": "S-Tier",
+   "tournament": "ESL ESEA Pro League Season 1 - North America"
+  },
+  {
+   "date": "2013-11-30",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "coL",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2013"
+  },
+  {
+   "date": "2012-07-01",
+   "place": "1st",
+   "team": "100'/.",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 11: Invite Division - 1.6"
+  },
+  {
+   "date": "2012-03-04",
+   "place": "1st",
+   "team": "B2B",
+   "tier": "A-Tier",
+   "tournament": "ESEA Season 10 - Invite Division - 1.6"
+  }
+ ],
+ "shox": [
+  {
+   "date": "2021-12-19",
+   "place": "3rd",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2021"
+  },
+  {
+   "date": "2021-12-12",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XVI - Winter"
+  },
+  {
+   "date": "2021-11-28",
+   "place": "2nd",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall Finals 2021"
+  },
+  {
+   "date": "2020-12-13",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Fall 2020"
+  },
+  {
+   "date": "2019-12-22",
+   "place": "1st",
+   "team": "Vitality",
+   "tier": "S-Tier",
+   "tournament": "EPICENTER 2019"
+  },
+  {
+   "date": "2017-09-03",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Malm\u00f6 2017"
+  },
+  {
+   "date": "2017-06-04",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 5 - Finals"
+  },
+  {
+   "date": "2016-06-26",
+   "place": "1st",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 1 - Finals"
+  },
+  {
+   "date": "2016-05-15",
+   "place": "2nd",
+   "team": "G2",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 3 - Finals"
+  },
+  {
+   "date": "2014-11-29",
+   "place": "1st",
+   "team": "LDLC",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Winter 2014"
+  }
+ ],
+ "siuhy": [
+  {
+   "date": "2025-09-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "FISSURE Playground #2"
+  },
+  {
+   "date": "2024-12-14",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Perfect World Shanghai Major 2024"
+  },
+  {
+   "date": "2024-08-17",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters Cologne 2024"
+  },
+  {
+   "date": "2024-07-20",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "Esports World Cup 2024"
+  },
+  {
+   "date": "2024-05-19",
+   "place": "1st",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "BetBoom Dacha Belgrade 2024 #1"
+  },
+  {
+   "date": "2024-05-12",
+   "place": "1st",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 19"
+  },
+  {
+   "date": "2023-12-16",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: World Final 2023"
+  },
+  {
+   "date": "2023-11-12",
+   "place": "2nd",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "CS Asia Championships 2023"
+  },
+  {
+   "date": "2023-10-01",
+   "place": "1st",
+   "team": "MOUZ",
+   "tier": "S-Tier",
+   "tournament": "ESL Pro League Season 18"
+  },
+  {
+   "date": "2023-05-21",
+   "place": "2nd",
+   "team": "GL",
+   "tier": "S-Tier",
+   "tournament": "BLAST.tv Paris Major 2023"
+  }
+ ],
+ "stanislaw": [
+  {
+   "date": "2020-08-29",
+   "place": "1st",
+   "team": "EG",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2020 Online - North America"
+  },
+  {
+   "date": "2020-06-21",
+   "place": "1st",
+   "team": "EG",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring 2020 American Finals"
+  },
+  {
+   "date": "2019-10-27",
+   "place": "1st",
+   "team": "EG",
+   "tier": "S-Tier",
+   "tournament": "StarSeries & i-League CS:GO Season 8"
+  },
+  {
+   "date": "2019-09-29",
+   "place": "1st",
+   "team": "EG",
+   "tier": "S-Tier",
+   "tournament": "ESL One: New York 2019"
+  },
+  {
+   "date": "2019-09-08",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "NRG",
+   "tier": "S-Tier",
+   "tournament": "StarLadder Berlin Major 2019"
+  },
+  {
+   "date": "2017-09-17",
+   "place": "2nd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESL One: New York 2017"
+  },
+  {
+   "date": "2017-09-10",
+   "place": "2nd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "ESG Tour Mykonos 2017"
+  },
+  {
+   "date": "2016-12-11",
+   "place": "2nd",
+   "team": "OpTic",
+   "tier": "S-Tier",
+   "tournament": "Esports Championship Series Season 2 - Finals"
+  },
+  {
+   "date": "2016-12-03",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "S-Tier",
+   "tournament": "ELEAGUE Season 2"
+  },
+  {
+   "date": "2016-11-13",
+   "place": "1st",
+   "team": "OpTic",
+   "tier": "A-Tier",
+   "tournament": "Northern Arena 2016 - Montreal"
+  }
+ ],
+ "steel": [
+  {
+   "date": "2018-11-18",
+   "place": "2nd",
+   "team": "LG",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Atlanta 2018"
+  },
+  {
+   "date": "2018-07-14",
+   "place": "2nd",
+   "team": "LG",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Valencia 2018"
+  },
+  {
+   "date": "2018-03-03",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XII - World Championship"
+  },
+  {
+   "date": "2018-02-25",
+   "place": "3rd",
+   "team": "Liquid",
+   "tier": "S-Tier",
+   "tournament": "StarLadder & i-League StarSeries Season 4"
+  },
+  {
+   "date": "2018-02-11",
+   "place": "1st",
+   "team": "Liquid",
+   "tier": "A-Tier",
+   "tournament": "cs_summit 2"
+  },
+  {
+   "date": "2017-09-10",
+   "place": "2nd",
+   "team": "IMT",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Montreal 2017"
+  },
+  {
+   "date": "2017-07-23",
+   "place": "2nd",
+   "team": "IMT",
+   "tier": "S-Tier",
+   "tournament": "PGL Major Krak\u00f3w 2017"
+  },
+  {
+   "date": "2017-04-30",
+   "place": "2nd",
+   "team": "IMT",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Austin 2017"
+  },
+  {
+   "date": "2017-03-04",
+   "place": "3rd\u00a0-\u00a04th",
+   "team": "IMT",
+   "tier": "S-Tier",
+   "tournament": "Intel Extreme Masters XI - World Championship"
+  },
+  {
+   "date": "2016-11-13",
+   "place": "1st",
+   "team": "IMT",
+   "tier": "A-Tier",
+   "tournament": "iBUYPOWER Masters 2016"
+  }
+ ],
+ "tabseN": [
+  {
+   "date": "2025-05-04",
+   "place": "2nd",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "MESA Nomadic Masters Spring 2025"
+  },
+  {
+   "date": "2023-12-07",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "CCT Season 1 Online Finals #5"
+  },
+  {
+   "date": "2022-06-30",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "Roobet Cup 2022"
+  },
+  {
+   "date": "2021-04-26",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "Funspark ULTI 2020"
+  },
+  {
+   "date": "2021-02-06",
+   "place": "1st\u00a0-\u00a03rd",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "BLAST Premier: Spring Groups 2021"
+  },
+  {
+   "date": "2020-06-14",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "DreamHack Masters Spring 2020: Europe"
+  },
+  {
+   "date": "2020-01-26",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "DreamHack Open Leipzig 2020"
+  },
+  {
+   "date": "2018-09-20",
+   "place": "5th\u00a0-\u00a08th",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "FACEIT Major: London 2018"
+  },
+  {
+   "date": "2018-07-08",
+   "place": "2nd",
+   "team": "BIG",
+   "tier": "S-Tier",
+   "tournament": "ESL One: Cologne 2018"
+  },
+  {
+   "date": "2017-06-18",
+   "place": "1st",
+   "team": "BIG",
+   "tier": "A-Tier",
+   "tournament": "Europe Minor Championship - Krak\u00f3w 2017"
+  }
+ ]
+}
