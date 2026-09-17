@@ -2,7 +2,7 @@
   --bg: #0d1117; --panel: #161b22; --panel2: #1c232c;
   --line: #2a323d; --text: #e6edf3; --dim: #8b949e;
   --acc: #f0883e; --ok: #3fb950; --bad: #f85149;
-  --awp: #a371f7; --igl: #58a6ff; --star: #f0883e; --anchor: #6e7681;
+  --awp: #a371f7; --igl: #58a6ff; --rotater: #f0883e; --anchor: #3fb950;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text);
@@ -36,8 +36,9 @@ h1 .sub { color: var(--acc); font-size: 13px; margin-left: 8px; text-transform: 
   border-radius: 4px; font-weight: 700; }
 .t-awp { background: #2d1f4a; color: var(--awp); }
 .t-igl { background: #12304d; color: var(--igl); }
-.t-star { background: #40260f; color: var(--star); }
-.t-anchor { background: #22262c; color: var(--anchor); }
+.t-rotater { background: #40260f; color: var(--rotater); }
+.t-anchor { background: #11301c; color: var(--anchor); }
+.t-flex { background: #1c2027; color: #5a636e; }
 
 .reqs { display: flex; gap: 10px; font-size: 12px; margin-bottom: 22px; align-items: center; }
 .reqs span { padding: 3px 9px; border-radius: 6px; background: var(--panel); border: 1px solid var(--line); }
@@ -45,7 +46,16 @@ h1 .sub { color: var(--acc); font-size: 13px; margin-left: 8px; text-transform: 
 .reqs .bad { color: var(--bad); border-color: #4a2020; }
 .reqs .strength { margin-left: auto; color: var(--acc); font-weight: 600; }
 
-.roll-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 14px; gap: 12px; }
+.roll-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; gap: 14px; }
+.roll-head > div:nth-child(2) { margin-right: auto; }
+.org-logo { width: 46px; height: 46px; object-fit: contain; flex: none; }
+.roll-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.reroll { background: var(--panel); border: 1px solid var(--line); color: var(--text);
+  padding: 6px 11px; border-radius: 8px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+.reroll:hover:not(:disabled) { border-color: var(--acc); color: var(--acc); }
+.reroll:disabled { opacity: .4; cursor: not-allowed; }
+.reroll span { color: var(--acc); font-weight: 700; margin-left: 3px; }
+.reroll:disabled span { color: var(--dim); }
 .r-label { color: var(--dim); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
 .roll h2 { margin: 4px 0 0; font-size: 24px; }
 .roll h2 em { color: var(--acc); font-style: normal; }

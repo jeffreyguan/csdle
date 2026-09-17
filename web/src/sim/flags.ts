@@ -1,5 +1,5 @@
 /** Nationality -> flag emoji. Liquipedia/HLTV spell out country names, and the
- *  flag is the fastest way to read the chemistry bloc at a glance. */
+ *  flag is the quickest way to read where a player is from. */
 const MAP: Record<string, string> = {
   Denmark: "🇩🇰", Sweden: "🇸🇪", Norway: "🇳🇴", Finland: "🇫🇮", Iceland: "🇮🇸",
   Poland: "🇵🇱", Ukraine: "🇺🇦", Russia: "🇷🇺", Belarus: "🇧🇾", Kazakhstan: "🇰🇿",

@@ -1,4 +1,4 @@
-export type Label = "awp" | "igl" | "star" | "anchor";
+export type Label = "awp" | "igl" | "anchor" | "rotater";
 
 export interface Player {
   id: string;

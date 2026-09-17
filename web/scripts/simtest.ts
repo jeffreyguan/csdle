@@ -35,8 +35,6 @@ function draft(seed: string, smart: boolean): Player[] {
         if (!haveIgl && p.labels.includes("igl")) s += 14;
         if (!haveAwp && p.labels.includes("awp")) s += 12;
         if (haveIgl && p.labels.includes("igl")) s -= 6;
-        const nat = picks.filter(x => x.nationality === p.nationality).length;
-        s += nat * 2;
       }
       if (s > bs) { bs = s; best = p; }
     }
@@ -62,7 +60,7 @@ console.log(`constraint-aware : avg strength ${(sTot/N).toFixed(1)}, championshi
 const picks = draft("2026-09-17", true);
 const bd = evaluate(picks, snap);
 console.log(`\nexample roster: ${picks.map(p=>`${p.nick}(${p.year},${p.rating})`).join(", ")}`);
-console.log(`  base ${bd.base.toFixed(1)} | leadership +${bd.leadership.toFixed(1)} | chem +${bd.chemistry} | comp -${bd.compositionPenalty} => ${bd.total.toFixed(1)}`);
+console.log(`  base ${bd.base.toFixed(1)} | leadership +${bd.leadership.toFixed(1)} | comp -${bd.compositionPenalty} => ${bd.total.toFixed(1)}`);
 bd.notes.forEach(n => console.log("   ·", n));
 const res = simulate(bd.total, snap, "2026-09-17");
 console.log(`  run: ${res.placement} (${res.wins} wins)`);

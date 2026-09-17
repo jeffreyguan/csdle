@@ -10,9 +10,12 @@
     "preview": "vite preview",
     "test:sim": "vite-node scripts/simtest.ts",
     "test:render": "vite-node scripts/rendertest.tsx",
-    "test": "npm run test:sim && npm run test:render && npm run test:avatar",
-    "sync-data": "cp ../data/snapshot.json public/snapshot.json",
-    "test:avatar": "vite-node scripts/avatartest.ts"
+    "test": "npm run test:sim && npm run test:render && npm run test:avatar && npm run test:variety && npm run test:reroll && npm run test:lead",
+    "sync-data": "cp ../data/snapshot.json public/snapshot.json && cp ../data/logos.json public/logos.json",
+    "test:avatar": "vite-node scripts/avatartest.ts",
+    "test:variety": "vite-node scripts/orgtest.ts && vite-node scripts/ceilingtest.ts",
+    "test:reroll": "vite-node scripts/rerolltest.ts",
+    "test:lead": "vite-node scripts/leadtest.ts"
   },
   "dependencies": {
     "react": "^19.2.8",

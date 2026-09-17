@@ -82,14 +82,9 @@ def main():
             roster.append(pid)
         if len(roster) != 5: continue
 
-        # derived labels: star = top-2 by rating on the roster, anchor = default
-        med = st.median(p["rating"] for p in players.values())
-        for p in sorted((players[i] for i in roster), key=lambda p: -p["rating"])[:2]:
-            if p["rating"] >= med and "star" not in p["labels"]:
-                p["labels"] = sorted(p["labels"] + ["star"])
-        for i in roster:
-            if not players[i]["labels"]:
-                players[i]["labels"] = ["anchor"]
+        # `star` is assigned after the loop — see below. It must NOT be derived
+        # here: `players` is still being accumulated, and 28 player-years sit on
+        # two teams in the same year sharing one object.
 
         # IGL leadership: trophies won UP TO this year buff the OTHER FOUR.
         # Never the IGL himself - a personal bonus would stack on an already
@@ -110,6 +105,11 @@ def main():
             "confidence": "high" if d >= 150 else "medium" if d >= 60 else "low",
             "strength": round(base, 1),
         })
+
+    # No derived labels. `star` was removed: it was a rating proxy dressed as a
+    # role (top-2 on the roster), which said nothing about how a player actually
+    # played. Roles are anchor / rotater / awp / igl, all hand-curated; a player
+    # with no positional label is FLEX and the engine fills the short slot.
 
     snap = {"teams": teams, "players": players,
             "years": sorted({t["year"] for t in teams}),

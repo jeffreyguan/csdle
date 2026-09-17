@@ -15,7 +15,7 @@ const rolls = makeRolls(snap, "render-test");
 const picks: Player[] = [];
 for (let n = 0; n <= 5; n++) {
   const bd = evaluate(picks, snap);
-  const bad = [bd.base, bd.total, bd.chemistry, bd.compositionPenalty].some(v => !Number.isFinite(v));
+  const bad = [bd.base, bd.total, bd.compositionPenalty].some(v => !Number.isFinite(v));
   console.log(`  evaluate(${n} picks): total=${bd.total.toFixed(1)} finite=${!bad}`);
   if (bad) process.exit(1);
   if (n < 5) picks.push(rolls[n].options[0]);

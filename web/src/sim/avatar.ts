@@ -15,8 +15,10 @@ function hash(s: string): number {
   return h >>> 0;
 }
 
+// ring = the player's role at a glance. `flex` is an unlabelled position, not a
+// role — positional labels are hand-curated and deliberately partial.
 const ROLE_RING: Record<string, string> = {
-  awp: "#a371f7", igl: "#58a6ff", star: "#f0883e", anchor: "#6e7681",
+  awp: "#a371f7", igl: "#58a6ff", rotater: "#f0883e", anchor: "#3fb950", flex: "#6e7681",
 };
 
 export interface Avatar {
@@ -32,7 +34,7 @@ export function avatarFor(id: string, nick: string, labels: string[]): Avatar {
   const h = hash(id);
   const hue = h % 360;
   const hue2 = (hue + 40 + (h >> 9) % 60) % 360;
-  const role = ["awp", "igl", "star", "anchor"].find((r) => labels.includes(r)) ?? "anchor";
+  const role = ["awp", "igl", "rotater", "anchor"].find((r) => labels.includes(r)) ?? "flex";
 
   // strip leading non-letters so "910" and "b1t" still read sensibly
   const letters = nick.replace(/[^A-Za-z0-9]/g, "");

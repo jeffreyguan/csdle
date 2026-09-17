@@ -1,1282 +1,1282 @@
-year,player_id,nick,nationality,teams,hltv_rating,maps,shrunk,z,game_rating
-2015,2757,GuardiaN,Slovakia,Natus Vincere,1.18,94,1.110,+2.58,76
-2015,3741,NiKo,Bosnia and Herzegovina,MOUZ,1.15,65,1.076,+1.88,69
-2015,7592,device,Denmark,?,1.14,120,1.093,+2.22,72
-2015,798,oskar,Czech Republic,HellRaisers,1.14,62,1.068,+1.73,67
-2015,7998,s1mple,Ukraine,HellRaisers,1.13,35,1.041,+1.18,62
-2015,7167,kennyS,France,Envy,1.13,95,1.078,+1.93,69
-2015,885,olofmeister,Sweden,fnatic,1.11,115,1.070,+1.77,68
-2015,29,f0rest,Sweden,Ninjas in Pyjamas,1.11,71,1.056,+1.48,65
-2015,8183,rain,Norway,G2|Kinguin,1.11,74,1.057,+1.51,65
-2015,8095,aizy,Denmark,G2|Dignitas,1.10,78,1.053,+1.41,64
-2015,7528,KRIMZ,Sweden,fnatic,1.10,112,1.063,+1.62,66
-2015,7429,Happy,France,Envy,1.10,98,1.059,+1.54,65
-2015,973,SZPERO,Poland,CSGL,1.10,51,1.040,+1.16,62
-2015,7403,WorldEdit,Russia,FlipSid3,1.09,50,1.035,+1.05,60
-2015,9216,coldzera,Brazil,Luminosity,1.08,72,1.039,+1.13,61
-2015,7594,flamie,Russia,Natus Vincere,1.08,94,1.045,+1.26,63
-2015,7687,nitr0,United States,Liquid,1.08,78,1.041,+1.17,62
-2015,9078,k0nfig,Denmark,Dignitas,1.07,32,1.015,+0.64,56
-2015,3055,flusha,Sweden,fnatic,1.07,117,1.043,+1.21,62
-2015,7440,Skadoodle,United States,Cloud9,1.07,37,1.018,+0.71,57
-2015,334,AdreN,Kazakhstan,HellRaisers|Nostalgie,1.07,24,1.009,+0.52,55
-2015,8346,jdm64,United States,CLG,1.06,53,1.021,+0.77,58
-2015,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.06,75,1.028,+0.91,59
-2015,8412,dream3r,Bulgaria,E-frag.net,1.05,53,1.016,+0.66,57
-2015,7398,dupreeh,Denmark,?,1.05,120,1.029,+0.94,59
-2015,2553,Snax,Poland,Virtus.pro,1.05,96,1.026,+0.87,59
-2015,4954,Xyp9x,Denmark,?,1.04,120,1.022,+0.79,58
-2015,7168,NBK-,France,Envy,1.04,101,1.020,+0.75,57
-2015,7356,MICHU,Poland,CSGL|Poland,1.04,50,1.010,+0.54,55
-2015,2730,chrisJ,Netherlands,MOUZ,1.04,65,1.014,+0.62,56
-2015,1225,shox,France,Titan,1.04,89,1.018,+0.71,57
-2015,8323,mouz,Poland,CSGL,1.04,21,0.997,+0.29,53
-2015,2131,bondik,Ukraine,FlipSid3,1.04,50,1.010,+0.54,55
-2015,8248,jkaem,Norway,G2,1.04,54,1.011,+0.56,56
-2015,1146,dennis,Sweden,fnatic|G2|Kinguin,1.03,111,1.014,+0.63,56
-2015,7390,ScreaM,Belgium,Titan|Kinguin,1.03,84,1.011,+0.57,56
-2015,2644,Hiko,United States,Liquid,1.03,78,1.010,+0.55,56
-2015,9032,Magisk,Denmark,SK,1.03,26,0.997,+0.28,53
-2015,1485,RUBINO,Norway,Dignitas,1.02,30,0.995,+0.23,52
-2015,695,allu,Finland,Ninjas in Pyjamas,1.02,71,1.003,+0.41,54
-2015,3347,seized,Russia,Natus Vincere,1.02,94,1.006,+0.46,55
-2015,7322,apEX,France,Envy,1.02,101,1.007,+0.48,55
-2015,8564,fer,Brazil,Luminosity,1.02,72,1.003,+0.41,54
-2015,2469,cajunb,Denmark,?,1.01,123,1.001,+0.37,54
-2015,2023,FalleN,Brazil,Luminosity,1.01,72,0.997,+0.29,53
-2015,629,fox,Portugal,G2|Kinguin,1.01,79,0.998,+0.31,53
-2015,8151,AcilioN,Denmark,SK,1.01,26,0.990,+0.14,51
-2015,3849,JW,Sweden,fnatic,1.01,115,1.001,+0.36,54
-2015,8394,Kjaerbye,Denmark,Dignitas,1.00,83,0.992,+0.19,52
-2015,7154,Pimp,Denmark,Dignitas,1.00,56,0.990,+0.15,51
-2015,8520,NAF,Canada,Conquest,1.00,24,0.986,+0.06,51
-2015,8349,shroud,Canada,Cloud9,0.99,37,0.984,+0.02,50
-2015,317,pashaBiceps,Poland,Virtus.pro,0.99,98,0.986,+0.07,51
-2015,5386,byali,Poland,Virtus.pro,0.99,98,0.986,+0.07,51
-2015,7805,RUSH,United States,Conquest,0.99,24,0.983,-0.00,50
-2015,557,fnx,Brazil,Luminosity,0.98,20,0.980,-0.07,49
-2015,203,n0thing,United States,Cloud9,0.98,37,0.980,-0.07,49
-2015,429,karrigan,Denmark,?,0.98,120,0.980,-0.07,49
-2015,4959,kioShiMa,France,Envy,0.98,96,0.980,-0.07,49
-2015,5287,TENZKI,Denmark,Dignitas,0.98,39,0.980,-0.07,49
-2015,7256,nex,Germany,MOUZ,0.98,65,0.980,-0.07,49
-2015,8523,tarik,United States,CLG,0.97,53,0.975,-0.17,48
-2015,7810,ShahZaM,United States,Conquest,0.97,24,0.976,-0.14,49
-2015,338,markeloff,Ukraine,FlipSid3,0.97,50,0.975,-0.17,48
-2015,7433,adreN,United States,Liquid,0.97,78,0.974,-0.19,48
-2015,7834,v1c7oR,Bulgaria,E-frag.net,0.97,53,0.975,-0.17,48
-2015,884,Xizt,Sweden,Ninjas in Pyjamas,0.97,73,0.974,-0.19,48
-2015,7,Friis,Denmark,SK,0.96,25,0.973,-0.21,48
-2015,165,NEO,Poland,Virtus.pro,0.96,98,0.967,-0.33,47
-2015,8738,EliGE,United States,Liquid,0.96,76,0.968,-0.31,47
-2015,1045,Maikelele,Sweden,G2|Kinguin,0.96,83,0.967,-0.32,47
-2015,7169,RpK,France,Titan,0.96,84,0.967,-0.32,47
-2015,7964,cadiaN,Denmark,SK,0.96,24,0.973,-0.20,48
-2015,5388,rallen,Poland,Vexed,0.96,31,0.972,-0.22,48
-2015,3669,innocent,Poland,CSGL,0.95,51,0.965,-0.37,46
-2015,3847,znajder,Sweden,HellRaisers|Dignitas,0.95,71,0.962,-0.42,46
-2015,8522,FugLy,United States,Liquid,0.95,78,0.961,-0.44,46
-2015,339,ANGE1,Ukraine,HellRaisers,0.95,85,0.961,-0.45,46
-2015,483,Edward,Ukraine,Natus Vincere,0.94,94,0.954,-0.60,44
-2015,8137,reltuC,United States,CLG,0.94,53,0.959,-0.48,45
-2015,8327,Furlan,Poland,Vexed|Poland,0.94,36,0.963,-0.41,46
-2015,161,TaZ,Poland,Virtus.pro,0.94,98,0.953,-0.60,44
-2015,8347,hazed,United States,CLG,0.94,53,0.959,-0.48,45
-2015,964,mou,Kazakhstan,HellRaisers,0.94,24,0.967,-0.33,47
-2015,7808,freakazoid,United States,Cloud9,0.93,37,0.958,-0.50,45
-2015,3183,spyleadeR,Bulgaria,E-frag.net,0.93,53,0.954,-0.59,44
-2015,2799,bubble,Bulgaria,E-frag.net,0.92,53,0.949,-0.69,43
-2015,484,Zeus,Ukraine,Natus Vincere,0.92,94,0.941,-0.86,41
-2015,8568,boltz,Brazil,Luminosity,0.92,52,0.949,-0.69,43
-2015,8124,DavCost,Russia,FlipSid3,0.92,43,0.952,-0.63,44
-2015,7166,Ex6TenZ,Belgium,Titan,0.90,84,0.930,-1.08,39
-2015,8507,stanislaw,Canada,Conquest,0.90,23,0.954,-0.58,44
-2015,7148,friberg,Sweden,Ninjas in Pyjamas,0.90,71,0.933,-1.02,40
-2015,6904,STYKO,Slovakia,HellRaisers,0.90,59,0.936,-0.94,41
-2015,7170,SmithZz,France,Titan,0.89,88,0.922,-1.23,38
-2015,823,Maniac,Switzerland,Titan,0.89,26,0.949,-0.69,43
-2015,6451,FNS,Canada,CLG,0.89,53,0.933,-1.01,40
-2015,1916,seang@res,United States,Cloud9,0.88,30,0.942,-0.83,42
-2015,8321,oskarish,Poland,CSGL,0.88,35,0.938,-0.90,41
-2015,7382,steel,Brazil,Luminosity,0.86,52,0.919,-1.31,37
-2015,7369,peet,Poland,Vexed|Poland,0.86,32,0.933,-1.02,40
-2015,7511,denis,Germany,MOUZ,0.86,65,0.912,-1.44,36
-2015,302,kUcheR,Russia,HellRaisers,0.85,83,0.899,-1.71,33
-2015,7368,Hyper,Poland,Vexed,0.85,31,0.930,-1.08,39
-2015,545,MODDII,Sweden,SK,0.85,26,0.935,-0.97,40
-2015,7156,MSL,Denmark,Dignitas,0.85,86,0.898,-1.73,33
-2015,8521,daps,Canada,Conquest,0.83,24,0.931,-1.06,39
-2015,41,pronax,Sweden,fnatic,0.82,68,0.888,-1.94,31
-2015,8570,GruBy,Poland,Vexed,0.81,31,0.915,-1.39,36
-2015,472,B1ad3,Ukraine,FlipSid3,0.81,50,0.895,-1.79,32
-2015,5327,nkl,Bulgaria,E-frag.net,0.78,53,0.877,-2.15,28
-2015,9217,TACO,Brazil,Luminosity,0.74,20,0.911,-1.46,35
-2015,136,gob b,Germany,MOUZ,0.73,61,0.842,-2.85,21
-2015,163,Loord,Poland,CSGL,0.69,37,0.856,-2.57,24
-2016,798,oskar,Czech Republic,HellRaisers|MOUZ,1.19,109,1.127,+2.15,72
-2016,9216,coldzera,Brazil,Luminosity,1.19,186,1.148,+2.48,75
-2016,7592,device,Denmark,Astralis,1.17,225,1.137,+2.32,73
-2016,3741,NiKo,Bosnia and Herzegovina,MOUZ,1.16,188,1.124,+2.11,71
-2016,7998,s1mple,Ukraine,Natus Vincere|Liquid,1.13,106,1.085,+1.48,65
-2016,1225,shox,France,G2,1.12,205,1.095,+1.63,66
-2016,8565,HEN1,Brazil,Immortals|Tempo Storm,1.12,152,1.088,+1.52,65
-2016,8735,autimatic,United States,Cloud9,1.11,106,1.072,+1.26,63
-2016,7390,ScreaM,Belgium,G2,1.11,205,1.087,+1.50,65
-2016,2023,FalleN,Brazil,Luminosity,1.10,186,1.077,+1.35,63
-2016,9032,Magisk,Denmark,Dignitas,1.10,208,1.079,+1.38,64
-2016,7167,kennyS,France,Envy,1.10,195,1.078,+1.36,64
-2016,3055,flusha,Sweden,GODSENT|fnatic,1.10,191,1.077,+1.35,64
-2016,7443,twist,Sweden,fnatic|GODSENT,1.09,83,1.053,+0.96,60
-2016,29,f0rest,Sweden,Ninjas in Pyjamas,1.09,193,1.070,+1.23,62
-2016,1146,dennis,Sweden,fnatic,1.08,174,1.060,+1.08,61
-2016,8394,Kjaerbye,Denmark,Astralis|Dignitas,1.08,226,1.064,+1.14,61
-2016,2757,GuardiaN,Slovakia,Natus Vincere,1.08,145,1.057,+1.03,60
-2016,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.07,193,1.054,+0.98,60
-2016,885,olofmeister,Sweden,fnatic,1.07,142,1.049,+0.91,59
-2016,7398,dupreeh,Denmark,Astralis,1.07,220,1.055,+1.00,60
-2016,8370,mixwell,Spain,OpTic,1.07,146,1.050,+0.91,59
-2016,9078,k0nfig,Denmark,Dignitas,1.07,263,1.057,+1.03,60
-2016,2469,cajunb,Denmark,Dignitas|Astralis,1.07,255,1.057,+1.03,60
-2016,7403,WorldEdit,Russia,FlipSid3,1.07,145,1.050,+0.91,59
-2016,8183,rain,Norway,FaZe,1.06,196,1.046,+0.85,59
-2016,9031,valde,Denmark,X,1.06,108,1.038,+0.72,57
-2016,8564,fer,Brazil,Luminosity,1.06,182,1.045,+0.84,58
-2016,7594,flamie,Russia,Natus Vincere,1.05,149,1.035,+0.68,57
-2016,8568,boltz,Brazil,Immortals|Tempo Storm,1.05,152,1.035,+0.68,57
-2016,8349,shroud,Canada,Cloud9,1.04,176,1.029,+0.58,56
-2016,3849,JW,Sweden,GODSENT|fnatic,1.04,191,1.030,+0.59,56
-2016,334,AdreN,Kazakhstan,Gambit,1.04,80,1.021,+0.45,55
-2016,3847,znajder,Sweden,GODSENT,1.03,96,1.016,+0.38,54
-2016,6904,STYKO,Slovakia,HellRaisers,1.03,113,1.018,+0.40,54
-2016,8797,Stewie2K,United States,Cloud9,1.03,176,1.021,+0.46,55
-2016,2553,Snax,Poland,Virtus.pro,1.03,187,1.022,+0.46,55
-2016,557,fnx,Brazil,Luminosity,1.03,180,1.021,+0.46,55
-2016,2730,chrisJ,Netherlands,MOUZ,1.03,188,1.022,+0.46,55
-2016,7256,nex,Germany,MOUZ,1.03,115,1.018,+0.40,54
-2016,695,allu,Finland,FaZe,1.03,105,1.017,+0.39,54
-2016,9219,felps,Brazil,Immortals|Tempo Storm,1.02,152,1.013,+0.32,53
-2016,7805,RUSH,United States,OpTic,1.02,165,1.013,+0.33,53
-2016,964,mou,Kazakhstan,Gambit,1.01,80,1.002,+0.16,52
-2016,7440,Skadoodle,United States,Cloud9,1.01,176,1.006,+0.21,52
-2016,8738,EliGE,United States,Liquid,1.00,136,0.997,+0.07,51
-2016,7429,Happy,France,Envy,1.00,193,0.998,+0.08,51
-2016,9261,Lekr0,Sweden,GODSENT|fnatic,1.00,96,0.997,+0.06,51
-2016,5386,byali,Poland,Virtus.pro,1.00,187,0.998,+0.08,51
-2016,8095,aizy,Denmark,FaZe,1.00,205,0.998,+0.09,51
-2016,8523,tarik,United States,OpTic|CLG,1.00,178,0.998,+0.08,51
-2016,4954,Xyp9x,Denmark,Astralis,0.99,225,0.990,-0.04,50
-2016,2131,bondik,Ukraine,HellRaisers|FlipSid3,0.99,127,0.990,-0.04,50
-2016,483,Edward,Ukraine,Natus Vincere,0.99,149,0.990,-0.04,50
-2016,8520,NAF,Canada,OpTic,0.99,165,0.990,-0.04,50
-2016,7528,KRIMZ,Sweden,fnatic|GODSENT,0.99,178,0.990,-0.04,50
-2016,545,MODDII,Sweden,X,0.99,189,0.990,-0.04,50
-2016,7322,apEX,France,Envy,0.98,195,0.982,-0.17,48
-2016,2644,Hiko,United States,Liquid,0.97,136,0.975,-0.28,47
-2016,3347,seized,Russia,Natus Vincere,0.97,149,0.975,-0.28,47
-2016,7687,nitr0,United States,Liquid,0.97,136,0.975,-0.28,47
-2016,884,Xizt,Sweden,Ninjas in Pyjamas,0.97,193,0.974,-0.30,47
-2016,203,n0thing,United States,Cloud9,0.97,176,0.975,-0.29,47
-2016,7169,RpK,France,G2,0.97,202,0.974,-0.30,47
-2016,1485,RUBINO,Norway,Dignitas,0.97,245,0.973,-0.31,47
-2016,161,TaZ,Poland,Virtus.pro,0.96,187,0.966,-0.42,46
-2016,9217,TACO,Brazil,Luminosity,0.96,186,0.966,-0.42,46
-2016,7412,gla1ve,Denmark,Astralis|X,0.96,132,0.968,-0.39,46
-2016,7527,pyth,Sweden,Ninjas in Pyjamas,0.96,133,0.968,-0.39,46
-2016,8507,stanislaw,Canada,OpTic,0.96,154,0.967,-0.41,46
-2016,8566,LUCAS1,Brazil,Immortals|Tempo Storm,0.96,150,0.968,-0.40,46
-2016,8248,jkaem,Norway,FaZe,0.96,162,0.967,-0.41,46
-2016,8346,jdm64,United States,Liquid|CLG,0.96,147,0.968,-0.40,46
-2016,8374,bodyy,France,G2,0.96,151,0.968,-0.40,46
-2016,8413,Zero,Slovakia,HellRaisers,0.95,113,0.962,-0.49,45
-2016,165,NEO,Poland,Virtus.pro,0.95,187,0.959,-0.55,45
-2016,7154,Pimp,Denmark,Liquid,0.95,134,0.961,-0.51,45
-2016,7168,NBK-,France,Envy,0.95,191,0.958,-0.55,44
-2016,7148,friberg,Sweden,Ninjas in Pyjamas,0.94,190,0.951,-0.68,43
-2016,338,markeloff,Ukraine,FlipSid3,0.94,143,0.953,-0.64,44
-2016,4959,kioShiMa,France,FaZe,0.94,190,0.951,-0.68,43
-2016,7499,Spiidi,Germany,MOUZ,0.94,186,0.951,-0.67,43
-2016,629,fox,Portugal,FaZe,0.93,99,0.950,-0.68,43
-2016,7,Friis,Denmark,X,0.93,188,0.943,-0.80,42
-2016,484,Zeus,Ukraine,Gambit|Natus Vincere,0.93,113,0.949,-0.71,43
-2016,317,pashaBiceps,Poland,Virtus.pro,0.93,187,0.943,-0.80,42
-2016,5287,TENZKI,Denmark,Dignitas,0.92,131,0.939,-0.85,41
-2016,339,ANGE1,Ukraine,HellRaisers,0.92,115,0.941,-0.82,42
-2016,735,Dosia,Russia,Gambit,0.91,80,0.941,-0.83,42
-2016,7170,SmithZz,France,G2,0.91,205,0.926,-1.07,39
-2016,1045,Maikelele,Sweden,Ninjas in Pyjamas|FaZe|G2,0.91,75,0.942,-0.81,42
-2016,2031,wenton,Sweden,fnatic,0.90,69,0.938,-0.88,41
-2016,429,karrigan,Denmark,FaZe|Astralis,0.90,229,0.916,-1.23,38
-2016,8347,hazed,United States,CLG,0.89,84,0.927,-1.05,40
-2016,7511,denis,Germany,MOUZ,0.89,188,0.911,-1.31,37
-2016,8569,DEVIL,France,Envy,0.88,95,0.918,-1.20,38
-2016,9220,SHOOWTiME,Brazil,Tempo Storm|Immortals,0.88,82,0.922,-1.14,39
-2016,7808,freakazoid,United States,Cloud9|Echo Fox,0.87,71,0.920,-1.17,38
-2016,8522,FugLy,United States,CLG,0.86,65,0.917,-1.22,38
-2016,7796,wayLander,Russia,FlipSid3|Gambit,0.86,113,0.900,-1.49,35
-2016,922,Snappi,Denmark,X,0.86,97,0.904,-1.42,36
-2016,8151,AcilioN,Denmark,SK,0.86,92,0.906,-1.39,36
-2016,1866,Shara,Ukraine,FlipSid3,0.85,114,0.893,-1.60,34
-2016,8137,reltuC,United States,CLG,0.85,85,0.902,-1.45,35
-2016,8521,daps,Canada,OpTic,0.85,83,0.903,-1.44,36
-2016,7156,MSL,Denmark,Dignitas,0.83,263,0.856,-2.20,28
-2016,499,hooch,Russia,Gambit,0.82,64,0.895,-1.57,34
-2016,41,pronax,Sweden,GODSENT,0.82,96,0.878,-1.83,32
-2016,472,B1ad3,Ukraine,FlipSid3,0.78,145,0.834,-2.55,25
-2017,7938,XANTARES,Türkiye,Space Soldiers,1.29,85,1.200,+2.69,77
-2017,3741,NiKo,Bosnia and Herzegovina,FaZe|MOUZ,1.23,229,1.197,+2.65,76
-2017,7998,s1mple,Ukraine,Natus Vincere,1.22,143,1.175,+2.26,73
-2017,9216,coldzera,Brazil,SK,1.21,199,1.177,+2.29,73
-2017,8564,fer,Brazil,SK,1.20,199,1.169,+2.15,72
-2017,8183,rain,Norway,FaZe,1.17,222,1.147,+1.77,68
-2017,5794,tabseN,Germany,BIG,1.16,103,1.123,+1.34,63
-2017,7592,device,Denmark,Astralis,1.15,176,1.127,+1.41,64
-2017,8575,Calyx,Türkiye,Space Soldiers,1.15,76,1.109,+1.09,61
-2017,798,oskar,Czech Republic,MOUZ,1.15,181,1.127,+1.42,64
-2017,10394,Twistzz,Canada,Liquid,1.14,140,1.115,+1.21,62
-2017,9353,paz,Türkiye,Space Soldiers,1.14,75,1.102,+0.98,60
-2017,9078,k0nfig,Denmark,North,1.14,157,1.117,+1.24,62
-2017,7167,kennyS,France,G2,1.14,190,1.120,+1.30,63
-2017,8738,EliGE,United States,Liquid,1.13,160,1.110,+1.11,61
-2017,9261,Lekr0,Sweden,fnatic|GODSENT,1.12,118,1.098,+0.90,59
-2017,8568,boltz,Brazil,Immortals,1.12,161,1.102,+0.98,60
-2017,7398,dupreeh,Denmark,Astralis,1.12,198,1.105,+1.03,60
-2017,2023,FalleN,Brazil,SK,1.11,199,1.097,+0.89,59
-2017,8797,Stewie2K,United States,Cloud9,1.11,166,1.095,+0.85,59
-2017,8520,NAF,Canada,Renegades|OpTic,1.11,126,1.092,+0.79,58
-2017,8783,JUGi,Denmark,HEROIC,1.11,140,1.093,+0.82,58
-2017,7256,nex,Germany,BIG,1.11,103,1.089,+0.74,57
-2017,2757,GuardiaN,Slovakia,FaZe|Natus Vincere,1.11,191,1.097,+0.88,59
-2017,9255,draken,Sweden,Ninjas in Pyjamas,1.11,168,1.095,+0.85,59
-2017,885,olofmeister,Sweden,FaZe|fnatic,1.10,223,1.090,+0.76,58
-2017,11816,ropz,Estonia,MOUZ,1.10,152,1.087,+0.70,57
-2017,5479,suNny,Finland,MOUZ,1.10,126,1.085,+0.67,57
-2017,8528,HObbit,Kazakhstan,Gambit,1.10,121,1.084,+0.66,57
-2017,8994,HS,Estonia,OpTic,1.09,70,1.072,+0.44,54
-2017,9278,REZ,Sweden,Ninjas in Pyjamas|Epsilon,1.09,128,1.078,+0.54,55
-2017,8745,Rickeh,Australia,CLG,1.09,96,1.075,+0.49,55
-2017,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.09,171,1.080,+0.59,56
-2017,7390,ScreaM,Belgium,Envy,1.09,143,1.079,+0.56,56
-2017,7594,flamie,Russia,Natus Vincere,1.08,135,1.071,+0.42,54
-2017,9032,Magisk,Denmark,OpTic,1.08,134,1.071,+0.42,54
-2017,3849,JW,Sweden,fnatic,1.08,183,1.073,+0.46,55
-2017,8735,autimatic,United States,Cloud9,1.08,164,1.072,+0.44,54
-2017,8565,HEN1,Brazil,Immortals,1.08,121,1.070,+0.41,54
-2017,4954,Xyp9x,Denmark,Astralis,1.08,198,1.073,+0.46,55
-2017,334,AdreN,Kazakhstan,Gambit,1.08,120,1.070,+0.41,54
-2017,339,ANGE1,Ukraine,HellRaisers,1.08,130,1.070,+0.42,54
-2017,8394,Kjaerbye,Denmark,Astralis,1.08,198,1.073,+0.46,55
-2017,2469,cajunb,Denmark,North,1.08,157,1.072,+0.44,54
-2017,29,f0rest,Sweden,Ninjas in Pyjamas,1.08,169,1.072,+0.45,54
-2017,9031,valde,Denmark,North,1.07,121,1.063,+0.28,53
-2017,1225,shox,France,G2,1.07,184,1.065,+0.32,53
-2017,8566,LUCAS1,Brazil,Immortals,1.07,121,1.063,+0.28,53
-2017,7169,RpK,France,Envy,1.07,146,1.064,+0.30,53
-2017,8918,electroNic,Russia,Natus Vincere|FlipSid3,1.07,78,1.060,+0.24,52
-2017,7322,apEX,France,G2,1.07,190,1.065,+0.32,53
-2017,7168,NBK-,France,G2,1.07,190,1.065,+0.32,53
-2017,10671,Ethan,United States,CLG,1.06,95,1.055,+0.15,51
-2017,3055,flusha,Sweden,fnatic,1.06,182,1.057,+0.18,52
-2017,964,mou,Kazakhstan,Gambit,1.06,121,1.056,+0.16,52
-2017,9219,felps,Brazil,SK,1.05,146,1.049,+0.04,50
-2017,8370,mixwell,Spain,OpTic,1.05,122,1.049,+0.04,50
-2017,10264,niko,Denmark,HEROIC,1.05,156,1.049,+0.04,50
-2017,10449,ISSAA,Jordan,HellRaisers,1.04,61,1.043,-0.07,49
-2017,4679,jks,Australia,Renegades,1.04,80,1.042,-0.08,49
-2017,695,allu,Finland,OpTic|FaZe,1.04,152,1.041,-0.09,49
-2017,8413,Zero,Slovakia,HellRaisers,1.04,115,1.042,-0.09,49
-2017,7429,Happy,France,Envy,1.03,152,1.034,-0.23,48
-2017,8523,tarik,United States,Cloud9|OpTic,1.03,151,1.034,-0.23,48
-2017,317,pashaBiceps,Poland,Virtus.pro,1.03,171,1.034,-0.23,48
-2017,1146,dennis,Sweden,fnatic,1.03,117,1.035,-0.21,48
-2017,8771,USTILO,Australia,Renegades,1.03,80,1.036,-0.19,48
-2017,8374,bodyy,France,G2,1.02,184,1.025,-0.37,46
-2017,5386,byali,Poland,Virtus.pro,1.02,173,1.026,-0.37,46
-2017,2553,Snax,Poland,Virtus.pro,1.02,173,1.026,-0.37,46
-2017,7528,KRIMZ,Sweden,fnatic,1.02,181,1.026,-0.37,46
-2017,2131,bondik,Ukraine,HellRaisers,1.02,73,1.030,-0.29,47
-2017,8095,aizy,Denmark,North,1.02,160,1.026,-0.36,46
-2017,3997,loWel,Spain,MOUZ,1.02,91,1.029,-0.31,47
-2017,4959,kioShiMa,France,FaZe,1.02,109,1.028,-0.33,47
-2017,7805,RUSH,United States,Cloud9|OpTic,1.01,151,1.019,-0.49,45
-2017,9056,koosta,United States,CLG,1.01,95,1.022,-0.43,46
-2017,8082,AZR,Australia,Renegades,1.01,80,1.024,-0.41,46
-2017,7440,Skadoodle,United States,Cloud9,1.01,156,1.019,-0.49,45
-2017,7382,steel,Brazil,Immortals,1.00,131,1.013,-0.60,44
-2017,735,Dosia,Russia,Gambit,1.00,121,1.013,-0.59,44
-2017,150,MAJ3R,Türkiye,Space Soldiers,1.00,85,1.017,-0.53,45
-2017,8716,DeadFox,Hungary,HellRaisers,0.99,130,1.005,-0.73,43
-2017,7412,gla1ve,Denmark,Astralis,0.99,198,1.001,-0.80,42
-2017,8137,reltuC,United States,CLG,0.99,95,1.009,-0.66,43
-2017,545,MODDII,Sweden,HEROIC,0.99,156,1.004,-0.76,42
-2017,2730,chrisJ,Netherlands,MOUZ,0.99,171,1.003,-0.78,42
-2017,8346,jdm64,United States,Liquid,0.99,160,1.003,-0.77,42
-2017,884,Xizt,Sweden,Ninjas in Pyjamas,0.99,171,1.003,-0.78,42
-2017,922,Snappi,Denmark,HEROIC,0.98,156,0.996,-0.90,41
-2017,483,Edward,Ukraine,Natus Vincere,0.98,137,0.998,-0.87,41
-2017,9069,Nifty,United States,Renegades,0.98,77,1.006,-0.72,43
-2017,5799,keev,Germany,BIG,0.98,103,1.001,-0.80,42
-2017,8507,stanislaw,Canada,Liquid,0.98,142,0.997,-0.87,41
-2017,6904,STYKO,Slovakia,MOUZ|HellRaisers,0.98,169,0.995,-0.91,41
-2017,7687,nitr0,United States,Liquid,0.97,160,0.988,-1.03,40
-2017,7511,denis,Germany,MOUZ,0.97,89,0.997,-0.87,41
-2017,7156,MSL,Denmark,North,0.96,157,0.981,-1.16,38
-2017,9545,xms,France,Envy,0.96,138,0.983,-1.13,39
-2017,9217,TACO,Brazil,SK,0.96,199,0.977,-1.23,38
-2017,203,n0thing,United States,Cloud9,0.96,93,0.990,-1.00,40
-2017,8349,shroud,Canada,Cloud9,0.96,95,0.990,-1.01,40
-2017,338,markeloff,Ukraine,FlipSid3,0.95,62,0.993,-0.95,40
-2017,7148,friberg,Sweden,OpTic|Ninjas in Pyjamas,0.95,104,0.981,-1.16,38
-2017,429,karrigan,Denmark,FaZe,0.94,222,0.959,-1.54,35
-2017,165,NEO,Poland,Virtus.pro,0.94,173,0.964,-1.46,35
-2017,8611,es3tag,Denmark,HEROIC,0.93,100,0.969,-1.38,36
-2017,147,SIXER,France,Envy,0.93,152,0.959,-1.55,34
-2017,484,Zeus,Ukraine,Natus Vincere|Gambit,0.93,125,0.963,-1.47,35
-2017,3347,seized,Russia,Natus Vincere,0.91,108,0.953,-1.65,33
-2017,161,TaZ,Poland,Virtus.pro,0.90,173,0.933,-2.01,30
-2017,11110,Golden,Sweden,fnatic,0.90,80,0.956,-1.60,34
-2017,136,gob b,Germany,BIG,0.89,103,0.941,-1.87,31
-2017,3252,LEGIJA,Germany,BIG,0.88,103,0.934,-1.98,30
-2017,6451,FNS,Canada,CLG,0.84,93,0.912,-2.38,26
-2018,7998,s1mple,Ukraine,Natus Vincere,1.34,209,1.280,+3.87,89
-2018,7592,device,Denmark,Astralis,1.23,238,1.195,+2.54,75
-2018,7938,XANTARES,Türkiye,Space Soldiers|ex-Space Soldiers,1.23,137,1.177,+2.25,72
-2018,3741,NiKo,Bosnia and Herzegovina,FaZe,1.21,228,1.178,+2.27,73
-2018,5794,tabseN,Germany,BIG,1.20,98,1.143,+1.72,67
-2018,8574,woxic,Türkiye,HellRaisers,1.19,169,1.154,+1.89,69
-2018,11916,sergej,Finland,ENCE,1.18,61,1.113,+1.25,62
-2018,10671,Ethan,United States,NRG,1.18,133,1.139,+1.66,67
-2018,8918,electroNic,Russia,Natus Vincere,1.17,205,1.143,+1.72,67
-2018,7398,dupreeh,Denmark,Astralis,1.17,238,1.146,+1.77,68
-2018,9032,Magisk,Denmark,Astralis,1.15,234,1.129,+1.50,65
-2018,8520,NAF,Canada,Liquid,1.15,211,1.127,+1.47,65
-2018,9216,coldzera,Brazil,MIBR,1.14,167,1.115,+1.28,63
-2018,9031,valde,Denmark,North,1.13,215,1.111,+1.23,62
-2018,4076,Aerial,Finland,ENCE,1.13,61,1.085,+0.82,58
-2018,8735,autimatic,United States,Cloud9,1.13,107,1.098,+1.02,60
-2018,798,oskar,Czech Republic,MOUZ,1.12,236,1.104,+1.12,61
-2018,7412,gla1ve,Denmark,Astralis,1.12,238,1.104,+1.12,61
-2018,10394,Twistzz,Canada,Liquid,1.12,211,1.103,+1.09,61
-2018,4954,Xyp9x,Denmark,Astralis,1.12,238,1.104,+1.12,61
-2018,9136,Brehze,United States,NRG,1.12,133,1.096,+0.98,60
-2018,5479,suNny,Finland,MOUZ,1.11,245,1.097,+1.00,60
-2018,11219,CeRq,Bulgaria,NRG,1.11,133,1.088,+0.87,59
-2018,695,allu,Finland,ENCE,1.11,61,1.074,+0.65,56
-2018,7322,apEX,France,G2,1.10,79,1.073,+0.63,56
-2018,9078,k0nfig,Denmark,OpTic,1.10,98,1.076,+0.68,57
-2018,10449,ISSAA,Jordan,HellRaisers,1.10,175,1.085,+0.81,58
-2018,8394,Kjaerbye,Denmark,North,1.09,217,1.079,+0.72,57
-2018,8738,EliGE,United States,Liquid,1.09,217,1.079,+0.72,57
-2018,7256,nex,Germany,BIG,1.09,96,1.070,+0.57,56
-2018,2757,GuardiaN,Slovakia,FaZe,1.09,228,1.079,+0.73,57
-2018,7528,KRIMZ,Sweden,fnatic,1.09,178,1.077,+0.69,57
-2018,7167,kennyS,France,G2,1.08,167,1.069,+0.56,56
-2018,8575,Calyx,Türkiye,ex-Space Soldiers|Space Soldiers,1.08,134,1.067,+0.53,55
-2018,11816,ropz,Estonia,MOUZ,1.08,245,1.072,+0.61,56
-2018,8611,es3tag,Denmark,HEROIC,1.08,150,1.068,+0.54,55
-2018,8783,JUGi,Denmark,OpTic,1.07,135,1.059,+0.41,54
-2018,2023,FalleN,Brazil,MIBR,1.07,167,1.061,+0.44,54
-2018,8183,rain,Norway,FaZe,1.07,228,1.063,+0.47,55
-2018,7443,twist,Sweden,fnatic|GODSENT,1.07,123,1.059,+0.40,54
-2018,9895,mertz,Denmark,HEROIC,1.07,186,1.062,+0.45,54
-2018,7594,flamie,Russia,Natus Vincere,1.07,207,1.062,+0.46,55
-2018,2469,cajunb,Denmark,OpTic,1.06,98,1.050,+0.27,53
-2018,13666,Brollan,Sweden,fnatic|GODSENT,1.06,119,1.051,+0.29,53
-2018,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,181,1.054,+0.32,53
-2018,29,f0rest,Sweden,Ninjas in Pyjamas,1.06,181,1.054,+0.32,53
-2018,1225,shox,France,G2,1.06,126,1.052,+0.29,53
-2018,8564,fer,Brazil,MIBR,1.06,162,1.053,+0.31,53
-2018,9353,paz,Türkiye,ex-Space Soldiers|Space Soldiers,1.05,137,1.045,+0.19,52
-2018,7131,BnTeT,Indonesia,TYLOO,1.05,81,1.043,+0.15,52
-2018,964,mou,Kazakhstan,Gambit,1.05,148,1.045,+0.19,52
-2018,8523,tarik,United States,MIBR|Cloud9,1.05,172,1.046,+0.20,52
-2018,3055,flusha,Sweden,fnatic,1.04,134,1.037,+0.07,51
-2018,7687,nitr0,United States,Liquid,1.04,217,1.038,+0.08,51
-2018,11271,smooya,United Kingdom,BIG,1.04,98,1.037,+0.06,51
-2018,9766,hampus,Sweden,GODSENT,1.04,76,1.036,+0.05,51
-2018,9261,Lekr0,Sweden,Ninjas in Pyjamas|fnatic,1.04,195,1.038,+0.08,51
-2018,9255,draken,Sweden,Ninjas in Pyjamas|fnatic,1.04,111,1.037,+0.06,51
-2018,8570,GruBy,Poland,AGO,1.04,112,1.037,+0.06,51
-2018,8797,Stewie2K,United States,MIBR|Cloud9,1.04,186,1.038,+0.08,51
-2018,9256,disco doplan,Sweden,GODSENT,1.03,76,1.030,-0.04,50
-2018,1146,dennis,Sweden,Ninjas in Pyjamas,1.03,175,1.030,-0.04,50
-2018,7168,NBK-,France,G2,1.03,79,1.030,-0.04,50
-2018,8095,aizy,Denmark,North,1.03,215,1.030,-0.04,50
-2018,8528,HObbit,Kazakhstan,HellRaisers|Gambit,1.03,167,1.030,-0.04,50
-2018,885,olofmeister,Sweden,FaZe,1.02,152,1.023,-0.16,48
-2018,4679,jks,Australia,Renegades,1.02,119,1.023,-0.15,48
-2018,8248,jkaem,Norway,Renegades,1.02,113,1.023,-0.15,48
-2018,8327,Furlan,Poland,AGO,1.02,112,1.023,-0.15,48
-2018,7390,ScreaM,Belgium,fnatic,1.02,62,1.025,-0.13,49
-2018,2131,bondik,Ukraine,HellRaisers,1.02,159,1.022,-0.16,48
-2018,2730,chrisJ,Netherlands,MOUZ,1.02,245,1.022,-0.17,48
-2018,3849,JW,Sweden,fnatic,1.01,178,1.014,-0.29,47
-2018,7440,Skadoodle,United States,Cloud9,1.01,99,1.017,-0.25,47
-2018,8522,FugLy,United States,NRG,1.01,133,1.016,-0.27,47
-2018,9816,Aleksib,Finland,ENCE,1.01,61,1.019,-0.22,48
-2018,8875,gade,Denmark,OpTic,1.01,101,1.017,-0.25,47
-2018,334,AdreN,Kazakhstan,Gambit,1.00,148,1.008,-0.40,46
-2018,7805,RUSH,United States,Cloud9,1.00,107,1.010,-0.36,46
-2018,10264,niko,Denmark,OpTic,1.00,184,1.006,-0.41,46
-2018,7356,MICHU,Poland,Virtus.pro,1.00,100,1.010,-0.36,46
-2018,9574,snatchie,Poland,AGO,1.00,120,1.009,-0.38,46
-2018,150,MAJ3R,Türkiye,ex-Space Soldiers|Space Soldiers,1.00,137,1.008,-0.39,46
-2018,7964,cadiaN,Denmark,North,0.99,62,1.008,-0.39,46
-2018,483,Edward,Ukraine,Natus Vincere,0.99,207,0.998,-0.55,45
-2018,8605,somebody,China,TYLOO,0.98,81,0.999,-0.53,45
-2018,2553,Snax,Poland,Virtus.pro|MOUZ,0.98,140,0.993,-0.62,44
-2018,5386,byali,Poland,Virtus.pro,0.98,98,0.997,-0.56,44
-2018,7026,DD,China,TYLOO,0.98,81,0.999,-0.53,45
-2018,8789,mir,Russia,Gambit|Vega Squadron,0.98,73,1.000,-0.51,45
-2018,9257,freddieb,Sweden,GODSENT,0.97,76,0.994,-0.61,44
-2018,317,pashaBiceps,Poland,Virtus.pro,0.97,103,0.990,-0.68,43
-2018,922,Snappi,Denmark,OpTic,0.97,163,0.984,-0.76,42
-2018,7248,xseveN,Finland,ENCE,0.97,61,0.997,-0.56,44
-2018,10263,xccurate,Indonesia,TYLOO,0.97,81,0.993,-0.62,44
-2018,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,0.97,181,0.983,-0.78,42
-2018,339,ANGE1,Ukraine,HellRaisers,0.97,183,0.983,-0.78,42
-2018,5796,tiziaN,Germany,BIG,0.97,98,0.990,-0.67,43
-2018,7156,MSL,Denmark,North,0.96,153,0.977,-0.87,41
-2018,3347,seized,Russia,Gambit,0.95,81,0.981,-0.82,42
-2018,7148,friberg,Sweden,HEROIC,0.95,99,0.977,-0.88,41
-2018,9217,TACO,Brazil,Liquid,0.95,186,0.967,-1.03,40
-2018,545,MODDII,Sweden,HEROIC,0.95,166,0.969,-1.01,40
-2018,8082,AZR,Australia,Renegades,0.95,119,0.974,-0.93,41
-2018,735,Dosia,Russia,Gambit,0.95,148,0.970,-0.98,40
-2018,8568,boltz,Brazil,MIBR,0.94,77,0.976,-0.90,41
-2018,8374,bodyy,France,G2,0.94,167,0.961,-1.13,39
-2018,11278,TOAO,Poland,AGO,0.94,112,0.968,-1.02,40
-2018,6904,STYKO,Slovakia,MOUZ,0.94,198,0.958,-1.17,38
-2018,7382,steel,Brazil,Liquid,0.94,66,0.979,-0.85,42
-2018,9069,Nifty,United States,Renegades,0.93,82,0.968,-1.02,40
-2018,7166,Ex6TenZ,Belgium,G2,0.93,78,0.969,-1.00,40
-2018,11891,phr,Poland,AGO,0.93,112,0.961,-1.13,39
-2018,8151,AcilioN,Denmark,Imperial,0.92,87,0.960,-1.14,39
-2018,484,Zeus,Ukraine,Natus Vincere,0.92,207,0.941,-1.43,36
-2018,429,karrigan,Denmark,FaZe,0.92,228,0.940,-1.46,35
-2018,8716,DeadFox,Hungary,HellRaisers,0.91,179,0.936,-1.51,35
-2018,136,gob b,Germany,BIG,0.91,98,0.951,-1.29,37
-2018,884,Xizt,Sweden,fnatic|FaZe,0.91,143,0.941,-1.44,36
-2018,8521,daps,Canada,NRG,0.91,133,0.943,-1.41,36
-2018,1485,RUBINO,Norway,HEROIC,0.90,61,0.959,-1.16,38
-2018,8771,USTILO,Australia,Renegades,0.90,82,0.949,-1.31,37
-2018,9857,ngiN,Türkiye,ex-Space Soldiers|Space Soldiers,0.90,137,0.935,-1.54,35
-2018,11110,Golden,Sweden,fnatic,0.88,107,0.928,-1.64,34
-2018,5187,captainMo,China,TYLOO,0.86,64,0.935,-1.54,35
-2018,165,NEO,Poland,Virtus.pro,0.86,103,0.916,-1.84,32
-2018,7170,SmithZz,France,G2,0.80,78,0.890,-2.24,28
-2019,7998,s1mple,Ukraine,Natus Vincere,1.29,129,1.218,+3.08,81
-2019,11893,ZywOo,France,Vitality,1.28,188,1.228,+3.24,82
-2019,7592,device,Denmark,Astralis,1.21,135,1.162,+2.13,71
-2019,8918,electroNic,Russia,Natus Vincere,1.20,129,1.153,+1.98,70
-2019,8738,EliGE,United States,Liquid,1.19,166,1.154,+1.98,70
-2019,13776,Jame,Russia,AVANGAR,1.19,150,1.151,+1.94,69
-2019,11816,ropz,Estonia,MOUZ,1.17,153,1.136,+1.69,67
-2019,3972,huNter-,Bosnia and Herzegovina,G2|Valiance|CR4ZY,1.17,167,1.139,+1.73,67
-2019,3741,NiKo,Bosnia and Herzegovina,FaZe,1.16,136,1.126,+1.52,65
-2019,8520,NAF,Canada,Liquid,1.15,166,1.123,+1.47,65
-2019,9032,Magisk,Denmark,Astralis,1.15,135,1.118,+1.39,64
-2019,15631,KSCERATO,Brazil,FURIA,1.15,94,1.109,+1.24,62
-2019,8574,woxic,Türkiye,MOUZ,1.14,156,1.114,+1.31,63
-2019,9618,nexa,Serbia,G2|Valiance|CR4ZY,1.14,167,1.115,+1.34,63
-2019,9136,Brehze,United States,Evil Geniuses,1.13,160,1.107,+1.19,62
-2019,9216,coldzera,Brazil,FaZe|MIBR,1.13,106,1.099,+1.06,61
-2019,9960,frozen,Slovakia,MOUZ,1.13,150,1.106,+1.17,62
-2019,7167,kennyS,France,G2,1.12,176,1.101,+1.09,61
-2019,12733,xsepower,Russia,FORZE,1.12,65,1.082,+0.78,58
-2019,10394,Twistzz,Canada,Liquid,1.12,166,1.100,+1.08,61
-2019,4679,jks,Australia,Renegades,1.12,115,1.094,+0.97,60
-2019,10330,acoR,Denmark,Tricked,1.11,53,1.073,+0.62,56
-2019,15165,blameF,Denmark,HEROIC,1.11,70,1.078,+0.71,57
-2019,11916,sergej,Finland,ENCE,1.10,127,1.081,+0.76,58
-2019,9612,Bubzkji,Denmark,Tricked,1.10,53,1.068,+0.53,55
-2019,11219,CeRq,Bulgaria,Evil Geniuses,1.09,164,1.077,+0.68,57
-2019,7398,dupreeh,Denmark,Astralis,1.09,135,1.075,+0.65,56
-2019,10671,Ethan,United States,Evil Geniuses,1.09,164,1.077,+0.68,57
-2019,5794,tabseN,Germany,BIG,1.09,52,1.062,+0.44,54
-2019,4954,Xyp9x,Denmark,Astralis,1.09,135,1.075,+0.65,56
-2019,13239,Qikert,Kazakhstan,AVANGAR,1.09,150,1.076,+0.67,57
-2019,8564,fer,Brazil,MIBR,1.09,124,1.074,+0.63,56
-2019,12553,yuurih,Brazil,FURIA,1.09,94,1.070,+0.57,56
-2019,7528,KRIMZ,Sweden,fnatic,1.08,156,1.069,+0.55,55
-2019,10994,stavn,Denmark,HEROIC,1.08,112,1.066,+0.49,55
-2019,13666,Brollan,Sweden,fnatic,1.08,162,1.069,+0.55,56
-2019,14148,sjuush,Denmark,Tricked,1.08,53,1.057,+0.36,54
-2019,9031,valde,Denmark,North,1.08,95,1.064,+0.47,55
-2019,8248,jkaem,Norway,Renegades,1.07,115,1.059,+0.38,54
-2019,695,allu,Finland,ENCE,1.07,127,1.060,+0.39,54
-2019,11283,ottoNd,Finland,CR4ZY|Valiance,1.07,142,1.060,+0.41,54
-2019,3055,flusha,Sweden,fnatic|Cloud9,1.06,95,1.051,+0.24,52
-2019,8183,rain,Norway,FaZe,1.06,141,1.053,+0.28,53
-2019,8095,aizy,Denmark,North,1.06,128,1.053,+0.27,53
-2019,11840,Boombl4,Russia,Natus Vincere|Winstrike,1.05,93,1.044,+0.13,51
-2019,11942,buster,Kazakhstan,AVANGAR,1.05,150,1.046,+0.16,52
-2019,8394,Kjaerbye,Denmark,North,1.05,128,1.045,+0.15,52
-2019,7594,flamie,Russia,Natus Vincere,1.05,129,1.045,+0.15,52
-2019,14218,Plopski,Sweden,Ninjas in Pyjamas|Ancient,1.05,75,1.043,+0.12,51
-2019,3849,JW,Sweden,fnatic,1.04,162,1.038,+0.04,50
-2019,7412,gla1ve,Denmark,Astralis,1.04,135,1.038,+0.03,50
-2019,29,f0rest,Sweden,Ninjas in Pyjamas,1.04,130,1.038,+0.03,50
-2019,1225,shox,France,Vitality|G2,1.04,164,1.038,+0.04,50
-2019,11343,SHiPZ,Bulgaria,CR4ZY|Windigo,1.04,75,1.037,+0.02,50
-2019,8611,es3tag,Denmark,HEROIC,1.04,121,1.038,+0.03,50
-2019,9078,k0nfig,Denmark,OpTic,1.03,66,1.031,-0.08,49
-2019,2730,chrisJ,Netherlands,MOUZ,1.03,155,1.031,-0.09,49
-2019,8797,Stewie2K,United States,Liquid,1.03,166,1.031,-0.09,49
-2019,9616,amanek,France,G2,1.03,153,1.031,-0.09,49
-2019,2023,FalleN,Brazil,MIBR,1.03,124,1.031,-0.09,49
-2019,9896,b0RUP,Denmark,Tricked,1.02,71,1.026,-0.18,48
-2019,7168,NBK-,France,Vitality,1.02,139,1.024,-0.22,48
-2019,8566,LUCAS1,Brazil,MIBR,1.02,63,1.026,-0.18,48
-2019,483,Edward,Ukraine,Natus Vincere,1.02,62,1.026,-0.18,48
-2019,11654,almazer,Russia,FORZE,1.01,65,1.020,-0.27,47
-2019,7322,apEX,France,Vitality,1.01,188,1.015,-0.36,46
-2019,12732,FL1T,Russia,FORZE,1.01,65,1.020,-0.27,47
-2019,12030,EspiranTo,Lithuania,CR4ZY|Valiance,1.01,141,1.016,-0.34,47
-2019,284,JACKZ,France,G2,1.01,176,1.015,-0.36,46
-2019,7687,nitr0,United States,Liquid,1.01,166,1.015,-0.35,46
-2019,10588,Liazz,Australia,Renegades,1.01,115,1.017,-0.33,47
-2019,2757,GuardiaN,Slovakia,Natus Vincere|FaZe,1.01,130,1.016,-0.34,47
-2019,885,olofmeister,Sweden,FaZe,1.01,141,1.016,-0.34,47
-2019,9278,REZ,Sweden,Ninjas in Pyjamas,1.00,130,1.009,-0.46,45
-2019,12521,arT,Brazil,FURIA,1.00,94,1.012,-0.42,46
-2019,7443,twist,Sweden,Ninjas in Pyjamas|fnatic,1.00,137,1.009,-0.46,45
-2019,7964,cadiaN,Denmark,HEROIC,1.00,89,1.012,-0.41,46
-2019,18053,broky,Latvia,FaZe,1.00,50,1.017,-0.33,47
-2019,9816,Aleksib,Finland,ENCE,1.00,94,1.012,-0.42,46
-2019,8726,facecrack,Russia,FORZE,1.00,65,1.014,-0.37,46
-2019,9219,felps,Brazil,MIBR,1.00,55,1.016,-0.35,47
-2019,8783,JUGi,Denmark,OpTic,1.00,105,1.011,-0.43,46
-2019,8523,tarik,United States,Evil Geniuses,0.99,159,1.000,-0.61,44
-2019,4076,Aerial,Finland,ENCE,0.99,127,1.002,-0.58,44
-2019,7148,friberg,Sweden,HEROIC,0.98,64,1.003,-0.56,44
-2019,10264,niko,Denmark,OpTic|Tricked,0.98,58,1.005,-0.53,45
-2019,8184,ALEX,United Kingdom,Vitality,0.97,188,0.983,-0.90,41
-2019,13157,Jerry,Russia,FORZE,0.97,65,0.998,-0.66,43
-2019,9261,Lekr0,Sweden,Ninjas in Pyjamas,0.97,130,0.988,-0.82,42
-2019,922,Snappi,Denmark,OpTic,0.97,90,0.993,-0.74,43
-2019,13497,Lucky,France,G2,0.96,128,0.981,-0.94,41
-2019,8875,gade,Denmark,North,0.96,128,0.981,-0.94,41
-2019,9686,Gratisfaction,New Zealand,Renegades,0.96,100,0.984,-0.88,41
-2019,12822,VINI,Brazil,FURIA,0.96,94,0.985,-0.86,41
-2019,7248,xseveN,Finland,ENCE,0.96,127,0.981,-0.94,41
-2019,7169,RpK,France,Vitality,0.95,188,0.968,-1.16,38
-2019,5736,kNgV-,Brazil,MIBR,0.94,50,0.987,-0.84,42
-2019,11891,phr,Poland,Virtus.pro|AGO,0.94,52,0.986,-0.85,41
-2019,16770,ableJ,Brazil,FURIA,0.94,54,0.985,-0.87,41
-2019,8507,stanislaw,Canada,Evil Geniuses,0.94,100,0.971,-1.10,39
-2019,429,karrigan,Denmark,MOUZ,0.94,148,0.964,-1.23,38
-2019,8082,AZR,Australia,Renegades,0.93,115,0.961,-1.27,37
-2019,11716,SANJI,Uzbekistan,AVANGAR,0.93,125,0.960,-1.30,37
-2019,10052,fitch,Kazakhstan,AVANGAR,0.93,66,0.975,-1.04,40
-2019,4216,LETN1,Serbia,CR4ZY|Valiance,0.93,144,0.957,-1.35,37
-2019,9217,TACO,Brazil,MIBR,0.93,124,0.960,-1.30,37
-2019,484,Zeus,Ukraine,Natus Vincere,0.92,90,0.960,-1.28,37
-2019,2469,cajunb,Denmark,OpTic|Cloud9,0.91,69,0.962,-1.26,37
-2019,334,AdreN,Kazakhstan,AVANGAR|FaZe,0.91,121,0.946,-1.53,35
-2019,9294,NaToSaphiX,Denmark,MOUZ,0.90,52,0.965,-1.20,38
-2019,7156,MSL,Denmark,OpTic,0.90,51,0.966,-1.19,38
-2019,11110,Golden,Sweden,fnatic,0.90,83,0.950,-1.46,35
-2019,884,Xizt,Sweden,fnatic,0.89,90,0.941,-1.61,34
-2019,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,0.87,85,0.930,-1.79,32
-2019,8521,daps,Canada,Cloud9,0.87,73,0.936,-1.69,33
-2019,5796,tiziaN,Germany,BIG,0.86,52,0.945,-1.54,35
-2019,136,gob b,Germany,BIG,0.85,52,0.940,-1.63,34
-2020,11893,ZywOo,France,Vitality,1.28,186,1.228,+3.43,84
-2020,7998,s1mple,Ukraine,Natus Vincere,1.28,168,1.224,+3.35,84
-2020,7592,device,Denmark,Astralis,1.20,179,1.164,+2.28,73
-2020,3741,NiKo,Bosnia and Herzegovina,G2|FaZe,1.18,166,1.146,+1.97,70
-2020,15165,blameF,Denmark,Complexity,1.17,134,1.133,+1.73,67
-2020,8738,EliGE,United States,Liquid,1.16,132,1.126,+1.60,66
-2020,11816,ropz,Estonia,MOUZ,1.16,138,1.127,+1.62,66
-2020,8789,mir,Russia,Spirit,1.16,90,1.115,+1.41,64
-2020,12553,yuurih,Brazil,FURIA,1.14,132,1.111,+1.34,63
-2020,8918,electroNic,Russia,Natus Vincere,1.14,168,1.116,+1.42,64
-2020,15631,KSCERATO,Brazil,FURIA,1.14,132,1.111,+1.34,63
-2020,8565,HEN1,Brazil,FURIA,1.13,132,1.104,+1.21,62
-2020,7266,syrsoN,Germany,BIG,1.12,165,1.100,+1.14,61
-2020,4679,jks,Australia,Complexity,1.11,119,1.088,+0.92,59
-2020,10330,acoR,Denmark,MAD Lions,1.11,66,1.078,+0.74,57
-2020,9136,Brehze,United States,Evil Geniuses,1.10,117,1.081,+0.79,58
-2020,9078,k0nfig,Denmark,Complexity,1.10,134,1.082,+0.82,58
-2020,10981,mantuu,Poland,OG,1.10,156,1.084,+0.85,59
-2020,8520,NAF,Canada,Liquid,1.09,132,1.075,+0.69,57
-2020,7398,dupreeh,Denmark,Astralis,1.09,179,1.078,+0.74,57
-2020,10994,stavn,Denmark,HEROIC,1.09,143,1.076,+0.70,57
-2020,9031,valde,Denmark,OG,1.09,156,1.077,+0.72,57
-2020,11219,CeRq,Bulgaria,Evil Geniuses,1.09,117,1.074,+0.66,57
-2020,9032,Magisk,Denmark,Astralis,1.09,179,1.078,+0.74,57
-2020,7938,XANTARES,Türkiye,BIG,1.09,165,1.077,+0.73,57
-2020,13666,Brollan,Sweden,fnatic,1.09,147,1.076,+0.71,57
-2020,13776,Jame,Russia,Virtus.pro,1.08,66,1.061,+0.43,54
-2020,9612,Bubzkji,Denmark,MAD Lions|Astralis,1.08,79,1.063,+0.47,55
-2020,3972,huNter-,Bosnia and Herzegovina,G2,1.08,153,1.069,+0.58,56
-2020,695,allu,Finland,ENCE,1.08,96,1.065,+0.50,55
-2020,10671,Ethan,United States,Evil Geniuses,1.08,117,1.067,+0.54,55
-2020,8611,es3tag,Denmark,Astralis,1.08,71,1.062,+0.45,54
-2020,4954,Xyp9x,Denmark,Astralis,1.07,109,1.059,+0.40,54
-2020,9278,REZ,Sweden,Ninjas in Pyjamas,1.07,149,1.061,+0.44,54
-2020,2023,FalleN,Brazil,MIBR,1.07,73,1.056,+0.34,53
-2020,13670,nawwk,Sweden,Ninjas in Pyjamas,1.07,145,1.061,+0.44,54
-2020,7528,KRIMZ,Sweden,fnatic,1.07,147,1.061,+0.44,54
-2020,9960,frozen,Slovakia,MOUZ,1.07,138,1.061,+0.43,54
-2020,18053,broky,Latvia,FaZe,1.07,152,1.061,+0.44,54
-2020,1378,zehN,Finland,GODSENT,1.06,113,1.052,+0.28,53
-2020,5794,tabseN,Germany,BIG,1.06,165,1.054,+0.32,53
-2020,14614,oBo,United States,Complexity,1.06,92,1.051,+0.26,53
-2020,10264,niko,Denmark,HEROIC,1.06,125,1.053,+0.29,53
-2020,10394,Twistzz,Canada,Liquid,1.06,132,1.053,+0.30,53
-2020,7964,cadiaN,Denmark,HEROIC,1.06,143,1.054,+0.30,53
-2020,12018,TeSeS,Denmark,HEROIC,1.06,125,1.053,+0.29,53
-2020,14273,iDISBALANCE,Russia,Spirit,1.06,91,1.051,+0.26,53
-2020,13239,Qikert,Kazakhstan,Virtus.pro,1.05,66,1.044,+0.13,51
-2020,8248,jkaem,Norway,100 Thieves,1.05,90,1.045,+0.14,51
-2020,13300,Farlig,Denmark,GODSENT,1.05,70,1.044,+0.13,51
-2020,9618,nexa,Serbia,G2,1.05,153,1.046,+0.17,52
-2020,14218,Plopski,Sweden,Ninjas in Pyjamas,1.05,149,1.046,+0.17,52
-2020,14148,sjuush,Denmark,MAD Lions,1.05,66,1.044,+0.13,51
-2020,11777,Maden,Montenegro,GODSENT,1.05,113,1.045,+0.16,52
-2020,7167,kennyS,France,G2,1.05,153,1.046,+0.17,52
-2020,8574,woxic,Türkiye,MOUZ,1.04,75,1.038,+0.03,50
-2020,9216,coldzera,Brazil,FaZe,1.04,152,1.039,+0.04,50
-2020,1225,shox,France,Vitality,1.04,177,1.039,+0.04,50
-2020,12126,poizon,Bulgaria,Complexity,1.04,130,1.039,+0.04,50
-2020,8735,autimatic,United States,Gen.G,1.04,71,1.038,+0.02,50
-2020,9686,Gratisfaction,New Zealand,100 Thieves,1.04,90,1.038,+0.03,50
-2020,12521,arT,Brazil,FURIA,1.03,132,1.031,-0.09,49
-2020,6904,STYKO,Slovakia,GODSENT,1.03,113,1.032,-0.09,49
-2020,8564,fer,Brazil,MIBR,1.03,73,1.032,-0.08,49
-2020,9056,koosta,United States,Gen.G,1.03,71,1.032,-0.08,49
-2020,14419,roeJ,Denmark,MAD Lions,1.02,66,1.027,-0.18,48
-2020,5736,kNgV-,Brazil,MIBR,1.02,73,1.026,-0.19,48
-2020,7412,gla1ve,Denmark,Astralis,1.02,163,1.024,-0.23,48
-2020,10449,ISSAA,Jordan,OG,1.02,156,1.024,-0.23,48
-2020,8183,rain,Norway,FaZe,1.01,152,1.016,-0.37,46
-2020,11942,buster,Kazakhstan,Virtus.pro,1.01,66,1.021,-0.28,47
-2020,12731,sdy,Ukraine,Spirit,1.01,90,1.019,-0.32,47
-2020,7131,BnTeT,Indonesia,Gen.G,1.01,71,1.020,-0.29,47
-2020,8523,tarik,United States,Evil Geniuses,1.01,117,1.018,-0.34,47
-2020,3055,flusha,Sweden,fnatic,1.01,147,1.016,-0.36,46
-2020,7169,RpK,France,Vitality,1.00,186,1.007,-0.52,45
-2020,7322,apEX,France,Vitality,1.00,186,1.007,-0.52,45
-2020,18317,magixx,Russia,Spirit,1.00,91,1.013,-0.43,46
-2020,3849,JW,Sweden,fnatic,0.99,147,1.001,-0.63,44
-2020,9766,hampus,Sweden,Ninjas in Pyjamas,0.99,101,1.005,-0.57,44
-2020,12822,VINI,Brazil,FURIA,0.99,132,1.002,-0.61,44
-2020,7168,NBK-,France,OG,0.99,156,1.001,-0.64,44
-2020,9816,Aleksib,Finland,OG,0.99,156,1.001,-0.64,44
-2020,10588,Liazz,Australia,100 Thieves,0.98,90,1.000,-0.66,43
-2020,5796,tiziaN,Germany,BIG,0.98,165,0.993,-0.78,42
-2020,7716,chopper,Russia,Spirit,0.98,91,1.000,-0.66,43
-2020,14176,misutaaa,France,Vitality,0.98,160,0.993,-0.78,42
-2020,11840,Boombl4,Russia,Natus Vincere,0.98,168,0.993,-0.79,42
-2020,284,JACKZ,France,G2,0.98,133,0.995,-0.74,43
-2020,19015,Bymas,Lithuania,MOUZ|FaZe,0.98,95,0.999,-0.67,43
-2020,7443,twist,Sweden,Ninjas in Pyjamas,0.98,149,0.994,-0.77,42
-2020,16947,Perfecto,Russia,Natus Vincere,0.98,168,0.993,-0.79,42
-2020,14365,s0m,United States,Gen.G,0.98,71,1.003,-0.61,44
-2020,8797,Stewie2K,United States,Liquid,0.97,132,0.988,-0.87,41
-2020,9616,amanek,France,G2,0.97,142,0.987,-0.89,41
-2020,8082,AZR,Australia,100 Thieves,0.97,90,0.993,-0.78,42
-2020,8394,Kjaerbye,Denmark,FaZe,0.96,67,0.992,-0.80,42
-2020,7594,flamie,Russia,Natus Vincere,0.96,163,0.978,-1.06,39
-2020,8507,stanislaw,Canada,Evil Geniuses,0.96,117,0.983,-0.97,40
-2020,11916,sergej,Finland,ENCE,0.95,96,0.979,-1.03,40
-2020,12781,k1to,Germany,BIG,0.95,165,0.970,-1.20,38
-2020,5479,suNny,Finland,ENCE,0.95,96,0.979,-1.03,40
-2020,7805,RUSH,United States,Complexity,0.95,134,0.973,-1.14,39
-2020,4076,Aerial,Finland,ENCE,0.94,92,0.974,-1.13,39
-2020,9896,b0RUP,Denmark,HEROIC,0.93,143,0.957,-1.42,36
-2020,7687,nitr0,United States,Liquid,0.93,75,0.972,-1.16,38
-2020,11716,SANJI,Uzbekistan,Virtus.pro,0.91,66,0.964,-1.30,37
-2020,11110,Golden,Sweden,fnatic,0.91,147,0.942,-1.70,33
-2020,9217,TACO,Brazil,MIBR,0.90,73,0.955,-1.46,35
-2020,2730,chrisJ,Netherlands,MOUZ,0.89,138,0.929,-1.94,31
-2020,885,olofmeister,Sweden,FaZe,0.89,76,0.948,-1.60,34
-2020,429,karrigan,Denmark,MOUZ,0.88,138,0.921,-2.07,29
-2020,8521,daps,Canada,Gen.G,0.86,65,0.936,-1.80,32
-2020,7218,kRYSTAL,Germany,GODSENT,0.79,99,0.872,-2.95,21
-2021,7998,s1mple,Ukraine,Natus Vincere,1.34,176,1.271,+4.18,92
-2021,11893,ZywOo,France,Vitality,1.29,150,1.224,+3.37,84
-2021,16920,sh1ro,Russia,Gambit,1.22,197,1.181,+2.62,76
-2021,14419,roeJ,Denmark,Copenhagen Flames,1.20,42,1.106,+1.32,63
-2021,3741,NiKo,Bosnia and Herzegovina,G2,1.19,174,1.154,+2.15,72
-2021,8528,HObbit,Kazakhstan,Gambit,1.16,197,1.133,+1.79,68
-2021,16555,Ax1Le,Russia,Gambit,1.16,197,1.133,+1.79,68
-2021,11816,ropz,Estonia,MOUZ,1.15,114,1.112,+1.44,64
-2021,13776,Jame,Russia,Virtus.pro,1.14,162,1.113,+1.45,65
-2021,15631,KSCERATO,Brazil,FURIA,1.14,106,1.104,+1.29,63
-2021,13281,El1an,Russia,Entropiq,1.14,92,1.100,+1.23,62
-2021,7592,device,Denmark,Astralis,1.14,155,1.112,+1.44,64
-2021,8918,electroNic,Russia,Natus Vincere,1.13,176,1.107,+1.35,63
-2021,15165,blameF,Denmark,Astralis,1.13,143,1.103,+1.28,63
-2021,13915,YEKINDAR,Latvia,Virtus.pro,1.13,162,1.106,+1.32,63
-2021,18221,Spinx,Israel,ENCE,1.12,58,1.077,+0.82,58
-2021,9960,frozen,Slovakia,MOUZ,1.12,114,1.092,+1.08,61
-2021,10394,Twistzz,Canada,FaZe,1.12,129,1.094,+1.12,61
-2021,8520,NAF,Canada,Liquid,1.12,108,1.091,+1.06,61
-2021,8789,mir,Russia,Spirit,1.11,95,1.081,+0.90,59
-2021,12732,FL1T,Russia,Virtus.pro|FORZE,1.11,88,1.080,+0.87,59
-2021,3972,huNter-,Bosnia and Herzegovina,G2,1.10,174,1.084,+0.94,59
-2021,10981,mantuu,Poland,OG,1.10,101,1.076,+0.80,58
-2021,18987,b1t,Ukraine,Natus Vincere,1.09,149,1.074,+0.78,58
-2021,16693,flameZ,Israel,OG,1.09,66,1.063,+0.58,56
-2021,18053,broky,Latvia,FaZe,1.09,131,1.073,+0.75,57
-2021,17306,degster,Russia,Spirit,1.09,95,1.068,+0.67,57
-2021,12553,yuurih,Brazil,FURIA,1.08,106,1.063,+0.58,56
-2021,8738,EliGE,United States,Liquid,1.08,108,1.063,+0.59,56
-2021,7938,XANTARES,Türkiye,BIG,1.08,106,1.063,+0.58,56
-2021,9078,k0nfig,Denmark,Astralis,1.08,109,1.063,+0.59,56
-2021,13666,Brollan,Sweden,fnatic,1.07,70,1.052,+0.39,54
-2021,10994,stavn,Denmark,HEROIC,1.07,132,1.058,+0.50,55
-2021,9031,valde,Denmark,OG,1.07,101,1.056,+0.46,55
-2021,11777,Maden,Montenegro,FunPlus Phoenix,1.07,53,1.049,+0.34,53
-2021,16080,dycha,Poland,ENCE,1.07,58,1.050,+0.36,54
-2021,5794,tabseN,Germany,BIG,1.07,159,1.060,+0.53,55
-2021,6904,STYKO,Slovakia,FunPlus Phoenix,1.07,52,1.049,+0.34,53
-2021,18462,mezii,United Kingdom,fnatic|Cloud9,1.07,65,1.051,+0.38,54
-2021,13602,nicoodoz,Denmark,Copenhagen Flames,1.06,42,1.042,+0.22,52
-2021,13466,dennyslaw,Bulgaria,SKADE,1.06,42,1.042,+0.22,52
-2021,7266,syrsoN,Germany,BIG,1.06,159,1.052,+0.39,54
-2021,7964,cadiaN,Denmark,HEROIC,1.06,136,1.051,+0.38,54
-2021,12018,TeSeS,Denmark,HEROIC,1.06,136,1.051,+0.38,54
-2021,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,163,1.052,+0.40,54
-2021,15662,zorte,Russia,FORZE,1.06,65,1.046,+0.28,53
-2021,17956,jabbi,Denmark,Copenhagen Flames,1.05,42,1.037,+0.14,51
-2021,9766,hampus,Sweden,Ninjas in Pyjamas,1.05,163,1.045,+0.26,53
-2021,13300,Farlig,Denmark,FunPlus Phoenix,1.04,52,1.034,+0.07,51
-2021,16848,hades,Poland,ENCE,1.04,58,1.034,+0.08,51
-2021,7398,dupreeh,Denmark,Astralis,1.04,115,1.036,+0.12,51
-2021,7528,KRIMZ,Sweden,fnatic,1.04,70,1.035,+0.09,51
-2021,13982,Forester,Russia,Entropiq|EPG Family,1.04,94,1.035,+0.11,51
-2021,16921,nafany,Russia,Gambit,1.03,197,1.029,+0.00,50
-2021,16947,Perfecto,Russia,Natus Vincere,1.03,176,1.029,-0.00,50
-2021,12731,sdy,Ukraine,Spirit,1.03,97,1.029,-0.01,50
-2021,14148,sjuush,Denmark,HEROIC,1.03,123,1.029,-0.00,50
-2021,9032,Magisk,Denmark,Astralis,1.03,115,1.029,-0.01,50
-2021,11343,SHiPZ,Bulgaria,SKADE|Fiend,1.03,49,1.028,-0.02,50
-2021,12521,arT,Brazil,FURIA,1.02,106,1.022,-0.12,49
-2021,12126,poizon,Bulgaria,Complexity,1.02,107,1.022,-0.12,49
-2021,9136,Brehze,United States,Evil Geniuses,1.02,73,1.023,-0.11,49
-2021,13239,Qikert,Kazakhstan,Virtus.pro,1.02,162,1.022,-0.13,49
-2021,19015,Bymas,Lithuania,MOUZ,1.02,114,1.022,-0.13,49
-2021,12027,Krad,Russia,Entropiq|EPG Family,1.02,94,1.022,-0.12,49
-2021,11942,buster,Kazakhstan,Virtus.pro,1.01,162,1.014,-0.27,47
-2021,14176,misutaaa,France,Vitality,1.01,143,1.014,-0.26,47
-2021,10330,acoR,Denmark,MOUZ,1.01,114,1.015,-0.25,48
-2021,14614,oBo,United States,Evil Geniuses,1.01,42,1.019,-0.18,48
-2021,8183,rain,Norway,FaZe,1.01,131,1.015,-0.25,47
-2021,19236,KENSI,Russia,FORZE,1.01,65,1.017,-0.21,48
-2021,10610,refrezh,Denmark,HEROIC,1.01,123,1.015,-0.25,47
-2021,1378,zehN,Finland,FunPlus Phoenix,1.00,52,1.013,-0.28,47
-2021,10264,niko,Denmark,OG,1.00,89,1.010,-0.34,47
-2021,1225,shox,France,Vitality,1.00,148,1.007,-0.39,46
-2021,2023,FalleN,Brazil,Liquid,1.00,108,1.008,-0.36,46
-2021,4679,jks,Australia,Complexity,0.99,118,1.001,-0.49,45
-2021,18317,magixx,Russia,Spirit,0.99,97,1.003,-0.46,45
-2021,13157,Jerry,Russia,FORZE,0.99,65,1.006,-0.40,46
-2021,9616,amanek,France,G2,0.99,174,0.998,-0.54,45
-2021,7322,apEX,France,Vitality,0.99,147,0.999,-0.52,45
-2021,9216,coldzera,Brazil,FaZe,0.98,61,1.001,-0.49,45
-2021,14218,Plopski,Sweden,Ninjas in Pyjamas,0.98,163,0.991,-0.66,43
-2021,8184,ALEX,United Kingdom,fnatic|Cloud9,0.98,65,1.000,-0.50,45
-2021,8797,Stewie2K,United States,Liquid,0.98,108,0.995,-0.60,44
-2021,11840,Boombl4,Russia,Natus Vincere,0.98,176,0.990,-0.67,43
-2021,20090,Zyphon,Denmark,Copenhagen Flames,0.97,42,1.001,-0.49,45
-2021,9816,Aleksib,Finland,OG,0.97,101,0.989,-0.70,43
-2021,11219,CeRq,Bulgaria,Evil Geniuses,0.97,73,0.993,-0.63,44
-2021,9618,nexa,Serbia,G2,0.97,166,0.983,-0.80,42
-2021,12822,VINI,Brazil,FURIA,0.97,106,0.988,-0.71,43
-2021,17145,Rainwaker,Bulgaria,SKADE,0.97,42,1.001,-0.49,45
-2021,8611,es3tag,Denmark,Cloud9,0.96,88,0.984,-0.78,42
-2021,9612,Bubzkji,Denmark,Astralis,0.96,64,0.989,-0.69,43
-2021,11498,NickelBack,Russia,Entropiq|EPG Family,0.96,94,0.983,-0.80,42
-2021,7412,gla1ve,Denmark,Astralis,0.96,122,0.979,-0.86,41
-2021,13669,Jackinho,Sweden,fnatic,0.96,46,0.995,-0.60,44
-2021,13578,Grim,United States,Liquid,0.95,108,0.974,-0.95,40
-2021,16410,Duplicate,Bulgaria,SKADE,0.95,42,0.992,-0.65,43
-2021,4954,Xyp9x,Denmark,Astralis,0.95,129,0.971,-1.00,40
-2021,9115,dexter,Australia,MOUZ,0.95,106,0.975,-0.95,41
-2021,922,Snappi,Denmark,ENCE,0.95,57,0.986,-0.75,42
-2021,11654,almazer,Russia,FORZE,0.94,63,0.978,-0.88,41
-2021,7716,chopper,Russia,Spirit,0.94,94,0.970,-1.02,40
-2021,15071,interz,Russia,Gambit,0.94,197,0.958,-1.24,38
-2021,12781,k1to,Germany,BIG,0.94,159,0.961,-1.19,38
-2021,9819,doto,Finland,ENCE,0.94,58,0.980,-0.85,41
-2021,885,olofmeister,Sweden,FaZe,0.94,101,0.969,-1.05,40
-2021,13843,Lucky,Denmark,Astralis,0.93,62,0.973,-0.97,40
-2021,13240,Lack1,Kazakhstan,Entropiq|EPG Family,0.93,94,0.964,-1.14,39
-2021,8523,tarik,United States,Evil Geniuses,0.93,42,0.983,-0.81,42
-2021,284,JACKZ,France,G2,0.92,150,0.947,-1.43,36
-2021,19310,LNZ,Sweden,Ninjas in Pyjamas,0.91,79,0.955,-1.28,37
-2021,429,karrigan,Denmark,FaZe,0.91,126,0.943,-1.49,35
-2021,8875,gade,Denmark,BIG,0.91,53,0.967,-1.08,39
-2021,19672,Kyojin,France,Vitality,0.91,119,0.945,-1.47,35
-2021,11716,SANJI,Uzbekistan,Virtus.pro,0.91,137,0.941,-1.52,35
-2021,5796,tiziaN,Germany,BIG,0.90,159,0.930,-1.71,33
-2021,14494,junior,United States,FURIA,0.89,53,0.956,-1.26,37
-2021,7805,RUSH,United States,Complexity,0.89,84,0.941,-1.53,35
-2021,10096,HooXi,Denmark,Copenhagen Flames,0.88,42,0.960,-1.20,38
-2021,8507,stanislaw,Canada,Evil Geniuses,0.87,62,0.940,-1.55,35
-2021,16486,ztr,Sweden,Ninjas in Pyjamas,0.86,49,0.944,-1.47,35
-2022,16920,sh1ro,Russia,Cloud9|Gambit|Players,1.26,103,1.184,+2.75,78
-2022,7998,s1mple,Ukraine,Natus Vincere,1.26,116,1.190,+2.86,79
-2022,11893,ZywOo,France,Vitality,1.24,131,1.181,+2.70,77
-2022,15165,blameF,Denmark,Astralis,1.21,136,1.161,+2.34,73
-2022,16555,Ax1Le,Russia,Cloud9|Gambit|Players,1.21,103,1.151,+2.15,71
-2022,3741,NiKo,Bosnia and Herzegovina,G2,1.20,116,1.148,+2.11,71
-2022,10994,stavn,Denmark,HEROIC,1.16,120,1.121,+1.62,66
-2022,17306,degster,Russia,OG,1.15,57,1.093,+1.12,61
-2022,19230,m0NESY,Russia,G2,1.15,116,1.113,+1.48,65
-2022,9960,frozen,Slovakia,MOUZ,1.15,118,1.114,+1.49,65
-2022,15631,KSCERATO,Brazil,FURIA,1.14,89,1.100,+1.24,62
-2022,19164,SunPayus,Spain,ENCE|Movistar Riders,1.14,89,1.100,+1.24,62
-2022,13915,YEKINDAR,Latvia,Liquid|Outsiders|Virtus.pro,1.14,111,1.105,+1.34,63
-2022,18053,broky,Latvia,FaZe,1.13,148,1.104,+1.32,63
-2022,19673,Patsi,Russia,Spirit,1.13,60,1.084,+0.95,60
-2022,20127,w0nderful,Ukraine,Spirit,1.13,44,1.076,+0.81,58
-2022,11816,ropz,Estonia,FaZe,1.12,144,1.096,+1.18,62
-2022,12553,yuurih,Brazil,FURIA,1.12,89,1.087,+1.01,60
-2022,11954,FASHR,Netherlands,fnatic|ECSTATIC,1.12,57,1.077,+0.84,58
-2022,10394,Twistzz,Canada,FaZe,1.11,148,1.089,+1.06,61
-2022,3972,huNter-,Bosnia and Herzegovina,G2,1.11,116,1.085,+0.98,60
-2022,8528,HObbit,Kazakhstan,Cloud9|Gambit|Players,1.10,103,1.077,+0.83,58
-2022,7266,syrsoN,Germany,BIG,1.10,115,1.078,+0.86,59
-2022,13776,Jame,Russia,Outsiders|Virtus.pro,1.10,97,1.076,+0.81,58
-2022,16693,flameZ,Israel,OG,1.09,68,1.064,+0.60,56
-2022,18221,Spinx,Israel,Vitality|ENCE,1.09,149,1.074,+0.79,58
-2022,8520,NAF,Canada,Liquid,1.09,106,1.070,+0.71,57
-2022,8738,EliGE,United States,Liquid,1.09,106,1.070,+0.71,57
-2022,16080,dycha,Poland,ENCE,1.08,135,1.066,+0.64,56
-2022,8918,electroNic,Russia,Natus Vincere,1.08,118,1.065,+0.61,56
-2022,18987,b1t,Ukraine,Natus Vincere,1.08,118,1.065,+0.61,56
-2022,12732,FL1T,Russia,Outsiders|Virtus.pro,1.08,97,1.062,+0.57,56
-2022,8183,rain,Norway,FaZe,1.08,141,1.066,+0.65,56
-2022,13982,Forester,Russia,Entropiq,1.07,55,1.050,+0.35,54
-2022,9278,REZ,Sweden,Ninjas in Pyjamas,1.07,113,1.057,+0.48,55
-2022,12018,TeSeS,Denmark,HEROIC,1.07,126,1.058,+0.50,55
-2022,7964,cadiaN,Denmark,HEROIC,1.06,126,1.051,+0.37,54
-2022,15662,zorte,Russia,FORZE,1.06,52,1.044,+0.25,53
-2022,20101,fame,Russia,Outsiders,1.06,89,1.049,+0.33,53
-2022,14419,roeJ,Denmark,fnatic|Copenhagen Flames,1.06,90,1.049,+0.33,53
-2022,13578,Grim,United States,Complexity,1.06,42,1.043,+0.22,52
-2022,18072,torzsi,Hungary,MOUZ,1.06,118,1.051,+0.36,54
-2022,9078,k0nfig,Denmark,Astralis,1.06,124,1.051,+0.37,54
-2022,12713,floppy,United States,Complexity,1.06,42,1.043,+0.22,52
-2022,13666,Brollan,Sweden,fnatic,1.05,94,1.042,+0.22,52
-2022,20312,xertioN,Israel,MOUZ,1.05,42,1.038,+0.14,51
-2022,13602,nicoodoz,Denmark,fnatic|Copenhagen Flames,1.05,90,1.042,+0.21,52
-2022,8371,alex,Spain,Movistar Riders,1.05,70,1.041,+0.19,52
-2022,8564,fer,Brazil,Imperial,1.05,46,1.039,+0.15,51
-2022,5794,tabseN,Germany,BIG,1.04,122,1.037,+0.11,51
-2022,14148,sjuush,Denmark,HEROIC,1.04,126,1.037,+0.11,51
-2022,9032,Magisk,Denmark,Vitality,1.04,131,1.037,+0.12,51
-2022,13249,oSee,United States,Liquid,1.04,106,1.036,+0.11,51
-2022,16848,hades,Poland,ENCE,1.04,103,1.036,+0.10,51
-2022,16947,Perfecto,Russia,Natus Vincere,1.04,118,1.036,+0.11,51
-2022,17011,shalfey,Russia,FORZE,1.03,52,1.029,-0.02,50
-2022,19015,Bymas,Lithuania,MOUZ,1.03,63,1.029,-0.02,50
-2022,18317,magixx,Russia,Spirit,1.03,60,1.029,-0.02,50
-2022,17956,jabbi,Denmark,Copenhagen Flames,1.03,127,1.029,-0.01,50
-2022,4679,jks,Australia,G2|FaZe,1.03,50,1.029,-0.02,50
-2022,18462,mezii,United Kingdom,fnatic,1.03,74,1.029,-0.02,50
-2022,13281,El1an,Russia,Entropiq,1.02,55,1.024,-0.11,49
-2022,14932,faveN,Germany,BIG,1.02,89,1.023,-0.13,49
-2022,8568,boltz,Brazil,Imperial,1.01,46,1.019,-0.19,48
-2022,12521,arT,Brazil,FURIA,1.01,89,1.017,-0.25,48
-2022,9031,valde,Denmark,ENCE|OG,1.01,48,1.019,-0.20,48
-2022,19236,KENSI,Russia,FORZE,1.01,52,1.019,-0.20,48
-2022,16612,n0rb3r7,Russia,Outsiders,1.00,89,1.010,-0.36,46
-2022,11498,NickelBack,Russia,Entropiq,1.00,55,1.013,-0.30,47
-2022,9766,hampus,Sweden,Ninjas in Pyjamas,1.00,105,1.009,-0.38,46
-2022,7398,dupreeh,Denmark,Vitality,1.00,131,1.008,-0.40,46
-2022,18835,saffee,Brazil,FURIA,1.00,89,1.010,-0.36,46
-2022,18506,S1ren,Russia,Spirit,1.00,60,1.013,-0.31,47
-2022,20090,Zyphon,Denmark,Sprout|Copenhagen Flames,1.00,68,1.012,-0.33,47
-2022,11777,Maden,Montenegro,ENCE,1.00,134,1.008,-0.40,46
-2022,20304,Staehr,Denmark,Sprout,0.99,41,1.011,-0.34,47
-2022,2023,FalleN,Brazil,Imperial,0.99,46,1.010,-0.36,46
-2022,15821,NEOFRAG,Czech Republic,OG,0.98,52,1.004,-0.48,45
-2022,9254,mopoz,Spain,Movistar Riders,0.98,70,1.000,-0.54,45
-2022,7716,chopper,Russia,Spirit,0.98,60,1.002,-0.51,45
-2022,15071,interz,Russia,Cloud9|Gambit|Players,0.98,103,0.996,-0.62,44
-2022,12731,sdy,Ukraine,Natus Vincere,0.98,72,1.000,-0.55,45
-2022,17372,FaNg,Canada,Complexity,0.98,42,1.006,-0.43,46
-2022,14929,JDC,Germany,MOUZ,0.97,108,0.988,-0.75,43
-2022,11840,Boombl4,Russia,Natus Vincere,0.97,43,1.001,-0.52,45
-2022,7528,KRIMZ,Sweden,fnatic,0.97,57,0.997,-0.59,44
-2022,19899,Krimbo,Germany,BIG,0.96,88,0.985,-0.81,42
-2022,19882,Norwi,Russia,FORZE,0.96,52,0.993,-0.66,43
-2022,13240,Lack1,Kazakhstan,Entropiq,0.96,47,0.995,-0.63,44
-2022,13300,Farlig,Denmark,Astralis,0.96,98,0.983,-0.84,42
-2022,9618,nexa,Serbia,OG,0.96,68,0.989,-0.74,43
-2022,13239,Qikert,Kazakhstan,Outsiders|Virtus.pro,0.95,97,0.977,-0.96,40
-2022,13157,Jerry,Russia,FORZE,0.95,52,0.988,-0.75,43
-2022,14218,Plopski,Sweden,Ninjas in Pyjamas,0.95,94,0.977,-0.95,41
-2022,10610,refrezh,Denmark,Sprout,0.95,67,0.983,-0.84,42
-2022,284,JACKZ,France,G2,0.95,77,0.981,-0.88,41
-2022,12781,k1to,Germany,BIG,0.95,84,0.979,-0.91,41
-2022,4954,Xyp9x,Denmark,Astralis,0.95,136,0.971,-1.06,39
-2022,16921,nafany,Russia,Cloud9|Gambit|Players,0.94,103,0.969,-1.10,39
-2022,19044,F1KU,Poland,OG,0.94,52,0.983,-0.84,42
-2022,12027,Krad,Russia,Entropiq,0.94,55,0.982,-0.86,41
-2022,9816,Aleksib,Finland,G2,0.94,91,0.971,-1.05,39
-2022,7412,gla1ve,Denmark,Astralis,0.93,135,0.957,-1.32,37
-2022,19750,drop,Brazil,FURIA,0.93,89,0.965,-1.16,38
-2022,12822,VINI,Brazil,Imperial,0.93,46,0.981,-0.88,41
-2022,8611,es3tag,Denmark,Ninjas in Pyjamas,0.93,113,0.960,-1.25,37
-2022,922,Snappi,Denmark,ENCE,0.93,135,0.957,-1.32,37
-2022,5796,tiziaN,Germany,BIG,0.92,90,0.959,-1.28,37
-2022,9115,dexter,Australia,MOUZ,0.92,118,0.952,-1.39,36
-2022,13093,DeathZz,Spain,Movistar Riders,0.92,70,0.965,-1.16,38
-2022,15370,slaxz-,Germany,Sprout,0.92,41,0.979,-0.91,41
-2022,429,karrigan,Denmark,FaZe,0.91,148,0.940,-1.62,34
-2022,14176,misutaaa,France,Vitality,0.90,74,0.952,-1.40,36
-2022,7322,apEX,France,Vitality,0.90,131,0.935,-1.69,33
-2022,19509,dav1g,Spain,Movistar Riders,0.90,70,0.953,-1.37,36
-2022,7687,nitr0,United States,Liquid,0.89,106,0.934,-1.71,33
-2022,10096,HooXi,Denmark,G2|Copenhagen Flames,0.82,92,0.893,-2.45,26
-2022,11630,JT,South Africa,Complexity,0.81,42,0.929,-1.82,32
-2023,11893,ZywOo,France,Vitality,1.28,118,1.207,+3.11,81
-2023,7592,device,Denmark,Astralis,1.21,110,1.155,+2.16,72
-2023,16920,sh1ro,Russia,Cloud9,1.20,124,1.153,+2.11,71
-2023,7938,XANTARES,Türkiye,Eternal Fire,1.20,68,1.130,+1.70,67
-2023,3741,NiKo,Bosnia and Herzegovina,G2,1.19,113,1.143,+1.93,69
-2023,9960,frozen,Slovakia,MOUZ,1.19,112,1.142,+1.92,69
-2023,15165,blameF,Denmark,Astralis,1.18,110,1.135,+1.79,68
-2023,7998,s1mple,Ukraine,Natus Vincere,1.18,90,1.128,+1.67,67
-2023,18221,Spinx,Israel,Vitality,1.17,118,1.130,+1.70,67
-2023,19230,m0NESY,Russia,G2,1.17,113,1.129,+1.67,67
-2023,15662,zorte,Russia,BETBOOM|FORZE,1.16,61,1.104,+1.22,62
-2023,11816,ropz,Estonia,FaZe,1.16,162,1.131,+1.71,67
-2023,13776,Jame,Russia,Virtus.pro|Outsiders,1.16,111,1.121,+1.54,65
-2023,19164,SunPayus,Spain,ENCE,1.13,123,1.103,+1.20,62
-2023,15631,KSCERATO,Brazil,FURIA,1.13,98,1.098,+1.11,61
-2023,18053,broky,Latvia,FaZe,1.12,162,1.100,+1.15,62
-2023,12732,FL1T,Russia,Virtus.pro|Outsiders,1.12,111,1.094,+1.03,60
-2023,19899,Krimbo,Germany,BIG,1.12,116,1.095,+1.05,60
-2023,10994,stavn,Denmark,HEROIC,1.12,103,1.092,+1.01,60
-2023,16555,Ax1Le,Russia,Cloud9,1.11,146,1.091,+0.98,60
-2023,17306,degster,Russia,OG,1.11,61,1.076,+0.72,57
-2023,8248,jkaem,Norway,Apeks,1.10,94,1.078,+0.74,57
-2023,8738,EliGE,United States,Liquid,1.09,120,1.074,+0.67,57
-2023,18850,Jimpphat,Finland,MOUZ,1.09,54,1.064,+0.49,55
-2023,9032,Magisk,Denmark,Vitality,1.09,100,1.072,+0.63,56
-2023,13670,nawwk,Sweden,Apeks,1.09,94,1.071,+0.62,56
-2023,17956,jabbi,Denmark,HEROIC,1.09,102,1.072,+0.64,56
-2023,18072,torzsi,Hungary,MOUZ,1.08,111,1.066,+0.53,55
-2023,12731,sdy,Ukraine,Monte,1.08,80,1.063,+0.47,55
-2023,8918,electroNic,Russia,Cloud9|Natus Vincere,1.08,130,1.068,+0.56,56
-2023,20127,w0nderful,Ukraine,Natus Vincere,1.08,52,1.058,+0.38,54
-2023,9436,NertZ,Israel,ENCE,1.08,106,1.066,+0.52,55
-2023,20312,xertioN,Israel,MOUZ,1.08,111,1.066,+0.53,55
-2023,10394,Twistzz,Canada,FaZe,1.08,155,1.069,+0.58,56
-2023,16848,hades,Poland,9INE,1.07,65,1.055,+0.33,53
-2023,7964,cadiaN,Denmark,HEROIC,1.07,100,1.058,+0.39,54
-2023,18987,b1t,Ukraine,Natus Vincere,1.07,113,1.059,+0.41,54
-2023,18462,mezii,United Kingdom,fnatic,1.07,113,1.059,+0.41,54
-2023,3972,huNter-,Bosnia and Herzegovina,G2,1.06,113,1.052,+0.28,53
-2023,19284,prosus,Germany,BIG,1.06,50,1.048,+0.19,52
-2023,5794,tabseN,Germany,BIG,1.06,116,1.053,+0.28,53
-2023,8520,NAF,Canada,Liquid,1.06,81,1.051,+0.25,52
-2023,12553,yuurih,Brazil,FURIA,1.06,98,1.052,+0.27,53
-2023,19592,headtr1ck,Ukraine,Ninjas in Pyjamas,1.06,114,1.053,+0.28,53
-2023,14759,iM,Romania,Natus Vincere|GamerLegion,1.06,83,1.051,+0.25,52
-2023,16885,Woro2k,Ukraine,Monte,1.06,80,1.051,+0.25,52
-2023,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,114,1.053,+0.28,53
-2023,16612,n0rb3r7,Russia,Virtus.pro,1.06,73,1.050,+0.24,52
-2023,8183,rain,Norway,FaZe,1.05,155,1.046,+0.17,52
-2023,16693,flameZ,Israel,OG,1.05,122,1.046,+0.16,52
-2023,20101,fame,Russia,Virtus.pro|Outsiders,1.05,111,1.045,+0.15,52
-2023,13602,nicoodoz,Denmark,fnatic,1.05,52,1.043,+0.10,51
-2023,18790,CacaNito,North Macedonia,Apeks,1.04,56,1.038,+0.01,50
-2023,8528,HObbit,Kazakhstan,Cloud9,1.04,156,1.039,+0.03,50
-2023,18317,magixx,Russia,Spirit,1.04,82,1.038,+0.02,50
-2023,12840,hallzerk,Norway,Complexity,1.04,103,1.039,+0.02,50
-2023,19206,jL,Lithuania,Natus Vincere|Apeks,1.04,96,1.038,+0.02,50
-2023,14148,sjuush,Denmark,HEROIC,1.04,108,1.039,+0.03,50
-2023,19733,DemQQ,Ukraine,Monte,1.04,80,1.038,+0.02,50
-2023,4679,jks,Australia,G2,1.04,105,1.039,+0.03,50
-2023,17504,KEi,Poland,9INE,1.03,65,1.032,-0.09,49
-2023,8789,mir,Russia,Virtus.pro,1.03,81,1.032,-0.09,49
-2023,12018,TeSeS,Denmark,HEROIC,1.03,108,1.032,-0.10,49
-2023,7398,dupreeh,Denmark,HEROIC,1.03,72,1.032,-0.09,49
-2023,12713,floppy,United States,Complexity,1.03,107,1.032,-0.10,49
-2023,16717,br0,Denmark,Monte,1.03,62,1.032,-0.09,49
-2023,13578,Grim,United States,Complexity,1.03,107,1.032,-0.10,49
-2023,13249,oSee,United States,Liquid,1.03,81,1.032,-0.09,49
-2023,16080,dycha,Poland,ENCE,1.03,114,1.032,-0.10,49
-2023,16947,Perfecto,Russia,Cloud9|Natus Vincere,1.02,130,1.024,-0.24,48
-2023,10330,acoR,Denmark,GamerLegion,1.02,73,1.026,-0.20,48
-2023,13915,YEKINDAR,Latvia,Liquid,1.02,81,1.026,-0.21,48
-2023,9078,k0nfig,Denmark,Ninjas in Pyjamas,1.02,103,1.025,-0.22,48
-2023,14932,faveN,Germany,BIG,1.01,66,1.021,-0.30,47
-2023,12781,k1to,Germany,BIG,1.01,69,1.021,-0.30,47
-2023,20282,kRaSnaL,Poland,Monte,1.01,80,1.020,-0.32,47
-2023,20358,volt,Romania,GamerLegion|Into the Breach,1.00,72,1.015,-0.41,46
-2023,13666,Brollan,Sweden,Ninjas in Pyjamas,1.00,106,1.011,-0.47,45
-2023,18506,S1ren,Russia,BETBOOM,1.00,59,1.016,-0.38,46
-2023,18835,saffee,Brazil,FURIA,1.00,67,1.015,-0.40,46
-2023,15428,Goofy,Poland,9INE,1.00,65,1.015,-0.40,46
-2023,8575,Calyx,Türkiye,Eternal Fire,1.00,68,1.015,-0.40,46
-2023,7528,KRIMZ,Sweden,fnatic,0.99,94,1.006,-0.57,44
-2023,21468,hyped,Germany,BIG,0.99,51,1.013,-0.45,45
-2023,11777,Maden,Montenegro,ENCE,0.99,123,1.003,-0.62,44
-2023,20304,Staehr,Denmark,Astralis|Sprout,0.99,56,1.011,-0.47,45
-2023,10566,chelo,Brazil,FURIA|Imperial,0.98,69,1.003,-0.62,44
-2023,19114,Kylar,Poland,9INE,0.98,65,1.004,-0.60,44
-2023,14419,roeJ,Denmark,fnatic,0.98,95,0.999,-0.70,43
-2023,19677,kyxsan,North Macedonia,Apeks,0.98,94,0.999,-0.69,43
-2023,2023,FalleN,Brazil,FURIA|Imperial,0.97,69,0.998,-0.72,43
-2023,19673,Patsi,Russia,Liquid,0.97,65,0.998,-0.71,43
-2023,17937,isak,Sweden,GamerLegion,0.97,73,0.997,-0.74,43
-2023,16820,siuhy,Poland,MOUZ|GamerLegion,0.96,87,0.988,-0.91,41
-2023,12521,arT,Brazil,FURIA,0.96,98,0.985,-0.94,41
-2023,20941,Buzz,Denmark,Astralis,0.95,105,0.978,-1.09,39
-2023,15821,NEOFRAG,Czech Republic,OG,0.95,74,0.984,-0.96,40
-2023,11942,buster,Kazakhstan,Cloud9,0.95,93,0.980,-1.05,40
-2023,9816,Aleksib,Finland,Natus Vincere,0.94,128,0.967,-1.29,37
-2023,7716,chopper,Russia,Spirit,0.94,82,0.976,-1.12,39
-2023,7412,gla1ve,Denmark,ENCE|Astralis,0.94,72,0.979,-1.06,39
-2023,19044,F1KU,Poland,OG,0.94,72,0.979,-1.06,39
-2023,7322,apEX,France,Vitality,0.94,118,0.968,-1.26,37
-2023,11954,FASHR,Netherlands,fnatic,0.93,52,0.982,-1.01,40
-2023,6904,STYKO,Slovakia,Apeks,0.93,57,0.979,-1.06,39
-2023,16921,nafany,Russia,BETBOOM|Cloud9,0.93,105,0.964,-1.34,37
-2023,21708,npl,Ukraine,Natus Vincere,0.92,55,0.975,-1.14,39
-2023,150,MAJ3R,Türkiye,Eternal Fire,0.91,68,0.963,-1.35,36
-2023,922,Snappi,Denmark,ENCE,0.91,112,0.949,-1.62,34
-2023,7687,nitr0,United States,Liquid,0.91,52,0.972,-1.20,38
-2023,15117,Keoz,Belgium,GamerLegion,0.91,73,0.961,-1.39,36
-2023,4829,mynio,Poland,9INE,0.90,65,0.959,-1.43,36
-2023,19750,drop,Brazil,FURIA,0.88,67,0.946,-1.66,33
-2023,429,karrigan,Denmark,FaZe,0.88,162,0.917,-2.20,28
-2023,11630,JT,South Africa,Complexity,0.88,107,0.930,-1.97,30
-2023,9115,dexter,Australia,MOUZ|fnatic,0.87,92,0.928,-1.99,30
-2023,10096,HooXi,Denmark,G2,0.83,113,0.893,-2.64,24
-2024,11893,ZywOo,France,Vitality,1.36,132,1.267,+3.89,89
-2024,21167,donk,Russia,Spirit,1.33,134,1.246,+3.56,86
-2024,19230,m0NESY,Russia,G2,1.30,156,1.232,+3.34,83
-2024,3741,NiKo,Bosnia and Herzegovina,G2,1.19,159,1.150,+2.01,70
-2024,16920,sh1ro,Russia,Spirit,1.16,136,1.123,+1.58,66
-2024,15631,KSCERATO,Brazil,FURIA,1.16,101,1.114,+1.44,64
-2024,7938,XANTARES,Türkiye,Eternal Fire,1.15,122,1.113,+1.42,64
-2024,18987,b1t,Ukraine,Natus Vincere,1.15,159,1.119,+1.53,65
-2024,21037,insani,Brazil,MIBR,1.14,88,1.097,+1.17,62
-2024,18850,Jimpphat,Finland,MOUZ,1.14,134,1.108,+1.34,63
-2024,19206,jL,Lithuania,Natus Vincere,1.14,159,1.112,+1.41,64
-2024,10394,Twistzz,Canada,Liquid,1.14,104,1.101,+1.24,62
-2024,8738,EliGE,United States,Complexity,1.13,102,1.094,+1.13,61
-2024,9960,frozen,Slovakia,FaZe,1.12,162,1.097,+1.17,62
-2024,20127,w0nderful,Ukraine,Natus Vincere,1.12,159,1.096,+1.16,62
-2024,11617,malbsMd,Guatemala,G2,1.12,83,1.083,+0.95,59
-2024,18221,Spinx,Israel,Vitality,1.10,132,1.078,+0.87,59
-2024,20312,xertioN,Israel,MOUZ,1.10,134,1.079,+0.88,59
-2024,8520,NAF,Canada,Liquid,1.10,104,1.074,+0.81,58
-2024,16693,flameZ,Israel,Vitality,1.10,132,1.078,+0.87,59
-2024,11816,ropz,Estonia,FaZe,1.09,162,1.074,+0.80,58
-2024,20464,ewjerkz,Portugal,SAW,1.08,62,1.054,+0.48,55
-2024,9436,NertZ,Israel,HEROIC,1.08,137,1.064,+0.65,56
-2024,20903,Senzu,Mongolia,The MongolZ,1.08,103,1.061,+0.59,56
-2024,18053,broky,Latvia,FaZe,1.08,162,1.066,+0.68,57
-2024,19899,Krimbo,Germany,BIG,1.07,90,1.053,+0.46,55
-2024,13666,Brollan,Sweden,MOUZ,1.07,134,1.057,+0.53,55
-2024,17956,jabbi,Denmark,Astralis,1.06,106,1.048,+0.38,54
-2024,21239,MartinezSa,Spain,9z,1.06,52,1.041,+0.28,53
-2024,10994,stavn,Denmark,Astralis,1.06,106,1.048,+0.38,54
-2024,20423,zont1x,Ukraine,Spirit,1.06,136,1.050,+0.41,54
-2024,18141,biguzera,Brazil,paiN,1.06,115,1.048,+0.39,54
-2024,20465,arrozdoce,Portugal,SAW,1.06,50,1.041,+0.27,53
-2024,11154,exit,Brazil,MIBR,1.06,88,1.046,+0.35,54
-2024,12840,hallzerk,Norway,Complexity,1.05,102,1.041,+0.27,53
-2024,19164,SunPayus,Spain,Falcons,1.05,98,1.040,+0.26,53
-2024,18072,torzsi,Hungary,MOUZ,1.05,134,1.042,+0.29,53
-2024,12018,TeSeS,Denmark,HEROIC,1.05,137,1.042,+0.30,53
-2024,14929,JDC,Germany,BIG,1.05,70,1.038,+0.23,52
-2024,14736,dgt,Uruguay,9z,1.05,52,1.036,+0.19,52
-2024,8574,woxic,Türkiye,Eternal Fire,1.04,122,1.035,+0.17,52
-2024,14759,iM,Romania,Natus Vincere,1.04,159,1.036,+0.19,52
-2024,21243,Wicadia,Türkiye,Eternal Fire,1.04,122,1.035,+0.17,52
-2024,20101,fame,Russia,Virtus.pro,1.03,132,1.028,+0.06,51
-2024,4679,jks,Australia,Liquid,1.03,66,1.026,+0.04,50
-2024,17306,degster,Russia,HEROIC,1.03,72,1.026,+0.04,50
-2024,20275,Techno,Mongolia,The MongolZ,1.03,103,1.027,+0.05,51
-2024,18835,saffee,Brazil,MIBR,1.03,88,1.027,+0.05,50
-2024,12553,yuurih,Brazil,FURIA,1.03,101,1.027,+0.05,51
-2024,20304,Staehr,Denmark,Astralis,1.03,106,1.027,+0.05,51
-2024,20563,lux,Brazil,paiN,1.03,115,1.027,+0.06,51
-2024,8918,electroNic,Russia,Virtus.pro|Cloud9,1.02,133,1.020,-0.06,49
-2024,20194,bLitz,Mongolia,The MongolZ,1.02,103,1.020,-0.06,49
-2024,18462,mezii,United Kingdom,Vitality,1.02,122,1.020,-0.06,49
-2024,21763,ultimate,Poland,Liquid,1.02,66,1.021,-0.05,49
-2024,7592,device,Denmark,Astralis,1.02,100,1.020,-0.06,49
-2024,21809,910,Mongolia,The MongolZ,1.02,103,1.020,-0.06,49
-2024,8183,rain,Norway,FaZe,1.01,162,1.013,-0.18,48
-2024,21001,mzinho,Mongolia,The MongolZ,1.01,103,1.014,-0.16,48
-2024,14148,sjuush,Denmark,HEROIC,1.01,137,1.013,-0.17,48
-2024,8575,Calyx,Türkiye,Eternal Fire,1.01,122,1.013,-0.17,48
-2024,19694,nqz,Brazil,paiN,1.01,115,1.013,-0.17,48
-2024,15662,zorte,Russia,BETBOOM,1.00,53,1.010,-0.22,48
-2024,8565,HEN1,Brazil,Imperial,1.00,58,1.010,-0.22,48
-2024,20183,decenty,Brazil,Imperial,1.00,84,1.008,-0.26,47
-2024,12732,FL1T,Russia,Virtus.pro,1.00,132,1.006,-0.29,47
-2024,13578,Grim,United States,Complexity,1.00,102,1.007,-0.27,47
-2024,9219,felps,Brazil,Imperial,1.00,84,1.008,-0.26,47
-2024,13776,Jame,Russia,Virtus.pro,1.00,132,1.006,-0.29,47
-2024,18506,S1ren,Russia,BETBOOM,1.00,53,1.010,-0.22,48
-2024,9032,Magisk,Denmark,Falcons,1.00,105,1.007,-0.27,47
-2024,16717,br0,Denmark,Astralis|Monte,0.99,77,1.002,-0.35,47
-2024,18317,magixx,Russia,Spirit,0.99,134,0.999,-0.41,46
-2024,20462,story,Portugal,SAW,0.99,62,1.004,-0.32,47
-2024,5794,tabseN,Germany,BIG,0.99,90,1.001,-0.36,46
-2024,3972,huNter-,Bosnia and Herzegovina,G2,0.98,159,0.990,-0.54,45
-2024,16612,n0rb3r7,Russia,Virtus.pro,0.98,132,0.991,-0.52,45
-2024,22613,HUASOPEEK,Chile,9z,0.98,52,1.000,-0.38,46
-2024,19920,KaiR0N-,Russia,BETBOOM,0.97,53,0.995,-0.46,45
-2024,20171,snow,Brazil,paiN,0.97,70,0.991,-0.52,45
-2024,11777,Maden,Montenegro,Falcons,0.97,105,0.987,-0.60,44
-2024,7266,syrsoN,Germany,BIG,0.97,70,0.991,-0.52,45
-2024,19750,drop,Brazil,MIBR,0.97,88,0.989,-0.57,44
-2024,18676,skullz,Brazil,FURIA|Liquid,0.97,104,0.987,-0.60,44
-2024,22564,noway,Brazil,Imperial,0.96,84,0.983,-0.66,43
-2024,13602,nicoodoz,Denmark,HEROIC,0.96,59,0.988,-0.57,44
-2024,13915,YEKINDAR,Latvia,Liquid,0.96,104,0.980,-0.70,43
-2024,12713,floppy,United States,Complexity,0.96,102,0.980,-0.70,43
-2024,19677,kyxsan,North Macedonia,HEROIC,0.96,137,0.976,-0.76,42
-2024,12092,max,Uruguay,9z,0.95,52,0.985,-0.62,44
-2024,20085,kauez,Brazil,paiN,0.95,115,0.972,-0.84,42
-2024,9618,nexa,Serbia,G2,0.95,76,0.978,-0.73,43
-2024,2023,FalleN,Brazil,FURIA,0.94,101,0.967,-0.91,41
-2024,7398,dupreeh,Denmark,Falcons,0.94,86,0.970,-0.86,41
-2024,16820,siuhy,Poland,MOUZ,0.94,134,0.962,-0.99,40
-2024,17937,isak,Sweden,GamerLegion,0.94,64,0.976,-0.77,42
-2024,7716,chopper,Russia,Spirit,0.94,136,0.962,-0.99,40
-2024,2241,roman,Portugal,SAW,0.94,62,0.976,-0.76,42
-2024,20987,brnz4n,Brazil,MIBR,0.93,62,0.971,-0.85,41
-2024,150,MAJ3R,Türkiye,Eternal Fire,0.93,122,0.957,-1.08,39
-2024,630,MUTiRiS,Portugal,SAW,0.93,62,0.971,-0.85,41
-2024,10566,chelo,Brazil,FURIA,0.93,101,0.960,-1.02,40
-2024,12822,VINI,Brazil,Imperial,0.92,84,0.958,-1.06,39
-2024,11630,JT,South Africa,Complexity,0.92,102,0.953,-1.13,39
-2024,9816,Aleksib,Finland,Natus Vincere,0.91,159,0.937,-1.40,36
-2024,7322,apEX,France,Vitality,0.90,132,0.933,-1.45,35
-2024,2553,Snax,Poland,G2|GamerLegion,0.89,118,0.929,-1.52,35
-2024,20607,buda,Argentina,9z,0.88,52,0.949,-1.19,38
-2024,7964,cadiaN,Denmark,Astralis|Liquid,0.88,61,0.944,-1.28,37
-2024,429,karrigan,Denmark,FaZe,0.86,162,0.898,-2.02,30
-2024,10096,HooXi,Denmark,G2,0.85,60,0.928,-1.54,35
-2024,922,Snappi,Denmark,Falcons,0.82,105,0.885,-2.23,28
-2024,16921,nafany,Russia,BETBOOM,0.81,53,0.913,-1.78,32
-2025,21167,donk,Russia,Spirit,1.38,142,1.287,+3.97,90
-2025,11893,ZywOo,France,Vitality,1.32,189,1.258,+3.52,85
-2025,19230,m0NESY,Russia,Falcons|G2,1.24,167,1.190,+2.49,75
-2025,15631,KSCERATO,Brazil,FURIA,1.19,180,1.154,+1.94,69
-2025,16920,sh1ro,Russia,Spirit,1.19,142,1.147,+1.83,68
-2025,10394,Twistzz,Canada,Liquid,1.16,146,1.125,+1.50,65
-2025,11816,ropz,Estonia,Vitality,1.16,189,1.132,+1.60,66
-2025,9960,frozen,Slovakia,FaZe,1.16,161,1.128,+1.54,65
-2025,24177,kyousuke,Russia,Falcons,1.16,73,1.105,+1.19,62
-2025,7938,XANTARES,Türkiye,Aurora|Eternal Fire,1.14,171,1.114,+1.32,63
-2025,20447,HeavyGod,Israel,G2,1.13,149,1.103,+1.17,62
-2025,24144,molodoy,Kazakhstan,FURIA,1.12,138,1.095,+1.03,60
-2025,3741,NiKo,Bosnia and Herzegovina,Falcons,1.12,182,1.099,+1.11,61
-2025,20903,Senzu,Mongolia,The MongolZ,1.12,168,1.098,+1.08,61
-2025,19808,tN1R,Belarus,HEROIC,1.12,92,1.086,+0.91,59
-2025,19045,latto,Brazil,Legacy,1.11,84,1.078,+0.78,58
-2025,16693,flameZ,Israel,Vitality,1.11,189,1.092,+0.99,60
-2025,22279,PR,Czech Republic,GamerLegion,1.11,132,1.086,+0.91,59
-2025,18221,Spinx,Israel,MOUZ,1.11,174,1.091,+0.98,60
-2025,19645,JamYoung,China,TYLOO,1.11,51,1.068,+0.62,56
-2025,13915,YEKINDAR,Latvia,FURIA,1.10,138,1.080,+0.81,58
-2025,21062,MATYS,Slovakia,G2,1.10,73,1.069,+0.65,56
-2025,9278,REZ,Sweden,GamerLegion,1.10,132,1.079,+0.80,58
-2025,21243,Wicadia,Türkiye,Aurora|Eternal Fire,1.09,175,1.075,+0.74,57
-2025,14759,iM,Romania,Natus Vincere,1.09,131,1.072,+0.69,57
-2025,8738,EliGE,United States,Liquid,1.09,123,1.071,+0.67,57
-2025,18987,b1t,Ukraine,Natus Vincere,1.08,131,1.065,+0.58,56
-2025,20312,xertioN,Israel,MOUZ,1.08,181,1.068,+0.63,56
-2025,20127,w0nderful,Ukraine,Natus Vincere,1.08,131,1.065,+0.58,56
-2025,21708,npl,Ukraine,B8,1.08,58,1.054,+0.42,54
-2025,18462,mezii,United Kingdom,Vitality,1.08,189,1.068,+0.63,56
-2025,12732,FL1T,Russia,Virtus.pro,1.07,128,1.057,+0.46,55
-2025,22673,makazze,Kosovo,Natus Vincere,1.07,69,1.051,+0.37,54
-2025,21037,insani,Brazil,MIBR,1.07,66,1.050,+0.36,54
-2025,20423,zont1x,Ukraine,Spirit,1.06,107,1.049,+0.33,53
-2025,20304,Staehr,Denmark,Astralis,1.06,155,1.051,+0.37,54
-2025,18072,torzsi,Hungary,MOUZ,1.06,181,1.052,+0.39,54
-2025,19206,jL,Lithuania,Natus Vincere,1.05,62,1.038,+0.18,52
-2025,12553,yuurih,Brazil,FURIA,1.05,180,1.044,+0.27,53
-2025,19694,nqz,Brazil,paiN,1.05,132,1.043,+0.25,52
-2025,21001,mzinho,Mongolia,The MongolZ,1.04,192,1.037,+0.15,52
-2025,13138,Maka,France,3DMAX,1.04,170,1.036,+0.15,51
-2025,19187,xfl0ud,Türkiye,HEROIC,1.04,89,1.034,+0.12,51
-2025,10994,stavn,Denmark,Astralis,1.04,103,1.035,+0.12,51
-2025,22842,kensizor,Ukraine,B8,1.04,54,1.032,+0.09,51
-2025,20119,nilo,Sweden,HEROIC,1.04,52,1.032,+0.08,51
-2025,8574,woxic,Türkiye,Aurora|Eternal Fire,1.04,175,1.036,+0.15,51
-2025,21809,910,Mongolia,The MongolZ,1.04,192,1.037,+0.15,52
-2025,20101,fame,Russia,Virtus.pro,1.04,128,1.036,+0.13,51
-2025,23643,esenthial,Ukraine,B8,1.04,58,1.033,+0.09,51
-2025,21621,Moseyuh,China,TYLOO,1.04,51,1.032,+0.08,51
-2025,18850,Jimpphat,Finland,MOUZ,1.04,181,1.037,+0.15,51
-2025,11617,malbsMd,Guatemala,G2,1.04,149,1.036,+0.14,51
-2025,15698,dumau,Brazil,Legacy,1.03,84,1.028,+0.02,50
-2025,7592,device,Denmark,Astralis,1.03,152,1.029,+0.03,50
-2025,9436,NertZ,Israel,Liquid,1.02,127,1.021,-0.08,49
-2025,17956,jabbi,Denmark,Astralis,1.02,155,1.021,-0.09,49
-2025,8183,rain,Norway,FaZe,1.02,127,1.021,-0.08,49
-2025,18053,broky,Latvia,FaZe,1.02,142,1.021,-0.09,49
-2025,8374,bodyy,France,3DMAX,1.02,161,1.021,-0.09,49
-2025,14736,dgt,Uruguay,paiN,1.02,80,1.022,-0.08,49
-2025,19164,SunPayus,Spain,G2|HEROIC,1.02,119,1.021,-0.08,49
-2025,22965,saadzin,Brazil,Legacy,1.02,84,1.022,-0.08,49
-2025,13497,Lucky,France,3DMAX,1.02,173,1.021,-0.09,49
-2025,20301,Tauson,Denmark,GamerLegion,1.02,132,1.021,-0.08,49
-2025,19686,n1ssim,Brazil,Legacy,1.02,84,1.022,-0.08,49
-2025,17306,degster,Russia,Falcons,1.01,65,1.016,-0.16,48
-2025,19739,Ex3rcice,France,3DMAX,1.01,173,1.013,-0.21,48
-2025,22361,jottAAA,Türkiye,Aurora|Eternal Fire,1.00,175,1.005,-0.32,47
-2025,12018,TeSeS,Denmark,Falcons,1.00,182,1.005,-0.33,47
-2025,18317,magixx,Russia,Spirit,1.00,74,1.010,-0.26,47
-2025,21763,ultimate,Poland,Liquid,1.00,127,1.007,-0.30,47
-2025,20194,bLitz,Mongolia,The MongolZ,1.00,192,1.005,-0.33,47
-2025,18865,dav1deuS,Chile,paiN,0.99,132,0.999,-0.42,46
-2025,20895,Mercury,China,TYLOO,0.99,51,1.007,-0.30,47
-2025,21439,ICY,Kazakhstan,Virtus.pro,0.99,119,1.000,-0.40,46
-2025,21014,Ag1l,Portugal,SAW,0.99,58,1.006,-0.32,47
-2025,20870,sl3nd,Hungary,GamerLegion,0.98,56,1.001,-0.39,46
-2025,20275,Techno,Mongolia,The MongolZ,0.97,192,0.981,-0.69,43
-2025,20462,story,Portugal,SAW,0.97,58,0.995,-0.48,45
-2025,3972,huNter-,Bosnia and Herzegovina,G2,0.97,137,0.984,-0.64,44
-2025,18141,biguzera,Brazil,paiN,0.97,128,0.985,-0.63,44
-2025,22047,yxngstxr,Sweden,HEROIC,0.97,98,0.988,-0.58,44
-2025,20994,FL4MUS,Russia,Virtus.pro,0.97,76,0.992,-0.54,45
-2025,9032,Magisk,Denmark,Falcons|Astralis,0.96,161,0.975,-0.78,42
-2025,8520,NAF,Canada,Liquid,0.96,127,0.978,-0.74,43
-2025,21969,Graviti,France,3DMAX,0.96,173,0.974,-0.80,42
-2025,19677,kyxsan,North Macedonia,Falcons,0.96,182,0.974,-0.80,42
-2025,8918,electroNic,Russia,Virtus.pro,0.96,103,0.981,-0.70,43
-2025,20112,alex666,Ukraine,B8,0.96,58,0.990,-0.56,44
-2025,23685,zweih,Russia,Spirit,0.95,68,0.981,-0.69,43
-2025,16947,Perfecto,Russia,Virtus.pro,0.95,50,0.987,-0.60,44
-2025,19592,headtr1ck,Ukraine,B8,0.95,58,0.984,-0.64,44
-2025,13666,Brollan,Sweden,MOUZ,0.94,181,0.958,-1.04,40
-2025,20171,snow,Brazil,paiN,0.93,132,0.956,-1.08,39
-2025,20563,lux,Brazil,Legacy,0.93,84,0.965,-0.94,41
-2025,7322,apEX,France,Vitality,0.92,189,0.942,-1.29,37
-2025,630,MUTiRiS,Portugal,SAW,0.92,58,0.968,-0.89,41
-2025,18835,saffee,Brazil,MIBR,0.92,66,0.965,-0.94,41
-2025,10096,HooXi,Denmark,Astralis,0.91,99,0.948,-1.19,38
-2025,11154,exit,Brazil,MIBR,0.91,66,0.959,-1.03,40
-2025,9816,Aleksib,Finland,Natus Vincere,0.90,131,0.934,-1.41,36
-2025,2023,FalleN,Brazil,FURIA,0.90,180,0.927,-1.52,35
-2025,2553,Snax,Poland,G2,0.90,76,0.949,-1.18,38
-2025,16820,siuhy,Poland,Liquid,0.89,95,0.936,-1.38,36
-2025,18717,Lucaozy,Brazil,MIBR,0.89,54,0.955,-1.10,39
-2025,7716,chopper,Russia,Spirit,0.89,142,0.925,-1.55,35
-2025,19310,LNZ,Sweden,HEROIC,0.89,98,0.935,-1.39,36
-2025,20987,brnz4n,Brazil,MIBR,0.89,53,0.955,-1.09,39
-2025,16486,ztr,Sweden,GamerLegion,0.86,132,0.905,-1.85,31
-2025,8552,Attacker,China,TYLOO,0.86,51,0.941,-1.30,37
-2025,150,MAJ3R,Türkiye,Aurora|Eternal Fire,0.86,175,0.896,-1.98,30
-2025,429,karrigan,Denmark,FaZe,0.85,161,0.891,-2.06,29
-2025,7964,cadiaN,Denmark,Astralis,0.84,56,0.927,-1.52,35
+year,player_id,nick,nationality,teams,hltv_rating,maps,trust,shrunk,z,game_rating
+2015,2757,GuardiaN,Slovakia,Natus Vincere,1.18,94,1.00,1.180,+2.56,76
+2015,3741,NiKo,Bosnia and Herzegovina,MOUZ,1.15,65,1.00,1.150,+2.16,72
+2015,7592,device,Denmark,?,1.14,120,1.00,1.140,+2.03,70
+2015,798,oskar,Czech Republic,HellRaisers,1.14,62,0.95,1.133,+1.93,69
+2015,7998,s1mple,Ukraine,HellRaisers,1.13,35,0.54,1.060,+0.98,60
+2015,7167,kennyS,France,Envy,1.13,95,1.00,1.130,+1.90,69
+2015,885,olofmeister,Sweden,fnatic,1.11,115,1.00,1.110,+1.63,66
+2015,29,f0rest,Sweden,Ninjas in Pyjamas,1.11,71,1.00,1.110,+1.63,66
+2015,8183,rain,Norway,G2|Kinguin,1.11,74,1.00,1.110,+1.63,66
+2015,8095,aizy,Denmark,G2|Dignitas,1.10,78,1.00,1.100,+1.50,65
+2015,7528,KRIMZ,Sweden,fnatic,1.10,112,1.00,1.100,+1.50,65
+2015,7429,Happy,France,Envy,1.10,98,1.00,1.100,+1.50,65
+2015,973,SZPERO,Poland,CSGL,1.10,51,0.78,1.074,+1.16,62
+2015,7403,WorldEdit,Russia,FlipSid3,1.09,50,0.77,1.064,+1.04,60
+2015,9216,coldzera,Brazil,Luminosity,1.08,72,1.00,1.080,+1.24,62
+2015,7594,flamie,Russia,Natus Vincere,1.08,94,1.00,1.080,+1.24,62
+2015,7687,nitr0,United States,Liquid,1.08,78,1.00,1.080,+1.24,62
+2015,9078,k0nfig,Denmark,Dignitas,1.07,32,0.49,1.024,+0.50,55
+2015,3055,flusha,Sweden,fnatic,1.07,117,1.00,1.070,+1.11,61
+2015,7440,Skadoodle,United States,Cloud9,1.07,37,0.57,1.031,+0.59,56
+2015,334,AdreN,Kazakhstan,HellRaisers|Nostalgie,1.07,24,0.37,1.013,+0.36,54
+2015,8346,jdm64,United States,CLG,1.06,53,0.82,1.045,+0.78,58
+2015,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.06,75,1.00,1.060,+0.98,60
+2015,8412,dream3r,Bulgaria,E-frag.net,1.05,53,0.82,1.037,+0.67,57
+2015,7398,dupreeh,Denmark,?,1.05,120,1.00,1.050,+0.85,58
+2015,2553,Snax,Poland,Virtus.pro,1.05,96,1.00,1.050,+0.85,58
+2015,4954,Xyp9x,Denmark,?,1.04,120,1.00,1.040,+0.71,57
+2015,7168,NBK-,France,Envy,1.04,101,1.00,1.040,+0.71,57
+2015,7356,MICHU,Poland,CSGL|Poland,1.04,50,0.77,1.026,+0.53,55
+2015,2730,chrisJ,Netherlands,MOUZ,1.04,65,1.00,1.040,+0.71,57
+2015,1225,shox,France,Titan,1.04,89,1.00,1.040,+0.71,57
+2015,8323,mouz,Poland,CSGL,1.04,21,0.32,0.999,+0.17,52
+2015,2131,bondik,Ukraine,FlipSid3,1.04,50,0.77,1.026,+0.53,55
+2015,8248,jkaem,Norway,G2,1.04,54,0.83,1.030,+0.58,56
+2015,1146,dennis,Sweden,fnatic|G2|Kinguin,1.03,111,1.00,1.030,+0.58,56
+2015,7390,ScreaM,Belgium,Titan|Kinguin,1.03,84,1.00,1.030,+0.58,56
+2015,2644,Hiko,United States,Liquid,1.03,78,1.00,1.030,+0.58,56
+2015,9032,Magisk,Denmark,SK,1.03,26,0.40,1.000,+0.18,52
+2015,1485,RUBINO,Norway,Dignitas,1.02,30,0.46,0.998,+0.16,52
+2015,695,allu,Finland,Ninjas in Pyjamas,1.02,71,1.00,1.020,+0.45,55
+2015,3347,seized,Russia,Natus Vincere,1.02,94,1.00,1.020,+0.45,55
+2015,7322,apEX,France,Envy,1.02,101,1.00,1.020,+0.45,55
+2015,8564,fer,Brazil,Luminosity,1.02,72,1.00,1.020,+0.45,55
+2015,2469,cajunb,Denmark,?,1.01,123,1.00,1.010,+0.32,53
+2015,2023,FalleN,Brazil,Luminosity,1.01,72,1.00,1.010,+0.32,53
+2015,629,fox,Portugal,G2|Kinguin,1.01,79,1.00,1.010,+0.32,53
+2015,8151,AcilioN,Denmark,SK,1.01,26,0.40,0.992,+0.08,51
+2015,3849,JW,Sweden,fnatic,1.01,115,1.00,1.010,+0.32,53
+2015,8394,Kjaerbye,Denmark,Dignitas,1.00,83,1.00,1.000,+0.19,52
+2015,7154,Pimp,Denmark,Dignitas,1.00,56,0.86,0.997,+0.15,51
+2015,8520,NAF,Canada,Conquest,1.00,24,0.37,0.987,+0.02,50
+2015,8349,shroud,Canada,Cloud9,0.99,37,0.57,0.985,-0.00,50
+2015,317,pashaBiceps,Poland,Virtus.pro,0.99,98,1.00,0.990,+0.06,51
+2015,5386,byali,Poland,Virtus.pro,0.99,98,1.00,0.990,+0.06,51
+2015,7805,RUSH,United States,Conquest,0.99,24,0.37,0.983,-0.03,50
+2015,557,fnx,Brazil,Luminosity,0.98,20,0.31,0.980,-0.08,49
+2015,203,n0thing,United States,Cloud9,0.98,37,0.57,0.980,-0.08,49
+2015,429,karrigan,Denmark,?,0.98,120,1.00,0.980,-0.08,49
+2015,4959,kioShiMa,France,Envy,0.98,96,1.00,0.980,-0.08,49
+2015,5287,TENZKI,Denmark,Dignitas,0.98,39,0.60,0.980,-0.08,49
+2015,7256,nex,Germany,MOUZ,0.98,65,1.00,0.980,-0.08,49
+2015,8523,tarik,United States,CLG,0.97,53,0.82,0.972,-0.18,48
+2015,7810,ShahZaM,United States,Conquest,0.97,24,0.37,0.976,-0.13,49
+2015,338,markeloff,Ukraine,FlipSid3,0.97,50,0.77,0.972,-0.18,48
+2015,7433,adreN,United States,Liquid,0.97,78,1.00,0.970,-0.21,48
+2015,7834,v1c7oR,Bulgaria,E-frag.net,0.97,53,0.82,0.972,-0.18,48
+2015,884,Xizt,Sweden,Ninjas in Pyjamas,0.97,73,1.00,0.970,-0.21,48
+2015,7,Friis,Denmark,SK,0.96,25,0.38,0.972,-0.18,48
+2015,165,NEO,Poland,Virtus.pro,0.96,98,1.00,0.960,-0.34,47
+2015,8738,EliGE,United States,Liquid,0.96,76,1.00,0.960,-0.34,47
+2015,1045,Maikelele,Sweden,G2|Kinguin,0.96,83,1.00,0.960,-0.34,47
+2015,7169,RpK,France,Titan,0.96,84,1.00,0.960,-0.34,47
+2015,7964,cadiaN,Denmark,SK,0.96,24,0.37,0.972,-0.18,48
+2015,5388,rallen,Poland,Vexed,0.96,31,0.48,0.970,-0.21,48
+2015,3669,innocent,Poland,CSGL,0.95,51,0.78,0.956,-0.39,46
+2015,3847,znajder,Sweden,HellRaisers|Dignitas,0.95,71,1.00,0.950,-0.47,45
+2015,8522,FugLy,United States,Liquid,0.95,78,1.00,0.950,-0.47,45
+2015,339,ANGE1,Ukraine,HellRaisers,0.95,85,1.00,0.950,-0.47,45
+2015,483,Edward,Ukraine,Natus Vincere,0.94,94,1.00,0.940,-0.60,44
+2015,8137,reltuC,United States,CLG,0.94,53,0.82,0.947,-0.51,45
+2015,8327,Furlan,Poland,Vexed|Poland,0.94,36,0.55,0.958,-0.37,46
+2015,161,TaZ,Poland,Virtus.pro,0.94,98,1.00,0.940,-0.60,44
+2015,8347,hazed,United States,CLG,0.94,53,0.82,0.947,-0.51,45
+2015,964,mou,Kazakhstan,HellRaisers,0.94,24,0.37,0.965,-0.28,47
+2015,7808,freakazoid,United States,Cloud9,0.93,37,0.57,0.951,-0.45,45
+2015,3183,spyleadeR,Bulgaria,E-frag.net,0.93,53,0.82,0.939,-0.61,44
+2015,2799,bubble,Bulgaria,E-frag.net,0.92,53,0.82,0.931,-0.72,43
+2015,484,Zeus,Ukraine,Natus Vincere,0.92,94,1.00,0.920,-0.87,41
+2015,8568,boltz,Brazil,Luminosity,0.92,52,0.80,0.932,-0.71,43
+2015,8124,DavCost,Russia,FlipSid3,0.92,43,0.66,0.940,-0.60,44
+2015,7166,Ex6TenZ,Belgium,Titan,0.90,84,1.00,0.900,-1.13,39
+2015,8507,stanislaw,Canada,Conquest,0.90,23,0.35,0.951,-0.45,45
+2015,7148,friberg,Sweden,Ninjas in Pyjamas,0.90,71,1.00,0.900,-1.13,39
+2015,6904,STYKO,Slovakia,HellRaisers,0.90,59,0.91,0.907,-1.03,40
+2015,7170,SmithZz,France,Titan,0.89,88,1.00,0.890,-1.26,37
+2015,823,Maniac,Switzerland,Titan,0.89,26,0.40,0.944,-0.55,44
+2015,6451,FNS,Canada,CLG,0.89,53,0.82,0.907,-1.04,40
+2015,1916,seang@res,United States,Cloud9,0.88,30,0.46,0.934,-0.69,43
+2015,8321,oskarish,Poland,CSGL,0.88,35,0.54,0.926,-0.79,42
+2015,7382,steel,Brazil,Luminosity,0.86,52,0.80,0.884,-1.34,37
+2015,7369,peet,Poland,Vexed|Poland,0.86,32,0.49,0.921,-0.86,41
+2015,7511,denis,Germany,MOUZ,0.86,65,1.00,0.860,-1.65,33
+2015,302,kUcheR,Russia,HellRaisers,0.85,83,1.00,0.850,-1.79,32
+2015,7368,Hyper,Poland,Vexed,0.85,31,0.48,0.918,-0.90,41
+2015,545,MODDII,Sweden,SK,0.85,26,0.40,0.928,-0.77,42
+2015,7156,MSL,Denmark,Dignitas,0.85,86,1.00,0.850,-1.79,32
+2015,8521,daps,Canada,Conquest,0.83,24,0.37,0.924,-0.81,42
+2015,41,pronax,Sweden,fnatic,0.82,68,1.00,0.820,-2.18,28
+2015,8570,GruBy,Poland,Vexed,0.81,31,0.48,0.899,-1.15,39
+2015,472,B1ad3,Ukraine,FlipSid3,0.81,50,0.77,0.849,-1.80,32
+2015,5327,nkl,Bulgaria,E-frag.net,0.78,53,0.82,0.817,-2.22,28
+2015,9217,TACO,Brazil,Luminosity,0.74,20,0.31,0.906,-1.05,39
+2015,136,gob b,Germany,MOUZ,0.73,61,0.94,0.745,-3.16,18
+2015,163,Loord,Poland,CSGL,0.69,37,0.57,0.815,-2.25,27
+2016,798,oskar,Czech Republic,HellRaisers|MOUZ,1.19,109,0.72,1.134,+1.90,69
+2016,9216,coldzera,Brazil,Luminosity,1.19,186,1.00,1.190,+2.69,77
+2016,7592,device,Denmark,Astralis,1.17,225,1.00,1.170,+2.41,74
+2016,3741,NiKo,Bosnia and Herzegovina,MOUZ,1.16,188,1.00,1.160,+2.27,73
+2016,7998,s1mple,Ukraine,Natus Vincere|Liquid,1.13,106,0.70,1.088,+1.27,63
+2016,1225,shox,France,G2,1.12,205,1.00,1.120,+1.72,67
+2016,8565,HEN1,Brazil,Immortals|Tempo Storm,1.12,152,1.00,1.120,+1.72,67
+2016,8735,autimatic,United States,Cloud9,1.11,106,0.70,1.074,+1.07,61
+2016,7390,ScreaM,Belgium,G2,1.11,205,1.00,1.110,+1.58,66
+2016,2023,FalleN,Brazil,Luminosity,1.10,186,1.00,1.100,+1.44,64
+2016,9032,Magisk,Denmark,Dignitas,1.10,208,1.00,1.100,+1.44,64
+2016,7167,kennyS,France,Envy,1.10,195,1.00,1.100,+1.44,64
+2016,3055,flusha,Sweden,GODSENT|fnatic,1.10,191,1.00,1.100,+1.44,64
+2016,7443,twist,Sweden,fnatic|GODSENT,1.09,83,0.55,1.045,+0.67,57
+2016,29,f0rest,Sweden,Ninjas in Pyjamas,1.09,193,1.00,1.090,+1.30,63
+2016,1146,dennis,Sweden,fnatic,1.08,174,1.00,1.080,+1.16,62
+2016,8394,Kjaerbye,Denmark,Astralis|Dignitas,1.08,226,1.00,1.080,+1.16,62
+2016,2757,GuardiaN,Slovakia,Natus Vincere,1.08,145,0.95,1.076,+1.10,61
+2016,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.07,193,1.00,1.070,+1.02,60
+2016,885,olofmeister,Sweden,fnatic,1.07,142,0.93,1.065,+0.95,59
+2016,7398,dupreeh,Denmark,Astralis,1.07,220,1.00,1.070,+1.02,60
+2016,8370,mixwell,Spain,OpTic,1.07,146,0.96,1.067,+0.98,60
+2016,9078,k0nfig,Denmark,Dignitas,1.07,263,1.00,1.070,+1.02,60
+2016,2469,cajunb,Denmark,Dignitas|Astralis,1.07,255,1.00,1.070,+1.02,60
+2016,7403,WorldEdit,Russia,FlipSid3,1.07,145,0.95,1.066,+0.97,60
+2016,8183,rain,Norway,FaZe,1.06,196,1.00,1.060,+0.88,59
+2016,9031,valde,Denmark,X,1.06,108,0.71,1.040,+0.60,56
+2016,8564,fer,Brazil,Luminosity,1.06,182,1.00,1.060,+0.88,59
+2016,7594,flamie,Russia,Natus Vincere,1.05,149,0.98,1.049,+0.73,57
+2016,8568,boltz,Brazil,Immortals|Tempo Storm,1.05,152,1.00,1.050,+0.74,57
+2016,8349,shroud,Canada,Cloud9,1.04,176,1.00,1.040,+0.60,56
+2016,3849,JW,Sweden,GODSENT|fnatic,1.04,191,1.00,1.040,+0.60,56
+2016,334,AdreN,Kazakhstan,Gambit,1.04,80,0.53,1.017,+0.28,53
+2016,3847,znajder,Sweden,GODSENT,1.03,96,0.63,1.015,+0.26,53
+2016,6904,STYKO,Slovakia,HellRaisers,1.03,113,0.74,1.020,+0.32,53
+2016,8797,Stewie2K,United States,Cloud9,1.03,176,1.00,1.030,+0.47,55
+2016,2553,Snax,Poland,Virtus.pro,1.03,187,1.00,1.030,+0.47,55
+2016,557,fnx,Brazil,Luminosity,1.03,180,1.00,1.030,+0.47,55
+2016,2730,chrisJ,Netherlands,MOUZ,1.03,188,1.00,1.030,+0.47,55
+2016,7256,nex,Germany,MOUZ,1.03,115,0.76,1.020,+0.33,53
+2016,695,allu,Finland,FaZe,1.03,105,0.69,1.018,+0.30,53
+2016,9219,felps,Brazil,Immortals|Tempo Storm,1.02,152,1.00,1.020,+0.33,53
+2016,7805,RUSH,United States,OpTic,1.02,165,1.00,1.020,+0.33,53
+2016,964,mou,Kazakhstan,Gambit,1.01,80,0.53,1.001,+0.06,51
+2016,7440,Skadoodle,United States,Cloud9,1.01,176,1.00,1.010,+0.19,52
+2016,8738,EliGE,United States,Liquid,1.00,136,0.89,0.999,+0.03,50
+2016,7429,Happy,France,Envy,1.00,193,1.00,1.000,+0.05,50
+2016,9261,Lekr0,Sweden,GODSENT|fnatic,1.00,96,0.63,0.996,-0.00,50
+2016,5386,byali,Poland,Virtus.pro,1.00,187,1.00,1.000,+0.05,50
+2016,8095,aizy,Denmark,FaZe,1.00,205,1.00,1.000,+0.05,50
+2016,8523,tarik,United States,OpTic|CLG,1.00,178,1.00,1.000,+0.05,50
+2016,4954,Xyp9x,Denmark,Astralis,0.99,225,1.00,0.990,-0.09,49
+2016,2131,bondik,Ukraine,HellRaisers|FlipSid3,0.99,127,0.84,0.990,-0.09,49
+2016,483,Edward,Ukraine,Natus Vincere,0.99,149,0.98,0.990,-0.09,49
+2016,8520,NAF,Canada,OpTic,0.99,165,1.00,0.990,-0.09,49
+2016,7528,KRIMZ,Sweden,fnatic|GODSENT,0.99,178,1.00,0.990,-0.09,49
+2016,545,MODDII,Sweden,X,0.99,189,1.00,0.990,-0.09,49
+2016,7322,apEX,France,Envy,0.98,195,1.00,0.980,-0.23,48
+2016,2644,Hiko,United States,Liquid,0.97,136,0.89,0.972,-0.34,47
+2016,3347,seized,Russia,Natus Vincere,0.97,149,0.98,0.970,-0.36,46
+2016,7687,nitr0,United States,Liquid,0.97,136,0.89,0.972,-0.34,47
+2016,884,Xizt,Sweden,Ninjas in Pyjamas,0.97,193,1.00,0.970,-0.37,46
+2016,203,n0thing,United States,Cloud9,0.97,176,1.00,0.970,-0.37,46
+2016,7169,RpK,France,G2,0.97,202,1.00,0.970,-0.37,46
+2016,1485,RUBINO,Norway,Dignitas,0.97,245,1.00,0.970,-0.37,46
+2016,161,TaZ,Poland,Virtus.pro,0.96,187,1.00,0.960,-0.51,45
+2016,9217,TACO,Brazil,Luminosity,0.96,186,1.00,0.960,-0.51,45
+2016,7412,gla1ve,Denmark,Astralis|X,0.96,132,0.87,0.964,-0.45,45
+2016,7527,pyth,Sweden,Ninjas in Pyjamas,0.96,133,0.88,0.964,-0.45,45
+2016,8507,stanislaw,Canada,OpTic,0.96,154,1.00,0.960,-0.51,45
+2016,8566,LUCAS1,Brazil,Immortals|Tempo Storm,0.96,150,0.99,0.960,-0.50,45
+2016,8248,jkaem,Norway,FaZe,0.96,162,1.00,0.960,-0.51,45
+2016,8346,jdm64,United States,Liquid|CLG,0.96,147,0.97,0.961,-0.49,45
+2016,8374,bodyy,France,G2,0.96,151,0.99,0.960,-0.51,45
+2016,8413,Zero,Slovakia,HellRaisers,0.95,113,0.74,0.960,-0.50,45
+2016,165,NEO,Poland,Virtus.pro,0.95,187,1.00,0.950,-0.65,44
+2016,7154,Pimp,Denmark,Liquid,0.95,134,0.88,0.955,-0.58,44
+2016,7168,NBK-,France,Envy,0.95,191,1.00,0.950,-0.65,44
+2016,7148,friberg,Sweden,Ninjas in Pyjamas,0.94,190,1.00,0.940,-0.79,42
+2016,338,markeloff,Ukraine,FlipSid3,0.94,143,0.94,0.943,-0.74,43
+2016,4959,kioShiMa,France,FaZe,0.94,190,1.00,0.940,-0.79,42
+2016,7499,Spiidi,Germany,MOUZ,0.94,186,1.00,0.940,-0.79,42
+2016,629,fox,Portugal,FaZe,0.93,99,0.65,0.951,-0.63,44
+2016,7,Friis,Denmark,X,0.93,188,1.00,0.930,-0.92,41
+2016,484,Zeus,Ukraine,Gambit|Natus Vincere,0.93,113,0.74,0.946,-0.71,43
+2016,317,pashaBiceps,Poland,Virtus.pro,0.93,187,1.00,0.930,-0.92,41
+2016,5287,TENZKI,Denmark,Dignitas,0.92,131,0.86,0.930,-0.93,41
+2016,339,ANGE1,Ukraine,HellRaisers,0.92,115,0.76,0.937,-0.83,42
+2016,735,Dosia,Russia,Gambit,0.91,80,0.53,0.948,-0.67,43
+2016,7170,SmithZz,France,G2,0.91,205,1.00,0.910,-1.20,38
+2016,1045,Maikelele,Sweden,Ninjas in Pyjamas|FaZe|G2,0.91,75,0.49,0.951,-0.64,44
+2016,2031,wenton,Sweden,fnatic,0.90,69,0.45,0.949,-0.66,43
+2016,429,karrigan,Denmark,FaZe|Astralis,0.90,229,1.00,0.900,-1.34,37
+2016,8347,hazed,United States,CLG,0.89,84,0.55,0.935,-0.86,41
+2016,7511,denis,Germany,MOUZ,0.89,188,1.00,0.890,-1.48,35
+2016,8569,DEVIL,France,Envy,0.88,95,0.62,0.921,-1.04,40
+2016,9220,SHOOWTiME,Brazil,Tempo Storm|Immortals,0.88,82,0.54,0.931,-0.91,41
+2016,7808,freakazoid,United States,Cloud9|Echo Fox,0.87,71,0.47,0.934,-0.87,41
+2016,8522,FugLy,United States,CLG,0.86,65,0.43,0.935,-0.86,41
+2016,7796,wayLander,Russia,FlipSid3|Gambit,0.86,113,0.74,0.893,-1.43,36
+2016,922,Snappi,Denmark,X,0.86,97,0.64,0.907,-1.24,38
+2016,8151,AcilioN,Denmark,SK,0.86,92,0.61,0.911,-1.18,38
+2016,1866,Shara,Ukraine,FlipSid3,0.85,114,0.75,0.885,-1.55,35
+2016,8137,reltuC,United States,CLG,0.85,85,0.56,0.912,-1.18,38
+2016,8521,daps,Canada,OpTic,0.85,83,0.55,0.914,-1.15,38
+2016,7156,MSL,Denmark,Dignitas,0.83,263,1.00,0.830,-2.31,27
+2016,499,hooch,Russia,Gambit,0.82,64,0.42,0.919,-1.08,39
+2016,41,pronax,Sweden,GODSENT,0.82,96,0.63,0.883,-1.58,34
+2016,472,B1ad3,Ukraine,FlipSid3,0.78,145,0.95,0.790,-2.87,21
+2017,7938,XANTARES,Türkiye,Space Soldiers,1.29,85,0.59,1.191,+2.12,71
+2017,3741,NiKo,Bosnia and Herzegovina,FaZe|MOUZ,1.23,229,1.00,1.230,+2.70,77
+2017,7998,s1mple,Ukraine,Natus Vincere,1.22,143,1.00,1.220,+2.55,75
+2017,9216,coldzera,Brazil,SK,1.21,199,1.00,1.210,+2.40,74
+2017,8564,fer,Brazil,SK,1.20,199,1.00,1.200,+2.25,73
+2017,8183,rain,Norway,FaZe,1.17,222,1.00,1.170,+1.81,68
+2017,5794,tabseN,Germany,BIG,1.16,103,0.72,1.128,+1.18,62
+2017,7592,device,Denmark,Astralis,1.15,176,1.00,1.150,+1.51,65
+2017,8575,Calyx,Türkiye,Space Soldiers,1.15,76,0.53,1.101,+0.79,58
+2017,798,oskar,Czech Republic,MOUZ,1.15,181,1.00,1.150,+1.51,65
+2017,10394,Twistzz,Canada,Liquid,1.14,140,0.98,1.138,+1.33,63
+2017,9353,paz,Türkiye,Space Soldiers,1.14,75,0.52,1.095,+0.70,57
+2017,9078,k0nfig,Denmark,North,1.14,157,1.00,1.140,+1.36,64
+2017,7167,kennyS,France,G2,1.14,190,1.00,1.140,+1.36,64
+2017,8738,EliGE,United States,Liquid,1.13,160,1.00,1.130,+1.21,62
+2017,9261,Lekr0,Sweden,fnatic|GODSENT,1.12,118,0.83,1.107,+0.87,59
+2017,8568,boltz,Brazil,Immortals,1.12,161,1.00,1.120,+1.07,61
+2017,7398,dupreeh,Denmark,Astralis,1.12,198,1.00,1.120,+1.07,61
+2017,2023,FalleN,Brazil,SK,1.11,199,1.00,1.110,+0.92,59
+2017,8797,Stewie2K,United States,Cloud9,1.11,166,1.00,1.110,+0.92,59
+2017,8520,NAF,Canada,Renegades|OpTic,1.11,126,0.88,1.102,+0.80,58
+2017,8783,JUGi,Denmark,HEROIC,1.11,140,0.98,1.109,+0.90,59
+2017,7256,nex,Germany,BIG,1.11,103,0.72,1.092,+0.65,57
+2017,2757,GuardiaN,Slovakia,FaZe|Natus Vincere,1.11,191,1.00,1.110,+0.92,59
+2017,9255,draken,Sweden,Ninjas in Pyjamas,1.11,168,1.00,1.110,+0.92,59
+2017,885,olofmeister,Sweden,FaZe|fnatic,1.10,223,1.00,1.100,+0.77,58
+2017,11816,ropz,Estonia,MOUZ,1.10,152,1.00,1.100,+0.77,58
+2017,5479,suNny,Finland,MOUZ,1.10,126,0.88,1.094,+0.67,57
+2017,8528,HObbit,Kazakhstan,Gambit,1.10,121,0.85,1.092,+0.65,56
+2017,8994,HS,Estonia,OpTic,1.09,70,0.49,1.067,+0.28,53
+2017,9278,REZ,Sweden,Ninjas in Pyjamas|Epsilon,1.09,128,0.90,1.085,+0.55,56
+2017,8745,Rickeh,Australia,CLG,1.09,96,0.67,1.075,+0.40,54
+2017,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,1.09,171,1.00,1.090,+0.62,56
+2017,7390,ScreaM,Belgium,Envy,1.09,143,1.00,1.090,+0.62,56
+2017,7594,flamie,Russia,Natus Vincere,1.08,135,0.94,1.078,+0.44,54
+2017,9032,Magisk,Denmark,OpTic,1.08,134,0.94,1.078,+0.44,54
+2017,3849,JW,Sweden,fnatic,1.08,183,1.00,1.080,+0.47,55
+2017,8735,autimatic,United States,Cloud9,1.08,164,1.00,1.080,+0.47,55
+2017,8565,HEN1,Brazil,Immortals,1.08,121,0.85,1.075,+0.39,54
+2017,4954,Xyp9x,Denmark,Astralis,1.08,198,1.00,1.080,+0.47,55
+2017,334,AdreN,Kazakhstan,Gambit,1.08,120,0.84,1.074,+0.39,54
+2017,339,ANGE1,Ukraine,HellRaisers,1.08,130,0.91,1.077,+0.43,54
+2017,8394,Kjaerbye,Denmark,Astralis,1.08,198,1.00,1.080,+0.47,55
+2017,2469,cajunb,Denmark,North,1.08,157,1.00,1.080,+0.47,55
+2017,29,f0rest,Sweden,Ninjas in Pyjamas,1.08,169,1.00,1.080,+0.47,55
+2017,9031,valde,Denmark,North,1.07,121,0.85,1.066,+0.27,53
+2017,1225,shox,France,G2,1.07,184,1.00,1.070,+0.32,53
+2017,8566,LUCAS1,Brazil,Immortals,1.07,121,0.85,1.066,+0.27,53
+2017,7169,RpK,France,Envy,1.07,146,1.00,1.070,+0.32,53
+2017,8918,electroNic,Russia,Natus Vincere|FlipSid3,1.07,78,0.55,1.059,+0.16,52
+2017,7322,apEX,France,G2,1.07,190,1.00,1.070,+0.32,53
+2017,7168,NBK-,France,G2,1.07,190,1.00,1.070,+0.32,53
+2017,10671,Ethan,United States,CLG,1.06,95,0.66,1.055,+0.10,51
+2017,3055,flusha,Sweden,fnatic,1.06,182,1.00,1.060,+0.18,52
+2017,964,mou,Kazakhstan,Gambit,1.06,121,0.85,1.058,+0.14,51
+2017,9219,felps,Brazil,SK,1.05,146,1.00,1.050,+0.03,50
+2017,8370,mixwell,Spain,OpTic,1.05,122,0.85,1.049,+0.02,50
+2017,10264,niko,Denmark,HEROIC,1.05,156,1.00,1.050,+0.03,50
+2017,10449,ISSAA,Jordan,HellRaisers,1.04,61,0.43,1.043,-0.07,49
+2017,4679,jks,Australia,Renegades,1.04,80,0.56,1.042,-0.08,49
+2017,695,allu,Finland,OpTic|FaZe,1.04,152,1.00,1.040,-0.12,49
+2017,8413,Zero,Slovakia,HellRaisers,1.04,115,0.80,1.041,-0.10,49
+2017,7429,Happy,France,Envy,1.03,152,1.00,1.030,-0.27,47
+2017,8523,tarik,United States,Cloud9|OpTic,1.03,151,1.00,1.030,-0.27,47
+2017,317,pashaBiceps,Poland,Virtus.pro,1.03,171,1.00,1.030,-0.27,47
+2017,1146,dennis,Sweden,fnatic,1.03,117,0.82,1.033,-0.23,48
+2017,8771,USTILO,Australia,Renegades,1.03,80,0.56,1.037,-0.17,48
+2017,8374,bodyy,France,G2,1.02,184,1.00,1.020,-0.42,46
+2017,5386,byali,Poland,Virtus.pro,1.02,173,1.00,1.020,-0.42,46
+2017,2553,Snax,Poland,Virtus.pro,1.02,173,1.00,1.020,-0.42,46
+2017,7528,KRIMZ,Sweden,fnatic,1.02,181,1.00,1.020,-0.42,46
+2017,2131,bondik,Ukraine,HellRaisers,1.02,73,0.51,1.033,-0.23,48
+2017,8095,aizy,Denmark,North,1.02,160,1.00,1.020,-0.42,46
+2017,3997,loWel,Spain,MOUZ,1.02,91,0.64,1.029,-0.28,47
+2017,4959,kioShiMa,France,FaZe,1.02,109,0.76,1.026,-0.33,47
+2017,7805,RUSH,United States,Cloud9|OpTic,1.01,151,1.00,1.010,-0.57,44
+2017,9056,koosta,United States,CLG,1.01,95,0.66,1.022,-0.39,46
+2017,8082,AZR,Australia,Renegades,1.01,80,0.56,1.026,-0.33,47
+2017,7440,Skadoodle,United States,Cloud9,1.01,156,1.00,1.010,-0.57,44
+2017,7382,steel,Brazil,Immortals,1.00,131,0.92,1.004,-0.66,43
+2017,735,Dosia,Russia,Gambit,1.00,121,0.85,1.007,-0.61,44
+2017,150,MAJ3R,Türkiye,Space Soldiers,1.00,85,0.59,1.019,-0.44,46
+2017,8716,DeadFox,Hungary,HellRaisers,0.99,130,0.91,0.995,-0.79,42
+2017,7412,gla1ve,Denmark,Astralis,0.99,198,1.00,0.990,-0.86,41
+2017,8137,reltuC,United States,CLG,0.99,95,0.66,1.009,-0.59,44
+2017,545,MODDII,Sweden,HEROIC,0.99,156,1.00,0.990,-0.86,41
+2017,2730,chrisJ,Netherlands,MOUZ,0.99,171,1.00,0.990,-0.86,41
+2017,8346,jdm64,United States,Liquid,0.99,160,1.00,0.990,-0.86,41
+2017,884,Xizt,Sweden,Ninjas in Pyjamas,0.99,171,1.00,0.990,-0.86,41
+2017,922,Snappi,Denmark,HEROIC,0.98,156,1.00,0.980,-1.01,40
+2017,483,Edward,Ukraine,Natus Vincere,0.98,137,0.96,0.983,-0.97,40
+2017,9069,Nifty,United States,Renegades,0.98,77,0.54,1.010,-0.56,44
+2017,5799,keev,Germany,BIG,0.98,103,0.72,0.998,-0.74,43
+2017,8507,stanislaw,Canada,Liquid,0.98,142,0.99,0.980,-1.00,40
+2017,6904,STYKO,Slovakia,MOUZ|HellRaisers,0.98,169,1.00,0.980,-1.01,40
+2017,7687,nitr0,United States,Liquid,0.97,160,1.00,0.970,-1.16,38
+2017,7511,denis,Germany,MOUZ,0.97,89,0.62,0.999,-0.74,43
+2017,7156,MSL,Denmark,North,0.96,157,1.00,0.960,-1.31,37
+2017,9545,xms,France,Envy,0.96,138,0.97,0.963,-1.26,37
+2017,9217,TACO,Brazil,SK,0.96,199,1.00,0.960,-1.31,37
+2017,203,n0thing,United States,Cloud9,0.96,93,0.65,0.990,-0.86,41
+2017,8349,shroud,Canada,Cloud9,0.96,95,0.66,0.989,-0.88,41
+2017,338,markeloff,Ukraine,FlipSid3,0.95,62,0.43,1.004,-0.65,43
+2017,7148,friberg,Sweden,OpTic|Ninjas in Pyjamas,0.95,104,0.73,0.976,-1.07,39
+2017,429,karrigan,Denmark,FaZe,0.94,222,1.00,0.940,-1.60,34
+2017,165,NEO,Poland,Virtus.pro,0.94,173,1.00,0.940,-1.60,34
+2017,8611,es3tag,Denmark,HEROIC,0.93,100,0.70,0.965,-1.24,38
+2017,147,SIXER,France,Envy,0.93,152,1.00,0.930,-1.75,32
+2017,484,Zeus,Ukraine,Natus Vincere|Gambit,0.93,125,0.87,0.945,-1.54,35
+2017,3347,seized,Russia,Natus Vincere,0.91,108,0.76,0.943,-1.56,34
+2017,161,TaZ,Poland,Virtus.pro,0.90,173,1.00,0.900,-2.20,28
+2017,11110,Golden,Sweden,fnatic,0.90,80,0.56,0.964,-1.25,38
+2017,136,gob b,Germany,BIG,0.89,103,0.72,0.934,-1.70,33
+2017,3252,LEGIJA,Germany,BIG,0.88,103,0.72,0.926,-1.81,32
+2017,6451,FNS,Canada,CLG,0.84,93,0.65,0.912,-2.02,30
+2018,7998,s1mple,Ukraine,Natus Vincere,1.34,209,1.00,1.340,+3.98,90
+2018,7592,device,Denmark,Astralis,1.23,238,1.00,1.230,+2.54,75
+2018,7938,XANTARES,Türkiye,Space Soldiers|ex-Space Soldiers,1.23,137,1.00,1.230,+2.54,75
+2018,3741,NiKo,Bosnia and Herzegovina,FaZe,1.21,228,1.00,1.210,+2.28,73
+2018,5794,tabseN,Germany,BIG,1.20,98,0.73,1.154,+1.54,65
+2018,8574,woxic,Türkiye,HellRaisers,1.19,169,1.00,1.190,+2.02,70
+2018,11916,sergej,Finland,ENCE,1.18,61,0.45,1.098,+0.82,58
+2018,10671,Ethan,United States,NRG,1.18,133,0.99,1.178,+1.86,69
+2018,8918,electroNic,Russia,Natus Vincere,1.17,205,1.00,1.170,+1.76,68
+2018,7398,dupreeh,Denmark,Astralis,1.17,238,1.00,1.170,+1.76,68
+2018,9032,Magisk,Denmark,Astralis,1.15,234,1.00,1.150,+1.50,65
+2018,8520,NAF,Canada,Liquid,1.15,211,1.00,1.150,+1.50,65
+2018,9216,coldzera,Brazil,MIBR,1.14,167,1.00,1.140,+1.37,64
+2018,9031,valde,Denmark,North,1.13,215,1.00,1.130,+1.24,62
+2018,4076,Aerial,Finland,ENCE,1.13,61,0.45,1.075,+0.52,55
+2018,8735,autimatic,United States,Cloud9,1.13,107,0.79,1.109,+0.97,60
+2018,798,oskar,Czech Republic,MOUZ,1.12,236,1.00,1.120,+1.11,61
+2018,7412,gla1ve,Denmark,Astralis,1.12,238,1.00,1.120,+1.11,61
+2018,10394,Twistzz,Canada,Liquid,1.12,211,1.00,1.120,+1.11,61
+2018,4954,Xyp9x,Denmark,Astralis,1.12,238,1.00,1.120,+1.11,61
+2018,9136,Brehze,United States,NRG,1.12,133,0.99,1.119,+1.09,61
+2018,5479,suNny,Finland,MOUZ,1.11,245,1.00,1.110,+0.97,60
+2018,11219,CeRq,Bulgaria,NRG,1.11,133,0.99,1.109,+0.96,60
+2018,695,allu,Finland,ENCE,1.11,61,0.45,1.066,+0.41,54
+2018,7322,apEX,France,G2,1.10,79,0.59,1.071,+0.47,55
+2018,9078,k0nfig,Denmark,OpTic,1.10,98,0.73,1.081,+0.60,56
+2018,10449,ISSAA,Jordan,HellRaisers,1.10,175,1.00,1.100,+0.84,58
+2018,8394,Kjaerbye,Denmark,North,1.09,217,1.00,1.090,+0.71,57
+2018,8738,EliGE,United States,Liquid,1.09,217,1.00,1.090,+0.71,57
+2018,7256,nex,Germany,BIG,1.09,96,0.71,1.073,+0.49,55
+2018,2757,GuardiaN,Slovakia,FaZe,1.09,228,1.00,1.090,+0.71,57
+2018,7528,KRIMZ,Sweden,fnatic,1.09,178,1.00,1.090,+0.71,57
+2018,7167,kennyS,France,G2,1.08,167,1.00,1.080,+0.58,56
+2018,8575,Calyx,Türkiye,ex-Space Soldiers|Space Soldiers,1.08,134,0.99,1.080,+0.58,56
+2018,11816,ropz,Estonia,MOUZ,1.08,245,1.00,1.080,+0.58,56
+2018,8611,es3tag,Denmark,HEROIC,1.08,150,1.00,1.080,+0.58,56
+2018,8783,JUGi,Denmark,OpTic,1.07,135,1.00,1.070,+0.45,55
+2018,2023,FalleN,Brazil,MIBR,1.07,167,1.00,1.070,+0.45,55
+2018,8183,rain,Norway,FaZe,1.07,228,1.00,1.070,+0.45,55
+2018,7443,twist,Sweden,fnatic|GODSENT,1.07,123,0.91,1.066,+0.41,54
+2018,9895,mertz,Denmark,HEROIC,1.07,186,1.00,1.070,+0.45,55
+2018,7594,flamie,Russia,Natus Vincere,1.07,207,1.00,1.070,+0.45,55
+2018,2469,cajunb,Denmark,OpTic,1.06,98,0.73,1.052,+0.22,52
+2018,13666,Brollan,Sweden,fnatic|GODSENT,1.06,119,0.88,1.056,+0.28,53
+2018,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,181,1.00,1.060,+0.32,53
+2018,29,f0rest,Sweden,Ninjas in Pyjamas,1.06,181,1.00,1.060,+0.32,53
+2018,1225,shox,France,G2,1.06,126,0.93,1.058,+0.30,53
+2018,8564,fer,Brazil,MIBR,1.06,162,1.00,1.060,+0.32,53
+2018,9353,paz,Türkiye,ex-Space Soldiers|Space Soldiers,1.05,137,1.00,1.050,+0.19,52
+2018,7131,BnTeT,Indonesia,TYLOO,1.05,81,0.60,1.042,+0.09,51
+2018,964,mou,Kazakhstan,Gambit,1.05,148,1.00,1.050,+0.19,52
+2018,8523,tarik,United States,MIBR|Cloud9,1.05,172,1.00,1.050,+0.19,52
+2018,3055,flusha,Sweden,fnatic,1.04,134,0.99,1.040,+0.06,51
+2018,7687,nitr0,United States,Liquid,1.04,217,1.00,1.040,+0.06,51
+2018,11271,smooya,United Kingdom,BIG,1.04,98,0.73,1.037,+0.03,50
+2018,9766,hampus,Sweden,GODSENT,1.04,76,0.56,1.036,+0.01,50
+2018,9261,Lekr0,Sweden,Ninjas in Pyjamas|fnatic,1.04,195,1.00,1.040,+0.06,51
+2018,9255,draken,Sweden,Ninjas in Pyjamas|fnatic,1.04,111,0.82,1.038,+0.04,50
+2018,8570,GruBy,Poland,AGO,1.04,112,0.83,1.038,+0.04,50
+2018,8797,Stewie2K,United States,MIBR|Cloud9,1.04,186,1.00,1.040,+0.06,51
+2018,9256,disco doplan,Sweden,GODSENT,1.03,76,0.56,1.030,-0.07,49
+2018,1146,dennis,Sweden,Ninjas in Pyjamas,1.03,175,1.00,1.030,-0.07,49
+2018,7168,NBK-,France,G2,1.03,79,0.59,1.030,-0.07,49
+2018,8095,aizy,Denmark,North,1.03,215,1.00,1.030,-0.07,49
+2018,8528,HObbit,Kazakhstan,HellRaisers|Gambit,1.03,167,1.00,1.030,-0.07,49
+2018,885,olofmeister,Sweden,FaZe,1.02,152,1.00,1.020,-0.20,48
+2018,4679,jks,Australia,Renegades,1.02,119,0.88,1.021,-0.18,48
+2018,8248,jkaem,Norway,Renegades,1.02,113,0.84,1.022,-0.18,48
+2018,8327,Furlan,Poland,AGO,1.02,112,0.83,1.022,-0.18,48
+2018,7390,ScreaM,Belgium,fnatic,1.02,62,0.46,1.026,-0.13,49
+2018,2131,bondik,Ukraine,HellRaisers,1.02,159,1.00,1.020,-0.20,48
+2018,2730,chrisJ,Netherlands,MOUZ,1.02,245,1.00,1.020,-0.20,48
+2018,3849,JW,Sweden,fnatic,1.01,178,1.00,1.010,-0.33,47
+2018,7440,Skadoodle,United States,Cloud9,1.01,99,0.73,1.015,-0.26,47
+2018,8522,FugLy,United States,NRG,1.01,133,0.99,1.010,-0.33,47
+2018,9816,Aleksib,Finland,ENCE,1.01,61,0.45,1.021,-0.18,48
+2018,8875,gade,Denmark,OpTic,1.01,101,0.75,1.015,-0.26,47
+2018,334,AdreN,Kazakhstan,Gambit,1.00,148,1.00,1.000,-0.46,45
+2018,7805,RUSH,United States,Cloud9,1.00,107,0.79,1.006,-0.38,46
+2018,10264,niko,Denmark,OpTic,1.00,184,1.00,1.000,-0.46,45
+2018,7356,MICHU,Poland,Virtus.pro,1.00,100,0.74,1.008,-0.36,46
+2018,9574,snatchie,Poland,AGO,1.00,120,0.89,1.003,-0.42,46
+2018,150,MAJ3R,Türkiye,ex-Space Soldiers|Space Soldiers,1.00,137,1.00,1.000,-0.46,45
+2018,7964,cadiaN,Denmark,North,0.99,62,0.46,1.012,-0.31,47
+2018,483,Edward,Ukraine,Natus Vincere,0.99,207,1.00,0.990,-0.59,44
+2018,8605,somebody,China,TYLOO,0.98,81,0.60,1.000,-0.46,45
+2018,2553,Snax,Poland,Virtus.pro|MOUZ,0.98,140,1.00,0.980,-0.72,43
+2018,5386,byali,Poland,Virtus.pro,0.98,98,0.73,0.994,-0.54,45
+2018,7026,DD,China,TYLOO,0.98,81,0.60,1.000,-0.46,45
+2018,8789,mir,Russia,Gambit|Vega Squadron,0.98,73,0.54,1.003,-0.42,46
+2018,9257,freddieb,Sweden,GODSENT,0.97,76,0.56,0.996,-0.51,45
+2018,317,pashaBiceps,Poland,Virtus.pro,0.97,103,0.76,0.984,-0.67,43
+2018,922,Snappi,Denmark,OpTic,0.97,163,1.00,0.970,-0.85,41
+2018,7248,xseveN,Finland,ENCE,0.97,61,0.45,1.003,-0.42,46
+2018,10263,xccurate,Indonesia,TYLOO,0.97,81,0.60,0.994,-0.54,45
+2018,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,0.97,181,1.00,0.970,-0.85,41
+2018,339,ANGE1,Ukraine,HellRaisers,0.97,183,1.00,0.970,-0.85,41
+2018,5796,tiziaN,Germany,BIG,0.97,98,0.73,0.987,-0.64,44
+2018,7156,MSL,Denmark,North,0.96,153,1.00,0.960,-0.98,40
+2018,3347,seized,Russia,Gambit,0.95,81,0.60,0.982,-0.69,43
+2018,7148,friberg,Sweden,HEROIC,0.95,99,0.73,0.971,-0.83,42
+2018,9217,TACO,Brazil,Liquid,0.95,186,1.00,0.950,-1.11,39
+2018,545,MODDII,Sweden,HEROIC,0.95,166,1.00,0.950,-1.11,39
+2018,8082,AZR,Australia,Renegades,0.95,119,0.88,0.960,-0.99,40
+2018,735,Dosia,Russia,Gambit,0.95,148,1.00,0.950,-1.11,39
+2018,8568,boltz,Brazil,MIBR,0.94,77,0.57,0.979,-0.74,43
+2018,8374,bodyy,France,G2,0.94,167,1.00,0.940,-1.25,38
+2018,11278,TOAO,Poland,AGO,0.94,112,0.83,0.955,-1.04,40
+2018,6904,STYKO,Slovakia,MOUZ,0.94,198,1.00,0.940,-1.25,38
+2018,7382,steel,Brazil,Liquid,0.94,66,0.49,0.986,-0.64,44
+2018,9069,Nifty,United States,Renegades,0.93,82,0.61,0.969,-0.86,41
+2018,7166,Ex6TenZ,Belgium,G2,0.93,78,0.58,0.972,-0.82,42
+2018,11891,phr,Poland,AGO,0.93,112,0.83,0.947,-1.15,38
+2018,8151,AcilioN,Denmark,Imperial,0.92,87,0.64,0.959,-0.99,40
+2018,484,Zeus,Ukraine,Natus Vincere,0.92,207,1.00,0.920,-1.51,35
+2018,429,karrigan,Denmark,FaZe,0.92,228,1.00,0.920,-1.51,35
+2018,8716,DeadFox,Hungary,HellRaisers,0.91,179,1.00,0.910,-1.64,34
+2018,136,gob b,Germany,BIG,0.91,98,0.73,0.943,-1.21,38
+2018,884,Xizt,Sweden,fnatic|FaZe,0.91,143,1.00,0.910,-1.64,34
+2018,8521,daps,Canada,NRG,0.91,133,0.99,0.912,-1.61,34
+2018,1485,RUBINO,Norway,HEROIC,0.90,61,0.45,0.971,-0.83,42
+2018,8771,USTILO,Australia,Renegades,0.90,82,0.61,0.951,-1.10,39
+2018,9857,ngiN,Türkiye,ex-Space Soldiers|Space Soldiers,0.90,137,1.00,0.900,-1.77,32
+2018,11110,Golden,Sweden,fnatic,0.88,107,0.79,0.911,-1.62,34
+2018,5187,captainMo,China,TYLOO,0.86,64,0.47,0.950,-1.12,39
+2018,165,NEO,Poland,Virtus.pro,0.86,103,0.76,0.900,-1.76,32
+2018,7170,SmithZz,France,G2,0.80,78,0.58,0.897,-1.80,32
+2019,7998,s1mple,Ukraine,Natus Vincere,1.29,129,1.00,1.290,+3.39,84
+2019,11893,ZywOo,France,Vitality,1.28,188,1.00,1.280,+3.25,83
+2019,7592,device,Denmark,Astralis,1.21,135,1.00,1.210,+2.30,73
+2019,8918,electroNic,Russia,Natus Vincere,1.20,129,1.00,1.200,+2.17,72
+2019,8738,EliGE,United States,Liquid,1.19,166,1.00,1.190,+2.03,70
+2019,13776,Jame,Russia,AVANGAR,1.19,150,1.00,1.190,+2.03,70
+2019,11816,ropz,Estonia,MOUZ,1.17,153,1.00,1.170,+1.76,68
+2019,3972,huNter-,Bosnia and Herzegovina,G2|Valiance|CR4ZY,1.17,167,1.00,1.170,+1.76,68
+2019,3741,NiKo,Bosnia and Herzegovina,FaZe,1.16,136,1.00,1.160,+1.62,66
+2019,8520,NAF,Canada,Liquid,1.15,166,1.00,1.150,+1.49,65
+2019,9032,Magisk,Denmark,Astralis,1.15,135,1.00,1.150,+1.49,65
+2019,15631,KSCERATO,Brazil,FURIA,1.15,94,0.75,1.121,+1.09,61
+2019,8574,woxic,Türkiye,MOUZ,1.14,156,1.00,1.140,+1.35,64
+2019,9618,nexa,Serbia,G2|Valiance|CR4ZY,1.14,167,1.00,1.140,+1.35,64
+2019,9136,Brehze,United States,Evil Geniuses,1.13,160,1.00,1.130,+1.21,62
+2019,9216,coldzera,Brazil,FaZe|MIBR,1.13,106,0.85,1.115,+1.02,60
+2019,9960,frozen,Slovakia,MOUZ,1.13,150,1.00,1.130,+1.21,62
+2019,7167,kennyS,France,G2,1.12,176,1.00,1.120,+1.08,61
+2019,12733,xsepower,Russia,FORZE,1.12,65,0.52,1.078,+0.51,55
+2019,10394,Twistzz,Canada,Liquid,1.12,166,1.00,1.120,+1.08,61
+2019,4679,jks,Australia,Renegades,1.12,115,0.92,1.113,+0.98,60
+2019,10330,acoR,Denmark,Tricked,1.11,53,0.42,1.066,+0.34,53
+2019,15165,blameF,Denmark,HEROIC,1.11,70,0.56,1.076,+0.49,55
+2019,11916,sergej,Finland,ENCE,1.10,127,1.00,1.100,+0.81,58
+2019,9612,Bubzkji,Denmark,Tricked,1.10,53,0.42,1.062,+0.29,53
+2019,11219,CeRq,Bulgaria,Evil Geniuses,1.09,164,1.00,1.090,+0.67,57
+2019,7398,dupreeh,Denmark,Astralis,1.09,135,1.00,1.090,+0.67,57
+2019,10671,Ethan,United States,Evil Geniuses,1.09,164,1.00,1.090,+0.67,57
+2019,5794,tabseN,Germany,BIG,1.09,52,0.42,1.057,+0.22,52
+2019,4954,Xyp9x,Denmark,Astralis,1.09,135,1.00,1.090,+0.67,57
+2019,13239,Qikert,Kazakhstan,AVANGAR,1.09,150,1.00,1.090,+0.67,57
+2019,8564,fer,Brazil,MIBR,1.09,124,0.99,1.090,+0.67,57
+2019,12553,yuurih,Brazil,FURIA,1.09,94,0.75,1.076,+0.48,55
+2019,7528,KRIMZ,Sweden,fnatic,1.08,156,1.00,1.080,+0.54,55
+2019,10994,stavn,Denmark,HEROIC,1.08,112,0.90,1.075,+0.47,55
+2019,13666,Brollan,Sweden,fnatic,1.08,162,1.00,1.080,+0.54,55
+2019,14148,sjuush,Denmark,Tricked,1.08,53,0.42,1.053,+0.17,52
+2019,9031,valde,Denmark,North,1.08,95,0.76,1.069,+0.38,54
+2019,8248,jkaem,Norway,Renegades,1.07,115,0.92,1.067,+0.36,54
+2019,695,allu,Finland,ENCE,1.07,127,1.00,1.070,+0.40,54
+2019,11283,ottoNd,Finland,CR4ZY|Valiance,1.07,142,1.00,1.070,+0.40,54
+2019,3055,flusha,Sweden,fnatic|Cloud9,1.06,95,0.76,1.054,+0.18,52
+2019,8183,rain,Norway,FaZe,1.06,141,1.00,1.060,+0.26,53
+2019,8095,aizy,Denmark,North,1.06,128,1.00,1.060,+0.26,53
+2019,11840,Boombl4,Russia,Natus Vincere|Winstrike,1.05,93,0.74,1.046,+0.07,51
+2019,11942,buster,Kazakhstan,AVANGAR,1.05,150,1.00,1.050,+0.13,51
+2019,8394,Kjaerbye,Denmark,North,1.05,128,1.00,1.050,+0.13,51
+2019,7594,flamie,Russia,Natus Vincere,1.05,129,1.00,1.050,+0.13,51
+2019,14218,Plopski,Sweden,Ninjas in Pyjamas|Ancient,1.05,75,0.60,1.043,+0.04,50
+2019,3849,JW,Sweden,fnatic,1.04,162,1.00,1.040,-0.01,50
+2019,7412,gla1ve,Denmark,Astralis,1.04,135,1.00,1.040,-0.01,50
+2019,29,f0rest,Sweden,Ninjas in Pyjamas,1.04,130,1.00,1.040,-0.01,50
+2019,1225,shox,France,Vitality|G2,1.04,164,1.00,1.040,-0.01,50
+2019,11343,SHiPZ,Bulgaria,CR4ZY|Windigo,1.04,75,0.60,1.037,-0.04,50
+2019,8611,es3tag,Denmark,HEROIC,1.04,121,0.97,1.040,-0.01,50
+2019,9078,k0nfig,Denmark,OpTic,1.03,66,0.53,1.032,-0.12,49
+2019,2730,chrisJ,Netherlands,MOUZ,1.03,155,1.00,1.030,-0.14,49
+2019,8797,Stewie2K,United States,Liquid,1.03,166,1.00,1.030,-0.14,49
+2019,9616,amanek,France,G2,1.03,153,1.00,1.030,-0.14,49
+2019,2023,FalleN,Brazil,MIBR,1.03,124,0.99,1.030,-0.14,49
+2019,9896,b0RUP,Denmark,Tricked,1.02,71,0.57,1.026,-0.20,48
+2019,7168,NBK-,France,Vitality,1.02,139,1.00,1.020,-0.28,47
+2019,8566,LUCAS1,Brazil,MIBR,1.02,63,0.50,1.027,-0.19,48
+2019,483,Edward,Ukraine,Natus Vincere,1.02,62,0.50,1.027,-0.19,48
+2019,11654,almazer,Russia,FORZE,1.01,65,0.52,1.021,-0.26,47
+2019,7322,apEX,France,Vitality,1.01,188,1.00,1.010,-0.42,46
+2019,12732,FL1T,Russia,FORZE,1.01,65,0.52,1.021,-0.26,47
+2019,12030,EspiranTo,Lithuania,CR4ZY|Valiance,1.01,141,1.00,1.010,-0.42,46
+2019,284,JACKZ,France,G2,1.01,176,1.00,1.010,-0.42,46
+2019,7687,nitr0,United States,Liquid,1.01,166,1.00,1.010,-0.42,46
+2019,10588,Liazz,Australia,Renegades,1.01,115,0.92,1.012,-0.39,46
+2019,2757,GuardiaN,Slovakia,Natus Vincere|FaZe,1.01,130,1.00,1.010,-0.42,46
+2019,885,olofmeister,Sweden,FaZe,1.01,141,1.00,1.010,-0.42,46
+2019,9278,REZ,Sweden,Ninjas in Pyjamas,1.00,130,1.00,1.000,-0.55,44
+2019,12521,arT,Brazil,FURIA,1.00,94,0.75,1.008,-0.44,46
+2019,7443,twist,Sweden,Ninjas in Pyjamas|fnatic,1.00,137,1.00,1.000,-0.55,44
+2019,7964,cadiaN,Denmark,HEROIC,1.00,89,0.71,1.010,-0.42,46
+2019,18053,broky,Latvia,FaZe,1.00,50,0.40,1.020,-0.28,47
+2019,9816,Aleksib,Finland,ENCE,1.00,94,0.75,1.008,-0.44,46
+2019,8726,facecrack,Russia,FORZE,1.00,65,0.52,1.016,-0.33,47
+2019,9219,felps,Brazil,MIBR,1.00,55,0.44,1.019,-0.30,47
+2019,8783,JUGi,Denmark,OpTic,1.00,105,0.84,1.005,-0.48,45
+2019,8523,tarik,United States,Evil Geniuses,0.99,159,1.00,0.990,-0.69,43
+2019,4076,Aerial,Finland,ENCE,0.99,127,1.00,0.990,-0.69,43
+2019,7148,friberg,Sweden,HEROIC,0.98,64,0.51,1.006,-0.47,45
+2019,10264,niko,Denmark,OpTic|Tricked,0.98,58,0.46,1.009,-0.43,46
+2019,8184,ALEX,United Kingdom,Vitality,0.97,188,1.00,0.970,-0.96,40
+2019,13157,Jerry,Russia,FORZE,0.97,65,0.52,1.000,-0.55,45
+2019,9261,Lekr0,Sweden,Ninjas in Pyjamas,0.97,130,1.00,0.970,-0.96,40
+2019,922,Snappi,Denmark,OpTic,0.97,90,0.72,0.988,-0.72,43
+2019,13497,Lucky,France,G2,0.96,128,1.00,0.960,-1.09,39
+2019,8875,gade,Denmark,North,0.96,128,1.00,0.960,-1.09,39
+2019,9686,Gratisfaction,New Zealand,Renegades,0.96,100,0.80,0.975,-0.90,41
+2019,12822,VINI,Brazil,FURIA,0.96,94,0.75,0.978,-0.85,42
+2019,7248,xseveN,Finland,ENCE,0.96,127,1.00,0.960,-1.09,39
+2019,7169,RpK,France,Vitality,0.95,188,1.00,0.950,-1.23,38
+2019,5736,kNgV-,Brazil,MIBR,0.94,50,0.40,0.996,-0.61,44
+2019,11891,phr,Poland,Virtus.pro|AGO,0.94,52,0.42,0.995,-0.63,44
+2019,16770,ableJ,Brazil,FURIA,0.94,54,0.43,0.993,-0.65,44
+2019,8507,stanislaw,Canada,Evil Geniuses,0.94,100,0.80,0.959,-1.11,39
+2019,429,karrigan,Denmark,MOUZ,0.94,148,1.00,0.940,-1.37,36
+2019,8082,AZR,Australia,Renegades,0.93,115,0.92,0.938,-1.39,36
+2019,11716,SANJI,Uzbekistan,AVANGAR,0.93,125,1.00,0.930,-1.50,35
+2019,10052,fitch,Kazakhstan,AVANGAR,0.93,66,0.53,0.979,-0.84,42
+2019,4216,LETN1,Serbia,CR4ZY|Valiance,0.93,144,1.00,0.930,-1.50,35
+2019,9217,TACO,Brazil,MIBR,0.93,124,0.99,0.931,-1.49,35
+2019,484,Zeus,Ukraine,Natus Vincere,0.92,90,0.72,0.952,-1.21,38
+2019,2469,cajunb,Denmark,OpTic|Cloud9,0.91,69,0.55,0.965,-1.02,40
+2019,334,AdreN,Kazakhstan,AVANGAR|FaZe,0.91,121,0.97,0.914,-1.72,33
+2019,9294,NaToSaphiX,Denmark,MOUZ,0.90,52,0.42,0.978,-0.85,41
+2019,7156,MSL,Denmark,OpTic,0.90,51,0.41,0.979,-0.84,42
+2019,11110,Golden,Sweden,fnatic,0.90,83,0.66,0.945,-1.30,37
+2019,884,Xizt,Sweden,fnatic,0.89,90,0.72,0.930,-1.50,35
+2019,39,GeT_RiGhT,Sweden,Ninjas in Pyjamas,0.87,85,0.68,0.922,-1.61,34
+2019,8521,daps,Canada,Cloud9,0.87,73,0.58,0.938,-1.39,36
+2019,5796,tiziaN,Germany,BIG,0.86,52,0.42,0.961,-1.08,39
+2019,136,gob b,Germany,BIG,0.85,52,0.42,0.957,-1.13,39
+2020,11893,ZywOo,France,Vitality,1.28,186,1.00,1.280,+3.46,85
+2020,7998,s1mple,Ukraine,Natus Vincere,1.28,168,1.00,1.280,+3.46,85
+2020,7592,device,Denmark,Astralis,1.20,179,1.00,1.200,+2.31,73
+2020,3741,NiKo,Bosnia and Herzegovina,G2|FaZe,1.18,166,1.00,1.180,+2.03,70
+2020,15165,blameF,Denmark,Complexity,1.17,134,1.00,1.170,+1.88,69
+2020,8738,EliGE,United States,Liquid,1.16,132,1.00,1.160,+1.74,67
+2020,11816,ropz,Estonia,MOUZ,1.16,138,1.00,1.160,+1.74,67
+2020,8789,mir,Russia,Spirit,1.16,90,0.68,1.120,+1.17,62
+2020,12553,yuurih,Brazil,FURIA,1.14,132,1.00,1.140,+1.45,65
+2020,8918,electroNic,Russia,Natus Vincere,1.14,168,1.00,1.140,+1.45,65
+2020,15631,KSCERATO,Brazil,FURIA,1.14,132,1.00,1.140,+1.45,65
+2020,8565,HEN1,Brazil,FURIA,1.13,132,1.00,1.130,+1.31,63
+2020,7266,syrsoN,Germany,BIG,1.12,165,1.00,1.120,+1.16,62
+2020,4679,jks,Australia,Complexity,1.11,119,0.90,1.103,+0.91,59
+2020,10330,acoR,Denmark,MAD Lions,1.11,66,0.50,1.073,+0.48,55
+2020,9136,Brehze,United States,Evil Geniuses,1.10,117,0.89,1.093,+0.77,58
+2020,9078,k0nfig,Denmark,Complexity,1.10,134,1.00,1.100,+0.88,59
+2020,10981,mantuu,Poland,OG,1.10,156,1.00,1.100,+0.88,59
+2020,8520,NAF,Canada,Liquid,1.09,132,1.00,1.090,+0.73,57
+2020,7398,dupreeh,Denmark,Astralis,1.09,179,1.00,1.090,+0.73,57
+2020,10994,stavn,Denmark,HEROIC,1.09,143,1.00,1.090,+0.73,57
+2020,9031,valde,Denmark,OG,1.09,156,1.00,1.090,+0.73,57
+2020,11219,CeRq,Bulgaria,Evil Geniuses,1.09,117,0.89,1.084,+0.64,56
+2020,9032,Magisk,Denmark,Astralis,1.09,179,1.00,1.090,+0.73,57
+2020,7938,XANTARES,Türkiye,BIG,1.09,165,1.00,1.090,+0.73,57
+2020,13666,Brollan,Sweden,fnatic,1.09,147,1.00,1.090,+0.73,57
+2020,13776,Jame,Russia,Virtus.pro,1.08,66,0.50,1.058,+0.27,53
+2020,9612,Bubzkji,Denmark,MAD Lions|Astralis,1.08,79,0.60,1.062,+0.33,53
+2020,3972,huNter-,Bosnia and Herzegovina,G2,1.08,153,1.00,1.080,+0.59,56
+2020,695,allu,Finland,ENCE,1.08,96,0.73,1.068,+0.41,54
+2020,10671,Ethan,United States,Evil Geniuses,1.08,117,0.89,1.075,+0.52,55
+2020,8611,es3tag,Denmark,Astralis,1.08,71,0.54,1.059,+0.29,53
+2020,4954,Xyp9x,Denmark,Astralis,1.07,109,0.83,1.064,+0.36,54
+2020,9278,REZ,Sweden,Ninjas in Pyjamas,1.07,149,1.00,1.070,+0.45,54
+2020,2023,FalleN,Brazil,MIBR,1.07,73,0.55,1.054,+0.22,52
+2020,13670,nawwk,Sweden,Ninjas in Pyjamas,1.07,145,1.00,1.070,+0.45,54
+2020,7528,KRIMZ,Sweden,fnatic,1.07,147,1.00,1.070,+0.45,54
+2020,9960,frozen,Slovakia,MOUZ,1.07,138,1.00,1.070,+0.45,54
+2020,18053,broky,Latvia,FaZe,1.07,152,1.00,1.070,+0.45,54
+2020,1378,zehN,Finland,GODSENT,1.06,113,0.86,1.056,+0.25,53
+2020,5794,tabseN,Germany,BIG,1.06,165,1.00,1.060,+0.30,53
+2020,14614,oBo,United States,Complexity,1.06,92,0.70,1.053,+0.19,52
+2020,10264,niko,Denmark,HEROIC,1.06,125,0.95,1.059,+0.28,53
+2020,10394,Twistzz,Canada,Liquid,1.06,132,1.00,1.060,+0.30,53
+2020,7964,cadiaN,Denmark,HEROIC,1.06,143,1.00,1.060,+0.30,53
+2020,12018,TeSeS,Denmark,HEROIC,1.06,125,0.95,1.059,+0.28,53
+2020,14273,iDISBALANCE,Russia,Spirit,1.06,91,0.69,1.052,+0.19,52
+2020,13239,Qikert,Kazakhstan,Virtus.pro,1.05,66,0.50,1.043,+0.05,51
+2020,8248,jkaem,Norway,100 Thieves,1.05,90,0.68,1.045,+0.09,51
+2020,13300,Farlig,Denmark,GODSENT,1.05,70,0.53,1.043,+0.06,51
+2020,9618,nexa,Serbia,G2,1.05,153,1.00,1.050,+0.16,52
+2020,14218,Plopski,Sweden,Ninjas in Pyjamas,1.05,149,1.00,1.050,+0.16,52
+2020,14148,sjuush,Denmark,MAD Lions,1.05,66,0.50,1.043,+0.05,51
+2020,11777,Maden,Montenegro,GODSENT,1.05,113,0.86,1.048,+0.13,51
+2020,7167,kennyS,France,G2,1.05,153,1.00,1.050,+0.16,52
+2020,8574,woxic,Türkiye,MOUZ,1.04,75,0.57,1.038,-0.01,50
+2020,9216,coldzera,Brazil,FaZe,1.04,152,1.00,1.040,+0.01,50
+2020,1225,shox,France,Vitality,1.04,177,1.00,1.040,+0.01,50
+2020,12126,poizon,Bulgaria,Complexity,1.04,130,0.98,1.040,+0.01,50
+2020,8735,autimatic,United States,Gen.G,1.04,71,0.54,1.038,-0.02,50
+2020,9686,Gratisfaction,New Zealand,100 Thieves,1.04,90,0.68,1.038,-0.01,50
+2020,12521,arT,Brazil,FURIA,1.03,132,1.00,1.030,-0.13,49
+2020,6904,STYKO,Slovakia,GODSENT,1.03,113,0.86,1.031,-0.12,49
+2020,8564,fer,Brazil,MIBR,1.03,73,0.55,1.032,-0.09,49
+2020,9056,koosta,United States,Gen.G,1.03,71,0.54,1.032,-0.09,49
+2020,14419,roeJ,Denmark,MAD Lions,1.02,66,0.50,1.028,-0.16,48
+2020,5736,kNgV-,Brazil,MIBR,1.02,73,0.55,1.027,-0.17,48
+2020,7412,gla1ve,Denmark,Astralis,1.02,163,1.00,1.020,-0.27,47
+2020,10449,ISSAA,Jordan,OG,1.02,156,1.00,1.020,-0.27,47
+2020,8183,rain,Norway,FaZe,1.01,152,1.00,1.010,-0.42,46
+2020,11942,buster,Kazakhstan,Virtus.pro,1.01,66,0.50,1.023,-0.23,48
+2020,12731,sdy,Ukraine,Spirit,1.01,90,0.68,1.018,-0.30,47
+2020,7131,BnTeT,Indonesia,Gen.G,1.01,71,0.54,1.022,-0.25,48
+2020,8523,tarik,United States,Evil Geniuses,1.01,117,0.89,1.013,-0.37,46
+2020,3055,flusha,Sweden,fnatic,1.01,147,1.00,1.010,-0.42,46
+2020,7169,RpK,France,Vitality,1.00,186,1.00,1.000,-0.56,44
+2020,7322,apEX,France,Vitality,1.00,186,1.00,1.000,-0.56,44
+2020,18317,magixx,Russia,Spirit,1.00,91,0.69,1.011,-0.40,46
+2020,3849,JW,Sweden,fnatic,0.99,147,1.00,0.990,-0.70,43
+2020,9766,hampus,Sweden,Ninjas in Pyjamas,0.99,101,0.77,1.001,-0.55,44
+2020,12822,VINI,Brazil,FURIA,0.99,132,1.00,0.990,-0.70,43
+2020,7168,NBK-,France,OG,0.99,156,1.00,0.990,-0.70,43
+2020,9816,Aleksib,Finland,OG,0.99,156,1.00,0.990,-0.70,43
+2020,10588,Liazz,Australia,100 Thieves,0.98,90,0.68,0.998,-0.59,44
+2020,5796,tiziaN,Germany,BIG,0.98,165,1.00,0.980,-0.85,42
+2020,7716,chopper,Russia,Spirit,0.98,91,0.69,0.997,-0.60,44
+2020,14176,misutaaa,France,Vitality,0.98,160,1.00,0.980,-0.85,42
+2020,11840,Boombl4,Russia,Natus Vincere,0.98,168,1.00,0.980,-0.85,42
+2020,284,JACKZ,France,G2,0.98,133,1.00,0.980,-0.85,42
+2020,19015,Bymas,Lithuania,MOUZ|FaZe,0.98,95,0.72,0.995,-0.62,44
+2020,7443,twist,Sweden,Ninjas in Pyjamas,0.98,149,1.00,0.980,-0.85,42
+2020,16947,Perfecto,Russia,Natus Vincere,0.98,168,1.00,0.980,-0.85,42
+2020,14365,s0m,United States,Gen.G,0.98,71,0.54,1.006,-0.48,45
+2020,8797,Stewie2K,United States,Liquid,0.97,132,1.00,0.970,-0.99,40
+2020,9616,amanek,France,G2,0.97,142,1.00,0.970,-0.99,40
+2020,8082,AZR,Australia,100 Thieves,0.97,90,0.68,0.991,-0.69,43
+2020,8394,Kjaerbye,Denmark,FaZe,0.96,67,0.51,0.997,-0.60,44
+2020,7594,flamie,Russia,Natus Vincere,0.96,163,1.00,0.960,-1.13,39
+2020,8507,stanislaw,Canada,Evil Geniuses,0.96,117,0.89,0.969,-1.01,40
+2020,11916,sergej,Finland,ENCE,0.95,96,0.73,0.973,-0.94,41
+2020,12781,k1to,Germany,BIG,0.95,165,1.00,0.950,-1.28,37
+2020,5479,suNny,Finland,ENCE,0.95,96,0.73,0.973,-0.94,41
+2020,7805,RUSH,United States,Complexity,0.95,134,1.00,0.950,-1.28,37
+2020,4076,Aerial,Finland,ENCE,0.94,92,0.70,0.969,-1.01,40
+2020,9896,b0RUP,Denmark,HEROIC,0.93,143,1.00,0.930,-1.56,34
+2020,7687,nitr0,United States,Liquid,0.93,75,0.57,0.975,-0.91,41
+2020,11716,SANJI,Uzbekistan,Virtus.pro,0.91,66,0.50,0.973,-0.95,40
+2020,11110,Golden,Sweden,fnatic,0.91,147,1.00,0.910,-1.85,31
+2020,9217,TACO,Brazil,MIBR,0.90,73,0.55,0.960,-1.13,39
+2020,2730,chrisJ,Netherlands,MOUZ,0.89,138,1.00,0.890,-2.14,29
+2020,885,olofmeister,Sweden,FaZe,0.89,76,0.58,0.952,-1.25,37
+2020,429,karrigan,Denmark,MOUZ,0.88,138,1.00,0.880,-2.28,27
+2020,8521,daps,Canada,Gen.G,0.86,65,0.49,0.949,-1.29,37
+2020,7218,kRYSTAL,Germany,GODSENT,0.79,99,0.75,0.851,-2.69,23
+2021,7998,s1mple,Ukraine,Natus Vincere,1.34,176,1.00,1.340,+4.17,92
+2021,11893,ZywOo,France,Vitality,1.29,150,1.00,1.290,+3.49,85
+2021,16920,sh1ro,Russia,Gambit,1.22,197,1.00,1.220,+2.55,75
+2021,14419,roeJ,Denmark,Copenhagen Flames,1.20,42,0.40,1.095,+0.86,59
+2021,3741,NiKo,Bosnia and Herzegovina,G2,1.19,174,1.00,1.190,+2.14,71
+2021,8528,HObbit,Kazakhstan,Gambit,1.16,197,1.00,1.160,+1.74,67
+2021,16555,Ax1Le,Russia,Gambit,1.16,197,1.00,1.160,+1.74,67
+2021,11816,ropz,Estonia,MOUZ,1.15,114,1.00,1.150,+1.60,66
+2021,13776,Jame,Russia,Virtus.pro,1.14,162,1.00,1.140,+1.47,65
+2021,15631,KSCERATO,Brazil,FURIA,1.14,106,1.00,1.140,+1.47,65
+2021,13281,El1an,Russia,Entropiq,1.14,92,0.87,1.125,+1.26,63
+2021,7592,device,Denmark,Astralis,1.14,155,1.00,1.140,+1.47,65
+2021,8918,electroNic,Russia,Natus Vincere,1.13,176,1.00,1.130,+1.33,63
+2021,15165,blameF,Denmark,Astralis,1.13,143,1.00,1.130,+1.33,63
+2021,13915,YEKINDAR,Latvia,Virtus.pro,1.13,162,1.00,1.130,+1.33,63
+2021,18221,Spinx,Israel,ENCE,1.12,58,0.55,1.078,+0.63,56
+2021,9960,frozen,Slovakia,MOUZ,1.12,114,1.00,1.120,+1.20,62
+2021,10394,Twistzz,Canada,FaZe,1.12,129,1.00,1.120,+1.20,62
+2021,8520,NAF,Canada,Liquid,1.12,108,1.00,1.120,+1.20,62
+2021,8789,mir,Russia,Spirit,1.11,95,0.90,1.101,+0.94,59
+2021,12732,FL1T,Russia,Virtus.pro|FORZE,1.11,88,0.83,1.096,+0.87,59
+2021,3972,huNter-,Bosnia and Herzegovina,G2,1.10,174,1.00,1.100,+0.93,59
+2021,10981,mantuu,Poland,OG,1.10,101,0.95,1.097,+0.88,59
+2021,18987,b1t,Ukraine,Natus Vincere,1.09,149,1.00,1.090,+0.79,58
+2021,16693,flameZ,Israel,OG,1.09,66,0.62,1.066,+0.47,55
+2021,18053,broky,Latvia,FaZe,1.09,131,1.00,1.090,+0.79,58
+2021,17306,degster,Russia,Spirit,1.09,95,0.90,1.083,+0.70,57
+2021,12553,yuurih,Brazil,FURIA,1.08,106,1.00,1.080,+0.66,57
+2021,8738,EliGE,United States,Liquid,1.08,108,1.00,1.080,+0.66,57
+2021,7938,XANTARES,Türkiye,BIG,1.08,106,1.00,1.080,+0.66,57
+2021,9078,k0nfig,Denmark,Astralis,1.08,109,1.00,1.080,+0.66,57
+2021,13666,Brollan,Sweden,fnatic,1.07,70,0.66,1.055,+0.32,53
+2021,10994,stavn,Denmark,HEROIC,1.07,132,1.00,1.070,+0.52,55
+2021,9031,valde,Denmark,OG,1.07,101,0.95,1.068,+0.49,55
+2021,11777,Maden,Montenegro,FunPlus Phoenix,1.07,53,0.50,1.048,+0.23,52
+2021,16080,dycha,Poland,ENCE,1.07,58,0.55,1.050,+0.26,53
+2021,5794,tabseN,Germany,BIG,1.07,159,1.00,1.070,+0.52,55
+2021,6904,STYKO,Slovakia,FunPlus Phoenix,1.07,52,0.49,1.048,+0.22,52
+2021,18462,mezii,United Kingdom,fnatic|Cloud9,1.07,65,0.61,1.053,+0.29,53
+2021,13602,nicoodoz,Denmark,Copenhagen Flames,1.06,42,0.40,1.040,+0.11,51
+2021,13466,dennyslaw,Bulgaria,SKADE,1.06,42,0.40,1.040,+0.11,51
+2021,7266,syrsoN,Germany,BIG,1.06,159,1.00,1.060,+0.39,54
+2021,7964,cadiaN,Denmark,HEROIC,1.06,136,1.00,1.060,+0.39,54
+2021,12018,TeSeS,Denmark,HEROIC,1.06,136,1.00,1.060,+0.39,54
+2021,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,163,1.00,1.060,+0.39,54
+2021,15662,zorte,Russia,FORZE,1.06,65,0.61,1.047,+0.21,52
+2021,17956,jabbi,Denmark,Copenhagen Flames,1.05,42,0.40,1.036,+0.06,51
+2021,9766,hampus,Sweden,Ninjas in Pyjamas,1.05,163,1.00,1.050,+0.25,53
+2021,13300,Farlig,Denmark,FunPlus Phoenix,1.04,52,0.49,1.033,+0.02,50
+2021,16848,hades,Poland,ENCE,1.04,58,0.55,1.034,+0.03,50
+2021,7398,dupreeh,Denmark,Astralis,1.04,115,1.00,1.040,+0.12,51
+2021,7528,KRIMZ,Sweden,fnatic,1.04,70,0.66,1.036,+0.05,51
+2021,13982,Forester,Russia,Entropiq|EPG Family,1.04,94,0.89,1.039,+0.10,51
+2021,16921,nafany,Russia,Gambit,1.03,197,1.00,1.030,-0.02,50
+2021,16947,Perfecto,Russia,Natus Vincere,1.03,176,1.00,1.030,-0.02,50
+2021,12731,sdy,Ukraine,Spirit,1.03,97,0.92,1.030,-0.02,50
+2021,14148,sjuush,Denmark,HEROIC,1.03,123,1.00,1.030,-0.02,50
+2021,9032,Magisk,Denmark,Astralis,1.03,115,1.00,1.030,-0.02,50
+2021,11343,SHiPZ,Bulgaria,SKADE|Fiend,1.03,49,0.46,1.028,-0.04,50
+2021,12521,arT,Brazil,FURIA,1.02,106,1.00,1.020,-0.16,48
+2021,12126,poizon,Bulgaria,Complexity,1.02,107,1.00,1.020,-0.16,48
+2021,9136,Brehze,United States,Evil Geniuses,1.02,73,0.69,1.022,-0.13,49
+2021,13239,Qikert,Kazakhstan,Virtus.pro,1.02,162,1.00,1.020,-0.16,48
+2021,19015,Bymas,Lithuania,MOUZ,1.02,114,1.00,1.020,-0.16,48
+2021,12027,Krad,Russia,Entropiq|EPG Family,1.02,94,0.89,1.021,-0.14,49
+2021,11942,buster,Kazakhstan,Virtus.pro,1.01,162,1.00,1.010,-0.29,47
+2021,14176,misutaaa,France,Vitality,1.01,143,1.00,1.010,-0.29,47
+2021,10330,acoR,Denmark,MOUZ,1.01,114,1.00,1.010,-0.29,47
+2021,14614,oBo,United States,Evil Geniuses,1.01,42,0.40,1.020,-0.15,48
+2021,8183,rain,Norway,FaZe,1.01,131,1.00,1.010,-0.29,47
+2021,19236,KENSI,Russia,FORZE,1.01,65,0.61,1.017,-0.20,48
+2021,10610,refrezh,Denmark,HEROIC,1.01,123,1.00,1.010,-0.29,47
+2021,1378,zehN,Finland,FunPlus Phoenix,1.00,52,0.49,1.014,-0.24,48
+2021,10264,niko,Denmark,OG,1.00,89,0.84,1.004,-0.37,46
+2021,1225,shox,France,Vitality,1.00,148,1.00,1.000,-0.43,46
+2021,2023,FalleN,Brazil,Liquid,1.00,108,1.00,1.000,-0.43,46
+2021,4679,jks,Australia,Complexity,0.99,118,1.00,0.990,-0.56,44
+2021,18317,magixx,Russia,Spirit,0.99,97,0.92,0.993,-0.52,45
+2021,13157,Jerry,Russia,FORZE,0.99,65,0.61,1.004,-0.37,46
+2021,9616,amanek,France,G2,0.99,174,1.00,0.990,-0.56,44
+2021,7322,apEX,France,Vitality,0.99,147,1.00,0.990,-0.56,44
+2021,9216,coldzera,Brazil,FaZe,0.98,61,0.58,1.000,-0.43,46
+2021,14218,Plopski,Sweden,Ninjas in Pyjamas,0.98,163,1.00,0.980,-0.70,43
+2021,8184,ALEX,United Kingdom,fnatic|Cloud9,0.98,65,0.61,0.998,-0.45,45
+2021,8797,Stewie2K,United States,Liquid,0.98,108,1.00,0.980,-0.70,43
+2021,11840,Boombl4,Russia,Natus Vincere,0.98,176,1.00,0.980,-0.70,43
+2021,20090,Zyphon,Denmark,Copenhagen Flames,0.97,42,0.40,1.004,-0.37,46
+2021,9816,Aleksib,Finland,OG,0.97,101,0.95,0.973,-0.79,42
+2021,11219,CeRq,Bulgaria,Evil Geniuses,0.97,73,0.69,0.988,-0.59,44
+2021,9618,nexa,Serbia,G2,0.97,166,1.00,0.970,-0.83,42
+2021,12822,VINI,Brazil,FURIA,0.97,106,1.00,0.970,-0.83,42
+2021,17145,Rainwaker,Bulgaria,SKADE,0.97,42,0.40,1.004,-0.37,46
+2021,8611,es3tag,Denmark,Cloud9,0.96,88,0.83,0.971,-0.81,42
+2021,9612,Bubzkji,Denmark,Astralis,0.96,64,0.60,0.986,-0.61,44
+2021,11498,NickelBack,Russia,Entropiq|EPG Family,0.96,94,0.89,0.968,-0.86,41
+2021,7412,gla1ve,Denmark,Astralis,0.96,122,1.00,0.960,-0.97,40
+2021,13669,Jackinho,Sweden,fnatic,0.96,46,0.43,0.998,-0.45,45
+2021,13578,Grim,United States,Liquid,0.95,108,1.00,0.950,-1.10,39
+2021,16410,Duplicate,Bulgaria,SKADE,0.95,42,0.40,0.996,-0.47,45
+2021,4954,Xyp9x,Denmark,Astralis,0.95,129,1.00,0.950,-1.10,39
+2021,9115,dexter,Australia,MOUZ,0.95,106,1.00,0.950,-1.10,39
+2021,922,Snappi,Denmark,ENCE,0.95,57,0.54,0.986,-0.62,44
+2021,11654,almazer,Russia,FORZE,0.94,63,0.59,0.975,-0.76,42
+2021,7716,chopper,Russia,Spirit,0.94,94,0.89,0.950,-1.10,39
+2021,15071,interz,Russia,Gambit,0.94,197,1.00,0.940,-1.24,38
+2021,12781,k1to,Germany,BIG,0.94,159,1.00,0.940,-1.24,38
+2021,9819,doto,Finland,ENCE,0.94,58,0.55,0.979,-0.70,43
+2021,885,olofmeister,Sweden,FaZe,0.94,101,0.95,0.944,-1.18,38
+2021,13843,Lucky,Denmark,Astralis,0.93,62,0.58,0.970,-0.83,42
+2021,13240,Lack1,Kazakhstan,Entropiq|EPG Family,0.93,94,0.89,0.941,-1.22,38
+2021,8523,tarik,United States,Evil Geniuses,0.93,42,0.40,0.988,-0.58,44
+2021,284,JACKZ,France,G2,0.92,150,1.00,0.920,-1.51,35
+2021,19310,LNZ,Sweden,Ninjas in Pyjamas,0.91,79,0.75,0.940,-1.24,38
+2021,429,karrigan,Denmark,FaZe,0.91,126,1.00,0.910,-1.64,34
+2021,8875,gade,Denmark,BIG,0.91,53,0.50,0.968,-0.85,41
+2021,19672,Kyojin,France,Vitality,0.91,119,1.00,0.910,-1.64,34
+2021,11716,SANJI,Uzbekistan,Virtus.pro,0.91,137,1.00,0.910,-1.64,34
+2021,5796,tiziaN,Germany,BIG,0.90,159,1.00,0.900,-1.78,32
+2021,14494,junior,United States,FURIA,0.89,53,0.50,0.958,-0.99,40
+2021,7805,RUSH,United States,Complexity,0.89,84,0.79,0.918,-1.53,35
+2021,10096,HooXi,Denmark,Copenhagen Flames,0.88,42,0.40,0.969,-0.85,42
+2021,8507,stanislaw,Canada,Evil Geniuses,0.87,62,0.58,0.935,-1.30,37
+2021,16486,ztr,Sweden,Ninjas in Pyjamas,0.86,49,0.46,0.950,-1.10,39
+2022,16920,sh1ro,Russia,Cloud9|Gambit|Players,1.26,103,1.00,1.260,+2.90,79
+2022,7998,s1mple,Ukraine,Natus Vincere,1.26,116,1.00,1.260,+2.90,79
+2022,11893,ZywOo,France,Vitality,1.24,131,1.00,1.240,+2.65,76
+2022,15165,blameF,Denmark,Astralis,1.21,136,1.00,1.210,+2.26,73
+2022,16555,Ax1Le,Russia,Cloud9|Gambit|Players,1.21,103,1.00,1.210,+2.26,73
+2022,3741,NiKo,Bosnia and Herzegovina,G2,1.20,116,1.00,1.200,+2.14,71
+2022,10994,stavn,Denmark,HEROIC,1.16,120,1.00,1.160,+1.63,66
+2022,17306,degster,Russia,OG,1.15,57,0.63,1.105,+0.93,59
+2022,19230,m0NESY,Russia,G2,1.15,116,1.00,1.150,+1.50,65
+2022,9960,frozen,Slovakia,MOUZ,1.15,118,1.00,1.150,+1.50,65
+2022,15631,KSCERATO,Brazil,FURIA,1.14,89,0.99,1.139,+1.36,64
+2022,19164,SunPayus,Spain,ENCE|Movistar Riders,1.14,89,0.99,1.139,+1.36,64
+2022,13915,YEKINDAR,Latvia,Liquid|Outsiders|Virtus.pro,1.14,111,1.00,1.140,+1.37,64
+2022,18053,broky,Latvia,FaZe,1.13,148,1.00,1.130,+1.25,62
+2022,19673,Patsi,Russia,Spirit,1.13,60,0.67,1.096,+0.81,58
+2022,20127,w0nderful,Ukraine,Spirit,1.13,44,0.49,1.078,+0.58,56
+2022,11816,ropz,Estonia,FaZe,1.12,144,1.00,1.120,+1.12,61
+2022,12553,yuurih,Brazil,FURIA,1.12,89,0.99,1.119,+1.11,61
+2022,11954,FASHR,Netherlands,fnatic|ECSTATIC,1.12,57,0.63,1.086,+0.69,57
+2022,10394,Twistzz,Canada,FaZe,1.11,148,1.00,1.110,+0.99,60
+2022,3972,huNter-,Bosnia and Herzegovina,G2,1.11,116,1.00,1.110,+0.99,60
+2022,8528,HObbit,Kazakhstan,Cloud9|Gambit|Players,1.10,103,1.00,1.100,+0.86,59
+2022,7266,syrsoN,Germany,BIG,1.10,115,1.00,1.100,+0.86,59
+2022,13776,Jame,Russia,Outsiders|Virtus.pro,1.10,97,1.00,1.100,+0.86,59
+2022,16693,flameZ,Israel,OG,1.09,68,0.76,1.075,+0.54,55
+2022,18221,Spinx,Israel,Vitality|ENCE,1.09,149,1.00,1.090,+0.74,57
+2022,8520,NAF,Canada,Liquid,1.09,106,1.00,1.090,+0.74,57
+2022,8738,EliGE,United States,Liquid,1.09,106,1.00,1.090,+0.74,57
+2022,16080,dycha,Poland,ENCE,1.08,135,1.00,1.080,+0.61,56
+2022,8918,electroNic,Russia,Natus Vincere,1.08,118,1.00,1.080,+0.61,56
+2022,18987,b1t,Ukraine,Natus Vincere,1.08,118,1.00,1.080,+0.61,56
+2022,12732,FL1T,Russia,Outsiders|Virtus.pro,1.08,97,1.00,1.080,+0.61,56
+2022,8183,rain,Norway,FaZe,1.08,141,1.00,1.080,+0.61,56
+2022,13982,Forester,Russia,Entropiq,1.07,55,0.61,1.054,+0.27,53
+2022,9278,REZ,Sweden,Ninjas in Pyjamas,1.07,113,1.00,1.070,+0.48,55
+2022,12018,TeSeS,Denmark,HEROIC,1.07,126,1.00,1.070,+0.48,55
+2022,7964,cadiaN,Denmark,HEROIC,1.06,126,1.00,1.060,+0.35,54
+2022,15662,zorte,Russia,FORZE,1.06,52,0.58,1.047,+0.18,52
+2022,20101,fame,Russia,Outsiders,1.06,89,0.99,1.060,+0.35,54
+2022,14419,roeJ,Denmark,fnatic|Copenhagen Flames,1.06,90,1.00,1.060,+0.35,54
+2022,13578,Grim,United States,Complexity,1.06,42,0.47,1.043,+0.14,51
+2022,18072,torzsi,Hungary,MOUZ,1.06,118,1.00,1.060,+0.35,54
+2022,9078,k0nfig,Denmark,Astralis,1.06,124,1.00,1.060,+0.35,54
+2022,12713,floppy,United States,Complexity,1.06,42,0.47,1.043,+0.14,51
+2022,13666,Brollan,Sweden,fnatic,1.05,94,1.00,1.050,+0.23,52
+2022,20312,xertioN,Israel,MOUZ,1.05,42,0.47,1.038,+0.08,51
+2022,13602,nicoodoz,Denmark,fnatic|Copenhagen Flames,1.05,90,1.00,1.050,+0.23,52
+2022,8371,alex,Spain,Movistar Riders,1.05,70,0.78,1.045,+0.17,52
+2022,8564,fer,Brazil,Imperial,1.05,46,0.51,1.039,+0.09,51
+2022,5794,tabseN,Germany,BIG,1.04,122,1.00,1.040,+0.10,51
+2022,14148,sjuush,Denmark,HEROIC,1.04,126,1.00,1.040,+0.10,51
+2022,9032,Magisk,Denmark,Vitality,1.04,131,1.00,1.040,+0.10,51
+2022,13249,oSee,United States,Liquid,1.04,106,1.00,1.040,+0.10,51
+2022,16848,hades,Poland,ENCE,1.04,103,1.00,1.040,+0.10,51
+2022,16947,Perfecto,Russia,Natus Vincere,1.04,118,1.00,1.040,+0.10,51
+2022,17011,shalfey,Russia,FORZE,1.03,52,0.58,1.029,-0.04,50
+2022,19015,Bymas,Lithuania,MOUZ,1.03,63,0.70,1.029,-0.03,50
+2022,18317,magixx,Russia,Spirit,1.03,60,0.67,1.029,-0.04,50
+2022,17956,jabbi,Denmark,Copenhagen Flames,1.03,127,1.00,1.030,-0.03,50
+2022,4679,jks,Australia,G2|FaZe,1.03,50,0.56,1.029,-0.04,50
+2022,18462,mezii,United Kingdom,fnatic,1.03,74,0.82,1.030,-0.03,50
+2022,13281,El1an,Russia,Entropiq,1.02,55,0.61,1.023,-0.11,49
+2022,14932,faveN,Germany,BIG,1.02,89,0.99,1.020,-0.15,48
+2022,8568,boltz,Brazil,Imperial,1.01,46,0.51,1.019,-0.17,48
+2022,12521,arT,Brazil,FURIA,1.01,89,0.99,1.010,-0.28,47
+2022,9031,valde,Denmark,ENCE|OG,1.01,48,0.53,1.018,-0.17,48
+2022,19236,KENSI,Russia,FORZE,1.01,52,0.58,1.018,-0.18,48
+2022,16612,n0rb3r7,Russia,Outsiders,1.00,89,0.99,1.000,-0.41,46
+2022,11498,NickelBack,Russia,Entropiq,1.00,55,0.61,1.011,-0.27,47
+2022,9766,hampus,Sweden,Ninjas in Pyjamas,1.00,105,1.00,1.000,-0.41,46
+2022,7398,dupreeh,Denmark,Vitality,1.00,131,1.00,1.000,-0.41,46
+2022,18835,saffee,Brazil,FURIA,1.00,89,0.99,1.000,-0.41,46
+2022,18506,S1ren,Russia,Spirit,1.00,60,0.67,1.009,-0.29,47
+2022,20090,Zyphon,Denmark,Sprout|Copenhagen Flames,1.00,68,0.76,1.007,-0.32,47
+2022,11777,Maden,Montenegro,ENCE,1.00,134,1.00,1.000,-0.41,46
+2022,20304,Staehr,Denmark,Sprout,0.99,41,0.46,1.011,-0.27,47
+2022,2023,FalleN,Brazil,Imperial,0.99,46,0.51,1.009,-0.30,47
+2022,15821,NEOFRAG,Czech Republic,OG,0.98,52,0.58,1.000,-0.40,46
+2022,9254,mopoz,Spain,Movistar Riders,0.98,70,0.78,0.991,-0.53,45
+2022,7716,chopper,Russia,Spirit,0.98,60,0.67,0.996,-0.46,45
+2022,15071,interz,Russia,Cloud9|Gambit|Players,0.98,103,1.00,0.980,-0.66,43
+2022,12731,sdy,Ukraine,Natus Vincere,0.98,72,0.80,0.990,-0.54,45
+2022,17372,FaNg,Canada,Complexity,0.98,42,0.47,1.006,-0.34,47
+2022,14929,JDC,Germany,MOUZ,0.97,108,1.00,0.970,-0.79,42
+2022,11840,Boombl4,Russia,Natus Vincere,0.97,43,0.48,1.000,-0.40,46
+2022,7528,KRIMZ,Sweden,fnatic,0.97,57,0.63,0.991,-0.52,45
+2022,19899,Krimbo,Germany,BIG,0.96,88,0.98,0.962,-0.90,41
+2022,19882,Norwi,Russia,FORZE,0.96,52,0.58,0.989,-0.55,44
+2022,13240,Lack1,Kazakhstan,Entropiq,0.96,47,0.52,0.993,-0.50,45
+2022,13300,Farlig,Denmark,Astralis,0.96,98,1.00,0.960,-0.92,41
+2022,9618,nexa,Serbia,OG,0.96,68,0.76,0.977,-0.71,43
+2022,13239,Qikert,Kazakhstan,Outsiders|Virtus.pro,0.95,97,1.00,0.950,-1.05,40
+2022,13157,Jerry,Russia,FORZE,0.95,52,0.58,0.983,-0.63,44
+2022,14218,Plopski,Sweden,Ninjas in Pyjamas,0.95,94,1.00,0.950,-1.05,40
+2022,10610,refrezh,Denmark,Sprout,0.95,67,0.74,0.970,-0.79,42
+2022,284,JACKZ,France,G2,0.95,77,0.86,0.961,-0.90,41
+2022,12781,k1to,Germany,BIG,0.95,84,0.93,0.955,-0.98,40
+2022,4954,Xyp9x,Denmark,Astralis,0.95,136,1.00,0.950,-1.05,40
+2022,16921,nafany,Russia,Cloud9|Gambit|Players,0.94,103,1.00,0.940,-1.17,38
+2022,19044,F1KU,Poland,OG,0.94,52,0.58,0.977,-0.70,43
+2022,12027,Krad,Russia,Entropiq,0.94,55,0.61,0.974,-0.74,43
+2022,9816,Aleksib,Finland,G2,0.94,91,1.00,0.940,-1.17,38
+2022,7412,gla1ve,Denmark,Astralis,0.93,135,1.00,0.930,-1.30,37
+2022,19750,drop,Brazil,FURIA,0.93,89,0.99,0.931,-1.29,37
+2022,12822,VINI,Brazil,Imperial,0.93,46,0.51,0.978,-0.69,43
+2022,8611,es3tag,Denmark,Ninjas in Pyjamas,0.93,113,1.00,0.930,-1.30,37
+2022,922,Snappi,Denmark,ENCE,0.93,135,1.00,0.930,-1.30,37
+2022,5796,tiziaN,Germany,BIG,0.92,90,1.00,0.920,-1.43,36
+2022,9115,dexter,Australia,MOUZ,0.92,118,1.00,0.920,-1.43,36
+2022,13093,DeathZz,Spain,Movistar Riders,0.92,70,0.78,0.944,-1.12,39
+2022,15370,slaxz-,Germany,Sprout,0.92,41,0.46,0.979,-0.68,43
+2022,429,karrigan,Denmark,FaZe,0.91,148,1.00,0.910,-1.55,34
+2022,14176,misutaaa,France,Vitality,0.90,74,0.82,0.923,-1.39,36
+2022,7322,apEX,France,Vitality,0.90,131,1.00,0.900,-1.68,33
+2022,19509,dav1g,Spain,Movistar Riders,0.90,70,0.78,0.928,-1.32,37
+2022,7687,nitr0,United States,Liquid,0.89,106,1.00,0.890,-1.81,32
+2022,10096,HooXi,Denmark,G2|Copenhagen Flames,0.82,92,1.00,0.820,-2.70,23
+2022,11630,JT,South Africa,Complexity,0.81,42,0.47,0.926,-1.35,37
+2023,11893,ZywOo,France,Vitality,1.28,118,1.00,1.280,+3.17,82
+2023,7592,device,Denmark,Astralis,1.21,110,1.00,1.210,+2.25,73
+2023,16920,sh1ro,Russia,Cloud9,1.20,124,1.00,1.200,+2.12,71
+2023,7938,XANTARES,Türkiye,Eternal Fire,1.20,68,0.72,1.153,+1.50,65
+2023,3741,NiKo,Bosnia and Herzegovina,G2,1.19,113,1.00,1.190,+1.99,70
+2023,9960,frozen,Slovakia,MOUZ,1.19,112,1.00,1.190,+1.99,70
+2023,15165,blameF,Denmark,Astralis,1.18,110,1.00,1.180,+1.86,69
+2023,7998,s1mple,Ukraine,Natus Vincere,1.18,90,0.95,1.172,+1.76,68
+2023,18221,Spinx,Israel,Vitality,1.17,118,1.00,1.170,+1.72,67
+2023,19230,m0NESY,Russia,G2,1.17,113,1.00,1.170,+1.72,67
+2023,15662,zorte,Russia,BETBOOM|FORZE,1.16,61,0.64,1.115,+1.01,60
+2023,11816,ropz,Estonia,FaZe,1.16,162,1.00,1.160,+1.59,66
+2023,13776,Jame,Russia,Virtus.pro|Outsiders,1.16,111,1.00,1.160,+1.59,66
+2023,19164,SunPayus,Spain,ENCE,1.13,123,1.00,1.130,+1.20,62
+2023,15631,KSCERATO,Brazil,FURIA,1.13,98,1.00,1.130,+1.20,62
+2023,18053,broky,Latvia,FaZe,1.12,162,1.00,1.120,+1.07,61
+2023,12732,FL1T,Russia,Virtus.pro|Outsiders,1.12,111,1.00,1.120,+1.07,61
+2023,19899,Krimbo,Germany,BIG,1.12,116,1.00,1.120,+1.07,61
+2023,10994,stavn,Denmark,HEROIC,1.12,103,1.00,1.120,+1.07,61
+2023,16555,Ax1Le,Russia,Cloud9,1.11,146,1.00,1.110,+0.93,59
+2023,17306,degster,Russia,OG,1.11,61,0.64,1.083,+0.58,56
+2023,8248,jkaem,Norway,Apeks,1.10,94,0.99,1.099,+0.79,58
+2023,8738,EliGE,United States,Liquid,1.09,120,1.00,1.090,+0.67,57
+2023,18850,Jimpphat,Finland,MOUZ,1.09,54,0.57,1.066,+0.36,54
+2023,9032,Magisk,Denmark,Vitality,1.09,100,1.00,1.090,+0.67,57
+2023,13670,nawwk,Sweden,Apeks,1.09,94,0.99,1.089,+0.66,57
+2023,17956,jabbi,Denmark,HEROIC,1.09,102,1.00,1.090,+0.67,57
+2023,18072,torzsi,Hungary,MOUZ,1.08,111,1.00,1.080,+0.54,55
+2023,12731,sdy,Ukraine,Monte,1.08,80,0.84,1.073,+0.45,54
+2023,8918,electroNic,Russia,Cloud9|Natus Vincere,1.08,130,1.00,1.080,+0.54,55
+2023,20127,w0nderful,Ukraine,Natus Vincere,1.08,52,0.55,1.060,+0.27,53
+2023,9436,NertZ,Israel,ENCE,1.08,106,1.00,1.080,+0.54,55
+2023,20312,xertioN,Israel,MOUZ,1.08,111,1.00,1.080,+0.54,55
+2023,10394,Twistzz,Canada,FaZe,1.08,155,1.00,1.080,+0.54,55
+2023,16848,hades,Poland,9INE,1.07,65,0.68,1.059,+0.26,53
+2023,7964,cadiaN,Denmark,HEROIC,1.07,100,1.00,1.070,+0.41,54
+2023,18987,b1t,Ukraine,Natus Vincere,1.07,113,1.00,1.070,+0.41,54
+2023,18462,mezii,United Kingdom,fnatic,1.07,113,1.00,1.070,+0.41,54
+2023,3972,huNter-,Bosnia and Herzegovina,G2,1.06,113,1.00,1.060,+0.28,53
+2023,19284,prosus,Germany,BIG,1.06,50,0.53,1.048,+0.12,51
+2023,5794,tabseN,Germany,BIG,1.06,116,1.00,1.060,+0.28,53
+2023,8520,NAF,Canada,Liquid,1.06,81,0.85,1.056,+0.23,52
+2023,12553,yuurih,Brazil,FURIA,1.06,98,1.00,1.060,+0.28,53
+2023,19592,headtr1ck,Ukraine,Ninjas in Pyjamas,1.06,114,1.00,1.060,+0.28,53
+2023,14759,iM,Romania,Natus Vincere|GamerLegion,1.06,83,0.87,1.057,+0.23,52
+2023,16885,Woro2k,Ukraine,Monte,1.06,80,0.84,1.056,+0.22,52
+2023,9278,REZ,Sweden,Ninjas in Pyjamas,1.06,114,1.00,1.060,+0.28,53
+2023,16612,n0rb3r7,Russia,Virtus.pro,1.06,73,0.77,1.054,+0.20,52
+2023,8183,rain,Norway,FaZe,1.05,155,1.00,1.050,+0.14,51
+2023,16693,flameZ,Israel,OG,1.05,122,1.00,1.050,+0.14,51
+2023,20101,fame,Russia,Virtus.pro|Outsiders,1.05,111,1.00,1.050,+0.14,51
+2023,13602,nicoodoz,Denmark,fnatic,1.05,52,0.55,1.043,+0.06,51
+2023,18790,CacaNito,North Macedonia,Apeks,1.04,56,0.59,1.038,-0.01,50
+2023,8528,HObbit,Kazakhstan,Cloud9,1.04,156,1.00,1.040,+0.01,50
+2023,18317,magixx,Russia,Spirit,1.04,82,0.86,1.039,+0.00,50
+2023,12840,hallzerk,Norway,Complexity,1.04,103,1.00,1.040,+0.01,50
+2023,19206,jL,Lithuania,Natus Vincere|Apeks,1.04,96,1.00,1.040,+0.01,50
+2023,14148,sjuush,Denmark,HEROIC,1.04,108,1.00,1.040,+0.01,50
+2023,19733,DemQQ,Ukraine,Monte,1.04,80,0.84,1.039,+0.00,50
+2023,4679,jks,Australia,G2,1.04,105,1.00,1.040,+0.01,50
+2023,17504,KEi,Poland,9INE,1.03,65,0.68,1.032,-0.10,49
+2023,8789,mir,Russia,Virtus.pro,1.03,81,0.85,1.031,-0.11,49
+2023,12018,TeSeS,Denmark,HEROIC,1.03,108,1.00,1.030,-0.12,49
+2023,7398,dupreeh,Denmark,HEROIC,1.03,72,0.76,1.031,-0.10,49
+2023,12713,floppy,United States,Complexity,1.03,107,1.00,1.030,-0.12,49
+2023,16717,br0,Denmark,Monte,1.03,62,0.65,1.032,-0.10,49
+2023,13578,Grim,United States,Complexity,1.03,107,1.00,1.030,-0.12,49
+2023,13249,oSee,United States,Liquid,1.03,81,0.85,1.031,-0.11,49
+2023,16080,dycha,Poland,ENCE,1.03,114,1.00,1.030,-0.12,49
+2023,16947,Perfecto,Russia,Cloud9|Natus Vincere,1.02,130,1.00,1.020,-0.25,47
+2023,10330,acoR,Denmark,GamerLegion,1.02,73,0.77,1.024,-0.20,48
+2023,13915,YEKINDAR,Latvia,Liquid,1.02,81,0.85,1.022,-0.22,48
+2023,9078,k0nfig,Denmark,Ninjas in Pyjamas,1.02,103,1.00,1.020,-0.25,47
+2023,14932,faveN,Germany,BIG,1.01,66,0.69,1.018,-0.28,47
+2023,12781,k1to,Germany,BIG,1.01,69,0.73,1.017,-0.29,47
+2023,20282,kRaSnaL,Poland,Monte,1.01,80,0.84,1.014,-0.33,47
+2023,20358,volt,Romania,GamerLegion|Into the Breach,1.00,72,0.76,1.009,-0.40,46
+2023,13666,Brollan,Sweden,Ninjas in Pyjamas,1.00,106,1.00,1.000,-0.52,45
+2023,18506,S1ren,Russia,BETBOOM,1.00,59,0.62,1.013,-0.34,47
+2023,18835,saffee,Brazil,FURIA,1.00,67,0.71,1.010,-0.38,46
+2023,15428,Goofy,Poland,9INE,1.00,65,0.68,1.011,-0.37,46
+2023,8575,Calyx,Türkiye,Eternal Fire,1.00,68,0.72,1.010,-0.38,46
+2023,7528,KRIMZ,Sweden,fnatic,0.99,94,0.99,0.990,-0.64,44
+2023,21468,hyped,Germany,BIG,0.99,51,0.54,1.011,-0.37,46
+2023,11777,Maden,Montenegro,ENCE,0.99,123,1.00,0.990,-0.65,44
+2023,20304,Staehr,Denmark,Astralis|Sprout,0.99,56,0.59,1.009,-0.40,46
+2023,10566,chelo,Brazil,FURIA|Imperial,0.98,69,0.73,0.995,-0.58,44
+2023,19114,Kylar,Poland,9INE,0.98,65,0.68,0.998,-0.55,45
+2023,14419,roeJ,Denmark,fnatic,0.98,95,1.00,0.980,-0.78,42
+2023,19677,kyxsan,North Macedonia,Apeks,0.98,94,0.99,0.981,-0.77,42
+2023,2023,FalleN,Brazil,FURIA|Imperial,0.97,69,0.73,0.988,-0.67,43
+2023,19673,Patsi,Russia,Liquid,0.97,65,0.68,0.991,-0.64,44
+2023,17937,isak,Sweden,GamerLegion,0.97,73,0.77,0.985,-0.71,43
+2023,16820,siuhy,Poland,MOUZ|GamerLegion,0.96,87,0.92,0.966,-0.96,40
+2023,12521,arT,Brazil,FURIA,0.96,98,1.00,0.960,-1.04,40
+2023,20941,Buzz,Denmark,Astralis,0.95,105,1.00,0.950,-1.17,38
+2023,15821,NEOFRAG,Czech Republic,OG,0.95,74,0.78,0.969,-0.93,41
+2023,11942,buster,Kazakhstan,Cloud9,0.95,93,0.98,0.952,-1.15,38
+2023,9816,Aleksib,Finland,Natus Vincere,0.94,128,1.00,0.940,-1.31,37
+2023,7716,chopper,Russia,Spirit,0.94,82,0.86,0.953,-1.13,39
+2023,7412,gla1ve,Denmark,ENCE|Astralis,0.94,72,0.76,0.963,-1.00,40
+2023,19044,F1KU,Poland,OG,0.94,72,0.76,0.963,-1.00,40
+2023,7322,apEX,France,Vitality,0.94,118,1.00,0.940,-1.31,37
+2023,11954,FASHR,Netherlands,fnatic,0.93,52,0.55,0.978,-0.81,42
+2023,6904,STYKO,Slovakia,Apeks,0.93,57,0.60,0.972,-0.88,41
+2023,16921,nafany,Russia,BETBOOM|Cloud9,0.93,105,1.00,0.930,-1.44,36
+2023,21708,npl,Ukraine,Natus Vincere,0.92,55,0.58,0.969,-0.93,41
+2023,150,MAJ3R,Türkiye,Eternal Fire,0.91,68,0.72,0.946,-1.23,38
+2023,922,Snappi,Denmark,ENCE,0.91,112,1.00,0.910,-1.70,33
+2023,7687,nitr0,United States,Liquid,0.91,52,0.55,0.967,-0.95,40
+2023,15117,Keoz,Belgium,GamerLegion,0.91,73,0.77,0.939,-1.32,37
+2023,4829,mynio,Poland,9INE,0.90,65,0.68,0.943,-1.27,37
+2023,19750,drop,Brazil,FURIA,0.88,67,0.71,0.926,-1.49,35
+2023,429,karrigan,Denmark,FaZe,0.88,162,1.00,0.880,-2.10,29
+2023,11630,JT,South Africa,Complexity,0.88,107,1.00,0.880,-2.10,29
+2023,9115,dexter,Australia,MOUZ|fnatic,0.87,92,0.97,0.875,-2.16,28
+2023,10096,HooXi,Denmark,G2,0.83,113,1.00,0.830,-2.76,22
+2024,11893,ZywOo,France,Vitality,1.36,132,1.00,1.360,+4.00,90
+2024,21167,donk,Russia,Spirit,1.33,134,1.00,1.330,+3.64,86
+2024,19230,m0NESY,Russia,G2,1.30,156,1.00,1.300,+3.28,83
+2024,3741,NiKo,Bosnia and Herzegovina,G2,1.19,159,1.00,1.190,+1.96,70
+2024,16920,sh1ro,Russia,Spirit,1.16,136,1.00,1.160,+1.60,66
+2024,15631,KSCERATO,Brazil,FURIA,1.16,101,0.97,1.156,+1.55,66
+2024,7938,XANTARES,Türkiye,Eternal Fire,1.15,122,1.00,1.150,+1.48,65
+2024,18987,b1t,Ukraine,Natus Vincere,1.15,159,1.00,1.150,+1.48,65
+2024,21037,insani,Brazil,MIBR,1.14,88,0.85,1.122,+1.14,61
+2024,18850,Jimpphat,Finland,MOUZ,1.14,134,1.00,1.140,+1.36,64
+2024,19206,jL,Lithuania,Natus Vincere,1.14,159,1.00,1.140,+1.36,64
+2024,10394,Twistzz,Canada,Liquid,1.14,104,1.00,1.140,+1.36,64
+2024,8738,EliGE,United States,Complexity,1.13,102,0.98,1.128,+1.22,62
+2024,9960,frozen,Slovakia,FaZe,1.12,162,1.00,1.120,+1.12,61
+2024,20127,w0nderful,Ukraine,Natus Vincere,1.12,159,1.00,1.120,+1.12,61
+2024,11617,malbsMd,Guatemala,G2,1.12,83,0.80,1.100,+0.88,59
+2024,18221,Spinx,Israel,Vitality,1.10,132,1.00,1.100,+0.88,59
+2024,20312,xertioN,Israel,MOUZ,1.10,134,1.00,1.100,+0.88,59
+2024,8520,NAF,Canada,Liquid,1.10,104,1.00,1.100,+0.88,59
+2024,16693,flameZ,Israel,Vitality,1.10,132,1.00,1.100,+0.88,59
+2024,11816,ropz,Estonia,FaZe,1.09,162,1.00,1.090,+0.76,58
+2024,20464,ewjerkz,Portugal,SAW,1.08,62,0.60,1.056,+0.36,54
+2024,9436,NertZ,Israel,HEROIC,1.08,137,1.00,1.080,+0.64,56
+2024,20903,Senzu,Mongolia,The MongolZ,1.08,103,0.99,1.079,+0.63,56
+2024,18053,broky,Latvia,FaZe,1.08,162,1.00,1.080,+0.64,56
+2024,19899,Krimbo,Germany,BIG,1.07,90,0.87,1.063,+0.44,54
+2024,13666,Brollan,Sweden,MOUZ,1.07,134,1.00,1.070,+0.52,55
+2024,17956,jabbi,Denmark,Astralis,1.06,106,1.00,1.060,+0.40,54
+2024,21239,MartinezSa,Spain,9z,1.06,52,0.50,1.041,+0.17,52
+2024,10994,stavn,Denmark,Astralis,1.06,106,1.00,1.060,+0.40,54
+2024,20423,zont1x,Ukraine,Spirit,1.06,136,1.00,1.060,+0.40,54
+2024,18141,biguzera,Brazil,paiN,1.06,115,1.00,1.060,+0.40,54
+2024,20465,arrozdoce,Portugal,SAW,1.06,50,0.48,1.040,+0.16,52
+2024,11154,exit,Brazil,MIBR,1.06,88,0.85,1.054,+0.33,53
+2024,12840,hallzerk,Norway,Complexity,1.05,102,0.98,1.049,+0.27,53
+2024,19164,SunPayus,Spain,Falcons,1.05,98,0.94,1.048,+0.26,53
+2024,18072,torzsi,Hungary,MOUZ,1.05,134,1.00,1.050,+0.28,53
+2024,12018,TeSeS,Denmark,HEROIC,1.05,137,1.00,1.050,+0.28,53
+2024,14929,JDC,Germany,BIG,1.05,70,0.67,1.041,+0.17,52
+2024,14736,dgt,Uruguay,9z,1.05,52,0.50,1.036,+0.11,51
+2024,8574,woxic,Türkiye,Eternal Fire,1.04,122,1.00,1.040,+0.16,52
+2024,14759,iM,Romania,Natus Vincere,1.04,159,1.00,1.040,+0.16,52
+2024,21243,Wicadia,Türkiye,Eternal Fire,1.04,122,1.00,1.040,+0.16,52
+2024,20101,fame,Russia,Virtus.pro,1.03,132,1.00,1.030,+0.04,50
+2024,4679,jks,Australia,Liquid,1.03,66,0.63,1.027,+0.00,50
+2024,17306,degster,Russia,HEROIC,1.03,72,0.69,1.027,+0.01,50
+2024,20275,Techno,Mongolia,The MongolZ,1.03,103,0.99,1.030,+0.04,50
+2024,18835,saffee,Brazil,MIBR,1.03,88,0.85,1.029,+0.03,50
+2024,12553,yuurih,Brazil,FURIA,1.03,101,0.97,1.030,+0.04,50
+2024,20304,Staehr,Denmark,Astralis,1.03,106,1.00,1.030,+0.04,50
+2024,20563,lux,Brazil,paiN,1.03,115,1.00,1.030,+0.04,50
+2024,8918,electroNic,Russia,Virtus.pro|Cloud9,1.02,133,1.00,1.020,-0.08,49
+2024,20194,bLitz,Mongolia,The MongolZ,1.02,103,0.99,1.020,-0.08,49
+2024,18462,mezii,United Kingdom,Vitality,1.02,122,1.00,1.020,-0.08,49
+2024,21763,ultimate,Poland,Liquid,1.02,66,0.63,1.021,-0.07,49
+2024,7592,device,Denmark,Astralis,1.02,100,0.96,1.020,-0.08,49
+2024,21809,910,Mongolia,The MongolZ,1.02,103,0.99,1.020,-0.08,49
+2024,8183,rain,Norway,FaZe,1.01,162,1.00,1.010,-0.20,48
+2024,21001,mzinho,Mongolia,The MongolZ,1.01,103,0.99,1.010,-0.20,48
+2024,14148,sjuush,Denmark,HEROIC,1.01,137,1.00,1.010,-0.20,48
+2024,8575,Calyx,Türkiye,Eternal Fire,1.01,122,1.00,1.010,-0.20,48
+2024,19694,nqz,Brazil,paiN,1.01,115,1.00,1.010,-0.20,48
+2024,15662,zorte,Russia,BETBOOM,1.00,53,0.51,1.011,-0.19,48
+2024,8565,HEN1,Brazil,Imperial,1.00,58,0.56,1.009,-0.20,48
+2024,20183,decenty,Brazil,Imperial,1.00,84,0.81,1.004,-0.27,47
+2024,12732,FL1T,Russia,Virtus.pro,1.00,132,1.00,1.000,-0.32,47
+2024,13578,Grim,United States,Complexity,1.00,102,0.98,1.000,-0.31,47
+2024,9219,felps,Brazil,Imperial,1.00,84,0.81,1.004,-0.27,47
+2024,13776,Jame,Russia,Virtus.pro,1.00,132,1.00,1.000,-0.32,47
+2024,18506,S1ren,Russia,BETBOOM,1.00,53,0.51,1.011,-0.19,48
+2024,9032,Magisk,Denmark,Falcons,1.00,105,1.00,1.000,-0.32,47
+2024,16717,br0,Denmark,Astralis|Monte,0.99,77,0.74,0.998,-0.34,47
+2024,18317,magixx,Russia,Spirit,0.99,134,1.00,0.990,-0.44,46
+2024,20462,story,Portugal,SAW,0.99,62,0.60,1.003,-0.29,47
+2024,5794,tabseN,Germany,BIG,0.99,90,0.87,0.994,-0.39,46
+2024,3972,huNter-,Bosnia and Herzegovina,G2,0.98,159,1.00,0.980,-0.56,44
+2024,16612,n0rb3r7,Russia,Virtus.pro,0.98,132,1.00,0.980,-0.56,44
+2024,22613,HUASOPEEK,Chile,9z,0.98,52,0.50,1.001,-0.31,47
+2024,19920,KaiR0N-,Russia,BETBOOM,0.97,53,0.51,0.995,-0.38,46
+2024,20171,snow,Brazil,paiN,0.97,70,0.67,0.987,-0.48,45
+2024,11777,Maden,Montenegro,Falcons,0.97,105,1.00,0.970,-0.68,43
+2024,7266,syrsoN,Germany,BIG,0.97,70,0.67,0.987,-0.48,45
+2024,19750,drop,Brazil,MIBR,0.97,88,0.85,0.978,-0.58,44
+2024,18676,skullz,Brazil,FURIA|Liquid,0.97,104,1.00,0.970,-0.68,43
+2024,22564,noway,Brazil,Imperial,0.96,84,0.81,0.972,-0.66,43
+2024,13602,nicoodoz,Denmark,HEROIC,0.96,59,0.57,0.987,-0.48,45
+2024,13915,YEKINDAR,Latvia,Liquid,0.96,104,1.00,0.960,-0.80,42
+2024,12713,floppy,United States,Complexity,0.96,102,0.98,0.961,-0.78,42
+2024,19677,kyxsan,North Macedonia,HEROIC,0.96,137,1.00,0.960,-0.80,42
+2024,12092,max,Uruguay,9z,0.95,52,0.50,0.986,-0.49,45
+2024,20085,kauez,Brazil,paiN,0.95,115,1.00,0.950,-0.92,41
+2024,9618,nexa,Serbia,G2,0.95,76,0.73,0.969,-0.69,43
+2024,2023,FalleN,Brazil,FURIA,0.94,101,0.97,0.942,-1.01,40
+2024,7398,dupreeh,Denmark,Falcons,0.94,86,0.83,0.954,-0.87,41
+2024,16820,siuhy,Poland,MOUZ,0.94,134,1.00,0.940,-1.04,40
+2024,17937,isak,Sweden,GamerLegion,0.94,64,0.62,0.971,-0.66,43
+2024,7716,chopper,Russia,Spirit,0.94,136,1.00,0.940,-1.04,40
+2024,2241,roman,Portugal,SAW,0.94,62,0.60,0.973,-0.64,44
+2024,20987,brnz4n,Brazil,MIBR,0.93,62,0.60,0.967,-0.71,43
+2024,150,MAJ3R,Türkiye,Eternal Fire,0.93,122,1.00,0.930,-1.16,38
+2024,630,MUTiRiS,Portugal,SAW,0.93,62,0.60,0.967,-0.71,43
+2024,10566,chelo,Brazil,FURIA,0.93,101,0.97,0.933,-1.13,39
+2024,12822,VINI,Brazil,Imperial,0.92,84,0.81,0.940,-1.04,40
+2024,11630,JT,South Africa,Complexity,0.92,102,0.98,0.922,-1.25,37
+2024,9816,Aleksib,Finland,Natus Vincere,0.91,159,1.00,0.910,-1.40,36
+2024,7322,apEX,France,Vitality,0.90,132,1.00,0.900,-1.52,35
+2024,2553,Snax,Poland,G2|GamerLegion,0.89,118,1.00,0.890,-1.64,34
+2024,20607,buda,Argentina,9z,0.88,52,0.50,0.951,-0.91,41
+2024,7964,cadiaN,Denmark,Astralis|Liquid,0.88,61,0.59,0.938,-1.06,39
+2024,429,karrigan,Denmark,FaZe,0.86,162,1.00,0.860,-2.00,30
+2024,10096,HooXi,Denmark,G2,0.85,60,0.58,0.923,-1.25,38
+2024,922,Snappi,Denmark,Falcons,0.82,105,1.00,0.820,-2.48,25
+2024,16921,nafany,Russia,BETBOOM,0.81,53,0.51,0.914,-1.35,36
+2025,21167,donk,Russia,Spirit,1.38,142,1.00,1.380,+4.27,93
+2025,11893,ZywOo,France,Vitality,1.32,189,1.00,1.320,+3.54,85
+2025,19230,m0NESY,Russia,Falcons|G2,1.24,167,1.00,1.240,+2.56,76
+2025,15631,KSCERATO,Brazil,FURIA,1.19,180,1.00,1.190,+1.95,69
+2025,16920,sh1ro,Russia,Spirit,1.19,142,1.00,1.190,+1.95,69
+2025,10394,Twistzz,Canada,Liquid,1.16,146,1.00,1.160,+1.58,66
+2025,11816,ropz,Estonia,Vitality,1.16,189,1.00,1.160,+1.58,66
+2025,9960,frozen,Slovakia,FaZe,1.16,161,1.00,1.160,+1.58,66
+2025,24177,kyousuke,Russia,Falcons,1.16,73,0.56,1.100,+0.85,58
+2025,7938,XANTARES,Türkiye,Aurora|Eternal Fire,1.14,171,1.00,1.140,+1.34,63
+2025,20447,HeavyGod,Israel,G2,1.13,149,1.00,1.130,+1.22,62
+2025,24144,molodoy,Kazakhstan,FURIA,1.12,138,1.00,1.120,+1.09,61
+2025,3741,NiKo,Bosnia and Herzegovina,Falcons,1.12,182,1.00,1.120,+1.09,61
+2025,20903,Senzu,Mongolia,The MongolZ,1.12,168,1.00,1.120,+1.09,61
+2025,19808,tN1R,Belarus,HEROIC,1.12,92,0.70,1.091,+0.75,57
+2025,19045,latto,Brazil,Legacy,1.11,84,0.64,1.079,+0.60,56
+2025,16693,flameZ,Israel,Vitality,1.11,189,1.00,1.110,+0.97,60
+2025,22279,PR,Czech Republic,GamerLegion,1.11,132,1.00,1.110,+0.97,60
+2025,18221,Spinx,Israel,MOUZ,1.11,174,1.00,1.110,+0.97,60
+2025,19645,JamYoung,China,TYLOO,1.11,51,0.39,1.058,+0.33,53
+2025,13915,YEKINDAR,Latvia,FURIA,1.10,138,1.00,1.100,+0.85,59
+2025,21062,MATYS,Slovakia,G2,1.10,73,0.56,1.066,+0.44,54
+2025,9278,REZ,Sweden,GamerLegion,1.10,132,1.00,1.100,+0.85,59
+2025,21243,Wicadia,Türkiye,Aurora|Eternal Fire,1.09,175,1.00,1.090,+0.73,57
+2025,14759,iM,Romania,Natus Vincere,1.09,131,1.00,1.090,+0.73,57
+2025,8738,EliGE,United States,Liquid,1.09,123,0.94,1.086,+0.68,57
+2025,18987,b1t,Ukraine,Natus Vincere,1.08,131,1.00,1.080,+0.61,56
+2025,20312,xertioN,Israel,MOUZ,1.08,181,1.00,1.080,+0.61,56
+2025,20127,w0nderful,Ukraine,Natus Vincere,1.08,131,1.00,1.080,+0.61,56
+2025,21708,npl,Ukraine,B8,1.08,58,0.44,1.049,+0.23,52
+2025,18462,mezii,United Kingdom,Vitality,1.08,189,1.00,1.080,+0.61,56
+2025,12732,FL1T,Russia,Virtus.pro,1.07,128,0.98,1.069,+0.47,55
+2025,22673,makazze,Kosovo,Natus Vincere,1.07,69,0.53,1.048,+0.22,52
+2025,21037,insani,Brazil,MIBR,1.07,66,0.50,1.047,+0.21,52
+2025,20423,zont1x,Ukraine,Spirit,1.06,107,0.82,1.053,+0.28,53
+2025,20304,Staehr,Denmark,Astralis,1.06,155,1.00,1.060,+0.36,54
+2025,18072,torzsi,Hungary,MOUZ,1.06,181,1.00,1.060,+0.36,54
+2025,19206,jL,Lithuania,Natus Vincere,1.05,62,0.47,1.036,+0.07,51
+2025,12553,yuurih,Brazil,FURIA,1.05,180,1.00,1.050,+0.24,52
+2025,19694,nqz,Brazil,paiN,1.05,132,1.00,1.050,+0.24,52
+2025,21001,mzinho,Mongolia,The MongolZ,1.04,192,1.00,1.040,+0.12,51
+2025,13138,Maka,France,3DMAX,1.04,170,1.00,1.040,+0.12,51
+2025,19187,xfl0ud,Türkiye,HEROIC,1.04,89,0.68,1.035,+0.06,51
+2025,10994,stavn,Denmark,Astralis,1.04,103,0.79,1.037,+0.08,51
+2025,22842,kensizor,Ukraine,B8,1.04,54,0.41,1.031,+0.00,50
+2025,20119,nilo,Sweden,HEROIC,1.04,52,0.40,1.030,+0.00,50
+2025,8574,woxic,Türkiye,Aurora|Eternal Fire,1.04,175,1.00,1.040,+0.12,51
+2025,21809,910,Mongolia,The MongolZ,1.04,192,1.00,1.040,+0.12,51
+2025,20101,fame,Russia,Virtus.pro,1.04,128,0.98,1.040,+0.11,51
+2025,23643,esenthial,Ukraine,B8,1.04,58,0.44,1.031,+0.01,50
+2025,21621,Moseyuh,China,TYLOO,1.04,51,0.39,1.030,+0.00,50
+2025,18850,Jimpphat,Finland,MOUZ,1.04,181,1.00,1.040,+0.12,51
+2025,11617,malbsMd,Guatemala,G2,1.04,149,1.00,1.040,+0.12,51
+2025,15698,dumau,Brazil,Legacy,1.03,84,0.64,1.028,-0.03,50
+2025,7592,device,Denmark,Astralis,1.03,152,1.00,1.030,-0.00,50
+2025,9436,NertZ,Israel,Liquid,1.02,127,0.97,1.020,-0.12,49
+2025,17956,jabbi,Denmark,Astralis,1.02,155,1.00,1.020,-0.13,49
+2025,8183,rain,Norway,FaZe,1.02,127,0.97,1.020,-0.12,49
+2025,18053,broky,Latvia,FaZe,1.02,142,1.00,1.020,-0.13,49
+2025,8374,bodyy,France,3DMAX,1.02,161,1.00,1.020,-0.13,49
+2025,14736,dgt,Uruguay,paiN,1.02,80,0.61,1.022,-0.11,49
+2025,19164,SunPayus,Spain,G2|HEROIC,1.02,119,0.91,1.020,-0.12,49
+2025,22965,saadzin,Brazil,Legacy,1.02,84,0.64,1.022,-0.11,49
+2025,13497,Lucky,France,3DMAX,1.02,173,1.00,1.020,-0.13,49
+2025,20301,Tauson,Denmark,GamerLegion,1.02,132,1.00,1.020,-0.13,49
+2025,19686,n1ssim,Brazil,Legacy,1.02,84,0.64,1.022,-0.11,49
+2025,17306,degster,Russia,Falcons,1.01,65,0.50,1.017,-0.16,48
+2025,19739,Ex3rcice,France,3DMAX,1.01,173,1.00,1.010,-0.25,48
+2025,22361,jottAAA,Türkiye,Aurora|Eternal Fire,1.00,175,1.00,1.000,-0.37,46
+2025,12018,TeSeS,Denmark,Falcons,1.00,182,1.00,1.000,-0.37,46
+2025,18317,magixx,Russia,Spirit,1.00,74,0.56,1.011,-0.24,48
+2025,21763,ultimate,Poland,Liquid,1.00,127,0.97,1.001,-0.36,46
+2025,20194,bLitz,Mongolia,The MongolZ,1.00,192,1.00,1.000,-0.37,46
+2025,18865,dav1deuS,Chile,paiN,0.99,132,1.00,0.990,-0.49,45
+2025,20895,Mercury,China,TYLOO,0.99,51,0.39,1.011,-0.24,48
+2025,21439,ICY,Kazakhstan,Virtus.pro,0.99,119,0.91,0.993,-0.45,45
+2025,21014,Ag1l,Portugal,SAW,0.99,58,0.44,1.009,-0.26,47
+2025,20870,sl3nd,Hungary,GamerLegion,0.98,56,0.43,1.005,-0.31,47
+2025,20275,Techno,Mongolia,The MongolZ,0.97,192,1.00,0.970,-0.74,43
+2025,20462,story,Portugal,SAW,0.97,58,0.44,1.000,-0.37,46
+2025,3972,huNter-,Bosnia and Herzegovina,G2,0.97,137,1.00,0.970,-0.74,43
+2025,18141,biguzera,Brazil,paiN,0.97,128,0.98,0.971,-0.72,43
+2025,22047,yxngstxr,Sweden,HEROIC,0.97,98,0.75,0.984,-0.57,44
+2025,20994,FL4MUS,Russia,Virtus.pro,0.97,76,0.58,0.993,-0.46,45
+2025,9032,Magisk,Denmark,Falcons|Astralis,0.96,161,1.00,0.960,-0.86,41
+2025,8520,NAF,Canada,Liquid,0.96,127,0.97,0.962,-0.83,42
+2025,21969,Graviti,France,3DMAX,0.96,173,1.00,0.960,-0.86,41
+2025,19677,kyxsan,North Macedonia,Falcons,0.96,182,1.00,0.960,-0.86,41
+2025,8918,electroNic,Russia,Virtus.pro,0.96,103,0.79,0.974,-0.69,43
+2025,20112,alex666,Ukraine,B8,0.96,58,0.44,0.996,-0.42,46
+2025,23685,zweih,Russia,Spirit,0.95,68,0.52,0.986,-0.54,45
+2025,16947,Perfecto,Russia,Virtus.pro,0.95,50,0.38,0.996,-0.42,46
+2025,19592,headtr1ck,Ukraine,B8,0.95,58,0.44,0.991,-0.48,45
+2025,13666,Brollan,Sweden,MOUZ,0.94,181,1.00,0.940,-1.10,39
+2025,20171,snow,Brazil,paiN,0.93,132,1.00,0.930,-1.22,38
+2025,20563,lux,Brazil,Legacy,0.93,84,0.64,0.964,-0.81,42
+2025,7322,apEX,France,Vitality,0.92,189,1.00,0.920,-1.35,37
+2025,630,MUTiRiS,Portugal,SAW,0.92,58,0.44,0.978,-0.64,44
+2025,18835,saffee,Brazil,MIBR,0.92,66,0.50,0.972,-0.72,43
+2025,10096,HooXi,Denmark,Astralis,0.91,99,0.76,0.938,-1.13,39
+2025,11154,exit,Brazil,MIBR,0.91,66,0.50,0.967,-0.78,42
+2025,9816,Aleksib,Finland,Natus Vincere,0.90,131,1.00,0.900,-1.59,34
+2025,2023,FalleN,Brazil,FURIA,0.90,180,1.00,0.900,-1.59,34
+2025,2553,Snax,Poland,G2,0.90,76,0.58,0.952,-0.95,40
+2025,16820,siuhy,Poland,Liquid,0.89,95,0.73,0.927,-1.26,37
+2025,18717,Lucaozy,Brazil,MIBR,0.89,54,0.41,0.969,-0.75,43
+2025,7716,chopper,Russia,Spirit,0.89,142,1.00,0.890,-1.71,33
+2025,19310,LNZ,Sweden,HEROIC,0.89,98,0.75,0.924,-1.30,37
+2025,20987,brnz4n,Brazil,MIBR,0.89,53,0.40,0.970,-0.74,43
+2025,16486,ztr,Sweden,GamerLegion,0.86,132,1.00,0.860,-2.08,29
+2025,8552,Attacker,China,TYLOO,0.86,51,0.39,0.960,-0.85,41
+2025,150,MAJ3R,Türkiye,Aurora|Eternal Fire,0.86,175,1.00,0.860,-2.08,29
+2025,429,karrigan,Denmark,FaZe,0.85,161,1.00,0.850,-2.20,28
+2025,7964,cadiaN,Denmark,Astralis,0.84,56,0.43,0.945,-1.04,40

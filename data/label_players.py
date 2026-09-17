@@ -31,9 +31,7 @@ def label(year=2018):
             if p["rating"] >= med:
                 p["labels"].add("star")
 
-    for p in P.values():
-        if not p["labels"]:
-            p["labels"].add("anchor")
+    # unlabelled = flex; no anchor default
         p["labels"] = sorted(p["labels"])
     return snap, med
 

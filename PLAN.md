@@ -368,7 +368,8 @@ maps is not 1.30 over 209. Left raw, a hot split becomes a first-round draft pic
 `data/build_ratings.py` applies empirical-Bayes shrinkage toward the year's pool
 mean before normalizing:
 
-    shrunk = (n * rating + K * pool_mean) / (n + K)      # K = 50 maps
+    weight = min(1, maps / season_median_maps)     # relative + saturating
+    shrunk = weight * rating + (1 - weight) * season_mean
 
 | top-20 maps | raw 1.30 becomes |
 |---|---|
@@ -692,8 +693,7 @@ reads as a bug, not as a hard draft.
 ### Scoring (all mechanics from 6i/6l wired in)
     strength = mean(5 ratings)
              + IGL leadership (other four only)
-             + chemistry  (largest same-nationality bloc: 3->+2, 4->+4, 5->+7)
-             - composition (no IGL -5, two callers -2, no AWP -6, two AWPs -2)
+             - composition (2 anchor / 1 awp / 2 rotater, soft; no IGL -5, no AWP -6)
 
 Sim: Bo3 per match, `p = 1/(1+exp(-(a-b)/7))`, 3-round bracket with opponents drawn
 from rising bands (35-60%, 60-85%, 85-100%) of the historical field, so the run
@@ -779,6 +779,343 @@ Only viable route is genuinely free-licensed sources (Wikimedia Commons has CC-B
 shots of a handful of marquee players), or asking the organisers directly.
 Coverage would be a few dozen players at best, so a hybrid — real photo where a
 free licence exists, generated avatar otherwise — is the only workable shape.
+
+## 6o. DRAFT VARIETY FIX (2026-09-17)
+
+**Report:** "I get the same teams every time." Measured it — team-*years* were
+well distributed (219/223 seen over 200 seeds), but **orgs** were not.
+
+**Cause:** 223 team-years across only **69 orgs**. G2, Liquid, MOUZ and NaVi have
+11 seasons each, so plain sampling dealt the same org twice in **21% of drafts**
+and the top 12 orgs took ~48% of all slots. Different years, same names — reads as
+repetition.
+
+### Fix
+1. **No repeated org within a draft** -> 21% to **0%**
+2. **No org carried over from the previous draft** (`avoid` param, endless only) ->
+   4.7/45 slots to **0.0**. Daily passes nothing, so it stays a pure function of
+   the seed and remains server-verifiable.
+
+Variety is now **92% of the theoretical ceiling** (35.7 distinct orgs per 50 slots
+under ideal uniform sampling).
+
+### Two alternatives tried and REJECTED, both measured
+- **Org-uniform sampling** (each org equally likely regardless of seasons).
+  Flattened the big names (5.3% -> 3.8% top share) but pulled in far more tier-2
+  sides, shrinking the gap between a good and a lazy draft from **1.65x to 1.23x**.
+  Variety is not worth losing the strategy.
+- **One roll per era band.** Looked varied, but unnecessary once orgs are deduped.
+  Counter-intuitively it *helped* chemistry (21% vs 10% reachable 3-blocs) because
+  same-era teams share nationality clusters — but not enough to justify it.
+
+### Final numbers
+| | |
+|---|---|
+| greedy by rating | 18% championships |
+| constraint-aware | **29%** championships (1.6x) |
+| same org twice in a draft | 0% |
+| org repeat from previous draft | 0.0/45 |
+| variety vs ceiling | 92% |
+| feasibility failures / 500 seeds | 0 |
+
+`npm run test:variety` guards both properties.
+
+### Residual
+A 3-player nationality bloc is reachable in only ~19% of drafts and 4+ in ~1%, so
+chemistry is a rare bonus rather than a routine lever. Inherent to 69 orgs across
+11 years — raising the CHEM values would make it matter more when it does land.
+
+## 6p. REAL REPETITION BUG + nationality synergy removed (2026-09-17)
+
+### The bug: every retry replayed the identical draft
+`Redraft` (ready screen) and `Try again` (result screen) both called `reset()`,
+which cleared picks but **left the seed unchanged** — so the same five team-years
+came back every time, in both modes. That is the "same team and year over and
+over" report, and it was a genuine bug, not a perception issue. The earlier
+org-sampling work was addressing a different (also real, now fixed) problem.
+
+**Fix — retry paths now say what they do:**
+| button | behaviour |
+|---|---|
+| `Change picks` | same rolls, re-pick (legitimate: rethinking the daily puzzle) |
+| `↻ New teams` / `↻ New draft` | bumps the nonce -> genuinely new teams (endless) |
+| `Play endless →` | offered on the daily result, since daily is one fixed draft |
+
+Daily deliberately keeps one draft per day — that is the format — but the UI no
+longer implies a retry will deal new teams. Verified: 0/5 consecutive endless
+drafts identical, 26/30 distinct team-years over 6 drafts.
+
+### Org-uniform sampling: NOT used
+Confirmed removed. Sampling is uniform over **team-years**; repetition is handled
+by the within-draft org dedupe and the previous-draft avoid-list only. Org-uniform
+was measured and rejected in 6o for shrinking the strategy gap 1.65x -> 1.23x.
+
+### Nationality synergy REMOVED (user request)
+Was `largest same-nationality bloc: 3->+2, 4->+4, 5->+7`. Gone from the engine,
+the breakdown UI, the tests and the README. Flags remain as player info only.
+
+Scoring is now just: **mean rating + IGL leadership − composition penalties.**
+
+Strategy gap holds after both removals: greedy **18%** vs constraint-aware **29%**
+championships (1.6x), so IGL/AWP composition alone still carries the design goal.
+
+## 6q. MAP-COUNT TRUST: now relative and saturating (2026-09-17)
+
+**Two problems with the old `maps / (maps + 50)`:**
+
+1. **Absolute, not relative.** Map volume swings by calendar — 2015's median was
+   65 maps, 2016's was 152. A fixed K=50 trusted a typical 2015 player **57%** and
+   a typical 2016 player **75%**, purely because the schedule was busier. Median
+   trust ranged 0.57-0.75 across seasons.
+2. **Never saturated.** The curve crept toward 1 forever, so 240 vs 320 maps still
+   moved the number even though the extra maps carry no real information.
+
+**New rule — one line, both fixed:**
+
+    weight = min(1, maps / season_median_maps)
+
+Play a median workload for your season and your rating is taken at face value;
+above that, extra maps do nothing at all.
+
+| | before | after |
+|---|---|---|
+| median trust spread across seasons | 0.57-0.75 | **1.00 everywhere** |
+| corr(maps, score) | 0.27 | **0.24** |
+| players at full trust | 0 | **656/1281 (51%)** |
+| mean score shift | — | 0.8 pts |
+
+Tuning knob is `FULL_TRUST_AT_MEDIAN` (1.0). Raise it to demand more evidence
+before believing a rating.
+
+Variants measured and rejected: `n/(n+0.5*median)` fixed the cross-season spread
+but still never saturated; `min(1, n/q60)` saturated but reintroduced a 0.11
+spread because the q60/median ratio moves by year.
+
+`game_ratings.csv` now carries a `trust` column so shrinkage is auditable per row.
+
+Downstream rebuilt: snapshot, web copy. Strategy gap holds — greedy **20%** vs
+constraint-aware **29%**.
+
+## 6r. PHOTOS SURVEYED, LOGOS + REROLLS ADDED (2026-09-17)
+
+### Why LoLdle/VALORANT have photos and CS cannot
+Structural, not legal sophistication. **Riot runs its own esport**, publishes
+179k+ official photos via the LoL Esports Flickr, and its "Legal Jibber Jabber"
+grants a *"limited licence for non-commercial community use"* of its IP — exactly
+the fan-game case. **Valve does not run CS esports.** Events belong to independent
+organisers (ESL, BLAST, PGL, StarLadder, DreamHack), each owning its own
+photography, none offering a fan-use grant. One permissive publisher vs a dozen
+rights-holders with none.
+
+### Everything is copyrighted; only the licence differs
+| source | copyrighted | licensed to us |
+|---|---|---|
+| HLTV | yes | **no** — terms: content owned by "HLTV **or its licensors**"; no use of materials without a licence. The "or its licensors" matters — HLTV mostly does not own the photos either |
+| Liquipedia | yes | **no** — 395/396 `permission`, 1 `fairuse`, 0 free |
+| Wikimedia Commons | yes | **YES** — CC BY / CC BY-SA / CC0 / PD |
+
+### Commons survey (all 407 players) — free, but thin
+| | |
+|---|---|
+| players with >=1 free photo | **95/406 (23%)** |
+| player-years with a photo from **that exact year** | **95/1087 (9%)** |
+| within +/-2 years | 181 (17%) |
+| none | 811 (75%) |
+
+A typical 5-man board would show ~1.7 photos and ~3.3 avatars; strict per-year
+~0.5 photos. **Per-year photos are not achievable** — recommendation is either
+all-avatars (consistent) or best-available-photo-regardless-of-year with the year
+labelled. Exact-year-only produces a board where one card in ten looks different.
+Data kept in `data/commons_photos.json` if this is revisited.
+
+### Team logos: shipped as placeholders
+68/69 orgs (`OG` missing), `data/fetch_logos.py` -> `web/public/logos/` + manifest.
+`license=fairuselogo` — trademarks identifying the real team (nominative use, the
+basis wikis and fantasy sites rely on). Weaker exposure than press photos but still
+an argument, not a grant.
+
+Placed on the **roll header**, not the player cards: all five options share a team,
+so five identical logos would replace the per-player distinction the avatars give.
+
+### Rerolls
+`REROLLS = 2` per draft. `rerollAt(snap, seed, round, attempt, inPlay)` is
+deterministic in `(seed, round, attempt)`, so a run stays reproducible from picks +
+reroll counts and the leaderboard can still re-derive the board.
+
+Verified over 500 rerolls: **0 collisions** with teams already on the board, 0
+returning the same team, successive rerolls all distinct.
+
+Deliberately does **not** preserve the IGL/AWP guarantee — the opening hand is
+always playable, but rerolling away your only caller is a chosen cost that the
+composition penalty prices.
+
+## 6s. COMPOSITION, DIFFICULTY, MULTI-CALLER (2026-09-17)
+
+### Positional composition: 2 anchors / 1 AWP / 2 rotaters — SOFT
+`-2` per slot off target. Never forced: you can always field your five, an
+unbalanced side just costs. Forcing the shape would make some boards unplayable.
+
+**Unlabelled = FLEX**, filling whichever slot is short, so an unlabelled pool costs
+the player nothing and penalties sharpen as labelling lands. The derived `anchor`
+default was removed — anchor/rotater are now curated labels, not a fallback.
+
+No source has positional data (it is demo-level), so this is a judgement call by
+design. Worksheets generated (see below).
+
+### No penalty for two callers (user call, and the data backs it)
+IGLs rate **43.2 vs 51.7** — 8.5 points below everyone else. A second caller was
+being charged three times over:
+
+| | cost |
+|---|---|
+| rating drag (8.5 pts on a mean of 5) | ~1.7 team pts |
+| **leadership forfeited entirely** (`igls.length === 1`) | **~4.6 team pts** |
+| explicit penalty | 2 |
+
+~8.3 team points for a merely suboptimal choice. The hidden forfeit was nearly
+triple the explicit penalty sitting next to it. Now: the **senior caller leads**
+(highest leadership among the IGLs) and there is no extra charge — the rating drag
+is the whole cost.
+
+### Difficulty retuned to ~10%
+Opponent bands swept to `75-90 / 90-97 / 97-100` of the historical field.
+
+| | championships |
+|---|---|
+| constraint-aware | **9.5%** |
+| greedy by rating | 4.8% |
+| gap | **2.0x** (was 1.55x) |
+
+Note: difficulty and skill-expression move together here — a harder field *widens*
+the gap, because weak rosters stop surviving on variance. Removing the multi-caller
+penalty narrowed it (greedy drafters who stumble into two callers keep the bonus),
+which the retune absorbed.
+
+### Worksheets for the remaining manual work
+| file | rows | note |
+|---|---|---|
+| `worksheet_positions.csv` | 399 | `anchor`/`rotater`, sorted by draftability |
+| `worksheet_igl.csv` | 23 | team-years forfeiting the leadership bonus |
+| `worksheet_awp.csv` | 27 | team-years silently eating -6 |
+
+Positional coverage is front-loaded: top 25 players = 19% of roster slots, top 100
+= **51%**, top 150 = 66%. Partial labelling is safe (flex), so there is no need to
+finish it.
+
+### Also fixed: 7 team-scoped labels never matched
+`labels_manual.csv` used Liquipedia page titles (`G2 Esports`, `Team Liquid`,
+`FaZe Clan`) while the data uses HLTV labels (`G2`, `Liquid`, `FaZe`), so those
+scoped rows silently did nothing. Label validity 76% -> **80%**.
+
+## 6s. COMPOSITION, DIFFICULTY, MULTI-CALLER (2026-09-17)
+
+### Positional composition: 2 anchors / 1 AWP / 2 rotaters — SOFT
+`-2` per slot off target. Never forced: you can always field your five, an
+unbalanced side just costs. **Unlabelled = FLEX**, filling whichever slot is short,
+so an unlabelled pool costs the player nothing and penalties sharpen as labelling
+lands. The derived `anchor` default was removed — anchor/rotater are curated labels
+now, not a fallback. No source has positional data (demo-level), so it is a
+judgement call by design.
+
+### Two callers: no penalty, and only ONE leadership bonus
+IGLs rate **43.2 vs 51.7** — 8.5 points below everyone else. A second caller was
+charged three times over:
+
+| | cost |
+|---|---|
+| rating drag (8.5 pts on a mean of 5) | ~1.7 team pts |
+| **leadership forfeited entirely** (`igls.length === 1`) | **~4.6 team pts** |
+| explicit penalty | 2 |
+
+~8.3 team points for a merely suboptimal choice — and the hidden forfeit was nearly
+triple the explicit penalty beside it.
+
+Now the **senior caller leads**: the highest-pedigree IGL in the five pays the
+bonus, applied **once, never stacked**. Verified — gla1ve 2019 (+12) alongside
+pronax 2015 (+11) yields +9.6 team points, identical to gla1ve alone; summing would
+have given +18.4.
+
+### Difficulty retuned to ~10%
+Opponent bands swept to `75-90 / 90-97 / 97-100` of the historical field:
+constraint-aware **9.5%**, greedy 4.8%, gap **2.0x** (was 1.55x).
+
+Difficulty and skill-expression move together here — a harder field *widens* the
+gap, because weak rosters stop surviving on variance. Removing the multi-caller
+penalty narrowed it (greedy drafters who stumble into two callers keep the bonus);
+the retune absorbed that.
+
+### Worksheets for the remaining manual work
+| file | rows | note |
+|---|---|---|
+| `worksheet_positions.csv` | 399 | `anchor`/`rotater`, sorted by draftability |
+| `worksheet_igl.csv` | 23 | team-years forfeiting the leadership bonus |
+| `worksheet_awp.csv` | 27 | team-years silently eating -6 |
+
+Coverage is front-loaded: top 25 players = 19% of roster slots, top 100 = **51%**,
+top 150 = 66%. Partial labelling is safe (flex), so finishing it is optional.
+
+### Also fixed: 7 team-scoped labels never matched
+`labels_manual.csv` used Liquipedia page titles (`G2 Esports`, `Team Liquid`,
+`FaZe Clan`) while the data uses HLTV labels (`G2`, `Liquid`, `FaZe`), so those rows
+silently did nothing. Label validity 76% -> **80%**.
+
+## 6t. `star` WAS BROKEN — now absolute (2026-09-17)
+
+**Symptom:** 20 player-years labelled `star` were rated BELOW the 50 season average
+— tarik 2015 (48), rallen 2015 (48), v1c7oR 2015 (48), Zero 2017 (49).
+
+**Two bugs, both silent:**
+1. **Drifting threshold.** `med = median(p["rating"] for p in players.values())`
+   sat INSIDE the per-team loop, over the dict being accumulated. The first team
+   compared against a ~5-player median; the last against ~1087. Early teams got a
+   nonsense cut, which is exactly where the sub-average stars came from.
+2. **Shared player-years.** 28 player-years sit on two teams in the same year
+   (tarik: MIBR 2018 + Cloud9 2018) and share ONE object, keyed `player_id:year`.
+   With `if "star" not in p["labels"]`, whichever team was processed first won —
+   so the label depended on iteration order, not on the player.
+
+Team-relative `star` cannot work at all while player-years are shared.
+
+**Fix: absolute threshold, assigned after the loop.**
+
+    STAR_AT = 62     # ~1.2 SD above the season mean
+
+`game_rating` is z-scored within each season (mean 50, ~10/SD), so a fixed cut
+means "elite for your era" and is order-independent by construction.
+
+| | before | after |
+|---|---|---|
+| stars | 406/1087 (37%) | **137/1087 (12.6%)** |
+| lowest-rated star | 48 | **62** |
+| stars below the 50 average | 20 | **0** |
+| depends on processing order | yes | no |
+
+~0.6 stars per 5-man board, so `star` now means something. `STAR_AT` is the knob.
+
+## 6u. `star` REMOVED — position is the role label (2026-09-17)
+
+`star` was a **rating proxy dressed as a role**: top-2 on the roster (later
+rating >= 62). It said nothing about how a player actually played, which is what a
+role label is for. Dropped entirely.
+
+**Label set is now four, all hand-curated:**
+
+| label | meaning | ring |
+|---|---|---|
+| `awp` | primary AWPer | purple |
+| `igl` | in-game leader | blue |
+| `rotater` | plays off the site, rotates | orange |
+| `anchor` | holds a site | green |
+| *(none)* | **flex** — position not yet labelled | grey |
+
+No derived labels remain. `flex` is shown as a dim chip so an unlabelled player
+reads as "not yet assigned" rather than a blank card, and the engine already treats
+flex as filling whichever slot is short — so partial labelling costs nothing.
+
+**Current state: 691/1087 player-years are flex.** That is the worksheet:
+`data/worksheet_positions.csv`, sorted by draftability (top 100 players = 51% of
+roster slots). Until it is filled the 2/1/2 composition penalty rarely bites,
+because flex absorbs the gaps by design.
 
 ## 7. Next step — Phase 1 data spike
 

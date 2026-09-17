@@ -27,9 +27,9 @@ year,team,days,lineup,igl,awp,worst_conf,status
 2016,Envy,177,DEVIL|Happy|NBK-|apEX|kennyS,Happy,kennyS,high,ok
 2016,FaZe,128,aizy|fox|jkaem|kioShiMa|rain,fox,fox,medium,ok
 2016,FlipSid3,153,B1ad3|Shara|WorldEdit|markeloff|wayLander,B1ad3,WorldEdit|markeloff,medium,ok
-2016,G2,266,RpK|ScreaM|SmithZz|bodyy|shox,,SmithZz,high,NO_IGL
+2016,G2,266,RpK|ScreaM|SmithZz|bodyy|shox,shox,SmithZz,medium,ok
 2016,GODSENT,133,Lekr0|pauf|pronax|twist|znajder,pronax,znajder,medium,ok
-2016,Gambit,159,AdreN|Dosia|hooch|mou|spaze,,,,"NO_IGL,NO_AWP"
+2016,Gambit,159,AdreN|Dosia|hooch|mou|spaze,AdreN,,medium,NO_AWP
 2016,HellRaisers,108,ANGE1|DeadFox|STYKO|Zero|bondik,ANGE1,DeadFox,low,ok
 2016,Immortals,58,HEN1|LUCAS1|boltz|felps|steel,steel,HEN1,high,ok
 2016,Liquid,200,EliGE|Hiko|Pimp|jdm64|nitr0,,jdm64,high,NO_IGL
@@ -69,7 +69,7 @@ year,team,days,lineup,igl,awp,worst_conf,status
 2018,FaZe,259,GuardiaN|NiKo|karrigan|olofmeister|rain,karrigan,GuardiaN,high,ok
 2018,G2,174,Ex6TenZ|SmithZz|bodyy|kennyS|shox,Ex6TenZ,SmithZz|kennyS,high,ok
 2018,GODSENT,38,Brollan|disco doplan|freddieb|hampus|twist,hampus,freddieb,medium,ok
-2018,Gambit,125,AdreN|Dosia|Hobbit|mir|mou,,,,"NO_IGL,NO_AWP"
+2018,Gambit,125,AdreN|Dosia|Hobbit|mir|mou,AdreN,,medium,NO_AWP
 2018,HEROIC,94,AcilioN|MODDII|es3tag|friberg|mertz,AcilioN,mertz,medium,ok
 2018,HellRaisers,294,ANGE1|DeadFox|ISSAA|bondik|woxic,ANGE1,DeadFox|woxic,low,ok
 2018,Liquid,258,EliGE|NAF|TACO|Twistzz|nitr0,nitr0,,high,NO_AWP
@@ -92,8 +92,8 @@ year,team,days,lineup,igl,awp,worst_conf,status
 2019,Evil Geniuses,97,Brehze|CeRq|Ethan|stanislaw|tarik,stanislaw,CeRq,high,ok
 2019,FORZE,365,FL1T|Jerry|almazer|facecrack|xsepower,almazer,Jerry|xsepower,medium,ok
 2019,FURIA,265,KSCERATO|VINI|ableJ|arT|yuurih,arT,,high,NO_AWP
-2019,FaZe,127,AdreN|GuardiaN|NiKo|olofmeister|rain,,GuardiaN,high,NO_IGL
-2019,G2,203,AMANEK|JACKZ|Lucky|kennyS|shox,,Lucky|kennyS,medium,NO_IGL
+2019,FaZe,127,AdreN|GuardiaN|NiKo|olofmeister|rain,AdreN,GuardiaN,high,ok
+2019,G2,203,AMANEK|JACKZ|Lucky|kennyS|shox,shox,Lucky|kennyS,medium,ok
 2019,HEROIC,102,NaToSaphiX|blameF|es3tag|friberg|stavn,blameF,,medium,NO_AWP
 2019,Liquid,365,EliGE|NAF|Stewie2K|Twistzz|nitr0,nitr0,,high,NO_AWP
 2019,MIBR,163,FalleN|TACO|coldzera|felps|fer,FalleN,FalleN|coldzera,low,ok
