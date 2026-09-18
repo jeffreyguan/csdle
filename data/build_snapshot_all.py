@@ -10,7 +10,6 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from apply_labels import load_labels, labels_for
-from build_leadership import bonus as igl_bonus
 
 D = Path(__file__).parent
 
@@ -18,6 +17,12 @@ def main():
     alias = {r["liquipedia_nick"]: r["hltv_nick"]
              for r in csv.DictReader(open(D / "aliases.csv"))}
     lab = load_labels()
+
+    # extra display stats the game_ratings table does not carry
+    extra = {}
+    for r in csv.DictReader(open(D / "player_year_ratings.csv")):
+        extra[(r["year"], r["player_id"])] = {"kd": r["kd"], "rounds": r["rounds"],
+                                              "kd_diff": r["kd_diff"]}
 
     ratings = collections.defaultdict(dict)      # year -> nick -> row
     ci      = collections.defaultdict(lambda: collections.defaultdict(list))
@@ -59,7 +64,18 @@ def main():
                 "game_rating": str(floor[year]), "hltv_rating": "0",
                 "maps": "0", "year": year}, "imputed"
 
-    ach = json.loads((D / "achievements.json").read_text()) if (D / "achievements.json").exists() else {}
+    # Season results drive BOTH bonuses now — one source, two magnitudes.
+    # Career pedigree was dropped: an IGL's 2018 results ARE his team's 2018
+    # results, so pairing the two double-counted the same tournament run, and
+    # Liquipedia's 10-row achievements cap made career totals arbitrary anyway.
+    succ = json.loads((D / "team_success.json").read_text()) \
+        if (D / "team_success.json").exists() else {}
+    majors = json.loads((D / "major_wins.json").read_text()) \
+        if (D / "major_wins.json").exists() else {}
+    trophies = json.loads((D / "trophies.json").read_text()) \
+        if (D / "trophies.json").exists() else {}
+    top20 = json.loads((D / "hltv_top20.json").read_text()) \
+        if (D / "hltv_top20.json").exists() else {}
     teams, players, missing = [], {}, []
     for r in csv.DictReader(open(D / "lineups_all.csv")):
         if not r["lineup"]: continue
@@ -76,6 +92,16 @@ def main():
                 "id": pid, "player_id": g["player_id"], "nick": g["nick"], "year": int(year),
                 "nationality": g["nationality"], "rating": int(g["game_rating"]),
                 "hltv": float(g["hltv_rating"]), "maps": int(g["maps"]),
+                "base_rating": int(g["game_rating"]), "team_bonus": 0,
+                "top20_bonus": 0, "leads": 0,
+                "team": r["label"],
+                # HLTV's Top 20 is editorial — big events, impact, awards — so it
+                # is independent of the rating already in this record
+                "top20": (top20.get(year, {}).get(g["nick"])
+                          or top20.get(year, {}).get(alias.get(nick, nick))
+                          or top20.get(year, {}).get(nick)),
+                "kd": float(extra.get((year, g["player_id"]), {}).get("kd") or 0) or None,
+                "kd_diff": extra.get((year, g["player_id"]), {}).get("kd_diff") or "",
                 "labels": sorted(ls.keys()),
                 "rating_source": how,
             }
@@ -89,12 +115,46 @@ def main():
         # IGL leadership: trophies won UP TO this year buff the OTHER FOUR.
         # Never the IGL himself - a personal bonus would stack on an already
         # high rating and push the draft back to "take the biggest number".
+        sc = succ.get(f"{r['label']}:{year}", {})
+        team_bonus = sc.get("team_bonus", 0)
         igl = next((players[i] for i in roster if "igl" in players[i]["labels"]), None)
-        lead, lead_raw = 0, 0.0
+        lead = sc.get("igl_bonus", 0) if igl else 0
+        lead_raw = sc.get("raw", 0.0)
+
+        # every player carries their season's success on their own rating
+        won_major = len(majors.get(f"{r['label']}:{year}", []))
+        # S-Tier titles that season (Majors included — a Major is S-Tier)
+        won_tro = trophies.get(f"{r['label']}:{year}", {}).get("s", 0)
+        for i in roster:
+            players[i]["majors"] = won_major
+            players[i]["trophies"] = won_tro
+            players[i]["team_bonus"] = team_bonus
+            # HLTV's Top 20 is editorial — it rewards impact, utility and calling
+            # that raw rating misses. corr(placing, rating) is -0.71, so it is
+            # mostly redundant but not entirely: 62 of 201 placed players rate
+            # below 60 (Snax 2015 #4 at 58, FalleN 2017 #6 at 59). Ranges 2-5:
+            # a floor of 1 undersold the achievement — making HLTV's top 20 at
+            # all is a real distinction, not a rounding error.
+            pl = players[i].get("top20")
+            t20b = round(2 + 3 * (20 - pl) / 19) if pl else 0
+            players[i]["top20_bonus"] = t20b
+            players[i]["rating"] = min(99, players[i]["base_rating"] + team_bonus + t20b)
+        # An IGL's value is almost entirely what he gives the other four, so his
+        # own card badly understates him — karrigan 2022 shows 40 while handing
+        # his side +12 team points. Surface it so the draft is legible.
         if igl:
-            lead, lead_raw, _ = igl_bonus(ach.get(igl["nick"], []), int(year))
+            players[igl["id"]]["leads"] = lead
+
         base = sum(players[i]["rating"] for i in roster) / 5
-        eff = base + lead * 4 / 5        # +lead to each of the other four
+        # leadership is MULTIPLICATIVE on the other four (see engine.ts): a
+        # caller amplifies good players, he does not lift bad ones to the same
+        # absolute degree. IGL_SCALE 12, LEAD_MAX_MULT 0.18.
+        if igl and lead:
+            others = [players[i]["rating"] for i in roster if i != igl["id"]]
+            mult = (lead / 12) * 0.18
+            eff = (sum(players[i]["rating"] for i in roster) + sum(others) * mult) / 5
+        else:
+            eff = base
 
         d = int(r["days"])
         teams.append({

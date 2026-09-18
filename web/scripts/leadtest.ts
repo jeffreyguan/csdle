@@ -12,13 +12,21 @@ const top = igls[0], second = igls.find(p => bonusOf(p) > 0 && p.nick !== top.ni
 console.log(`senior caller : ${top.nick} ${top.year} (leadership +${bonusOf(top)})`);
 console.log(`second caller : ${second.nick} ${second.year} (leadership +${bonusOf(second)})\n`);
 
-const one = evaluate([top, ...filler, P.find(p => !p.labels.includes("igl"))!], snap);
-const two = evaluate([top, second, ...filler], snap);
+const roster = [top, second, ...filler];
+const two = evaluate(roster, snap);
 
-console.log(`one IGL  : leadership +${one.leadership.toFixed(1)}`);
-console.log(`two IGLs : leadership +${two.leadership.toFixed(1)}`);
-const expected = bonusOf(top) * 4 / 5;
-console.log(`\nexpected if ONLY the senior caller counts: +${expected.toFixed(1)}`);
-console.log(`bonus is applied once, not stacked: ${Math.abs(two.leadership - expected) < 0.01}`);
-console.log(`summed would have been: +${((bonusOf(top)+bonusOf(second))*4/5).toFixed(1)}`);
+// leadership is MULTIPLICATIVE: other_four_total x (bonus/12) x 0.18, and only
+// the senior caller's bonus may apply — never both summed.
+const mult = (bonusOf(top) / 12) * 0.18;
+const others = roster.filter(p => p.id !== top.id);
+const expected = others.reduce((s, p) => s + p.rating, 0) * mult / roster.length;
+const stacked = ((bonusOf(top) + bonusOf(second)) / 12) * 0.18
+                * others.reduce((s, p) => s + p.rating, 0) / roster.length;
+
+console.log(`two IGLs : leadership +${two.leadership.toFixed(2)}`);
+console.log(`expected (senior caller only): +${expected.toFixed(2)}`);
+console.log(`if the two stacked it would be: +${stacked.toFixed(2)}`);
+console.log(`bonus is applied once, not stacked: ${Math.abs(two.leadership - expected) < 0.05}`);
+console.log(`leadership scales with roster quality (multiplicative): ${
+  evaluate(roster.map(p => ({...p, rating: p.rating * 2})), snap).leadership > two.leadership * 1.9}`);
 console.log(`\nnotes: ${two.notes.join(" | ")}`);

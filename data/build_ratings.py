@@ -19,8 +19,17 @@ Three steps:
                extra information. The old form crept toward 1 forever, so 240
                vs 320 maps still moved the number. Now anyone at or above their
                season's median is taken at face value - half the pool.
-  2. z-score - normalize WITHIN each year. HLTV ratings are not comparable across
-               eras (different formulas, different games).
+  2. z-score - normalize WITHIN each year (HLTV ratings are not comparable across
+               eras), using a TRIMMED standard deviation.
+
+               The trim matters: elite players inflate the full SD, and a bigger
+               SD divides everyone's delta down, so outliers suppress each other.
+               donk 2024 sat +0.303 above his field and s1mple 2018 +0.305 above
+               his — the same gap — yet donk scored 86 to s1mple's 90, purely
+               because 2024 had three players above 1.28 and 2018 had one.
+               sd(middle 90%) is near-identical across those years (0.0564 vs
+               0.0576), so trimming removes the distortion without changing what
+               a "typical" spread means.
   3. scale   - map to 0-100 for the draft UI.
 """
 import csv, statistics as st
@@ -52,8 +61,10 @@ def build(src="ratings_merged.csv", out="game_ratings.csv"):
             r["_w"] = w
             r["_shrunk"] = w * r["_r"] + (1 - w) * prior
 
-        mu = st.mean(x["_shrunk"] for x in pool)
-        sd = st.pstdev(x["_shrunk"] for x in pool) or 1e-9
+        shr = sorted(x["_shrunk"] for x in pool)
+        mu = st.mean(shr)
+        lo, hi = int(0.05 * len(shr)), int(0.95 * len(shr))
+        sd = st.pstdev(shr[lo:hi]) or 1e-9      # trimmed: ignore the tails
         for r in pool:
             n = r["_n"]          # re-read: do NOT reuse the loop var from above
             z = (r["_shrunk"] - mu) / sd
@@ -63,8 +74,10 @@ def build(src="ratings_merged.csv", out="game_ratings.csv"):
                 "hltv_rating": f"{r['_r']:.2f}", "maps": n,
                 "trust": f"{r['_w']:.2f}",
                 "shrunk": f"{r['_shrunk']:.3f}", "z": f"{z:+.2f}",
-                # 50 = average, ~10 points per standard deviation
-                "game_rating": max(1, min(99, round(50 + 10 * z))),
+                # 50 = average. 7.5 pts per trimmed-SD keeps the familiar range
+                # (~19-97); the trimmed SD is smaller, so the multiplier shrinks
+                # to match.
+                "game_rating": max(1, min(99, round(50 + 7.5 * z))),
             })
         print(f"{year}: {len(pool)} players, pool mean {prior:.3f}, sd {sd:.3f}")
 

@@ -35,8 +35,22 @@ MAX_BONUS = 12      # rating points added to each of the other four.
                     # Raise toward 16 to make the IGL the single biggest lever;
                     # raise EXPONENT to make top-tier pedigree rarer instead.
 
+# Majors before 2017 were not called "Major": DreamHack Winter, ESL One
+# Katowice/Cologne, MLG Columbus. A bare /\bmajor\b/ scored pronax's three
+# Major wins as ordinary S-Tier events while crediting apEX's 10s in full.
+EARLY_MAJORS = [
+    "dreamhack winter 2013", "ems one katowice 2014", "esl one: cologne 2014",
+    "esl one cologne 2014", "dreamhack winter 2014",
+    "esl one: katowice 2015", "esl one katowice 2015",
+    "esl one: cologne 2015", "esl one cologne 2015",
+    "dreamhack open cluj-napoca 2015", "dreamhack cluj-napoca 2015",
+    "mlg columbus 2016", "esl one: cologne 2016", "esl one cologne 2016",
+]
+
 def is_major(t):
-    return bool(re.search(r"\bmajor\b", t or "", re.I))
+    s = (t or "").strip().lower()
+    if re.search(r"\bmajor\b", s): return True
+    return any(m in s for m in EARLY_MAJORS)
 
 def raw_score(results, upto_year):
     total = 0.0

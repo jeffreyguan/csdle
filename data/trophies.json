@@ -1,0 +1,538 @@
+{
+ "Astralis:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "Astralis:2017": {
+  "major": 1,
+  "s": 2
+ },
+ "Astralis:2018": {
+  "major": 1,
+  "s": 9
+ },
+ "Astralis:2019": {
+  "major": 2,
+  "s": 5
+ },
+ "Astralis:2020": {
+  "major": 0,
+  "s": 3
+ },
+ "BIG:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "BIG:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "Cloud9:2015": {
+  "major": 0,
+  "s": 1
+ },
+ "Cloud9:2016": {
+  "major": 0,
+  "s": 2
+ },
+ "Cloud9:2018": {
+  "major": 1,
+  "s": 1
+ },
+ "Cloud9:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "Complexity:2005": {
+  "major": 0,
+  "s": 1
+ },
+ "Complexity:2006": {
+  "major": 0,
+  "s": 1
+ },
+ "Complexity:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "Dignitas:2014": {
+  "major": 0,
+  "s": 1
+ },
+ "Dignitas:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "ENCE:2018": {
+  "major": 0,
+  "s": 1
+ },
+ "ENCE:2023": {
+  "major": 0,
+  "s": 1
+ },
+ "Envy:2015": {
+  "major": 0,
+  "s": 7
+ },
+ "Envy:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "Envy:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "Evil Geniuses:2019": {
+  "major": 0,
+  "s": 2
+ },
+ "Evil Geniuses:2020": {
+  "major": 0,
+  "s": 2
+ },
+ "FURIA:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "FURIA:2025": {
+  "major": 0,
+  "s": 3
+ },
+ "FaZe:2017": {
+  "major": 0,
+  "s": 4
+ },
+ "FaZe:2018": {
+  "major": 0,
+  "s": 3
+ },
+ "FaZe:2022": {
+  "major": 1,
+  "s": 4
+ },
+ "FaZe:2023": {
+  "major": 0,
+  "s": 4
+ },
+ "FaZe:2024": {
+  "major": 0,
+  "s": 1
+ },
+ "Falcons:2025": {
+  "major": 0,
+  "s": 1
+ },
+ "Falcons:2026": {
+  "major": 1,
+  "s": 1
+ },
+ "G2:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "G2:2017": {
+  "major": 0,
+  "s": 2
+ },
+ "G2:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "G2:2023": {
+  "major": 0,
+  "s": 2
+ },
+ "G2:2024": {
+  "major": 0,
+  "s": 3
+ },
+ "G2:2025": {
+  "major": 0,
+  "s": 1
+ },
+ "Gambit:2017": {
+  "major": 1,
+  "s": 1
+ },
+ "Gambit:2021": {
+  "major": 0,
+  "s": 3
+ },
+ "HEROIC:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "HEROIC:2021": {
+  "major": 0,
+  "s": 1
+ },
+ "HEROIC:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "HEROIC:2023": {
+  "major": 0,
+  "s": 1
+ },
+ "Immortals:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "Legacy:2026": {
+  "major": 0,
+  "s": 2
+ },
+ "Liquid:2015": {
+  "major": 0,
+  "s": 1
+ },
+ "Liquid:2018": {
+  "major": 0,
+  "s": 1
+ },
+ "Liquid:2019": {
+  "major": 0,
+  "s": 5
+ },
+ "Liquid:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "Luminosity:2016": {
+  "major": 1,
+  "s": 3
+ },
+ "MIBR:2018": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2005": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2008": {
+  "major": 0,
+  "s": 2
+ },
+ "MOUZ:2009": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2010": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2018": {
+  "major": 0,
+  "s": 3
+ },
+ "MOUZ:2019": {
+  "major": 0,
+  "s": 2
+ },
+ "MOUZ:2023": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2024": {
+  "major": 0,
+  "s": 2
+ },
+ "MOUZ:2025": {
+  "major": 0,
+  "s": 1
+ },
+ "MOUZ:2026": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2010": {
+  "major": 0,
+  "s": 5
+ },
+ "Natus Vincere:2011": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2012": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2014": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2015": {
+  "major": 0,
+  "s": 4
+ },
+ "Natus Vincere:2016": {
+  "major": 0,
+  "s": 2
+ },
+ "Natus Vincere:2018": {
+  "major": 0,
+  "s": 2
+ },
+ "Natus Vincere:2019": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2021": {
+  "major": 1,
+  "s": 7
+ },
+ "Natus Vincere:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "Natus Vincere:2024": {
+  "major": 1,
+  "s": 4
+ },
+ "Natus Vincere:2026": {
+  "major": 0,
+  "s": 2
+ },
+ "Ninjas in Pyjamas:2001": {
+  "major": 0,
+  "s": 3
+ },
+ "Ninjas in Pyjamas:2006": {
+  "major": 0,
+  "s": 4
+ },
+ "Ninjas in Pyjamas:2012": {
+  "major": 0,
+  "s": 2
+ },
+ "Ninjas in Pyjamas:2013": {
+  "major": 0,
+  "s": 7
+ },
+ "Ninjas in Pyjamas:2014": {
+  "major": 1,
+  "s": 2
+ },
+ "Ninjas in Pyjamas:2015": {
+  "major": 0,
+  "s": 1
+ },
+ "Ninjas in Pyjamas:2016": {
+  "major": 0,
+  "s": 4
+ },
+ "Ninjas in Pyjamas:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "North:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "North:2018": {
+  "major": 0,
+  "s": 1
+ },
+ "OpTic:2016": {
+  "major": 0,
+  "s": 1
+ },
+ "OpTic:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "Outsiders:2022": {
+  "major": 1,
+  "s": 1
+ },
+ "SK:2002": {
+  "major": 0,
+  "s": 1
+ },
+ "SK:2003": {
+  "major": 0,
+  "s": 5
+ },
+ "SK:2005": {
+  "major": 0,
+  "s": 2
+ },
+ "SK:2007": {
+  "major": 0,
+  "s": 1
+ },
+ "SK:2008": {
+  "major": 0,
+  "s": 2
+ },
+ "SK:2009": {
+  "major": 0,
+  "s": 2
+ },
+ "SK:2011": {
+  "major": 0,
+  "s": 3
+ },
+ "SK:2016": {
+  "major": 1,
+  "s": 1
+ },
+ "SK:2017": {
+  "major": 0,
+  "s": 6
+ },
+ "Spirit:2024": {
+  "major": 1,
+  "s": 4
+ },
+ "Spirit:2025": {
+  "major": 0,
+  "s": 4
+ },
+ "Spirit:2026": {
+  "major": 0,
+  "s": 3
+ },
+ "The MongolZ:2024": {
+  "major": 0,
+  "s": 1
+ },
+ "The MongolZ:2025": {
+  "major": 0,
+  "s": 1
+ },
+ "Titan:2014": {
+  "major": 0,
+  "s": 1
+ },
+ "Virtus.pro:2007": {
+  "major": 0,
+  "s": 1
+ },
+ "Virtus.pro:2014": {
+  "major": 0,
+  "s": 2
+ },
+ "Virtus.pro:2015": {
+  "major": 0,
+  "s": 5
+ },
+ "Virtus.pro:2016": {
+  "major": 0,
+  "s": 3
+ },
+ "Virtus.pro:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "Virtus.pro:2020": {
+  "major": 0,
+  "s": 1
+ },
+ "Virtus.pro:2023": {
+  "major": 0,
+  "s": 1
+ },
+ "Vitality:2019": {
+  "major": 0,
+  "s": 2
+ },
+ "Vitality:2020": {
+  "major": 0,
+  "s": 2
+ },
+ "Vitality:2021": {
+  "major": 0,
+  "s": 1
+ },
+ "Vitality:2022": {
+  "major": 0,
+  "s": 1
+ },
+ "Vitality:2023": {
+  "major": 1,
+  "s": 5
+ },
+ "Vitality:2024": {
+  "major": 0,
+  "s": 1
+ },
+ "Vitality:2025": {
+  "major": 2,
+  "s": 9
+ },
+ "Vitality:2026": {
+  "major": 0,
+  "s": 5
+ },
+ "fnatic:2006": {
+  "major": 0,
+  "s": 1
+ },
+ "fnatic:2007": {
+  "major": 0,
+  "s": 3
+ },
+ "fnatic:2008": {
+  "major": 0,
+  "s": 3
+ },
+ "fnatic:2009": {
+  "major": 0,
+  "s": 6
+ },
+ "fnatic:2010": {
+  "major": 0,
+  "s": 2
+ },
+ "fnatic:2011": {
+  "major": 0,
+  "s": 3
+ },
+ "fnatic:2012": {
+  "major": 0,
+  "s": 1
+ },
+ "fnatic:2013": {
+  "major": 1,
+  "s": 1
+ },
+ "fnatic:2014": {
+  "major": 0,
+  "s": 5
+ },
+ "fnatic:2015": {
+  "major": 2,
+  "s": 11
+ },
+ "fnatic:2016": {
+  "major": 0,
+  "s": 3
+ },
+ "fnatic:2017": {
+  "major": 0,
+  "s": 1
+ },
+ "fnatic:2018": {
+  "major": 0,
+  "s": 2
+ },
+ "fnatic:2019": {
+  "major": 0,
+  "s": 1
+ },
+ "fnatic:2020": {
+  "major": 0,
+  "s": 1
+ }
+}

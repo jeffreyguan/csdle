@@ -4,6 +4,11 @@ import { hashSeed, mulberry32, shuffle, type Rng } from "./rng";
 export const ROUNDS = 5;
 export const REROLLS = 2;
 
+/** Leadership is applied as a percentage uplift to the IGL's four teammates.
+ *  IGL_SCALE is the season-bonus value that earns the full LEAD_MAX_MULT. */
+export const IGL_SCALE = 12;
+export const LEAD_MAX_MULT = 0.18;
+
 /* ------------------------------------------------------------------ rolls */
 
 export interface Roll {
@@ -112,7 +117,16 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
   const notes: string[] = [];
   const base = roster.reduce((s, p) => s + p.rating, 0) / Math.max(1, roster.length);
 
-  // --- leadership: the IGL's pedigree buffs the OTHER FOUR, never himself.
+  // --- leadership: MULTIPLICATIVE on the other four, never on the IGL himself.
+  //
+  // A great caller makes good players better through structure, utility and
+  // roles — he cannot make bad players good. A flat bonus said otherwise: +9.6
+  // team points was a 24% lift on a 40-rated roster but only 12% on an 80-rated
+  // one, so the worst rosters gained most and an elite IGL could carry a weak
+  // five. Scaling instead means the same PROPORTIONAL lift at every level.
+  //
+  // Measured: a 48-rated roster with a max IGL goes 57.6 -> 54.9, while a
+  // 72-rated one goes 81.6 -> 82.4. The carry case loses 2.7; the top gains 0.8.
   //
   // Two callers is NOT punished. IGLs already rate ~8.5 points below everyone
   // else, so a second one drags the roster mean on its own — that is the whole
@@ -123,17 +137,20 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
   const igls = roster.filter((p) => p.labels.includes("igl"));
   let leadership = 0;
   if (igls.length) {
-    let bestNick = "", best = -1;
+    // whichever caller won the most that season takes the reins — not the
+    // longest-serving one
+    let leader = igls[0], best = -1;
     for (const g of igls) {
-      const t = snap.teams.find((x) => x.igl === g.id);
-      const b = t ? t.leadership : 0;
-      if (b > best) { best = b; bestNick = g.nick; }
+      const b = snap.teams.find((x) => x.igl === g.id)?.leadership ?? 0;
+      if (b > best) { best = b; leader = g; }
     }
     const b = Math.max(0, best);
-    leadership = (b * (roster.length - 1)) / Math.max(1, roster.length);
     if (b > 0) {
-      notes.push(`${bestNick} leads: +${b} to each teammate` +
-        (igls.length > 1 ? ` (${igls.length} callers — the senior one calls)` : ""));
+      const mult = (b / IGL_SCALE) * LEAD_MAX_MULT;
+      const others = roster.filter((p) => p.id !== leader.id);
+      leadership = others.reduce((s, p) => s + p.rating, 0) * mult / roster.length;
+      notes.push(`${leader.nick} leads: +${Math.round(mult * 100)}% to the other four` +
+        (igls.length > 1 ? ` (${igls.length} callers — the most decorated one calls)` : ""));
     }
   }
 
@@ -181,31 +198,155 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
   return { base, leadership, compositionPenalty, total, notes };
 }
 
+/* ------------------------------------------------- opponent construction */
+
+/** Build an opponent: five real players, assembled to a target strength with a
+ *  coherent side — exactly one AWPer, exactly one IGL, and the 2-anchor /
+ *  2-rotater shape the player is asked for, as far as labels allow.
+ *
+ *  All opponents are built this way now. Real historical lineups were dropped:
+ *  there are only 223 of them, they always field the exact five who played, and
+ *  fitting them to a strength target meant the same small pool recycled. An
+ *  assembled side can hit any target and is identified by its players, not a
+ *  name. */
+function buildOpponent(
+  snap: Snapshot, target: number, rng: Rng, pool: Player[]
+): TeamYear {
+  const leadOf = (p: Player) =>
+    p.labels.includes("igl")
+      ? (snap.teams.find((x) => x.igl === p.id)?.leadership ?? 0)
+      : 0;
+  const effOf = (r: Player[]) => {
+    const lead = Math.max(0, ...r.map(leadOf));
+    if (!lead) return r.reduce((a, p) => a + p.rating, 0) / 5;
+    // same multiplicative rule the player's roster is scored by
+    let leader = r[0], best = -1;
+    for (const p of r) { const b = leadOf(p); if (b > best) { best = b; leader = p; } }
+    const mult = (lead / IGL_SCALE) * LEAD_MAX_MULT;
+    const others = r.filter((p) => p.id !== leader.id);
+    return (r.reduce((a, p) => a + p.rating, 0)
+            + others.reduce((a, p) => a + p.rating, 0) * mult) / 5;
+  };
+
+  const near = (xs: Player[], want: number) => {
+    let best = xs[0], bd = Infinity;
+    for (let k = 0; k < 70; k++) {
+      const c = xs[Math.floor(rng() * xs.length)];
+      if (!c) continue;
+      const d = Math.abs(c.rating - want);
+      if (d < bd) { bd = d; best = c; }
+    }
+    return best;
+  };
+
+  // Keep the side coherent: everyone within a band of the target. Without this
+  // the correction pass reaches for extremes to hit the number and produces
+  // nonsense like NiKo (77) beside STYKO (40) on one roster.
+  const BAND = 11;
+  const inBand = (p: Player) => Math.abs(p.rating - target) <= BAND;
+  const band = pool.filter(inBand);
+  const src = band.length >= 60 ? band : pool;
+
+  // prefer an AWPer who is not also a caller — FalleN and Jame are both, and
+  // taking one as the AWP then adding a separate IGL gives a side two callers
+  const awpOnly = src.filter((p) => p.labels.includes("awp") && !p.labels.includes("igl"));
+  const awps = awpOnly.length >= 10 ? awpOnly : src.filter((p) => p.labels.includes("awp"));
+  // exactly one caller: IGLs are excluded from every other bucket below
+  const igls = src.filter((p) => p.labels.includes("igl") && !p.labels.includes("awp"));
+  const noRole = (p: Player) => !p.labels.includes("awp") && !p.labels.includes("igl");
+  const anchors = src.filter((p) => p.labels.includes("anchor") && noRole(p));
+  const rotaters = src.filter((p) => p.labels.includes("rotater") && noRole(p));
+  const rest = src.filter(noRole);
+
+  // one AWPer and one IGL first — a side without either is not a real team
+  const roster: Player[] = [];
+  const awp = near(awps.length ? awps : src, target);
+  roster.push(awp);
+  // only add a caller if the AWPer is not already one
+  if (!awp.labels.includes("igl")) {
+    const cands = igls.filter((p) => p.player_id !== awp.player_id);
+    roster.push(near(cands.length ? cands : src, target - 6));  // callers rate lower
+  }
+
+  // then fill toward 2 anchors / 2 rotaters where labels exist, else anyone
+  const want = (bucket: Player[]) =>
+    bucket.filter((p) => !roster.some((x) => x.player_id === p.player_id));
+  for (const bucket of [anchors, rotaters, rest]) {
+    while (roster.length < 5) {
+      const src = want(bucket.length >= 10 ? bucket : rest);
+      if (!src.length) break;
+      const aim = (target * 5 - roster.reduce((a, p) => a + p.rating, 0)) / (5 - roster.length);
+      roster.push(near(src, aim));
+      if (bucket !== rest) break;      // one from each positional bucket, then fill
+    }
+  }
+  while (roster.length < 5) roster.push(near(want(rest).length ? want(rest) : want(pool), target));
+
+  // correct onto the target — leadership varies from 0 to +9.6 team points
+  // depending on which caller was drawn, so a fixed offset cannot work
+  for (let i = 0; i < 90 && Math.abs(effOf(roster) - target) > 0.4; i++) {
+    const gap = effOf(roster) - target;
+    const fixed = roster[0].labels.includes("igl") ? 1 : 2;   // AWP (+IGL) are locked
+    const idx = fixed + Math.floor(rng() * (5 - fixed));
+    const cur = roster[idx];
+    const wanted = cur.rating - gap * 5;
+    const cands = want(rest).filter(inBand);
+    if (!cands.length) break;
+    const cand = near(cands, wanted);
+    const trial = roster.slice(); trial[idx] = cand;
+    if (Math.abs(effOf(trial) - target) < Math.abs(gap)) roster[idx] = cand;
+  }
+
+  const lead = Math.max(0, ...roster.map(leadOf));
+  const iglP = roster.find((p) => leadOf(p) === lead && lead > 0)
+            ?? roster.find((p) => p.labels.includes("igl"));
+  const base = roster.reduce((a, p) => a + p.rating, 0) / 5;
+  return {
+    team: "", year: 0,
+    roster: roster.map((p) => p.id),
+    days: 0, confidence: "high",
+    strength: Math.round(base * 10) / 10,
+    effective_strength: Math.round(effOf(roster) * 10) / 10,
+    igl: iglP?.id ?? null,
+    leadership: lead,
+    leadership_raw: 0,
+    custom: true,
+  } as TeamYear;
+}
+
 /* ------------------------------------------------------------------ bracket */
 
 export interface MatchResult {
+  stage: string;
   opponent: TeamYear;
   scoreYou: number;
   scoreThem: number;
   won: boolean;
   maps: boolean[];
+  bo: 1 | 3 | 5;
+  /** the opponent's group-stage record, e.g. "2-0" */
+  oppRecord: string;
 }
 
 export interface RunResult {
   matches: MatchResult[];
-  wins: number;
+  groupWins: number;
+  groupLosses: number;
+  advanced: boolean;
+  playoffWins: number;
   placement: string;
   champion: boolean;
 }
 
-const SCALE = 7;  // logistic width, in rating points, for a single map
+const SCALE = 7;
 const winProb = (a: number, b: number) => 1 / (1 + Math.exp(-(a - b) / SCALE));
 
-function bo3(rng: Rng, a: number, b: number) {
+function series(rng: Rng, a: number, b: number, bo: 1 | 3 | 5) {
+  const need = bo === 1 ? 1 : bo === 3 ? 2 : 3;
   const maps: boolean[] = [];
   let you = 0, them = 0;
   const p = winProb(a, b);
-  while (you < 2 && them < 2) {
+  while (you < need && them < need) {
     const w = rng() < p;
     maps.push(w);
     w ? you++ : them++;
@@ -213,41 +354,103 @@ function bo3(rng: Rng, a: number, b: number) {
   return { you, them, maps, won: you > them };
 }
 
-const PLACE = ["Groups", "Quarter-final", "Semi-final", "Final", "CHAMPION"];
+// Swiss: first to 3 wins advances, 3 losses eliminates. Max 5 matches.
+const SWISS_WINS = 3;
+const SWISS_LOSSES = 3;
+// Swiss pairs you against teams on YOUR record, so difficulty tracks the
+// win-loss DIFFERENTIAL, not the win count. 2-0 faces other 2-0 sides and is
+// stiff; 2-2 faces other 2-2 sides and is not. Scaling by wins alone made those
+// two identical, which is why the 2-x matches all felt the same.
+//
+//   0-0  60.9     1-0  62.4     2-0  63.9
+//                 0-1  59.4     2-1  62.4     2-2  60.9
+const SWISS_BASE = 60.9;
+const SWISS_PER_DIFF = 1.5;    // per (wins - losses)
+const PLAYOFFS: { stage: string; target: number; bo: 3 | 5 }[] = [
+  { stage: "Quarter-final", target: 66.3, bo: 3 },
+  { stage: "Semi-final", target: 68.8, bo: 3 },
+  // Bo5 grand final. A longer series cuts variance, so it favours the stronger
+  // side — the target is eased slightly to keep the title near 10%.
+  { stage: "Grand Final", target: 72.7, bo: 5 },
+];
+const JITTER = 2.5;
+/** Chance a draw is a "stacked" side well above the stage target, and how far
+ *  above it can reach. Uniform jitter alone made every pool feel the same width:
+ *  the 2-0 pool topped out at 66.5 and could never produce a 70+ opponent, so a
+ *  good group run never delivered a genuine scare. Rare, but possible. */
+const SPIKE_CHANCE = 0.12;
+const SPIKE_MIN = 2.5;
+const SPIKE_MAX = 9.0;
 
-/** Seeded 8-team bracket. Opponents are real historical team-years spread across
- *  the strength range so the run escalates rather than being flat. */
+/** Quarter-final seeding. A real Major rewards a clean Swiss run: 3-0 teams are
+ *  drawn against 3-2 teams, while a 3-2 qualifier meets a 3-0. So the QF target
+ *  moves with how many losses you carried out of the group.
+ *
+ *  The step has to be wide enough that a 3-0 QF is EASIER than that side's own
+ *  last Swiss match (63.9) even after the QF base was raised — otherwise going
+ *  unbeaten stops being a reward. 66.3 - 3.3 = 63.0 clears it. */
+const QF_SEED_STEP = 3.3;
+
 export function simulate(strength: number, snap: Snapshot, seed: string): RunResult {
   const rng = mulberry32(hashSeed(seed + ":sim"));
-  const ranked = snap.teams.slice().sort((a, b) => a.effective_strength - b.effective_strength);
-
-  // Three opponents from rising bands of the historical field. Swept to a ~10%
-  // championship rate for good play (9.5% measured, greedy 4.8%, so a 2.0x skill
-  // gap). A harder field WIDENS that gap — weak rosters stop sneaking through on
-  // variance — so difficulty and skill-expression move together here.
-  const bands: [number, number][] = [[0.75, 0.90], [0.90, 0.97], [0.97, 1.0]];
-  const opponents = bands.map(([lo, hi]) => {
-    const slice = ranked.slice(Math.floor(lo * ranked.length), Math.max(1, Math.floor(hi * ranked.length)));
-    return slice[Math.floor(rng() * slice.length)] ?? ranked[ranked.length - 1];
-  });
-
+  const pool = Object.values(snap.players);
   const matches: MatchResult[] = [];
-  let wins = 0;
-  for (const opp of opponents) {
-    const r = bo3(rng, strength, opp.effective_strength);
-    matches.push({ opponent: opp, scoreYou: r.you, scoreThem: r.them, won: r.won, maps: r.maps });
-    if (!r.won) break;
-    wins++;
+  const jit = (t: number) => {
+    if (rng() < SPIKE_CHANCE) return t + SPIKE_MIN + rng() * (SPIKE_MAX - SPIKE_MIN);
+    return t + (rng() - 0.5) * 2 * JITTER;
+  };
+
+  // ---- Swiss stage
+  let w = 0, l = 0;
+  while (w < SWISS_WINS && l < SWISS_LOSSES) {
+    const target = jit(SWISS_BASE + (w - l) * SWISS_PER_DIFF);
+    const opp = buildOpponent(snap, target, rng, pool);
+    // the decider is Bo3, as in a real Swiss stage
+    const bo: 1 | 3 | 5 = (w === SWISS_WINS - 1 || l === SWISS_LOSSES - 1) ? 3 : 1;
+    const r = series(rng, strength, opp.effective_strength, bo);
+    // Swiss pairs teams on the same record, so the opponent carries yours
+    matches.push({ stage: `Swiss ${w}-${l}`, opponent: opp, scoreYou: r.you,
+                   scoreThem: r.them, won: r.won, maps: r.maps, bo,
+                   oppRecord: `${w}-${l}` });
+    r.won ? w++ : l++;
   }
+  const advanced = w >= SWISS_WINS;
+
+  // ---- playoffs
+  let playoffWins = 0;
+  if (advanced) {
+    for (const st of PLAYOFFS) {
+      // only the QF is seeded — by the bracket you are drawn into 3-0 meets 3-2,
+      // 3-2 meets 3-0. After that the field has levelled out.
+      const seed = st.stage === "Quarter-final" ? (l - 1) * QF_SEED_STEP : 0;
+      const opp = buildOpponent(snap, jit(st.target + seed), rng, pool);
+      const r = series(rng, strength, opp.effective_strength, st.bo);
+      // QF is cross-seeded: you qualified 3-L, so you draw a 3-(2-L).
+      // Later rounds are whoever survived, so their record is drawn from the
+      // qualifying spread rather than mirrored.
+      const oppRecord = st.stage === "Quarter-final"
+        ? `3-${2 - l}`
+        : `3-${Math.floor(rng() * 3)}`;
+      matches.push({ stage: st.stage, opponent: opp, scoreYou: r.you,
+                     scoreThem: r.them, won: r.won, maps: r.maps, bo: st.bo,
+                     oppRecord });
+      if (!r.won) break;
+      playoffWins++;
+    }
+  }
+
+  const PLACE = ["Quarter-final", "Semi-final", "Grand Final", "CHAMPION"];
   return {
-    matches,
-    wins,
-    placement: PLACE[Math.min(wins + 1, 4)],
-    champion: wins === opponents.length,
+    matches, groupWins: w, groupLosses: l, advanced, playoffWins,
+    placement: advanced ? PLACE[Math.min(playoffWins, 3)] : `Swiss stage (${w}-${l})`,
+    champion: playoffWins === 3,
   };
 }
 
 export function shareText(res: RunResult, seed: string): string {
-  const line = res.matches.map((m) => (m.won ? "🟩" : "🟥")).join("");
-  return `csdle ${seed}\n${line} ${res.wins}-${res.matches.length - res.wins}\n${res.placement}`;
+  const n = res.groupWins + res.groupLosses;
+  const grp = res.matches.slice(0, n).map((m) => (m.won ? "🟩" : "🟥")).join("");
+  const po = res.matches.slice(n).map((m) => (m.won ? "🟩" : "🟥")).join("");
+  const w = res.matches.filter((m) => m.won).length;
+  return `csdle ${seed}\n${grp}${po ? ` | ${po}` : ""}  ${w}-${res.matches.length - w}\n${res.placement}`;
 }

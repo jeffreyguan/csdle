@@ -1117,6 +1117,835 @@ flex as filling whichever slot is short — so partial labelling costs nothing.
 roster slots). Until it is filled the 2/1/2 composition penalty rarely bites,
 because flex absorbs the gaps by design.
 
+## 6v. GROUP STAGE + FITTED OPPONENTS + MATCH REVEAL (2026-09-17)
+
+**Diagnosis:** tuning only the championship rate hid the real problem. The
+placement spread was flat — **62% reached the semi-final or better**, 27% the
+final. Weak rosters went deep because every round drew from the same wide bands.
+
+### Format: Major-style
+`Group A/B/C` (Bo1) then `Quarter-final / Semi-final / Grand Final` (Bo3).
+**2 wins from 3 to advance**, so a bad group run ends the tournament.
+
+### Opponents: fitted to depth, not sampled from a band
+Each stage has a fixed strength TARGET and takes the nearest real team-year (one
+of the closest 8, deterministically jittered, no repeats within a run).
+
+    Group A 53 | Group B 57 | Group C 60 | QF 61 | SF 64 | GF 66
+
+**Fixed, never scaled to the player** — rubber-banding would make a strong draft
+pointless and a weak one feel unearned. Real teams are kept rather than generated
+ones: seeing "Astralis 2018" across the table is the flavour; *which* one you draw
+is what varies with depth.
+
+### Result (drafted strength p10 55 / p50 61 / p90 68)
+| | constraint-aware | greedy |
+|---|---|---|
+| out in groups | **29.4%** | 46.3% |
+| quarter-final | 28.4% | 27.4% |
+| semi-final | 21.4% | 14.3% |
+| grand final | 9.5% | 4.9% |
+| **CHAMPION** | **11.3%** | 7.1% |
+
+A proper descending curve: going deep is now rare and roughly a third of runs end
+in groups. Swept 9 target sets to land it.
+
+### UI: match-by-match reveal
+The run no longer resolves in one blob. Each step shows **who you are facing**
+(logo, team, year, Bo1/Bo3) before you press *Play the match*, then the result
+lands and the next opponent is revealed. Share string separates the stages:
+`🟩🟩🟩 | 🟩🟥  4-1`.
+
+## 6w. CUSTOM OPPONENT TEAMS (2026-09-17)
+
+**~50% of opponents are now assembled by the sim** rather than drawn from the 223
+real team-years. Real sides stay for recognition; custom ones let the game pose
+match-ups that never happened, and there are only 223 real lineups to rotate.
+
+### How they are built
+Five real players greedily assembled toward the stage's strength target. Accuracy
+is excellent — **mean error 0.04 pts vs target, max 0.4** — so custom sides do not
+disturb the tuned difficulty curve at all.
+
+### Org-style names
+`Vertex`, `Nomad Union`, `Obsidian Gaming`, `Talon Collective`, `Zenith Esports`.
+Descriptor prefixes ("All-Star Halcyon", "Nordic Vertex") were dropped — they read
+as a label, not a team you could plausibly lose to.
+
+### Custom teams get leadership too
+An IGL on their side buffs their other four, exactly as on yours. Without it a
+custom team was quietly weaker than a real team of identical players.
+
+Targeting had to become a **correction pass**: a fixed offset cannot work because
+leadership is 0 for a side with no IGL and up to +9.6 team points for one led by
+gla1ve, so the overshoot depends on who got drawn. A constant -2.5 blew the error
+out to 2.50 mean / 7.2 max; the swap loop restores **0.05 mean / 0.4 max**.
+
+### The reveal shows a head-to-head, not just a name
+Up-next card now carries both sides: **team rating, IGL, AWP, leadership bonus**,
+and the opponent's full five with avatars, year, rating and role tags. You can see
+what you are walking into and why the number is what it is.
+
+### Difficulty unchanged
+constraint-aware: 29.2% out in groups, **10.4% champion**; greedy 5.7%.
+
+## 6x. OPPONENT POOL WAS LOCKED TO 41 TEAMS (2026-09-17)
+
+**Report:** "I still see the same teams, especially the year — Vitality 21,
+HellRaisers 15."
+
+**Measured:** the DRAFT was fine — all 223 team-years appear, Vitality 2021 and
+HellRaisers 2015 each dealt 7x in 2000 slots against an expected 9. But they were
+**faced as opponents 0 times**, because:
+
+`opponentFor` took the **nearest 8 to a FIXED target**. Fixed targets => a fixed
+candidate list => **only 41 of 223 team-years could ever be faced**, and the same
+handful recycled forever (Falcons 2025 alone was 5.4% of all real matches).
+
+### Fix: jittered target + tolerance band
+    aim  = target ± 4          (the target itself moves per match)
+    pool = everything within ±4 of aim
+
+| | before | after |
+|---|---|---|
+| distinct real opponents | **41/223** | **172/223** |
+| most-seen opponent | 5.4% | **1.8%** |
+
+Jitter is symmetric so difficulty averages out across a run, though it did nudge
+the championship rate 11% -> 12.2%; targets raised by 1 to compensate.
+
+### Final curve
+| | constraint-aware | greedy |
+|---|---|---|
+| out in groups | 31.6% | — |
+| quarter-final | 28.9% | — |
+| semi-final | 19.5% | — |
+| grand final | 9.4% | — |
+| **CHAMPION** | **10.6%** | 5.9% |
+
+19 team-years still never appear — the extremes (43 strength at the bottom, 74 at
+the top) sit outside every stage band. Acceptable; they are draftable, just never
+opponents.
+
+## 6y. THE ACTUAL REPETITION BUG: endless always started at board 0 (2026-09-17)
+
+**Report:** "I still see the same teams I draft from — Vitality 21, HellRaisers 15."
+
+Those two are not a coincidence. `endless-0` dealt exactly:
+
+    Astralis 2022 | fnatic 2018 | Falcons 2024 | Vitality 2021 | HellRaisers 2015
+
+**Cause:** `const [nonce, setNonce] = useState(0)`. Endless always opened on board
+zero — every page load, and (during this session) every Vite HMR reload, which
+fired on each edit. So the same five teams kept reappearing.
+
+**Why every engine test missed it:** the tests exercise `makeRolls`, which is
+correct — 223/223 team-years reachable, 92% of the variety ceiling, 0.11 shared
+team-years between consecutive boards. The bug was in **session state**, not the
+engine. Statistical tests over many seeds cannot see a bug that always picks the
+same seed.
+
+**Fix:** `useState(() => Math.floor(Math.random() * 1e6))`. Every session opens on
+a different board. Daily is untouched — its seed is the date, and it is the only
+mode that must be reproducible.
+
+Also fixed alongside: `prevOrgs` was computed with `nonce > 0` so the very first
+endless board applied no avoid list, and it called `makeRolls` without the avoid
+argument, so it reconstructed a *different* previous board than the one shown.
+
+### Lesson
+Two separate "same teams" reports had two entirely different causes — the first was
+a genuine engine issue (opponent pool locked to 41/223), the second was UI state.
+Both presented identically to the player. Worth testing the app's state machine,
+not just the pure functions.
+
+## 6z. SWISS STAGE + ALL-CUSTOM, UNNAMED OPPONENTS (2026-09-17)
+
+### Format: Swiss, first to 3 wins
+Not a fixed 3 matches — you play until **3 wins (advance)** or **3 losses (out)**,
+so a run is 3-5 matches. The decider (2-x or x-2) is Bo3, as in a real Major.
+Run lengths: 36% / 37% / 27% for 3 / 4 / 5 matches.
+
+Opponents stiffen with your record: `56 + 3.0 x wins`, jittered ±2.5.
+
+### Every opponent is now assembled; real lineups dropped
+223 real team-years is too few, they always field the exact five who played, and
+fitting them to a strength target meant a small pool recycled (that was the
+41/223 bug in 6x). An assembled side hits any target exactly.
+
+**Roles are coherent: 100% have exactly one AWPer and exactly one IGL.**
+Getting to 100% needed two fixes:
+- *Dual-role players.* FalleN and Jame carry both `awp` and `igl`; taking one as
+  the AWPer then adding a separate caller gave two. Now the AWP slot prefers a
+  non-caller, and a caller is only added if the AWPer is not one.
+- *Roster incoherence.* The correction pass reached for extremes to hit the
+  number — NiKo (77) beside STYKO (40). Candidates are now confined to ±11 of
+  the target, so a side looks like a team.
+
+### No names
+Opponents are identified by their five players and their rating, not a fabricated
+org name. Match rows read `62.4 — s1mple, device, gla1ve…`; the reveal shows the
+full five with roles.
+
+### Difficulty
+| | constraint-aware | greedy |
+|---|---|---|
+| out in Swiss | **42.3%** | 63.3% |
+| quarter-final | 22.7% | 15.7% |
+| semi-final | 16.4% | 10.8% |
+| grand final | 9.7% | 5.2% |
+| **CHAMPION** | **8.9%** | 5.0% |
+
+Swiss now eliminates ~42%, close to a real Major's half-the-field, while the title
+stays near 10%. Swept 5 configurations.
+
+## 7a. SEASON SUCCESS REPLACES CAREER PEDIGREE (2026-09-17)
+
+**Trigger:** "why does pronax 2015 have a higher bonus than apEX 2025?" — and it
+exposed three bugs in the career-pedigree model.
+
+### Bugs in the old model
+1. **Liquipedia's achievements table caps at 10 rows.** apEX had 3 of his 10 dated
+   2026, which the as-of-year filter dropped — he was judged on **7 events** while
+   pronax got all 10. FalleN 2016 scored +8 in a year he won **two Majors**.
+2. **Pre-2017 Majors were not detected.** The check was `/\bmajor\b/`, but
+   DreamHack Winter, ESL One Katowice/Cologne and MLG Columbus are Majors that
+   are not named "Major" — pronax's three Major wins scored as ordinary S-Tier.
+3. **Double counting.** An IGL's 2018 results ARE his team's 2018 results, so
+   career pedigree + a team-success bonus would count one run twice.
+
+### New model: ONE source, two magnitudes, per season
+`data/team_results.json` — full `/Results` history for all 69 orgs (no 10-row cap).
+
+| | reads | magnitude |
+|---|---|---|
+| every player | their team's season | up to **+6** to their own rating |
+| the IGL | the same season | buffs the **other four** by up to **+15** |
+
+Weighting calibrated against the spread of HLTV form across team-years (sd 4.2)
+and the best possible single-slot upgrade (+8.8 team points):
+
+| TEAM / IGL | achievements sd | share of spread | max contribution |
+|---|---|---|---|
+| 4 / 12 | 3.6 | 46% | +13.6 |
+| **6 / 15** | **4.8** | **53%** | **+18.0** |
+| 8 / 20 | 6.3 | 60% | +24.0 |
+
+At 6/15 silverware is slightly ahead of form, which is the intent. Past ~8/20
+results swamp form entirely.
+
+Scoring: placement x tier, summed over the season (not averaged — entering 30
+events and winning 3 is not worse than entering 10 and winning 3), qualifiers and
+showmatches excluded, then normalised against **that year's best side**.
+
+### Two calibration findings
+- **Ranged placements.** `^1st` matched `"1st - 4th"` and gave a top-four-somewhere
+  finish full winner's credit. Envy 2015 had three, which alone made it the best
+  season on record (144.2). Ranged results now score at the **worse** end; Envy
+  fell to 131.1 and 3rd, behind fnatic 2015 (179.8, two Majors) and Astralis 2018.
+- **Reference bar.** Normalising against the 92nd percentile put 39 team-years at
+  the cap with a median of +6 of 12 — everyone got half, which discriminates
+  nothing. Against the year's best, with a linear curve: 14 at max, median +4.
+
+### Result
+    ENCE 2018   base 52.2  +1 each, igl +3   -> 55.6
+    ENCE 2019   base 48.0  +2 each, igl +5   -> 54.0
+
+At 4/12 the gap narrowed from 2.6 to 1.6 but did not flip. **At 6/15 it does:**
+
+    ENCE 2018   effective 55.6   (team +1 each, igl +3)
+    ENCE 2019   effective 56.6   (team +3 each, igl +7)
+
+Their Katowice final now outweighs the individual-stat dip, which was the point.
+
+### Difficulty re-centred
+Bonuses lifted drafted strength ~1 point (p50 61 -> 62), so the ladder moved with
+it (Swiss base 56 -> 57.5, playoffs 61/64/66 -> 62.5/65.5/67.5).
+Back to: **43.4% out in Swiss, 9.4% champion**, greedy 5.8%.
+
+## 7b. TRIMMED SD: elite players were suppressing each other (2026-09-17)
+
+**Report:** "why would ZywOo affect donk's z-score? the delta should be as large
+as s1mple 2018."
+
+Correct on both counts. The deltas ARE identical:
+
+    s1mple 2018  shrunk 1.340  field mean 1.035  delta +0.305  sd 0.0766  z 3.98 -> 90
+    donk   2024  shrunk 1.330  field mean 1.027  delta +0.303  sd 0.0834  z 3.64 -> 86
+
+Same distance above the field, different score — because 2024's **standard
+deviation** is larger. And it is larger precisely because 2024 had three players
+above 1.28 (ZywOo, donk, m0NESY) while 2018 had one. **Outliers inflate the SD,
+and a bigger SD divides every delta down, so elite players in the same season
+suppress one another.**
+
+The giveaway — the typical spread is near-identical:
+
+    2018:  sd(all) 0.0766   sd(middle 90%) 0.0576
+    2024:  sd(all) 0.0834   sd(middle 90%) 0.0564
+
+**Fix:** normalise against a **trimmed SD** (middle 90%), with the multiplier cut
+from 10 to 7.5 per SD to preserve the familiar range. The mean is unchanged — one
+player never moved that; it was always the denominator.
+
+    donk 2024  base 86 -> 90      (now equal to s1mple 2018, as the delta implies)
+    range 21-99, median 51 — essentially unchanged
+
+Final rating is also clamped to 99: base is clamped, but the success bonus could
+push a top season past it (donk 2025 briefly read 100).
+
+Difficulty unchanged at **46.1% out in Swiss, 10.9% champion**.
+
+## 7c. Bo5 GRAND FINAL (2026-09-17)
+
+Majors run Bo5 grand finals; the sim now matches. `series()` takes `1 | 3 | 5`
+(first to 1 / 2 / 3).
+
+Format is now: Swiss Bo1 (Bo3 decider) -> QF Bo3 -> SF Bo3 -> **GF Bo5**.
+
+A longer series cuts variance and favours the stronger side, so it was worth
+checking the title did not drift: **10.9% -> 10.4%**, small enough to leave alone.
+The effect is muted because finalists are already a selected group — reaching the
+final at all is ~18%, and those who do tend to be strong.
+
+Verified over 236 simulated finals: every scoreline is a valid Bo5
+(`3-0, 3-1, 3-2, 2-3, 1-3, 0-3`), never more than 5 maps.
+`npm run test:bo` guards it.
+
+## 7d. TWO BUGS IN SEASON SCORING (2026-09-17)
+
+**Report:** "Xizt 2016 got +15 and that wasn't even prime NiP."
+
+### Bug 1: a Major counted the same as any S-Tier event
+`TIER` had no Major tier, so **NiP 2016 (four ordinary S-Tier wins) tied
+Luminosity 2016 (two MAJORS)** at 63.1 vs 63.2 — both took +15. The old
+player-pedigree code weighted Majors at 2x; that never carried into season scoring.
+
+Fixed: `MAJOR = 22` vs S-Tier 10, with the pre-2017 name list (DreamHack Winter,
+ESL One Katowice/Cologne, MLG Columbus — Majors that are not named "Major").
+Tournament names now come from the results-table link title, present on 97% of
+13,979 rows. Luminosity 2016 -> 75.2, clear of NiP's 64.6.
+
+### Bug 2: scaling to the year's best inflated weak years
+The bonus was `raw / that_year's_best`, so a weak season inflated everyone:
+
+| year | best season | by |
+|---|---|---|
+| 2016 | **75.2** | Luminosity |
+| 2018 | **144.8** | Astralis |
+| 2025 | **148.7** | Vitality |
+
+2016's best is **half** of 2018's, so NiP 2016 sat at 86% of its year and drew
++13, while the same raw score in 2018 would be 45%. Conversely Spirit 2025 — a
+genuinely strong season — was squashed to +8 for coexisting with Vitality.
+
+Fixed: a **fixed benchmark of 170**. A great season now scores the same
+regardless of who else was great.
+
+170 rather than 130 because at 130 the whole elite tier was **clipped** — fnatic
+2015 (203.8), Astralis 2018 (144.8) and NaVi 2021 (131.8) all scored +15, despite
+fnatic's season being 55% bigger than NaVi's. Raising the bar lets great seasons
+rank against each other:
+
+    fnatic 2015    +15      Astralis 2019  +10
+    Vitality 2025  +13      SK 2017        +10
+    Astralis 2018  +13      Liquid 2019     +9
+    NaVi 2021      +12      NiP 2016        +6
+
+Exactly one season now reaches the cap (was 39 under per-year scaling, 6 at 130).
+The scale stays **linear** — convexity was tested and only squashed the middle
+without separating the top, which was the actual complaint.
+
+### Result
+    Xizt / NiP    2015  raw  98.1 -> igl +11
+                  2016  raw  64.6 -> igl  +7     (was +15)
+                  2017  raw  27.1 -> igl  +3
+
+Distribution is far healthier: median IGL bonus +4, only 6 seasons at the +15 cap
+(was 39 at cap under the old per-year scaling).
+
+Difficulty re-centred — smaller bonuses lowered drafted strength ~1 point
+(Swiss base 59 -> 58, playoffs 63/66/68). Back to **44.5% out in Swiss, 10.1%
+champion**.
+
+## 7e. SEASON SCORE IS NOW A RATE, NOT A TOTAL (2026-09-18)
+
+**Report:** "entering events and not doing well should be penalised... 2015
+fnatic was not as good as 2025 or 2018 or even 2019."
+
+Correct, and the totals were attendance-inflated:
+
+| season | entered | wins | win% | old raw | per event |
+|---|---|---|---|---|---|
+| fnatic 2015 | **32** | 15 | 47% | **203.8** (#1) | 6.4 |
+| Vitality 2025 | 21 | 11 | 52% | 148.7 | **7.1** |
+| Astralis 2018 | 22 | 14 | **64%** | 144.8 | 6.6 |
+| NaVi 2021 | 18 | 11 | 61% | 131.8 | **7.3** |
+| **Virtus.pro 2015** | **38** | 7 | **18%** | **132.4 (#5)** | 3.5 |
+| **Envy 2015** | **31** | 7 | **23%** | **140.9 (#4)** | 4.5 |
+
+2015 had a bloated calendar and three 2015 sides sat in the all-time top five.
+Virtus.pro won 18% of what they entered and scored 5th-best ever.
+
+**Fix: a GEOMETRIC blend of total and rate** — `sqrt(total x rate)`, each
+normalised (TOTAL_REF 205, RATE_REF 7.5, floor of 8 events).
+
+Neither alone works:
+- **Pure total** rewards attendance (Virtus.pro 2015: 38 events, 18% win rate,
+  5th all-time).
+- **Pure rate** over-rewards light schedules (NaVi 2021, 18 events, outranked
+  fnatic 2015 and Astralis 2018).
+- **A weighted average** lets a huge total paper over a poor rate — linear
+  blending put Virtus.pro 2015 back at #7.
+
+Multiplying requires BOTH volume and quality.
+
+This also delivers the "penalise entering and doing badly" ask without a separate
+penalty — a poor result adds to the denominator and nothing to the numerator.
+Worth noting a penalty ALONE would not have fixed fnatic 2015: they had 29 top-4s
+in 32 events and one finish below 9th. The problem was volume, not bad results.
+
+### Final ranking (IGL bonus), W_TOTAL = 0.5
+    1. fnatic 2015     +14      5. Astralis 2019  +9
+    2. Astralis 2018   +12      6. Envy 2015      +10
+    3. NaVi 2021       +12      7. SK 2017        +9
+    4. Vitality 2025   +12      9. FaZe 2022      +8
+                               20. Virtus.pro 15  +8
+
+fnatic 2015 and Astralis 2018 clear NaVi 2021, FaZe 2022 sits outside the top 8,
+and **Virtus.pro 2015 falls to #20** (38 events, 18% win rate) — at W_TOTAL 0.6 it
+was #8, and a linear blend put it at #7.
+
+`season_raw` returns 0..1 directly, so BENCHMARK = 1.0.
+
+### Rejected: mean of top-K events
+Tested at K=5/8/12. It suppresses the volume-inflated 2015 sides even harder
+(Virtus.pro #14, Envy #13 at K=5) but reverses the calls that prompted the work:
+Astralis 2018 slips to #5, NaVi 2021 rises to #3, FaZe 2022 returns to #6.
+Top-K measures PEAK only — five best results say nothing about the other twenty —
+so a side brilliant five times and mediocre often scores like one brilliant five
+times and good throughout.
+
+Difficulty re-centred: **42.4% -> ~10% champion** after lifting the ladder 0.6-0.7.
+
+## 7f. IGL CAP 15 -> 12, AND THE 2015 QUESTION (2026-09-18)
+
+`IGL_MAX` lowered to 12 (team stays 6). Distribution is now heavily bottom-loaded
+— median +2, one season at +11 — so the bonus reads as a genuine distinction
+rather than something most sides collect.
+
+### "2015 has two teams so high, which is a contradiction"
+Half right, and the cause is real: **the volume term is not era-normalised.**
+
+| year | median events entered |
+|---|---|
+| 2015 | **27** |
+| 2022 | **15** |
+| 2025 | 19 |
+
+2015 teams entered nearly twice what modern sides do, so the TOTAL half of
+`sqrt(total x rate)` hands 2015 free credit. Rate is era-neutral; volume is not.
+
+**But fixing it conflicts with the earlier calls.** Normalising volume against each
+season's median schedule:
+
+| | global ref (kept) | era-normalised |
+|---|---|---|
+| fnatic 2015 | #1 | #3 |
+| NaVi 2021 | #3 | **#2** |
+| Vitality 2025 | #2 | **#1** |
+| FaZe 2022 | #9 | **#5** |
+| Virtus.pro 2015 | #8 | **#18** |
+| 2015 sides in top 10 | 3 | 2 |
+
+It suppresses 2015 (and crushes Virtus.pro) but pushes NaVi 2021 to #2 and FaZe
+2022 back to #5 — reversing two explicit user calls. **Kept the global reference**;
+the tension is noted rather than resolved, since it is a genuine trade, not a bug.
+
+Worth separating: fnatic 2015 ranking #1 is *not* obviously wrong — 15 wins from
+32 events at a 47% win rate is a real case for best season on record. The weaker
+2015 entries (Envy #6 at a 23% win rate, Virtus.pro #8 at 18%) are where the
+volume bias actually shows.
+
+## 7g. RMR BUG + TOTAL_REF WAS A 2015 ARTEFACT (2026-09-18)
+
+**Report:** "donk 2024 only gets +3?" — Spirit won the Shanghai Major that year.
+
+### Bug: RMRs scored as Majors
+`is_major` matched the word "Major", so **"PGL Major Copenhagen 2024: European
+RMR"** — a *qualifier for* the Major — took the full 22-point Major weight instead
+of A-Tier's 5. **406 rows affected**, concentrated in the RMR era (118 in 2024,
+82 in 2022, 74 in 2023). Now excluded via `NOT_MAJOR` (rmr / qualifier / closed).
+
+### TOTAL_REF 205 was calibrated on a single outlier
+Best season total by year: **2015: 203.8** — every other year is **55-149**. So
+205 meant no modern side could approach the volume cap, and 2015 sat permanently
+on top. Spirit 2024's Major-winning season reached only 40% of it.
+
+Lowered to **130**, and MAJOR raised **22 -> 30** (at 22, a Major-winning season
+ranked 17th — a Major is the single most prestigious result in CS).
+
+### Result
+    1. Astralis 2018  +12      6. Envy 2015       +10
+    2. Vitality 2025  +12      7. FaZe 2022        +8
+    3. fnatic 2015    +11     11. Spirit 2024      +8   (was #17, +6)
+    4. Astralis 2019  +10
+    5. NaVi 2021      +11
+
+Astralis 2018 and Vitality 2025 now clear fnatic 2015, and Astralis 2019 sits
+just behind — matching the stated view that "2015 fnatic was not as good as 2025
+or 2018 or even 2019". donk 2024 now reads **90 + 4 = 94**.
+
+This also largely resolves 7f's noted contradiction: the 2015 dominance was mostly
+TOTAL_REF, not the blend.
+
+## 7h. CARD REDESIGN + IGL ALIGNMENT BUG (2026-09-18)
+
+### The alignment bug
+`.card` is a `<button>`, and **buttons vertically centre their content**. The IGL's
+`leads` badge made that card taller, so every other card floated mid-box against
+it. Fixed with `display:flex; flex-direction:column` (top-aligned, badge pushed
+down by `margin-top:auto`) and by **always rendering the badge** — empty for
+non-IGLs — so all cards are identical height regardless of role.
+
+Third instance of the same class this session: conditionally mounting an element
+inside a sized container. Reserve the slot, don't mount conditionally.
+
+### New card
+- **Org logo inside the avatar** instead of initials (1072/1087 players have one;
+  initials remain the fallback), plus a large faded logo watermark that lifts and
+  rotates on hover.
+- **Rating at 32px with a gradient meter bar**, and the `+N` results bonus as a
+  green superscript.
+- **Three-stat strip**: HLTV rating, K/D, maps. Added `team`, `kd`, `kd_diff` to
+  the player records (K/D present for 1045/1087; the rest show "—").
+- Nick, flag, team and season in a header block; role chips below.
+- Gradient panel background, lift-and-shadow on hover.
+
+`npm run test:card` asserts the app mounts and checks team/logo/K-D coverage.
+
+### Grid overflow
+The redesigned cards used `auto-fit, minmax(178px, 1fr)` — five of those need
+930px and the container gave 848px, so they wrapped to two rows. Now pinned to
+`repeat(5, minmax(0, 1fr))` with the container widened 880 -> 1000px (186px per
+card), and **every grid switched from `1fr` to `minmax(0, 1fr)`**.
+
+That distinction is the actual fix: `1fr` is `minmax(auto, 1fr)`, so a track
+never shrinks below its content and long names (Gratisfaction, "Ninjas in
+Pyjamas 2015") push the row wider instead of ellipsing. Applied to the option
+cards, roster slots, opponent roster, stat strip, match rows and the head-to-head
+panel.
+
+Responsive: 5 columns > 760px, 3 columns > 460px, 2 below.
+
+## 7i. HONOURS ON CARDS: Majors + HLTV Top 20 (2026-09-18)
+
+### Major wins
+Derived from `team_results.json`: a 1st place at a Major (ranged placements
+excluded). **15 Major-winning team-seasons across 2015-2025** — correctly none in
+2020, which had no Major.
+
+Needed one more `NOT_MAJOR` rule: **"ESL Major Series"** and **"ESL Major League"**
+are unrelated events that merely contain the word, and were producing false
+positives (NiP 2013, Vexed 2016). EMS One Katowice 2014 genuinely IS a Major and
+is listed explicitly in `EARLY_MAJORS`.
+
+### HLTV Top 20 Players of the Year
+Liquipedia mirrors the rankings at `HLTV/Top 20 Players`. Scraped to
+`data/hltv_top20.json` — **15 years, 20 players each**, 201 of the 1087
+player-years in the pool have a placing.
+
+This is genuinely new information: HLTV's ranking is **editorial** (big events,
+impact, awards) rather than a rating, so it is independent of everything already
+in the snapshot. It is also the answer to an earlier question — HLTV made donk #1
+of 2024 while raw rating vs top-20 had ZywOo ahead.
+
+Two parse fixes: 2023's header reads `"2023  (GO/2)"` (the CS:GO/CS2 split year)
+so it needed a prefix match rather than an exact one, and 2022's names carry
+invisible word-joiner characters (U+2060) that had to be stripped.
+
+### On the card
+Badges hang **over the top edge** as a tab: 🏆 for a Major (x2 when a side won
+both that year) and `HLTV #N` for the Top 20 placing, orange when top three.
+
+Positioned absolutely and out of flow, which matters: an in-flow honours row
+reserved ~26px on every card, and 886 of 1087 player-years have no Top 20 placing,
+so most cards carried an empty band. Out of flow costs nothing when empty and
+still cannot shift siblings.
+
+## 7j. LEADERSHIP IS NOW MULTIPLICATIVE (2026-09-18)
+
+**Question:** "should IGLs be a flat add or a multiplier? IGLs can carry a bad
+team right now."
+
+### Flat did favour weak rosters, by construction
+| roster | flat +9.6 | gain | x1.18 | gain |
+|---|---|---|---|---|
+| 40 | 49.6 | **24%** | 45.8 | 14% |
+| 60 | 69.6 | 16% | 68.6 | 14% |
+| 80 | 89.6 | **12%** | 91.5 | 14% |
+
+A flat bonus is worth twice as much proportionally to a 40-rated roster as an
+80-rated one — the carry effect exactly as described.
+
+**But it was mostly theoretical.** Over 1500 drafts by a bot deliberately chasing
+leadership, the weakest 20% averaged only +2.8 leadership, and just **0.7%** of
+sub-58 rosters reached 62+. The bonus distribution is bottom-heavy (median +2)
+after the 7f-7g recalibration, so elite callers are rare.
+
+### Changed anyway, because it is more true to CS
+A great caller makes good players better through structure, utility and roles —
+he cannot make bad players good. Flat said otherwise.
+
+    leadership = other_four_total x (season_bonus / 12) x 0.18
+
+Applied identically in `evaluate()`, in `buildOpponent`'s `effOf`, and in the
+snapshot's `effective_strength`.
+
+### Measured effect
+    weak roster (48) + max IGL:   57.6 -> 54.9   (-2.7, the carry case)
+    strong roster (72) + max IGL: 81.6 -> 82.4   (+0.8)
+
+The "too OP on a good team" worry does not materialise — the ceiling rises 0.8
+while the carry loses 2.7, and p10/p50/p90 of drafted strength are unchanged.
+Difficulty held at **45.0% out in Swiss, 9.2% champion** with no retune.
+
+UI now reads `leads · +18% to teammates` rather than a flat figure.
+
+## 7k. FILLED SLOTS MATCH THE OPTION CARDS (2026-09-18)
+
+Picked players were rendering as a cramped stub (30px avatar, 104px tall) while
+the options they came from were full cards — so making a pick visually shrank it.
+
+Filled slots now reuse the **exact card layout**: watermark, honours badges,
+avatar with org logo, nick + flag + team + season, 30px rating with meter, the
+three-stat strip, role chips and the leads badge. Same 5-column grid, so a pick
+looks identical before and after it is made.
+
+Empty slots keep a large centred number. Mobile min-height 92 -> 150px.
+
+Also: the first stat is now labelled **HLTV** (was "rating", which was ambiguous
+next to the big 0-99 number that is also called a rating) and the stat values went
+12.5px -> 14.5px.
+
+Dead `.s-nick` / `.s-meta` / `.s-leads` / `.s-tags` rules removed.
+
+## 7l. ALIGNMENT LINT (2026-09-18)
+
+The same layout bug has now appeared **four times**: reroll button, roll-header
+logo, mode buttons, honours row. Every instance was an element mounted
+conditionally inside a container whose layout depends on its children.
+
+`npm run test:align` guards it:
+- the layout-reserved blocks (`c-honours`, `c-leads`, `org-logo`, `mode-new`)
+  must render unconditionally
+- the option card and the filled slot must emit **identical block sets**, so the
+  two cannot drift apart
+
+**Rule:** reserve the slot and render it empty, or take the element out of flow
+entirely. Never mount conditionally inside a right-aligned, space-between, or
+content-sized container.
+
+## 7m. THE DIFFICULTY LADDER DIPPED (2026-09-18)
+
+**Report:** "2nd and 3rd group games feel much harder than the 1st, maybe harder
+than the QF, and the playoffs ramp slowly."
+
+Exactly right — the ladder was not monotonic:
+
+    Swiss 0-0      57.4
+    Swiss 1-x      60.4
+    Swiss 2-x      63.4   <- the decider
+    Quarter-final  62.0   <- EASIER than the match before it
+    Semi-final     65.0
+    Grand Final    67.0
+
+The Swiss climbed **+3.0 per win** while the playoffs climbed +3.0 then +2.0, so
+progressing out of the group stage made the next match *easier*, and the bracket
+barely escalated.
+
+### New ladder
+    Swiss 0-x   58.5          Quarter-final  62.5   (+1.0)
+    Swiss 1-x   60.0  (+1.5)  Semi-final     66.0   (+3.5)
+    Swiss 2-x   61.5  (+1.5)  Grand Final    69.5   (+3.5)
+
+Gentle through Swiss, steep through the bracket — **playoff steps are now 2.3x
+the Swiss steps**, where they used to be smaller.
+
+### Superseded by 7n — see below for the final seeded model.
+
+## 7n. SWISS SEEDING BY RECORD + QF CROSS-SEEDING (2026-09-18)
+
+**Report:** "2-0 should be slightly harder than 2-1, which is harder than 2-2.
+Going 3-0 should reward you with a 3-2 opponent."
+
+That is real Major Swiss: you are paired against teams on **your own record**, and
+a clean run earns a softer bracket. The model scaled by **win count alone**, so
+2-0 and 2-2 drew identical opponents.
+
+### Swiss now scales on (wins − losses)
+    target = SWISS_BASE + (wins - losses) x 1.5
+
+    0-0  59.8    1-0  61.3    2-0  62.8
+                 0-1  58.3    2-1  61.3    2-2  59.8
+
+Measured over 2500 runs — mean opponent strength by record:
+`2-0 61.4 > 2-1 60.0 > 2-2 58.4`, and `0-1 56.9` (losing early softens the draw,
+which is the point of Swiss).
+
+### Quarter-final is cross-seeded
+    QF target = 62.5 + (losses - 1) x 2.2
+
+    qualified 3-0 -> mean QF opponent 60.2
+    qualified 3-1 -> 62.5
+    qualified 3-2 -> 64.5
+
+So a 3-0 run draws a QF **easier than its own last Swiss match** (60.2 vs 62.8).
+That dip is deliberate — it is the reward — which broke the old monotonic-ladder
+test. `test:ladder` now asserts the six invariants that actually apply, including
+"a 3-0 run earns an easier QF than its last Swiss match" and "a 3-2 run draws a
+harder one".
+
+### Opponent records are shown
+Swiss opponents carry your record (pairing guarantees it); QF opponents show
+`3-(2-L)` from the cross-seed; later rounds draw from the qualifying spread.
+Displayed on the up-next card ("they went **2-0** in the group stage") and as a
+chip in the match history.
+
+### Final difficulty — champion 5%
+| | |
+|---|---|
+| out in Swiss | 39.1% |
+| quarter-final | 26.0% |
+| semi-final | 18.1% |
+| grand final | 11.9% |
+| **CHAMPION** | **4.9%** (greedy 3.1%) |
+
+`npm run test:seed` measures the Swiss and QF seeding empirically so neither can
+silently invert.
+
+## 7o. HLTV TOP 20 BONUS (2026-09-18)
+
+`bonus = round(2 + 3 x (20 - placing) / 19)` -> **+5 for #1-3 down to +2 for #20**,
+folded into the visible rating alongside the season-results bonus. A floor of +1
+undersold it — making HLTV's top 20 at all is a real distinction.
+
+### Why it is not just double-counting
+`corr(placing, base rating) = -0.71` — strong, so most of it is redundant. But
+**62 of 201 placed players rate below 60**:
+
+    Snax 2015    #4  rating 58        FalleN 2017  #6  rating 59
+    Snax 2016    #5  rating 54        broky 2024   #8  rating 57
+
+Those are players whose value is in utility, calling and impact rather than
+fragging — exactly the "good players with worse ratings" gap raised earlier.
+HLTV's ranking is editorial, so it captures what the rating cannot. Kept small
+(1-4) so it corrects rather than overrides.
+
+    Snax 2015  (#4):  58 + 4 season + 5 top20 = 67
+    FalleN 2017 (#6):  59 + 4 season + 4 top20 = 67
+    b1t 2025   (#20):  57 + 1 season + 2 top20 = 60
+
+6 player-years hit the 99 cap.
+
+### Difficulty re-centred
+Ratings rose ~1.5 points (p50 62 -> 63), so the ladder moved with them
+(Swiss base 59.8 -> 60.9, playoffs 64.9 / 68.8 / 72.7).
+
+| | |
+|---|---|
+| out in Swiss | 40.7% |
+| quarter-final | 25.0% |
+| semi-final | 17.9% |
+| grand final | 10.9% |
+| **CHAMPION** | **5.5%** |
+
+## 7p. TROPHY COUNT + "MOST DECORATED CALLS" (2026-09-18)
+
+### Trophy badge now counts S-Tier titles
+Was Majors only (63 player-years). Now every **S-Tier win that season**, Majors
+included, shown as `🏆×N`. 432 player-years carry at least one; the badge turns
+gold when one of the titles was a Major, grey otherwise — so a Major still reads
+differently from three ordinary S-Tiers.
+
+    fnatic 2015     x11  (2 Majors)      Envy 2015          x7  (0 Majors)
+    Astralis 2018    x9  (1 Major)       Natus Vincere 2021 x7  (1 Major)
+    Vitality 2025    x9  (2 Majors)
+
+Distribution: 71 seasons with 1 title, 23 with 2, 15 with 3, tailing to fnatic
+2015's 11. `test:card` asserts `trophies >= majors` (a Major is an S-Tier event),
+currently 0 violations.
+
+### "Most decorated calls", not "senior"
+The selection logic already picked the highest-leadership caller — only the note
+said "senior", which described the wrong rule. Wording corrected and the intent
+commented, so the behaviour and the explanation now agree.
+
+## 7q. THE OPTION CARD WAS NOT SHOWING THE HLTV BONUS (2026-09-18)
+
+**Report:** "every player on the same team has the same + number."
+
+True, and a bug. The card markup exists in **two places** — the option card and
+the filled roster slot — and an earlier edit matched only the slot's markup. The
+option card, the one you actually pick from, still rendered `+{team_bonus}`.
+Since the season bonus is identical for all five team-mates, every card showed
+the same `+N` and the HLTV component was invisible.
+
+Data was correct throughout: Astralis 2018 is `+10 / +9 / +11 / +10 / +10`
+(season +6, HLTV +4/+3/+5/+4/+4 for Magisk #7, Xyp9x #13, device #2, dupreeh #5,
+gla1ve #8).
+
+Both variants now render `team_bonus + top20_bonus`, with a tooltip breaking it
+down (`75 form + 6 season results + 5 HLTV #2`).
+
+`test:align` gained a check that the combined expression appears in both variants
+and the team-only form appears nowhere — the two card copies have now drifted
+twice, so it is worth asserting.
+
+**Note:** 111 of 223 team-years still show an identical `+N` across all five —
+those are sides with no Top 20 players at all. That is correct, not the bug.
+
+## 7r. HEAVY-TAILED DRAWS + STIFFER QF (2026-09-18)
+
+**Report:** "group stage variation is too small — facing a 65+ or even 70+ side
+should be possible, just unlikely, especially in the 2-0 pool. QF is too easy."
+
+Measured, and both were true. Uniform +/-2.5 jitter gave every pool the same
+narrow width:
+
+| pool | old max | old >=70 | new max | new >=70 |
+|---|---|---|---|---|
+| 0-0 | 63.3 | 0% | 69.9 | 0% |
+| 2-0 | **66.5** | **0%** | **72.7** | **3%** |
+| Quarter-final | 69.9 | 0% | **79.8** | **27%** |
+
+### Spike draws
+12% of draws now come from a long right tail (+2.5 to +9 above target) instead of
+the uniform band. A stacked side is rare but possible, and more likely the better
+your record — the 2-0 pool now produces a 65+ opponent a third of the time and a
+70+ one occasionally, so a good group run can still deliver a genuine scare.
+
+### QF raised 64.9 -> 66.3
+It was sitting barely above the Swiss decider. It is now a real gate: 77% of QF
+opponents are 65+, and it eliminates 34% of all runs.
+
+### QF seed step widened 2.2 -> 3.3
+Raising the QF base broke the reward — a 3-0 run's QF (64.1) had crept above its
+own last Swiss match (63.9). A wider step restores it:
+
+    qualified 3-0 -> mean QF opponent 63.6
+    qualified 3-1 -> 66.9
+    qualified 3-2 -> 70.6
+
+### One invariant was wrong, not the config
+`semi-final above the HARDEST QF draw` began failing because a 3-2 qualifier now
+meets a 70+ side in the quarter-final — harder than the semi. That is correct and
+true to a real Major, where the cross-seeded 3-2 vs 3-0 is often the bracket's
+toughest match. Relaxed to **"above the median QF draw"**: the bracket must
+escalate on average, not for every seed.
+
+Difficulty: **38.9% out in Swiss, 4.9% champion.**
+
 ## 7. Next step — Phase 1 data spike
 
 Before any app code, answer these empirically against the live Liquipedia API:

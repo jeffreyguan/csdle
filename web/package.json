@@ -10,12 +10,19 @@
     "preview": "vite preview",
     "test:sim": "vite-node scripts/simtest.ts",
     "test:render": "vite-node scripts/rendertest.tsx",
-    "test": "npm run test:sim && npm run test:render && npm run test:avatar && npm run test:variety && npm run test:reroll && npm run test:lead",
+    "test": "npm run test:sim && npm run test:render && npm run test:avatar && npm run test:variety && npm run test:reroll && npm run test:lead && npm run test:place && npm run test:swiss && npm run test:bo && npm run test:card && npm run test:align && npm run test:ladder && npm run test:seed",
     "sync-data": "cp ../data/snapshot.json public/snapshot.json && cp ../data/logos.json public/logos.json",
     "test:avatar": "vite-node scripts/avatartest.ts",
     "test:variety": "vite-node scripts/orgtest.ts && vite-node scripts/ceilingtest.ts",
     "test:reroll": "vite-node scripts/rerolltest.ts",
-    "test:lead": "vite-node scripts/leadtest.ts"
+    "test:lead": "vite-node scripts/leadtest.ts",
+    "test:place": "vite-node scripts/placetest.ts",
+    "test:swiss": "vite-node scripts/swisstest.ts",
+    "test:bo": "vite-node scripts/botest.ts",
+    "test:card": "vite-node scripts/cardtest.tsx",
+    "test:align": "vite-node scripts/alignlint.ts",
+    "test:ladder": "vite-node scripts/laddertest.ts",
+    "test:seed": "vite-node scripts/seedtest.ts"
   },
   "dependencies": {
     "react": "^19.2.8",

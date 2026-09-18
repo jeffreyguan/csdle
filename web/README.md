@@ -30,11 +30,38 @@ copyright retained by the tournament organiser (ESL/BLAST/PGL), and Wikimedia
 Commons — the only genuinely free source — covers just 23% of players and 9% of
 player-years. Avatars are generated deterministically from the player id instead.
 
+## Tournament
+
+**Swiss stage** — play until 3 wins (advance) or 3 losses (out), so 3-5 matches.
+The decider is Bo3. Opponents stiffen with your record. Then Bo3 quarter-final and
+semi-final, and a **Bo5 grand final**.
+
+**Every opponent is assembled** from real players to hit a strength target that
+rises with how far you have gone — always exactly one AWPer and one IGL, and all
+five within a band of each other so the side looks like a team. They have no name:
+you face a roster, shown in full before each match.
+
+Swiss pairs you against teams on **your own record** — 2-0 is a stiffer draw than
+2-2 — and the quarter-final is **cross-seeded**, so a 3-0 run meets a 3-2 team
+while a 3-2 run meets a 3-0. Opponent records are shown before each match.
+
+Draws are heavy-tailed — 12% of opponents come from a long right tail, so a 70+
+side is rare but possible, and likelier the better your record.
+
+Measured for good play: 39% out in Swiss, **~5% champion**.
+
 ## Scoring
 
     strength = mean(5 ratings)
-             + IGL leadership   (his trophies up to that year, buffing the OTHER four)
+             + team success     (that season's results, +0-6 to every player)
+             + HLTV Top 20      (+2 for #20 up to +5 for #1-3)
+             + IGL leadership   (same season, MULTIPLYING the other four by up to
+                                 +18% — a caller amplifies good players, he does
+                                 not lift bad ones)
              − composition      (see below)
+
+Cards carry two honour badges: `🏆×N` for S-Tier titles that season (gold when one
+was a Major) and `HLTV #N` for a Top 20 placing.
 
 Roles are `awp`, `igl`, `anchor`, `rotater` — all hand-curated. A player with no
 positional label is **flex**. There is no derived `star`: it was a rating proxy
@@ -49,7 +76,8 @@ pedigree) leads, and it is never stacked. There is no extra penalty for a second
 caller: IGLs already rate ~8.5 points below everyone else, so a second one drags
 the roster mean on its own. Charging for it on top double-counted.
 
-Ratings are HLTV, normalised **within each season** — Rating 1.0/2.0/3.0 are not
+Ratings are HLTV, normalised **within each season** against a *trimmed* SD
+(outliers otherwise inflate the spread and suppress each other) — Rating 1.0/2.0/3.0 are not
 comparable across eras, so only the derived 0–100 number means anything.
 
 ## Does the constraint actually bind?
