@@ -1946,6 +1946,172 @@ escalate on average, not for every seed.
 
 Difficulty: **38.9% out in Swiss, 4.9% champion.**
 
+## 7s. DUPLICATE AWP LABELS (2026-09-18)
+
+**Report:** "some teams have more than one AWPer — Senzu and HeavyGod aren't
+AWPers." Both correct: **31 of 223 team-years fielded two or three AWPers.**
+
+Two causes:
+1. **Wrong labels.** Speculative medium-confidence rows for players who are
+   riflers: Senzu, Techno4K, HeavyGod, Tauson, Woro2k, noway, El1an, WorldEdit,
+   fox, Rickeh, Jerry, coldzera, DeadFox, mixwell, ICY, niko, Maden, Lucky.
+   The MongolZ had **three** (Senzu, Techno4K, mzinho — only mzinho AWPs).
+2. **Blanket `*` on part-career AWPers.** chrisJ AWPed for mouz until oskar took
+   over in 2017; Magisk AWPed in 2016 but allu was OpTic's AWP in 2017; SmithZz
+   before kennyS; br0 at Monte but not Astralis; FalleN until molodoy at FURIA
+   2025; Maden before SunPayus. Now year-scoped.
+
+**Result: 31 -> 0 team-years with duplicate AWPers.** `npm run test:roles` fails
+the build if one returns.
+
+Side effect: `no_awp` rose 27 -> 35 team-years, since removing a wrong label
+exposes a genuine gap. Those are in `worksheet_awp.csv`.
+
+### Two doubled IGLs remain, and they cannot be fixed by labelling
+`AdreN 2019` appears on **both AVANGAR and FaZe**; `roeJ 2022` on both Copenhagen
+Flames and fnatic. A player-year is ONE object keyed `player_id:year`, so a
+team-scoped label applied for one side leaks to the other — the same structural
+limit that broke the derived `star` label in 7b.
+
+Tolerated deliberately: the engine already resolves multiple callers (only the
+most decorated one's bonus applies) and there is no multi-caller penalty, so it is
+cosmetic. A duplicate AWP is not — it mis-prices the composition penalty — which
+is why the lint fails on that and only reports this.
+
+## 7t. SEMI-AUTOMATED ROLE LABELLING (2026-09-18)
+
+**Question:** "is there an automated way to label? mzinho doesn't AWP, 910 does."
+
+Both corrections were right, and there is a partial automation.
+
+### Liquipedia `|roles=`, gated on `|status=`
+Rejected in 6h because it reads CURRENT occupation — gla1ve shows `coach`. But it
+carries a `status` field, and for **`status=Active` players it is their playing
+role**. It had both corrections outright:
+
+    mzinho  roles=Rifle     910  roles=AWP
+    Senzu   roles=rifle,awper    HeavyGod  roles=rifle
+
+403/407 pages read, **270 active with a usable role**.
+
+### But it is NOT a wholesale labeller — noisy in both directions
+- **Over-inclusive:** career-cumulative, so any brief stint counts.
+  `Twistzz: igl,rifle`, `rain: igl,entry`, `TACO: igl,support` — none are primary
+  callers.
+- **Under-inclusive:** `tabseN: rifle`, despite years as BIG's IGL.
+- **Not team-scoped:** a career AWPer label produces duplicates when two
+  AWP-capable players share a roster.
+
+### What was applied automatically
+Only unambiguous cases, by two rules:
+- **sole role is `awp`** -> add (18 players, including **910**)
+- **I say `awp` and Liquipedia lists other roles but not awp** -> remove
+  (12 players, including **mzinho**, Magisk, br0, FalleN, Graviti)
+
+Everything else — 62 conflicts — went to `worksheet_role_conflicts.csv` for a
+human call rather than being guessed.
+
+### Duplicate resolution needed a human too
+Auto-adding created two new doubles. The heuristic "keep the higher-rated player"
+resolved Legacy 2025 correctly (dumau over saadzin) but got **CLG 2017 wrong** —
+it kept Rickeh, when koosta was CLG's AWPer and Rickeh AWPed for Renegades.
+Rating is not a proxy for who holds the AWP. Corrected by hand.
+
+Labels gained a `*!YYYY` form ("every year except this one") for exactly this:
+a career AWPer who was not the primary on one particular roster.
+
+**Result: 0 team-years with duplicate AWPers**, guarded by `npm run test:roles`.
+
+## 7u. REWORKING THE NO-IGL PENALTY (2026-09-18)
+
+**Complaint:** "the no igl penalty seems a bit weird right now."
+
+It was. Three separate faults, and they compounded.
+
+### 1. It was regressive — backwards from the bonus it paired with
+Leadership is MULTIPLICATIVE (7p), so it scales up with roster quality. Its
+absence was a flat `-5`:
+
+    roster 45  ->  -5 is -11.1%
+    roster 75  ->  -5 is  -6.7%
+
+So owning a caller helped good rosters most, while lacking one hurt bad rosters
+most. The two halves of one mechanic pointed in opposite directions, and the
+flat term quietly functioned as a tax on weak boards.
+
+### 2. It was a cliff carrying the entire value of a caller
+An IGL with zero season success yields `mult = 0`, i.e. +0 leadership. So the
+only thing separating "unproven caller" from "nobody calls" was the flat -5 —
+the whole worth of having an IGL was packed into a step function, with nothing
+continuous underneath it.
+
+### 3. It fired 64% of the time
+Under greedy-by-rating drafting, 960/1500 boards ended with no caller. A penalty
+that common is not a penalty; it is a baseline shift. It also sat oddly beside
+the rule that **two callers are not punished** (7p): 0 callers -5, 1 fine,
+3 fine.
+
+### Fix: put "no caller" at the BOTTOM of the leadership axis
+Not a separate composition term. One axis, proportional at both ends:
+
+    no caller        -7.5% of the whole side
+    unproven caller    0%
+    decorated caller  up to +18% to the other four
+
+`NO_IGL_MULT = 0.075` chosen so the penalty at a median roster lands near the
+old 5.0 rather than re-tuning the game's difficulty around a bug fix.
+
+    roster avg   penalty
+            45      -3.4
+            65      -4.9
+            75      -5.6
+
+Measured gap between drafts-with-a-caller and drafts-with-none: **6.5** (was a
+flat 5.0, applied regressively). Championship rate holds at **4.9%** against the
+5% target.
+
+Removed from `compositionPenalty` entirely; `no AWPer -6` and `two AWPers -3`
+stay there since those are genuinely compositional, not leadership.
+
+### Also fixed: the conditional-mount hazard, 5th occurrence
+`{bd.leadership > 0 && <li>...}` — once leadership can go negative, that row
+UNMOUNTS and the breakdown panel shifts. Changed to `!== 0` with a sign-aware
+label ("No caller" / "IGL leadership"). Same for the versus panel.
+
+## 7v. MATCH SUMMARY TRUNCATED TWO NAMES EARLY (2026-09-18)
+
+**Report:** "in the summary section, it shows two names then ... there is enough
+space for all the names."
+
+Correct, and it was clipped TWICE over — which is why it read as two names when
+the code said three.
+
+1. **JSX:** `.slice(0, 3).join(", ")}…` — capped at three, with a HARDCODED
+   ellipsis that printed whether or not anything was actually cut.
+2. **CSS:** `.m-opp { overflow: hidden; text-overflow: ellipsis }` — and `.m-opp`
+   is `display: flex`, so the bare text node became an anonymous flex item.
+   Ellipsis on a flex CONTAINER does not behave like it does on a block; it
+   clipped the row well before the names ran out of room, eating the third name.
+
+### Space was never the constraint
+`.app` is 1000px; `.match` is `110px minmax(0,1fr) auto`, so the names track is
+~750px. Measured worst case over 300 simulated tournaments:
+
+    SunPayus, electroNic, GeT_RiGhT, n0rb3r7, olofmeister
+    53 chars, ~371px of ~750px
+
+Under half the available width. Nothing needed to be truncated at all.
+
+### Fix
+- render all five nicks, delete the hardcoded `…`
+- names moved into their own `.m-names` span; `overflow/text-overflow` live
+  THERE, on the text element, with `min-width: 0` on both it and the flex
+  parent. Real ellipsis now only fires on genuinely narrow viewports.
+
+`npm run test:names` guards both halves: asserts five nicks resolve for every
+opponent, measures the longest roster string, and fails if it would exceed the
+track or if the hardcoded ellipsis returns.
+
 ## 7. Next step — Phase 1 data spike
 
 Before any app code, answer these empirically against the live Liquipedia API:

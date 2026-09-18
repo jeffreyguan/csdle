@@ -4845,9 +4845,7 @@
    "top20": null,
    "kd": 1.14,
    "kd_diff": "+130",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -5162,7 +5160,6 @@
    "kd": 1.03,
    "kd_diff": "+47",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -5319,7 +5316,6 @@
    "kd": 1.04,
    "kd_diff": "+49",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -6932,7 +6928,6 @@
    "kd": 0.93,
    "kd_diff": "-115",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -7068,9 +7063,7 @@
    "top20": null,
    "kd": 1.07,
    "kd_diff": "+190",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -7502,9 +7495,7 @@
    "top20": null,
    "kd": null,
    "kd_diff": "",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "carried:2017",
    "majors": 0,
    "trophies": 0
@@ -7819,7 +7810,6 @@
    "kd": 1.2,
    "kd_diff": "+591",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -8336,9 +8326,7 @@
    "top20": null,
    "kd": 1.09,
    "kd_diff": "+240",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -8886,9 +8874,7 @@
    "top20": null,
    "kd": 1.02,
    "kd_diff": "+43",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -9684,9 +9670,7 @@
    "top20": null,
    "kd": 0.95,
    "kd_diff": "-118",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -9889,7 +9873,6 @@
    "kd": 0.91,
    "kd_diff": "-264",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -10233,9 +10216,7 @@
    "top20": null,
    "kd": 1.06,
    "kd_diff": "+143",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -10367,9 +10348,7 @@
    "top20": null,
    "kd": 0.99,
    "kd_diff": "-23",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -10506,7 +10485,6 @@
    "kd": 1.14,
    "kd_diff": "+440",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -11552,9 +11530,7 @@
    "top20": null,
    "kd": 0.7,
    "kd_diff": "-457",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -12008,9 +11984,7 @@
    "top20": null,
    "kd": 0.83,
    "kd_diff": "-533",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -12213,7 +12187,6 @@
    "kd": 1.09,
    "kd_diff": "+248",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -12237,9 +12210,7 @@
    "top20": 10,
    "kd": 1.21,
    "kd_diff": "+611",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -12306,7 +12277,6 @@
    "kd": 0.95,
    "kd_diff": "-227",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -13715,9 +13685,7 @@
    "top20": null,
    "kd": 0.96,
    "kd_diff": "-103",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -13807,7 +13775,9 @@
    "top20": null,
    "kd": 1.08,
    "kd_diff": "+190",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -14079,9 +14049,7 @@
    "top20": null,
    "kd": 0.89,
    "kd_diff": "-128",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -14419,9 +14387,7 @@
    "top20": null,
    "kd": 0.92,
    "kd_diff": "-182",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -14716,7 +14682,6 @@
    "kd": 1.02,
    "kd_diff": "+41",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -14762,9 +14727,7 @@
    "top20": null,
    "kd": 1.17,
    "kd_diff": "+287",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -14830,9 +14793,7 @@
    "top20": null,
    "kd": 1.01,
    "kd_diff": "+33",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 2
@@ -15310,7 +15271,9 @@
    "top20": null,
    "kd": 0.92,
    "kd_diff": "-135",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -16058,7 +16021,9 @@
    "top20": null,
    "kd": 1.02,
    "kd_diff": "+46",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -16604,9 +16569,7 @@
    "top20": null,
    "kd": 1.0,
    "kd_diff": "-1",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "case",
    "majors": 0,
    "trophies": 0
@@ -16833,9 +16796,7 @@
    "top20": null,
    "kd": 1.04,
    "kd_diff": "+84",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -16991,9 +16952,7 @@
    "top20": null,
    "kd": 0.82,
    "kd_diff": "-443",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -18221,7 +18180,9 @@
    "top20": null,
    "kd": 1.09,
    "kd_diff": "+83",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -18267,9 +18228,7 @@
    "top20": null,
    "kd": 1.0,
    "kd_diff": "-4",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -18493,9 +18452,7 @@
    "top20": null,
    "kd": 0.93,
    "kd_diff": "-87",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -18563,7 +18520,9 @@
    "top20": null,
    "kd": 1.09,
    "kd_diff": "+100",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -19173,7 +19132,6 @@
    "kd": 0.98,
    "kd_diff": "-37",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -20700,7 +20658,9 @@
    "top20": null,
    "kd": 1.08,
    "kd_diff": "+139",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -20722,9 +20682,7 @@
    "top20": null,
    "kd": 0.93,
    "kd_diff": "-165",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "case",
    "majors": 0,
    "trophies": 0
@@ -20770,9 +20728,7 @@
    "top20": null,
    "kd": 1.02,
    "kd_diff": "+24",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -20862,9 +20818,7 @@
    "top20": null,
    "kd": 0.83,
    "kd_diff": "-183",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -20952,7 +20906,9 @@
    "top20": null,
    "kd": 1.11,
    "kd_diff": "+94",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -22337,9 +22293,7 @@
    "top20": null,
    "kd": 0.97,
    "kd_diff": "-38",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -22361,7 +22315,9 @@
    "top20": null,
    "kd": 1.12,
    "kd_diff": "+141",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -22953,9 +22909,7 @@
    "top20": null,
    "kd": 0.93,
    "kd_diff": "-154",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "case",
    "majors": 0,
    "trophies": 1
@@ -22978,7 +22932,6 @@
    "kd": 0.98,
    "kd_diff": "-26",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -23819,9 +23772,7 @@
    "top20": null,
    "kd": 0.95,
    "kd_diff": "-48",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -24318,9 +24269,7 @@
    "top20": null,
    "kd": 0.9,
    "kd_diff": "-84",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -24364,9 +24313,7 @@
    "top20": null,
    "kd": 0.94,
    "kd_diff": "-66",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -24685,7 +24632,6 @@
    "kd": 0.96,
    "kd_diff": "-52",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -25003,9 +24949,7 @@
    "top20": null,
    "kd": 0.91,
    "kd_diff": "-142",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "case",
    "majors": 0,
    "trophies": 0
@@ -25345,9 +25289,7 @@
    "top20": null,
    "kd": 0.9,
    "kd_diff": "-131",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -25800,9 +25742,7 @@
    "top20": null,
    "kd": 0.86,
    "kd_diff": "-128",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -25890,7 +25830,9 @@
    "top20": null,
    "kd": 0.99,
    "kd_diff": "-5",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -26026,7 +25968,9 @@
    "top20": null,
    "kd": 1.11,
    "kd_diff": "+162",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -26048,9 +25992,7 @@
    "top20": null,
    "kd": 1.08,
    "kd_diff": "+130",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -26072,9 +26014,7 @@
    "top20": null,
    "kd": null,
    "kd_diff": "",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "imputed",
    "majors": 0,
    "trophies": 1
@@ -26120,9 +26060,7 @@
    "top20": null,
    "kd": 0.95,
    "kd_diff": "-79",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -26507,9 +26445,7 @@
    "top20": null,
    "kd": 0.9,
    "kd_diff": "-276",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -26531,9 +26467,7 @@
    "top20": null,
    "kd": 0.98,
    "kd_diff": "-45",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -27054,7 +26988,6 @@
    "kd": 0.87,
    "kd_diff": "-332",
    "labels": [
-    "awp",
     "igl"
    ],
    "rating_source": "exact",
@@ -27282,9 +27215,7 @@
    "top20": null,
    "kd": 1.11,
    "kd_diff": "+213",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -27440,9 +27371,7 @@
    "top20": null,
    "kd": 0.97,
    "kd_diff": "-47",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -27576,9 +27505,7 @@
    "top20": null,
    "kd": 0.96,
    "kd_diff": "-62",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0
@@ -28300,7 +28227,9 @@
    "top20": null,
    "kd": 1.1,
    "kd_diff": "+271",
-   "labels": [],
+   "labels": [
+    "awp"
+   ],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -28322,9 +28251,7 @@
    "top20": 13,
    "kd": 1.12,
    "kd_diff": "+297",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -28346,9 +28273,7 @@
    "top20": null,
    "kd": null,
    "kd_diff": "",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "imputed",
    "majors": 0,
    "trophies": 1
@@ -28394,9 +28319,7 @@
    "top20": null,
    "kd": 0.97,
    "kd_diff": "-97",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 1
@@ -28440,9 +28363,7 @@
    "top20": null,
    "kd": 0.91,
    "kd_diff": "-103",
-   "labels": [
-    "awp"
-   ],
+   "labels": [],
    "rating_source": "exact",
    "majors": 0,
    "trophies": 0

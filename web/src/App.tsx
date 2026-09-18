@@ -268,7 +268,7 @@ export default function App() {
           <h2>Roster complete</h2>
           <ul className="bd">
             <li><span>Average rating</span><b>{bd.base.toFixed(1)}</b></li>
-            {bd.leadership > 0 && <li><span>IGL leadership</span><b className="pos">+{bd.leadership.toFixed(1)}</b></li>}
+            {bd.leadership !== 0 && <li><span>{bd.leadership < 0 ? "No caller" : "IGL leadership"}</span><b className={bd.leadership < 0 ? "neg" : "pos"}>{bd.leadership < 0 ? "−" : "+"}{Math.abs(bd.leadership).toFixed(1)}</b></li>}
             {bd.compositionPenalty > 0 && <li><span>Composition</span><b className="neg">−{bd.compositionPenalty}</b></li>}
             <li className="tot"><span>Team strength</span><b>{bd.total.toFixed(1)}</b></li>
           </ul>
@@ -300,9 +300,11 @@ export default function App() {
                       <span className="m-opp">
                         <b className="m-rating">{m.opponent.effective_strength.toFixed(1)}</b>
                         {m.oppRecord && <span className="m-rec">{m.oppRecord}</span>}
-                        {m.opponent.roster
-                          .map((id) => snap.players[id]?.nick)
-                          .filter(Boolean).slice(0, 3).join(", ")}…
+                        <span className="m-names">
+                          {m.opponent.roster
+                            .map((id) => snap.players[id]?.nick)
+                            .filter(Boolean).join(", ")}
+                        </span>
                       </span>
                       <span className="m-score">{m.scoreYou}–{m.scoreThem}</span>
                     </div>
@@ -335,8 +337,10 @@ export default function App() {
                               <div className="vs-rating">{mine.total.toFixed(1)}</div>
                               <div className="vs-row">IGL <b>{myIgl?.nick ?? "—"}</b></div>
                               <div className="vs-row">AWP <b>{myAwp?.nick ?? "—"}</b></div>
-                              {mine.leadership > 0 && (
-                                <div className="vs-row dim">leadership +{mine.leadership.toFixed(1)}</div>
+                              {mine.leadership !== 0 && (
+                                <div className="vs-row dim">{mine.leadership < 0
+                                  ? `no caller \u2212${Math.abs(mine.leadership).toFixed(1)}`
+                                  : `leadership +${mine.leadership.toFixed(1)}`}</div>
                               )}
                             </div>
                             <div className="vs-mid">vs</div>

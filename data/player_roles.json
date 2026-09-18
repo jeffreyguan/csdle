@@ -1,0 +1,2409 @@
+{
+ "910": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "ALEX": {
+  "roles": [],
+  "status": ""
+ },
+ "ANGE1": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "AZR": {
+  "roles": [],
+  "status": "active"
+ },
+ "AcilioN": {
+  "roles": [],
+  "status": "active"
+ },
+ "Aerial": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Ag1l": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Aleksib": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "Attacker": {
+  "roles": [],
+  "status": "active"
+ },
+ "Ax1Le": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "B1ad3": {
+  "roles": [],
+  "status": "active"
+ },
+ "BnTeT": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Boombl4": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Brehze": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Brollan": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Bubzkji": {
+  "roles": [],
+  "status": "active"
+ },
+ "Buzz": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Bymas": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "CacaNito": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Calyx": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "CeRq": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "DD": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "DEVIL": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "DavCost": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "DeadFox": {
+  "roles": [
+   "entry",
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "DeathZz": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "DemQQ": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "Dosia": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "Duplicate": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Edward": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "El1an": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "EliGE": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "EspiranTo": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Ethan": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "Ex3rcice": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Ex6TenZ": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "F1KU": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "FASHR": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "FL1T": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "FL4MUS": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "FNS": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "FaNg": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "FalleN": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Farlig": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "Forester": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Friis": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "FugLy": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "Furlan": {
+  "roles": [],
+  "status": "active"
+ },
+ "GeT_RiGhT": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "Golden": {
+  "roles": [],
+  "status": "active"
+ },
+ "Goofy": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Gratisfaction": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Graviti": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Grim": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "GruBy": {
+  "roles": [],
+  "status": "active"
+ },
+ "GuardiaN": {
+  "roles": [],
+  "status": "retired"
+ },
+ "HEN1": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "HObbit": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "HS": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "HUASOPEEK": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Happy": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "HeavyGod": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Hiko": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "HooXi": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Hyper": {
+  "roles": [],
+  "status": ""
+ },
+ "ICY": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "ISSAA": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "JACKZ": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "JDC": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "JT": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "JUGi": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "JW": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Jackinho": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "JamYoung": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Jame": {
+  "roles": [
+   "igl",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Jerry": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Jimpphat": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "KENSI": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "KEi": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "KRIMZ": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "KSCERATO": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "KaiR0N-": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Keoz": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Kjaerbye": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Krad": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "Krimbo": {
+  "roles": [
+   "lurk",
+   "igl"
+  ],
+  "status": "active"
+ },
+ "Kylar": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "Kyojin": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "LEGIJA": {
+  "roles": [],
+  "status": "retired"
+ },
+ "LETN1": {
+  "roles": [],
+  "status": "active"
+ },
+ "LNZ": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "LUCAS1": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Lack1": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Lekr0": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "Liazz": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "Loord": {
+  "roles": [],
+  "status": "active"
+ },
+ "Lucaozy": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Lucky": {
+  "roles": [],
+  "status": ""
+ },
+ "MAJ3R": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "MICHU": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "MODDII": {
+  "roles": [],
+  "status": "retired"
+ },
+ "MSL": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "retired"
+ },
+ "MUTiRiS": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Maden": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Magisk": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Maikelele": {
+  "roles": [
+   "awp",
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "Maka": {
+  "roles": [
+   "igl",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Maniac": {
+  "roles": [],
+  "status": "retired"
+ },
+ "MartinezSa": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Mercury": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Moseyuh": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "NAF": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "NBK-": {
+  "roles": [],
+  "status": "active"
+ },
+ "NEO": {
+  "roles": [],
+  "status": "active"
+ },
+ "NEOFRAG": {
+  "roles": [
+   "entry"
+  ],
+  "status": "inactive"
+ },
+ "NaToSaphiX": {
+  "roles": [],
+  "status": "active"
+ },
+ "NertZ": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "NiKo": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "NickelBack": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Nifty": {
+  "roles": [
+   "igl",
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "Norwi": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "PR": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Patsi": {
+  "roles": [
+   "rifle",
+   "igl"
+  ],
+  "status": "active"
+ },
+ "Perfecto": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Pimp": {
+  "roles": [],
+  "status": "active"
+ },
+ "Plopski": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Qikert": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "REZ": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "RUBINO": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "RUSH": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "retired"
+ },
+ "Rainwaker": {
+  "roles": [
+   "lurk",
+   "support"
+  ],
+  "status": "active"
+ },
+ "Rickeh": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "RpK": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "S1ren": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "SANJI": {
+  "roles": [],
+  "status": "active"
+ },
+ "SHOOWTiME": {
+  "roles": [],
+  "status": "active"
+ },
+ "SHiPZ": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "SIXER": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "STYKO": {
+  "roles": [],
+  "status": "active"
+ },
+ "SZPERO": {
+  "roles": [],
+  "status": "active"
+ },
+ "ScreaM": {
+  "roles": [],
+  "status": ""
+ },
+ "Senzu": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "ShahZaM": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "Shara": {
+  "roles": [],
+  "status": "active"
+ },
+ "Skadoodle": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "SmithZz": {
+  "roles": [
+   "support",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "Snappi": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Snax": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Spiidi": {
+  "roles": [],
+  "status": "active"
+ },
+ "Spinx": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "Staehr": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Stewie2K": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "SunPayus": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "TACO": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "TENZKI": {
+  "roles": [],
+  "status": "active"
+ },
+ "TOAO": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "TaZ": {
+  "roles": [],
+  "status": "active"
+ },
+ "Tauson": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "TeSeS": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Techno": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Twistzz": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "USTILO": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "VINI": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "Wicadia": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "WorldEdit": {
+  "roles": [
+   "awp",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "Woro2k": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "XANTARES": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Xizt": {
+  "roles": [],
+  "status": "active"
+ },
+ "Xyp9x": {
+  "roles": [],
+  "status": "active"
+ },
+ "YEKINDAR": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "Zero": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "Zeus": {
+  "roles": [],
+  "status": "retired"
+ },
+ "Zyphon": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "ZywOo": {
+  "roles": [
+   "awp",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "ableJ": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "acoR": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "adreN": {
+  "roles": [],
+  "status": ""
+ },
+ "aizy": {
+  "roles": [],
+  "status": "active"
+ },
+ "alex": {
+  "roles": [],
+  "status": "active"
+ },
+ "alex666": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "allu": {
+  "roles": [],
+  "status": "active"
+ },
+ "almazer": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "apEX": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "arT": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "arrozdoce": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "autimatic": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "b0RUP": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "b1t": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "bLitz": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "biguzera": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "blameF": {
+  "roles": [
+   "lurk",
+   "igl"
+  ],
+  "status": "active"
+ },
+ "bodyy": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "boltz": {
+  "roles": [
+   "entry"
+  ],
+  "status": "inactive"
+ },
+ "bondik": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "br0": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "brnz4n": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "broky": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "bubble": {
+  "roles": [],
+  "status": "active"
+ },
+ "buda": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "buster": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "byali": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "cadiaN": {
+  "roles": [
+   "igl",
+   "awp",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "cajunb": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "captainMo": {
+  "roles": [],
+  "status": "active"
+ },
+ "chelo": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "chopper": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "chrisJ": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "retired"
+ },
+ "coldzera": {
+  "roles": [
+   "lurk",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "daps": {
+  "roles": [],
+  "status": "active"
+ },
+ "dav1deuS": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "dav1g": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "decenty": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "degster": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "denis": {
+  "roles": [],
+  "status": "retired"
+ },
+ "dennis": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "dennyslaw": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "device": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "dexter": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "dgt": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "disco doplan": {
+  "roles": [
+   "rifle",
+   "igl"
+  ],
+  "status": "retired"
+ },
+ "donk": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "doto": {
+  "roles": [],
+  "status": "active"
+ },
+ "draken": {
+  "roles": [],
+  "status": ""
+ },
+ "dream3r": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "drop": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "dumau": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "dupreeh": {
+  "roles": [],
+  "status": "active"
+ },
+ "dycha": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "electroNic": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "es3tag": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "esenthial": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "ewjerkz": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "exit": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "f0rest": {
+  "roles": [],
+  "status": "retired"
+ },
+ "facecrack": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "fame": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "faveN": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "felps": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "fer": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "fitch": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "flameZ": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "flamie": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "floppy": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "flusha": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "fnx": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "fox": {
+  "roles": [
+   "igl",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "freakazoid": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "freddieb": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "friberg": {
+  "roles": [],
+  "status": "active"
+ },
+ "frozen": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "gade": {
+  "roles": [],
+  "status": "active"
+ },
+ "gla1ve": {
+  "roles": [],
+  "status": "active"
+ },
+ "gob b": {
+  "roles": [],
+  "status": "active"
+ },
+ "hades": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "hallzerk": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "hampus": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "hazed": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "headtr1ck": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "hooch": {
+  "roles": [],
+  "status": "active"
+ },
+ "huNter-": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "hyped": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "iDISBALANCE": {
+  "roles": [
+   "awp",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "iM": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "innocent": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "insani": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "interz": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "isak": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "jL": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "jabbi": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "jdm64": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "jkaem": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "jks": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "jottAAA": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "junior": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "k0nfig": {
+  "roles": [
+   "entry",
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "k1to": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "kNgV-": {
+  "roles": [
+   "igl",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "kRYSTAL": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "kRaSnaL": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "kUcheR": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "karrigan": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "kauez": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "keev": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "kennyS": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "kensizor": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "kioShiMa": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "koosta": {
+  "roles": [
+   "entry",
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "kyousuke": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "kyxsan": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "latto": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "loWel": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "lux": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "m0NESY": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "magixx": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "makazze": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "malbsMd": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "mantuu": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "markeloff": {
+  "roles": [
+   "awp",
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "max": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "mertz": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "mezii": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "mir": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "misutaaa": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "mixwell": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "molodoy": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "mopoz": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "mou": {
+  "roles": [],
+  "status": "active"
+ },
+ "mouz": {
+  "roles": [],
+  "status": ""
+ },
+ "mynio": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "mzinho": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "n0rb3r7": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "n0thing": {
+  "roles": [],
+  "status": "retired"
+ },
+ "n1ssim": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "nafany": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "nawwk": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "nex": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "nexa": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "ngiN": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "nicoodoz": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "niko": {
+  "roles": [],
+  "status": ""
+ },
+ "nilo": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "nitr0": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "nkl": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "noway": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "npl": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "nqz": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "oBo": {
+  "roles": [
+   "entry"
+  ],
+  "status": "inactive"
+ },
+ "oSee": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "olofmeister": {
+  "roles": [
+   "support",
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "oskar": {
+  "roles": [],
+  "status": "active"
+ },
+ "oskarish": {
+  "roles": [],
+  "status": "active"
+ },
+ "ottoNd": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "pashaBiceps": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "paz": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "peet": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "phr": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "poizon": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "pronax": {
+  "roles": [
+   "igl"
+  ],
+  "status": "retired"
+ },
+ "prosus": {
+  "roles": [
+   "entry"
+  ],
+  "status": "active"
+ },
+ "pyth": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "rain": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "rallen": {
+  "roles": [
+   "lurk",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "refrezh": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "inactive"
+ },
+ "reltuC": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "roeJ": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "roman": {
+  "roles": [],
+  "status": "retired"
+ },
+ "ropz": {
+  "roles": [
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "s0m": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "s1mple": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "saadzin": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "saffee": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "sdy": {
+  "roles": [
+   "rifle",
+   "igl"
+  ],
+  "status": "active"
+ },
+ "seang@res": {
+  "roles": [],
+  "status": "active"
+ },
+ "seized": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "sergej": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "sh1ro": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "shalfey": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "shox": {
+  "roles": [
+   "support",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "shroud": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "siuhy": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "sjuush": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "skullz": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "sl3nd": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "slaxz-": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "smooya": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "snatchie": {
+  "roles": [],
+  "status": "active"
+ },
+ "snow": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "somebody": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "spyleadeR": {
+  "roles": [
+   "igl"
+  ],
+  "status": "retired"
+ },
+ "stanislaw": {
+  "roles": [
+   "igl"
+  ],
+  "status": "active"
+ },
+ "stavn": {
+  "roles": [
+   "rifle",
+   "awp"
+  ],
+  "status": "active"
+ },
+ "steel": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "story": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "suNny": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "syrsoN": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "tN1R": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "tabseN": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "tarik": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "tiziaN": {
+  "roles": [],
+  "status": "active"
+ },
+ "torzsi": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "twist": {
+  "roles": [
+   "igl",
+   "support"
+  ],
+  "status": "active"
+ },
+ "ultimate": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "v1c7oR": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "valde": {
+  "roles": [
+   "igl",
+   "lurk"
+  ],
+  "status": "active"
+ },
+ "volt": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "w0nderful": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "wayLander": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "retired"
+ },
+ "wenton": {
+  "roles": [],
+  "status": "retired"
+ },
+ "woxic": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "xccurate": {
+  "roles": [
+   "awp"
+  ],
+  "status": "retired"
+ },
+ "xertioN": {
+  "roles": [
+   "igl",
+   "entry"
+  ],
+  "status": "active"
+ },
+ "xfl0ud": {
+  "roles": [
+   "support"
+  ],
+  "status": "active"
+ },
+ "xms": {
+  "roles": [
+   "entry"
+  ],
+  "status": "retired"
+ },
+ "xsepower": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "xseveN": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "yuurih": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "yxngstxr": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "zehN": {
+  "roles": [
+   "support",
+   "lurk"
+  ],
+  "status": "retired"
+ },
+ "znajder": {
+  "roles": [
+   "support"
+  ],
+  "status": "retired"
+ },
+ "zont1x": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "zorte": {
+  "roles": [
+   "awp"
+  ],
+  "status": "active"
+ },
+ "ztr": {
+  "roles": [
+   "igl",
+   "rifle"
+  ],
+  "status": "active"
+ },
+ "zweih": {
+  "roles": [
+   "rifle"
+  ],
+  "status": "active"
+ }
+}

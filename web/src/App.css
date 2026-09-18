@@ -166,7 +166,11 @@ h1 .sub { color: var(--acc); font-size: 13px; margin-left: 8px; text-transform: 
 .match { display: grid; grid-template-columns: 110px minmax(0, 1fr) auto; gap: 10px; align-items: center;
   padding: 10px 12px; border-radius: 9px; background: var(--panel2); border-left: 3px solid var(--line); font-size: 14px; }
 .m-opp { display: flex; align-items: center; gap: 8px; color: var(--dim); font-size: 13px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  white-space: nowrap; min-width: 0; }
+/* the names are the only part allowed to shrink; ellipsis belongs on the text
+   element itself, not on the flex container — on the container it clipped the
+   row long before the names ran out of room. */
+.m-names { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .m-rating { color: var(--text); font-variant-numeric: tabular-nums; }
 .m-rec { font-size: 10px; color: var(--dim); border: 1px solid var(--line);
   border-radius: 4px; padding: 1px 4px; font-variant-numeric: tabular-nums; }

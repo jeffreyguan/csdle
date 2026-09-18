@@ -8,6 +8,10 @@ export const REROLLS = 2;
  *  IGL_SCALE is the season-bonus value that earns the full LEAD_MAX_MULT. */
 export const IGL_SCALE = 12;
 export const LEAD_MAX_MULT = 0.18;
+/** No caller at all sits at the BOTTOM of the same leadership axis, not in a
+ *  separate flat penalty — see 7u. Proportional, so it scales with the roster
+ *  exactly like the bonus does. */
+export const NO_IGL_MULT = 0.075;
 
 /* ------------------------------------------------------------------ rolls */
 
@@ -134,9 +138,21 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
   // points, nearly triple the explicit -2 penalty it sat next to), which made a
   // second caller cost ~8.3 points for a choice that is merely suboptimal.
   // The better-credentialed caller simply leads.
+  //
+  // NO caller sits at the BOTTOM of this same axis rather than in a separate
+  // flat penalty (7u). A flat -5 was regressive — it cost a 45-rated roster
+  // 11.1% and a 75-rated one 6.7%, so the bonus scaled UP with roster quality
+  // while its absence scaled DOWN. Now both ends are proportional, and the
+  // step from "no caller" to "unproven caller" is a percentage rather than a
+  // cliff that happened to carry the entire value of owning an IGL.
   const igls = roster.filter((p) => p.labels.includes("igl"));
   let leadership = 0;
-  if (igls.length) {
+  if (!igls.length) {
+    if (roster.length === ROUNDS) {
+      leadership = -roster.reduce((s, p) => s + p.rating, 0) * NO_IGL_MULT / roster.length;
+      notes.push(`nobody calls: ${Math.round(NO_IGL_MULT * 100)}% off the whole side`);
+    }
+  } else {
     // whichever caller won the most that season takes the reins — not the
     // longest-serving one
     let leader = igls[0], best = -1;
@@ -189,7 +205,6 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
       );
     }
 
-    if (igls.length === 0) { compositionPenalty += 5; notes.push("no IGL: -5"); }
     if (awps.length === 0) { compositionPenalty += 6; notes.push("no AWPer: -6"); }
     if (awps.length > 1) { compositionPenalty += 3; notes.push("two AWPers: -3"); }
   }

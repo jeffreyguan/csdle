@@ -13,22 +13,28 @@ D = Path(__file__).parent
 def load_labels():
     lab = collections.defaultdict(list)
     for r in csv.DictReader(open(D / "labels_manual.csv")):
-        for part in r["years"].strip().split(";"):
+        excl = set()
+        spec = r["years"].strip()
+        if "!" in spec:                       # "*!2017" = every year but 2017
+            spec, _, ex = spec.partition("!")
+            excl = {int(x) for x in ex.split("&") if x.strip().isdigit()}
+            spec = spec or "*"
+        for part in spec.split(";"):
             if part == "*":
                 lo, hi = 0, 9999
             else:
                 a, _, b = part.partition("-")
                 lo, hi = int(a), int(b or a)
             lab[r["nick"]].append((r["label"], lo, hi, r["confidence"],
-                                   (r.get("team") or "").strip()))
+                                   (r.get("team") or "").strip(), frozenset(excl)))
     return lab
 
 def labels_for(lab, nick, year, team=None):
     """team-scoped when the CSV names a team: Stewie2K IGL'd at Cloud9 in 2018
     but not at MIBR the same year, so player+year alone cannot disambiguate."""
     out = {}
-    for name, lo, hi, conf, tm in lab.get(nick, []):
-        if not (lo <= year <= hi): continue
+    for name, lo, hi, conf, tm, excl in lab.get(nick, []):
+        if not (lo <= year <= hi) or year in excl: continue
         if tm and team and tm.lower() != team.lower(): continue
         out[name] = conf
     return out
