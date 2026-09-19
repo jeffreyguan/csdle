@@ -11,7 +11,15 @@ export const LEAD_MAX_MULT = 0.18;
 /** No caller at all sits at the BOTTOM of the same leadership axis, not in a
  *  separate flat penalty — see 7u. Proportional, so it scales with the roster
  *  exactly like the bonus does. */
-export const NO_IGL_MULT = 0.075;
+export const NO_IGL_MULT = 0.10;
+/** How much worse than the best fit a candidate may be and still be drawn.
+ *  0 = argmin = the same side every time; too high = incoherent rosters. */
+const NEAR_TOL = 2.5;
+/** Never draw from fewer than this many candidates, however poorly they fit.
+ *  At the grand-final target only TWO IGLs sat within tolerance, so the same
+ *  pair called every final. Fit quality is worth less than not seeing dennis
+ *  in a third of your playoff games. */
+const NEAR_MIN = 12;
 
 /* ------------------------------------------------------------------ rolls */
 
@@ -182,31 +190,21 @@ export function evaluate(roster: Player[], snap: Snapshot): Breakdown {
   let compositionPenalty = 0;
   const awps = roster.filter((p) => p.labels.includes("awp"));
   if (roster.length === ROUNDS) {
-    const anchors = roster.filter((p) => p.labels.includes("anchor")).length;
-    const rotaters = roster.filter((p) => p.labels.includes("rotater")).length;
-    const flex = roster.length - anchors - rotaters;
-
-    // spend flex players on whichever side is short before charging for a gap
-    let needA = Math.max(0, 2 - anchors);
-    let needR = Math.max(0, 2 - rotaters);
-    const spend = Math.min(flex, needA + needR);
-    let left = spend;
-    const useA = Math.min(needA, left); needA -= useA; left -= useA;
-    const useR = Math.min(needR, left); needR -= useR;
-
-    const overA = Math.max(0, anchors - 2);
-    const overR = Math.max(0, rotaters - 2);
-    const off = needA + needR + overA + overR;
-    if (off) {
-      compositionPenalty += 2 * off;
-      notes.push(
-        `${anchors} anchor / ${rotaters} rotater${flex ? ` / ${flex} flex` : ""}` +
-        ` vs 2/2: -${2 * off}`
-      );
-    }
+    // --- 2 anchors / 2 rotaters: DISABLED (2026-09-18, on request) ----------
+    // Positional labelling is only ~36% complete (399 players still unlabelled
+    // in worksheet_positions.csv), so this term was charging players for gaps in
+    // MY data as often as for a genuinely lopsided side. Re-enable once the
+    // worksheet is filled — the logic is intact, just not applied.
+    //
+    // const field = roster.filter((p) => !p.labels.includes("awp"));
+    // ... needA/needR/overA/overR, -2 per slot off the 2/2 shape ...
 
     if (awps.length === 0) { compositionPenalty += 6; notes.push("no AWPer: -6"); }
-    if (awps.length > 1) { compositionPenalty += 3; notes.push("two AWPers: -3"); }
+    if (awps.length > 1) {                       // scale with the excess: the
+      const ex = awps.length - 1;                // optimum search fielded THREE
+      compositionPenalty += 3 * ex;              // AWPers for the same flat -3
+      notes.push(`${awps.length} AWPers: -${3 * ex}`);
+    }
   }
 
   const total = base + leadership - compositionPenalty;
@@ -243,15 +241,22 @@ function buildOpponent(
             + others.reduce((a, p) => a + p.rating, 0) * mult) / 5;
   };
 
+  // Pick UNIFORMLY among everyone who fits the target about as well as the best
+  // fit does. 70 random draws over a small bucket is argmin in disguise: the
+  // same target returned the same player nearly every time, so playoff sides —
+  // whose targets cluster around three fixed numbers — recycled a handful of
+  // players. electroNic appeared in 31% of playoff opponents, nexa 30%. The
+  // IGL slot was worst because that bucket is the smallest. See 7z.
   const near = (xs: Player[], want: number) => {
-    let best = xs[0], bd = Infinity;
-    for (let k = 0; k < 70; k++) {
-      const c = xs[Math.floor(rng() * xs.length)];
-      if (!c) continue;
-      const d = Math.abs(c.rating - want);
-      if (d < bd) { bd = d; best = c; }
+    if (!xs.length) return xs[0];
+    let bd = Infinity;
+    for (const c of xs) { const d = Math.abs(c.rating - want); if (d < bd) bd = d; }
+    let ok = xs.filter((c) => Math.abs(c.rating - want) <= bd + NEAR_TOL);
+    if (ok.length < NEAR_MIN) {                 // widen to the N nearest instead
+      ok = xs.slice().sort((a, b) =>
+        Math.abs(a.rating - want) - Math.abs(b.rating - want)).slice(0, NEAR_MIN);
     }
-    return best;
+    return ok[Math.floor(rng() * ok.length)];
   };
 
   // Keep the side coherent: everyone within a band of the target. Without this
@@ -267,7 +272,14 @@ function buildOpponent(
   const awpOnly = src.filter((p) => p.labels.includes("awp") && !p.labels.includes("igl"));
   const awps = awpOnly.length >= 10 ? awpOnly : src.filter((p) => p.labels.includes("awp"));
   // exactly one caller: IGLs are excluded from every other bucket below
-  const igls = src.filter((p) => p.labels.includes("igl") && !p.labels.includes("awp"));
+  // IGLs are drawn from a band centred where IGLs ACTUALLY RATE, not on the team
+  // target. Callers sit ~8.5 below the field by design (7p), so a band centred
+  // on the target excluded almost all of them at playoff strength — 8 survived
+  // at the GF target, against 190 players overall.
+  const iglAim = target - 6;
+  const iglBand = pool.filter((p) => Math.abs(p.rating - iglAim) <= BAND);
+  const igls = (iglBand.length >= 30 ? iglBand : pool)
+    .filter((p) => p.labels.includes("igl") && !p.labels.includes("awp"));
   const noRole = (p: Player) => !p.labels.includes("awp") && !p.labels.includes("igl");
   const anchors = src.filter((p) => p.labels.includes("anchor") && noRole(p));
   const rotaters = src.filter((p) => p.labels.includes("rotater") && noRole(p));
@@ -280,7 +292,7 @@ function buildOpponent(
   // only add a caller if the AWPer is not already one
   if (!awp.labels.includes("igl")) {
     const cands = igls.filter((p) => p.player_id !== awp.player_id);
-    roster.push(near(cands.length ? cands : src, target - 6));  // callers rate lower
+    roster.push(near(cands.length ? cands : src, iglAim));
   }
 
   // then fill toward 2 anchors / 2 rotaters where labels exist, else anyone
@@ -379,23 +391,30 @@ const SWISS_LOSSES = 3;
 //
 //   0-0  60.9     1-0  62.4     2-0  63.9
 //                 0-1  59.4     2-1  62.4     2-2  60.9
-const SWISS_BASE = 60.9;
+const SWISS_BASE = 60.92;
 const SWISS_PER_DIFF = 1.5;    // per (wins - losses)
 const PLAYOFFS: { stage: string; target: number; bo: 3 | 5 }[] = [
-  { stage: "Quarter-final", target: 66.3, bo: 3 },
-  { stage: "Semi-final", target: 68.8, bo: 3 },
+  { stage: "Quarter-final", target: 66.32, bo: 3 },
+  { stage: "Semi-final", target: 68.82, bo: 3 },
   // Bo5 grand final. A longer series cuts variance, so it favours the stronger
   // side — the target is eased slightly to keep the title near 10%.
-  { stage: "Grand Final", target: 72.7, bo: 5 },
+  { stage: "Grand Final", target: 71.80, bo: 5 },
 ];
-const JITTER = 2.5;
+const JITTER = 4.2;
 /** Chance a draw is a "stacked" side well above the stage target, and how far
  *  above it can reach. Uniform jitter alone made every pool feel the same width:
  *  the 2-0 pool topped out at 66.5 and could never produce a 70+ opponent, so a
  *  good group run never delivered a genuine scare. Rare, but possible. */
-const SPIKE_CHANCE = 0.12;
+const SPIKE_CHANCE = 0.13;
 const SPIKE_MIN = 2.5;
-const SPIKE_MAX = 9.0;
+const SPIKE_MAX = 12.0;
+/** Spikes only ever ran UPWARD, so a group stage could hand you a nasty draw but
+ *  never a soft one — every match sat at or above the record's baseline and the
+ *  spread stayed narrow (sd 2.8). DIP is the mirror: an occasional side well
+ *  below your record's level, the group-stage upset you are supposed to win. */
+const DIP_CHANCE = 0.13;
+const DIP_MIN = 3.0;
+const DIP_MAX = 10.0;
 
 /** Quarter-final seeding. A real Major rewards a clean Swiss run: 3-0 teams are
  *  drawn against 3-2 teams, while a 3-2 qualifier meets a 3-0. So the QF target
@@ -406,12 +425,37 @@ const SPIKE_MAX = 9.0;
  *  unbeaten stops being a reward. 66.3 - 3.3 = 63.0 clears it. */
 const QF_SEED_STEP = 3.3;
 
+/** Playoff opponents scale with YOU.
+ *
+ *  Fixed targets meant the ladder stopped mattering above ~70: a 72-rated side
+ *  met a 66.3 quarter-final, a 6-point mismatch, and reached the final 46% of
+ *  the time. Only 7.2% of drafts get that strong, so the very drafts that
+ *  deserve a hard bracket were the ones walking through it.
+ *
+ *  This is not rubber-banding the RESULT — it is who else survived. If you are
+ *  the best side in the world, the other semi-finalist is the second best, not
+ *  an average qualifier. Below the reference nothing changes, so weak runs are
+ *  untouched. */
+const PLAYOFF_REF = 66.0;
+const PLAYOFF_SCALE = 0.45;
+/** Ceiling on the LIFT, not on the target.
+ *
+ *  Capping the target collapsed all three rounds onto one number for a strong
+ *  side — QF, SF and GF every one a 71 — so every playoff match drew from the
+ *  same narrow band and NiKo appeared in 20% of sides. Capping the lift keeps
+ *  the three targets distinct and the ladder intact, while stopping the curve
+ *  from outrunning the pool: only ~12 player-years rate high enough to staff a
+ *  76+ side. */
+const LIFT_MAX = 2.5;
+
 export function simulate(strength: number, snap: Snapshot, seed: string): RunResult {
   const rng = mulberry32(hashSeed(seed + ":sim"));
   const pool = Object.values(snap.players);
   const matches: MatchResult[] = [];
   const jit = (t: number) => {
-    if (rng() < SPIKE_CHANCE) return t + SPIKE_MIN + rng() * (SPIKE_MAX - SPIKE_MIN);
+    const r = rng();
+    if (r < SPIKE_CHANCE) return t + SPIKE_MIN + rng() * (SPIKE_MAX - SPIKE_MIN);
+    if (r < SPIKE_CHANCE + DIP_CHANCE) return t - DIP_MIN - rng() * (DIP_MAX - DIP_MIN);
     return t + (rng() - 0.5) * 2 * JITTER;
   };
 
@@ -438,7 +482,19 @@ export function simulate(strength: number, snap: Snapshot, seed: string): RunRes
       // only the QF is seeded — by the bracket you are drawn into 3-0 meets 3-2,
       // 3-2 meets 3-0. After that the field has levelled out.
       const seed = st.stage === "Quarter-final" ? (l - 1) * QF_SEED_STEP : 0;
-      const opp = buildOpponent(snap, jit(st.target + seed), rng, pool);
+      // The QF and SF rise with you; the GRAND FINAL is a fixed hurdle.
+      //
+      // Lifting all three ran the target to ~77, where only a dozen player-years
+      // rate high enough to staff a side and NiKo appeared in 20% of them — the
+      // pool runs out before the curve does. Lifting only QF/SF made the semi
+      // HARDER than the final, which test:ladder caught. The fix is both: lift
+      // QF/SF, capped, and keep the GF base high enough to stay above a fully
+      // lifted semi (68.82 + 3.0 = 71.82 < 72.72). Monotone at every strength,
+      // and the final target never exceeds what the pool can field.
+      const lift = st.bo === 5 ? 0
+        : Math.min(LIFT_MAX, PLAYOFF_SCALE * Math.max(0, strength - PLAYOFF_REF));
+      const aim = st.target + seed + lift;
+      const opp = buildOpponent(snap, jit(aim), rng, pool);
       const r = series(rng, strength, opp.effective_strength, st.bo);
       // QF is cross-seeded: you qualified 3-L, so you draw a 3-(2-L).
       // Later rounds are whoever survived, so their record is drawn from the

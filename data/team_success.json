@@ -1,25 +1,25 @@
 {
  "3DMAX:2025": {
   "igl_bonus": 1,
-  "norm": 0.073,
+  "norm": 0.075,
   "raw": 0.1,
   "team_bonus": 0
  },
  "9INE:2023": {
-  "igl_bonus": 2,
-  "norm": 0.129,
+  "igl_bonus": 1,
+  "norm": 0.102,
   "raw": 0.1,
   "team_bonus": 1
  },
  "9z:2024": {
   "igl_bonus": 1,
-  "norm": 0.097,
+  "norm": 0.098,
   "raw": 0.1,
   "team_bonus": 1
  },
  "AGO:2018": {
   "igl_bonus": 2,
-  "norm": 0.189,
+  "norm": 0.187,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -37,7 +37,7 @@
  },
  "Astralis:2016": {
   "igl_bonus": 5,
-  "norm": 0.436,
+  "norm": 0.444,
   "raw": 0.4,
   "team_bonus": 3
  },
@@ -61,49 +61,49 @@
  },
  "Astralis:2020": {
   "igl_bonus": 5,
-  "norm": 0.445,
-  "raw": 0.4,
+  "norm": 0.454,
+  "raw": 0.5,
   "team_bonus": 3
  },
  "Astralis:2021": {
   "igl_bonus": 2,
-  "norm": 0.158,
+  "norm": 0.156,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Astralis:2022": {
   "igl_bonus": 2,
-  "norm": 0.148,
-  "raw": 0.1,
+  "norm": 0.152,
+  "raw": 0.2,
   "team_bonus": 1
  },
  "Astralis:2023": {
   "igl_bonus": 2,
-  "norm": 0.142,
+  "norm": 0.146,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Astralis:2024": {
   "igl_bonus": 2,
-  "norm": 0.137,
+  "norm": 0.144,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Astralis:2025": {
   "igl_bonus": 2,
-  "norm": 0.136,
+  "norm": 0.141,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Aurora:2025": {
   "igl_bonus": 2,
-  "norm": 0.173,
+  "norm": 0.175,
   "raw": 0.2,
   "team_bonus": 1
  },
  "B8:2025": {
   "igl_bonus": 1,
-  "norm": 0.1,
+  "norm": 0.107,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -121,25 +121,25 @@
  },
  "BIG:2020": {
   "igl_bonus": 4,
-  "norm": 0.312,
+  "norm": 0.315,
   "raw": 0.3,
   "team_bonus": 2
  },
  "BIG:2021": {
   "igl_bonus": 2,
-  "norm": 0.164,
+  "norm": 0.166,
   "raw": 0.2,
   "team_bonus": 1
  },
  "BIG:2022": {
   "igl_bonus": 2,
-  "norm": 0.186,
+  "norm": 0.172,
   "raw": 0.2,
   "team_bonus": 1
  },
  "BIG:2023": {
   "igl_bonus": 2,
-  "norm": 0.16,
+  "norm": 0.162,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -198,26 +198,26 @@
   "team_bonus": 2
  },
  "Cloud9:2022": {
-  "igl_bonus": 3,
-  "norm": 0.214,
+  "igl_bonus": 2,
+  "norm": 0.206,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Cloud9:2023": {
   "igl_bonus": 4,
-  "norm": 0.308,
+  "norm": 0.314,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Complexity:2020": {
   "igl_bonus": 3,
-  "norm": 0.211,
+  "norm": 0.216,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Complexity:2024": {
   "igl_bonus": 1,
-  "norm": 0.098,
+  "norm": 0.096,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -229,37 +229,37 @@
  },
  "Copenhagen Flames:2021": {
   "igl_bonus": 1,
-  "norm": 0.092,
+  "norm": 0.093,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Copenhagen Flames:2022": {
   "igl_bonus": 2,
-  "norm": 0.198,
+  "norm": 0.168,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Dignitas:2015": {
   "igl_bonus": 3,
-  "norm": 0.262,
+  "norm": 0.26,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Dignitas:2016": {
   "igl_bonus": 4,
-  "norm": 0.305,
+  "norm": 0.304,
   "raw": 0.3,
   "team_bonus": 2
  },
  "E-frag.net:2015": {
-  "igl_bonus": 2,
-  "norm": 0.129,
+  "igl_bonus": 1,
+  "norm": 0.122,
   "raw": 0.1,
   "team_bonus": 1
  },
  "ENCE:2018": {
   "igl_bonus": 3,
-  "norm": 0.265,
+  "norm": 0.266,
   "raw": 0.3,
   "team_bonus": 2
  },
@@ -271,37 +271,37 @@
  },
  "ENCE:2021": {
   "igl_bonus": 1,
-  "norm": 0.101,
+  "norm": 0.1,
   "raw": 0.1,
   "team_bonus": 1
  },
  "ENCE:2022": {
-  "igl_bonus": 4,
-  "norm": 0.303,
+  "igl_bonus": 3,
+  "norm": 0.289,
   "raw": 0.3,
   "team_bonus": 2
  },
  "ENCE:2023": {
   "igl_bonus": 4,
-  "norm": 0.3,
+  "norm": 0.306,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Entropiq:2021": {
   "igl_bonus": 2,
-  "norm": 0.186,
+  "norm": 0.184,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Entropiq:2022": {
   "igl_bonus": 1,
-  "norm": 0.07,
+  "norm": 0.072,
   "raw": 0.1,
   "team_bonus": 0
  },
  "Envy:2015": {
   "igl_bonus": 10,
-  "norm": 0.796,
+  "norm": 0.816,
   "raw": 0.8,
   "team_bonus": 5
  },
@@ -319,13 +319,13 @@
  },
  "Eternal Fire:2024": {
   "igl_bonus": 2,
-  "norm": 0.188,
+  "norm": 0.199,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Eternal Fire:2025": {
   "igl_bonus": 1,
-  "norm": 0.083,
+  "norm": 0.082,
   "raw": 0.1,
   "team_bonus": 0
  },
@@ -337,13 +337,13 @@
  },
  "Evil Geniuses:2020": {
   "igl_bonus": 4,
-  "norm": 0.359,
-  "raw": 0.4,
+  "norm": 0.346,
+  "raw": 0.3,
   "team_bonus": 2
  },
  "Evil Geniuses:2021": {
   "igl_bonus": 1,
-  "norm": 0.07,
+  "norm": 0.064,
   "raw": 0.1,
   "team_bonus": 0
  },
@@ -355,13 +355,13 @@
  },
  "FORZE:2021": {
   "igl_bonus": 2,
-  "norm": 0.148,
+  "norm": 0.147,
   "raw": 0.1,
   "team_bonus": 1
  },
  "FORZE:2022": {
   "igl_bonus": 1,
-  "norm": 0.092,
+  "norm": 0.091,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -373,44 +373,44 @@
  },
  "FURIA:2020": {
   "igl_bonus": 5,
-  "norm": 0.392,
+  "norm": 0.396,
   "raw": 0.4,
   "team_bonus": 2
  },
  "FURIA:2021": {
-  "igl_bonus": 3,
-  "norm": 0.21,
+  "igl_bonus": 2,
+  "norm": 0.193,
   "raw": 0.2,
   "team_bonus": 1
  },
  "FURIA:2022": {
   "igl_bonus": 3,
-  "norm": 0.246,
+  "norm": 0.213,
   "raw": 0.2,
   "team_bonus": 1
  },
  "FURIA:2023": {
-  "igl_bonus": 2,
-  "norm": 0.14,
+  "igl_bonus": 1,
+  "norm": 0.107,
   "raw": 0.1,
   "team_bonus": 1
  },
  "FURIA:2024": {
   "igl_bonus": 1,
-  "norm": 0.093,
+  "norm": 0.086,
   "raw": 0.1,
   "team_bonus": 1
  },
  "FURIA:2025": {
   "igl_bonus": 5,
-  "norm": 0.386,
+  "norm": 0.376,
   "raw": 0.4,
   "team_bonus": 2
  },
  "FaZe:2016": {
   "igl_bonus": 2,
-  "norm": 0.148,
-  "raw": 0.1,
+  "norm": 0.15,
+  "raw": 0.2,
   "team_bonus": 1
  },
  "FaZe:2017": {
@@ -433,61 +433,61 @@
  },
  "FaZe:2020": {
   "igl_bonus": 2,
-  "norm": 0.166,
+  "norm": 0.171,
   "raw": 0.2,
   "team_bonus": 1
  },
  "FaZe:2021": {
   "igl_bonus": 1,
-  "norm": 0.079,
+  "norm": 0.08,
   "raw": 0.1,
   "team_bonus": 0
  },
  "FaZe:2022": {
-  "igl_bonus": 8,
-  "norm": 0.707,
+  "igl_bonus": 9,
+  "norm": 0.719,
   "raw": 0.7,
   "team_bonus": 4
  },
  "FaZe:2023": {
   "igl_bonus": 6,
-  "norm": 0.512,
+  "norm": 0.525,
   "raw": 0.5,
   "team_bonus": 3
  },
  "FaZe:2024": {
   "igl_bonus": 6,
-  "norm": 0.482,
+  "norm": 0.499,
   "raw": 0.5,
   "team_bonus": 3
  },
  "Falcons:2024": {
   "igl_bonus": 1,
-  "norm": 0.108,
+  "norm": 0.114,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Falcons:2025": {
   "igl_bonus": 5,
-  "norm": 0.4,
+  "norm": 0.412,
   "raw": 0.4,
   "team_bonus": 2
  },
  "FlipSid3:2015": {
   "igl_bonus": 2,
-  "norm": 0.15,
+  "norm": 0.145,
   "raw": 0.1,
   "team_bonus": 1
  },
  "FlipSid3:2016": {
   "igl_bonus": 1,
-  "norm": 0.103,
+  "norm": 0.104,
   "raw": 0.1,
   "team_bonus": 1
  },
  "G2:2015": {
   "igl_bonus": 1,
-  "norm": 0.122,
+  "norm": 0.119,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -517,43 +517,43 @@
  },
  "G2:2020": {
   "igl_bonus": 3,
-  "norm": 0.235,
+  "norm": 0.24,
   "raw": 0.2,
   "team_bonus": 1
  },
  "G2:2021": {
   "igl_bonus": 4,
-  "norm": 0.33,
+  "norm": 0.332,
   "raw": 0.3,
   "team_bonus": 2
  },
  "G2:2022": {
   "igl_bonus": 3,
-  "norm": 0.235,
+  "norm": 0.247,
   "raw": 0.2,
   "team_bonus": 1
  },
  "G2:2023": {
   "igl_bonus": 4,
-  "norm": 0.299,
+  "norm": 0.303,
   "raw": 0.3,
   "team_bonus": 2
  },
  "G2:2024": {
   "igl_bonus": 6,
-  "norm": 0.516,
+  "norm": 0.52,
   "raw": 0.5,
   "team_bonus": 3
  },
  "G2:2025": {
   "igl_bonus": 3,
-  "norm": 0.21,
+  "norm": 0.216,
   "raw": 0.2,
   "team_bonus": 1
  },
  "GODSENT:2016": {
   "igl_bonus": 2,
-  "norm": 0.158,
+  "norm": 0.159,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -565,13 +565,13 @@
  },
  "GODSENT:2020": {
   "igl_bonus": 1,
-  "norm": 0.089,
+  "norm": 0.091,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Gambit:2016": {
   "igl_bonus": 2,
-  "norm": 0.19,
+  "norm": 0.195,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -588,8 +588,8 @@
   "team_bonus": 1
  },
  "Gambit:2021": {
-  "igl_bonus": 8,
-  "norm": 0.625,
+  "igl_bonus": 7,
+  "norm": 0.623,
   "raw": 0.6,
   "team_bonus": 4
  },
@@ -607,13 +607,13 @@
  },
  "GamerLegion:2025": {
   "igl_bonus": 1,
-  "norm": 0.053,
+  "norm": 0.054,
   "raw": 0.1,
   "team_bonus": 0
  },
  "Gen.G:2020": {
   "igl_bonus": 2,
-  "norm": 0.188,
+  "norm": 0.193,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -637,43 +637,43 @@
  },
  "HEROIC:2020": {
   "igl_bonus": 3,
-  "norm": 0.27,
+  "norm": 0.265,
   "raw": 0.3,
   "team_bonus": 2
  },
  "HEROIC:2021": {
   "igl_bonus": 3,
-  "norm": 0.279,
+  "norm": 0.285,
   "raw": 0.3,
   "team_bonus": 2
  },
  "HEROIC:2023": {
   "igl_bonus": 4,
-  "norm": 0.372,
+  "norm": 0.361,
   "raw": 0.4,
   "team_bonus": 2
  },
  "HEROIC:2024": {
   "igl_bonus": 2,
-  "norm": 0.142,
+  "norm": 0.141,
   "raw": 0.1,
   "team_bonus": 1
  },
  "HEROIC:2025": {
   "igl_bonus": 1,
-  "norm": 0.119,
+  "norm": 0.123,
   "raw": 0.1,
   "team_bonus": 1
  },
  "HellRaisers:2015": {
   "igl_bonus": 2,
-  "norm": 0.183,
+  "norm": 0.18,
   "raw": 0.2,
   "team_bonus": 1
  },
  "HellRaisers:2016": {
   "igl_bonus": 3,
-  "norm": 0.212,
+  "norm": 0.21,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -697,19 +697,19 @@
  },
  "Imperial:2024": {
   "igl_bonus": 1,
-  "norm": 0.1,
+  "norm": 0.093,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Kinguin:2015": {
   "igl_bonus": 2,
-  "norm": 0.144,
+  "norm": 0.133,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Legacy:2025": {
   "igl_bonus": 1,
-  "norm": 0.116,
+  "norm": 0.123,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -745,31 +745,31 @@
  },
  "Liquid:2020": {
   "igl_bonus": 4,
-  "norm": 0.321,
+  "norm": 0.324,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Liquid:2021": {
   "igl_bonus": 2,
-  "norm": 0.183,
+  "norm": 0.176,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Liquid:2022": {
-  "igl_bonus": 3,
-  "norm": 0.226,
+  "igl_bonus": 2,
+  "norm": 0.192,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Liquid:2023": {
   "igl_bonus": 1,
-  "norm": 0.107,
+  "norm": 0.097,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Liquid:2024": {
   "igl_bonus": 2,
-  "norm": 0.137,
+  "norm": 0.139,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -805,13 +805,13 @@
  },
  "MIBR:2024": {
   "igl_bonus": 2,
-  "norm": 0.141,
+  "norm": 0.128,
   "raw": 0.1,
   "team_bonus": 1
  },
  "MIBR:2025": {
   "igl_bonus": 1,
-  "norm": 0.061,
+  "norm": 0.065,
   "raw": 0.1,
   "team_bonus": 0
  },
@@ -823,7 +823,7 @@
  },
  "MOUZ:2016": {
   "igl_bonus": 2,
-  "norm": 0.189,
+  "norm": 0.194,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -847,43 +847,43 @@
  },
  "MOUZ:2020": {
   "igl_bonus": 2,
-  "norm": 0.198,
+  "norm": 0.205,
   "raw": 0.2,
   "team_bonus": 1
  },
  "MOUZ:2021": {
   "igl_bonus": 1,
-  "norm": 0.109,
+  "norm": 0.112,
   "raw": 0.1,
   "team_bonus": 1
  },
  "MOUZ:2022": {
   "igl_bonus": 2,
-  "norm": 0.141,
+  "norm": 0.147,
   "raw": 0.1,
   "team_bonus": 1
  },
  "MOUZ:2023": {
   "igl_bonus": 3,
-  "norm": 0.253,
+  "norm": 0.256,
   "raw": 0.3,
   "team_bonus": 2
  },
  "MOUZ:2024": {
   "igl_bonus": 6,
-  "norm": 0.478,
+  "norm": 0.464,
   "raw": 0.5,
   "team_bonus": 3
  },
  "MOUZ:2025": {
   "igl_bonus": 6,
-  "norm": 0.459,
+  "norm": 0.474,
   "raw": 0.5,
   "team_bonus": 3
  },
  "Monte:2023": {
   "igl_bonus": 2,
-  "norm": 0.205,
+  "norm": 0.201,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -931,43 +931,43 @@
  },
  "Natus Vincere:2020": {
   "igl_bonus": 5,
-  "norm": 0.394,
+  "norm": 0.393,
   "raw": 0.4,
   "team_bonus": 2
  },
  "Natus Vincere:2021": {
   "igl_bonus": 11,
-  "norm": 0.911,
+  "norm": 0.903,
   "raw": 0.9,
   "team_bonus": 5
  },
  "Natus Vincere:2022": {
   "igl_bonus": 5,
-  "norm": 0.439,
+  "norm": 0.437,
   "raw": 0.4,
   "team_bonus": 3
  },
  "Natus Vincere:2023": {
-  "igl_bonus": 3,
-  "norm": 0.236,
+  "igl_bonus": 2,
+  "norm": 0.201,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Natus Vincere:2024": {
-  "igl_bonus": 8,
-  "norm": 0.683,
+  "igl_bonus": 9,
+  "norm": 0.715,
   "raw": 0.7,
   "team_bonus": 4
  },
  "Natus Vincere:2025": {
   "igl_bonus": 3,
-  "norm": 0.246,
-  "raw": 0.2,
-  "team_bonus": 1
+  "norm": 0.262,
+  "raw": 0.3,
+  "team_bonus": 2
  },
  "Ninjas in Pyjamas:2015": {
-  "igl_bonus": 7,
-  "norm": 0.625,
+  "igl_bonus": 8,
+  "norm": 0.627,
   "raw": 0.6,
   "team_bonus": 4
  },
@@ -997,15 +997,15 @@
  },
  "Ninjas in Pyjamas:2020": {
   "igl_bonus": 1,
-  "norm": 0.096,
+  "norm": 0.091,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Ninjas in Pyjamas:2021": {
   "igl_bonus": 3,
-  "norm": 0.25,
-  "raw": 0.3,
-  "team_bonus": 2
+  "norm": 0.234,
+  "raw": 0.2,
+  "team_bonus": 1
  },
  "North:2017": {
   "igl_bonus": 5,
@@ -1021,19 +1021,19 @@
  },
  "OG:2020": {
   "igl_bonus": 2,
-  "norm": 0.164,
+  "norm": 0.168,
   "raw": 0.2,
   "team_bonus": 1
  },
  "OG:2021": {
   "igl_bonus": 2,
-  "norm": 0.132,
+  "norm": 0.136,
   "raw": 0.1,
   "team_bonus": 1
  },
  "OG:2022": {
   "igl_bonus": 2,
-  "norm": 0.145,
+  "norm": 0.143,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -1062,8 +1062,8 @@
   "team_bonus": 1
  },
  "Outsiders:2022": {
-  "igl_bonus": 4,
-  "norm": 0.365,
+  "igl_bonus": 5,
+  "norm": 0.388,
   "raw": 0.4,
   "team_bonus": 2
  },
@@ -1087,13 +1087,13 @@
  },
  "SAW:2024": {
   "igl_bonus": 2,
-  "norm": 0.126,
+  "norm": 0.129,
   "raw": 0.1,
   "team_bonus": 1
  },
  "SK:2015": {
   "igl_bonus": 1,
-  "norm": 0.125,
+  "norm": 0.121,
   "raw": 0.1,
   "team_bonus": 1
  },
@@ -1111,13 +1111,13 @@
  },
  "Spirit:2020": {
   "igl_bonus": 2,
-  "norm": 0.187,
+  "norm": 0.17,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Spirit:2021": {
   "igl_bonus": 2,
-  "norm": 0.179,
+  "norm": 0.169,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -1129,13 +1129,13 @@
  },
  "Spirit:2024": {
   "igl_bonus": 8,
-  "norm": 0.653,
+  "norm": 0.683,
   "raw": 0.7,
   "team_bonus": 4
  },
  "Spirit:2025": {
-  "igl_bonus": 6,
-  "norm": 0.517,
+  "igl_bonus": 7,
+  "norm": 0.549,
   "raw": 0.5,
   "team_bonus": 3
  },
@@ -1153,13 +1153,13 @@
  },
  "The MongolZ:2024": {
   "igl_bonus": 3,
-  "norm": 0.251,
-  "raw": 0.3,
-  "team_bonus": 2
+  "norm": 0.241,
+  "raw": 0.2,
+  "team_bonus": 1
  },
  "The MongolZ:2025": {
   "igl_bonus": 5,
-  "norm": 0.434,
+  "norm": 0.442,
   "raw": 0.4,
   "team_bonus": 3
  },
@@ -1171,7 +1171,7 @@
  },
  "Tricked:2019": {
   "igl_bonus": 2,
-  "norm": 0.162,
+  "norm": 0.163,
   "raw": 0.2,
   "team_bonus": 1
  },
@@ -1183,13 +1183,13 @@
  },
  "Vexed:2015": {
   "igl_bonus": 1,
-  "norm": 0.072,
+  "norm": 0.065,
   "raw": 0.1,
   "team_bonus": 0
  },
  "Virtus.pro:2015": {
   "igl_bonus": 8,
-  "norm": 0.692,
+  "norm": 0.695,
   "raw": 0.7,
   "team_bonus": 4
  },
@@ -1213,25 +1213,25 @@
  },
  "Virtus.pro:2021": {
   "igl_bonus": 3,
-  "norm": 0.233,
+  "norm": 0.241,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Virtus.pro:2023": {
   "igl_bonus": 4,
-  "norm": 0.303,
+  "norm": 0.313,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Virtus.pro:2024": {
-  "igl_bonus": 2,
-  "norm": 0.138,
+  "igl_bonus": 1,
+  "norm": 0.12,
   "raw": 0.1,
   "team_bonus": 1
  },
  "Virtus.pro:2025": {
   "igl_bonus": 1,
-  "norm": 0.052,
+  "norm": 0.054,
   "raw": 0.1,
   "team_bonus": 0
  },
@@ -1243,25 +1243,25 @@
  },
  "Vitality:2020": {
   "igl_bonus": 5,
-  "norm": 0.402,
+  "norm": 0.39,
   "raw": 0.4,
   "team_bonus": 2
  },
  "Vitality:2021": {
   "igl_bonus": 4,
-  "norm": 0.316,
+  "norm": 0.312,
   "raw": 0.3,
   "team_bonus": 2
  },
  "Vitality:2022": {
   "igl_bonus": 3,
-  "norm": 0.211,
+  "norm": 0.215,
   "raw": 0.2,
   "team_bonus": 1
  },
  "Vitality:2024": {
   "igl_bonus": 5,
-  "norm": 0.408,
+  "norm": 0.406,
   "raw": 0.4,
   "team_bonus": 2
  },
@@ -1272,8 +1272,8 @@
   "team_bonus": 6
  },
  "fnatic:2015": {
-  "igl_bonus": 11,
-  "norm": 0.957,
+  "igl_bonus": 12,
+  "norm": 0.973,
   "raw": 1.0,
   "team_bonus": 6
  },
@@ -1303,37 +1303,37 @@
  },
  "fnatic:2020": {
   "igl_bonus": 2,
-  "norm": 0.178,
+  "norm": 0.182,
   "raw": 0.2,
   "team_bonus": 1
  },
  "fnatic:2021": {
   "igl_bonus": 2,
-  "norm": 0.14,
+  "norm": 0.144,
   "raw": 0.1,
   "team_bonus": 1
  },
  "fnatic:2022": {
-  "igl_bonus": 1,
-  "norm": 0.12,
+  "igl_bonus": 2,
+  "norm": 0.125,
   "raw": 0.1,
   "team_bonus": 1
  },
  "fnatic:2023": {
-  "igl_bonus": 1,
-  "norm": 0.048,
+  "igl_bonus": 0,
+  "norm": 0.028,
   "raw": 0.0,
   "team_bonus": 0
  },
  "paiN:2024": {
   "igl_bonus": 2,
-  "norm": 0.165,
+  "norm": 0.166,
   "raw": 0.2,
   "team_bonus": 1
  },
  "paiN:2025": {
   "igl_bonus": 1,
-  "norm": 0.113,
+  "norm": 0.115,
   "raw": 0.1,
   "team_bonus": 1
  }

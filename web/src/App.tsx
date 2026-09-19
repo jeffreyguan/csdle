@@ -9,6 +9,26 @@ import "./App.css";
 
 type Mode = "daily" | "endless";
 
+/** Position tags, rendered identically wherever a player appears.
+ *
+ *  An AWPer is NEVER flex. The shape is 2 anchors + 1 AWP + 2 rotaters, so the
+ *  AWP holds his own slot and is not spent covering an anchor or rotater gap —
+ *  the engine excludes him from the flex pool, and the card must say the same.
+ *
+ *  Shared because the option card and the filled slot had already drifted: the
+ *  option card showed `flex`, the slot showed nothing. One renderer, one truth. */
+function Tags({ p }: { p: Player }) {
+  const positioned = p.labels.some((l) => l === "anchor" || l === "rotater" || l === "awp");
+  return (
+    <div className="c-tags">
+      {p.labels.map((l) => <span key={l} className={`tag t-${l}`}>{l}</span>)}
+      {!positioned && (
+        <span className="tag t-flex" title="position not yet labelled — fills whichever slot is short">flex</span>
+      )}
+    </div>
+  );
+}
+
 export default function App() {
   const [snap, setSnap] = useState<Snapshot | null>(null);
   const [mode, setMode] = useState<Mode>("daily");
@@ -144,9 +164,7 @@ export default function App() {
                     <div><b>{p.kd ? p.kd.toFixed(2) : "—"}</b><span>K/D</span></div>
                     <div><b>{p.maps}</b><span>maps</span></div>
                   </div>
-                  <div className="c-tags">
-                    {p.labels.map((l) => <span key={l} className={`tag t-${l}`}>{l}</span>)}
-                  </div>
+                  <Tags p={p} />
                   <div className={`c-leads ${p.leads > 0 ? "on" : ""}`}>
                     {p.leads > 0 ? `leads · +${Math.round((p.leads / 12) * 18)}%` : ""}
                   </div>
@@ -244,12 +262,7 @@ export default function App() {
                   <div><b>{p.maps}</b><span>maps</span></div>
                 </div>
 
-                <div className="c-tags">
-                  {p.labels.map((l) => <span key={l} className={`tag t-${l}`}>{l}</span>)}
-                  {!p.labels.some((l) => l === "anchor" || l === "rotater") && (
-                    <span className="tag t-flex" title="position not yet labelled — fills whichever slot is short">flex</span>
-                  )}
-                </div>
+                <Tags p={p} />
 
                 {/* always rendered so every card is the same height; only the
                     IGL's carries text. A conditional badge made IGL cards taller
@@ -302,7 +315,10 @@ export default function App() {
                         {m.oppRecord && <span className="m-rec">{m.oppRecord}</span>}
                         <span className="m-names">
                           {m.opponent.roster
-                            .map((id) => snap.players[id]?.nick)
+                            .map((id) => {
+                              const q = snap.players[id];
+                              return q && `${q.nick} ('${String(q.year).slice(2)})`;
+                            })
                             .filter(Boolean).join(", ")}
                         </span>
                       </span>

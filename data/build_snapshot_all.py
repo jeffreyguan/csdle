@@ -77,15 +77,28 @@ def main():
     top20 = json.loads((D / "hltv_top20.json").read_text()) \
         if (D / "hltv_top20.json").exists() else {}
     teams, players, missing = [], {}, []
+    # org-transition duplicates: when a roster changes org mid-year HLTV lists
+    # BOTH names for the same five players, so one lineup enters the pool twice
+    # under two logos. Drafting "Gambit 2022" and "Cloud9 2022" is the same
+    # five men. See team_exclude.csv and 7x.
+    excl = {(r["year"], r["team"]) for r in csv.DictReader(open(D / "team_exclude.csv"))}
     for r in csv.DictReader(open(D / "lineups_all.csv")):
         if not r["lineup"]: continue
+        if (r["year"], r["label"]) in excl: continue
         year = r["year"]
         roster, ok = [], True
         for nick in r["lineup"].split("|"):
             g, how = lookup(year, nick)
             if how in ("carried", "imputed") or how.startswith("carried"):
                 missing.append((year, r["label"], nick, how))
-            pid = f"{g['player_id']}:{year}"
+            # keyed by TEAM as well as year: 28 player-years appear on two
+            # teams (Stewie2K 2018 Cloud9+MIBR, Lekr0 2018 NiP+fnatic, ...).
+            # Without the team in the key the second write overwrote the first,
+            # destroying the earlier team's team-scoped labels, `team`, and
+            # team_bonus. That is what silently stripped Cloud9 2018 and NiP
+            # 2018 of their IGLs and caused the doubled-IGL team-years. A
+            # player-year on two rosters IS two draftable entities. See 7w.
+            pid = f"{g['player_id']}:{year}:{r['label']}"
             ls = (labels_for(lab, alias.get(nick, nick), int(year), r["label"])
                   or labels_for(lab, nick, int(year), r["label"]))
             players[pid] = {

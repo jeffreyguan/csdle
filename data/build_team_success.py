@@ -103,6 +103,13 @@ def season_raw(rows, year):
         if r["date"][:4] != str(year): continue
         tier = (r["tier"] or "").strip().lower()
         if tier in SKIP: continue
+        # SKIP matches on TIER, but Liquipedia tags plenty of qualifiers with
+        # the PARENT event's tier — "BLAST Open Fall 2025: Closed Qualifier"
+        # arrives as S-Tier and scored as a full S-Tier win. 460 rows leaked
+        # through, 103 of them as tournament wins. Filter on the name too.
+        name = (r.get("tournament") or "").strip()
+        if not name: continue                      # 282 rows have no event name
+        if NOT_MAJOR.search(name.lower()): continue
         entered += 1
         w = MAJOR if is_major(r.get("tournament")) else TIER.get(tier, 0.0)
         tot += w * place_mult(r["place"])

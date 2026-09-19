@@ -18,7 +18,7 @@ twoAwp.forEach(t => console.log(`   ${t.year} ${t.team}: `
 // a team-scoped label leaks to the other side (AdreN 2019 called for FaZe, not
 // AVANGAR). The engine already resolves it — only the most decorated caller's
 // bonus applies — so this is cosmetic, not a scoring fault.
-console.log(`team-years with >1 IGL: ${twoIgl.length} (tolerated — shared player-years)`);
+console.log(`team-years with >1 IGL: ${twoIgl.length} `);
 twoIgl.forEach(t => console.log(`   ${t.year} ${t.team}: `
   + t.roster.filter(i => P[i].labels.includes("igl" as never)).map(i => P[i].nick).join(", ")));
 

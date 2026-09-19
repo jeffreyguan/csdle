@@ -2054,17 +2054,28 @@ the rule that **two callers are not punished** (7p): 0 callers -5, 1 fine,
 ### Fix: put "no caller" at the BOTTOM of the leadership axis
 Not a separate composition term. One axis, proportional at both ends:
 
-    no caller        -7.5% of the whole side
+    no caller        -10% of the whole side
     unproven caller    0%
     decorated caller  up to +18% to the other four
 
-`NO_IGL_MULT = 0.075` chosen so the penalty at a median roster lands near the
-old 5.0 rather than re-tuning the game's difficulty around a bug fix.
+`NO_IGL_MULT` set to **0.10** on request (2026-09-18). It was initially 0.075,
+chosen so the penalty at a median roster landed near the old flat 5.0 rather
+than re-tuning difficulty around a bug fix; 10% makes fielding no caller a
+clearly losing choice rather than a marginal one.
+
+Cost of ignoring the caller rule entirely, measured at 4000 drafts each:
+
+    keeps a caller      strength 62.1   champion 4.9%
+    ignores the rule    strength 58.7   champion 2.7%
+
+A competent drafter is unaffected (they end up with a caller 98% of the time),
+so the championship rate stays on target at 4.9% — the penalty only bites the
+players it is meant to.
 
     roster avg   penalty
-            45      -3.4
-            65      -4.9
-            75      -5.6
+            45      -4.5
+            65      -6.5
+            75      -7.5
 
 Measured gap between drafts-with-a-caller and drafts-with-none: **6.5** (was a
 flat 5.0, applied regressively). Championship rate holds at **4.9%** against the
@@ -2111,6 +2122,429 @@ Under half the available width. Nothing needed to be truncated at all.
 `npm run test:names` guards both halves: asserts five nicks resolve for every
 opponent, measures the longest roster string, and fails if it would exceed the
 track or if the hardcoded ellipsis returns.
+
+## 7w. TEAM-SCOPED LABELS DESTROYED BY A NON-TEAM-SCOPED KEY (2026-09-18)
+
+**Report:** "some teams dont have igls now."
+
+A real regression, and the cause was NOT the labels — it was the snapshot key.
+
+    pid = f"{g['player_id']}:{year}"          # no team
+
+**28 player-years appear on two teams in one season** (Stewie2K 2018
+Cloud9+MIBR, Lekr0 2018 NiP+fnatic, Magisk 2017 North+OpTic, ...). The record is
+written once per roster into `players[pid]`, so **the second write overwrote the
+first** — including `labels`, which are computed with the *other* team's scope:
+
+    labels_for(lab, "Stewie2K", 2018, "MIBR")   -> {}   (his igl row is scoped to Cloud9)
+
+...which then clobbered the correct Cloud9 record. Cloud9 2018 and NiP 2018 lost
+their IGLs to a dict write.
+
+It also silently corrupted `team` and `team_bonus`: whichever team was written
+last supplied the logo and bonus for BOTH rosters.
+
+**And it was the cause of the two "tolerated" doubled-IGL team-years** (AVANGAR
+2019, Copenhagen Flames 2022) that had been written off as an accepted quirk.
+Same bug, opposite sign — the overwrite could add a caller as easily as remove
+one. Nothing was ever worth tolerating.
+
+Fix: `pid = f"{player_id}:{year}:{team}"`. A player-year on two rosters IS two
+draftable entities — different labels, different bonus, different logo. The
+engine dedupes on `player_id` (not `id`), so this is safe.
+
+Result: **0 doubled IGLs, 0 corrupted team bonuses**, 25 no-IGL -> 23.
+
+### Filling the genuine gaps — and why the obvious heuristic fails
+The 23 remaining were a real data gap, and the reworked penalty (7u) now charges
+the player for it. Proposed fills from Liquipedia `|roles=` (7t) using "exactly
+one ACTIVE player on the roster lists igl".
+
+**Validated against the 200 team-years whose IGL is already known** before
+applying any of it:
+
+    2015   20%        2020   62%
+    2016   25%        2021   86%
+    2017   20%        2022   80%
+    2018   67%        2023   86%
+    2019   86%        2024   90%
+                      2025  100%
+
+Overall 72% when it fires — but the era split is the whole story. The filter can
+only see ACTIVE players, so in old seasons the true IGL has RETIRED (adreN, Hiko,
+gob b, Zeus) and is invisible to it — leaving it to pick a still-active teammate,
+reliably the wrong one. It proposed **nitr0 for Liquid 2015**; adreN called that
+year, and nitr0 did not take over until 2016.
+
+So: auto-applied the **2022+** proposals only (9), hand-verified 3 more
+(stanislaw EG 2020-21, nitr0 Liquid 2016, adreN Liquid 2015), left the rest.
+
+**10 team-years still lack an IGL** -> `worksheet_igl.csv`, now carrying a
+`liquipedia_candidates` column so the remaining calls are informed, not blind.
+
+## 7x. ORG-TRANSITION DUPLICATES (2026-09-18)
+
+**Challenge:** "why is eternal fire even on this game? they werent a top 20 team."
+
+Right to remove, but the cause is sharper than the ranking. The 2025 pool:
+
+    Aurora         MAJ3R, Wicadia, XANTARES, jottAAA, woxic
+    Eternal Fire   MAJ3R, Wicadia, XANTARES, jottAAA, woxic
+
+**Identical five.** The Turkish core left Eternal Fire for Aurora, and the pool
+is built from HLTV's `teams` column, which lists EVERY org a player represented
+that season — so one roster cleared the 5-player bar twice, under two names.
+
+That is also why Eternal Fire resolved to the ACADEMY lineup (Calyx, EMSTAR,
+imoRR, jresy, lugseN): the real players had gone, so `canonical_lineup` found
+only the academy five. The "wrong roster" bug and the "why is this team here"
+bug were one bug.
+
+### It was not isolated — 4 cases
+Scanning every year for team-years sharing 4+ of five:
+
+    2019  Valiance [273d]  ==  CR4ZY  [273d]   5/5   rebrand
+    2022  Gambit   [114d]  ==  Cloud9 [252d]   5/5   roster moved orgs
+    2016  Immortals [58d]  vs  Tempo Storm [113d]  4/5  (steel vs SHOOWTiME)
+    2025  Eternal Fire      ==  Aurora            (masked by the academy fallback)
+
+Exact 5/5 pairs are not two boards, they are one board with two logos — and they
+compounded the "I keep seeing the same teams" complaint from 6m, since a
+duplicated roster is twice as likely to be drawn.
+
+### Fix
+`team_exclude.csv` — auditable, one row per drop with the reason. Applied in
+`build_snapshot_all.py`. Kept the org each roster's results are actually filed
+under: **CR4ZY** over Valiance, **Cloud9** (252d) over Gambit (114d), **Aurora**
+over Eternal Fire.
+
+**2016 Immortals / Tempo Storm kept BOTH** — 4/5, genuinely different fifth man,
+so they are two real lineups rather than one duplicated. Not a call to make
+silently; `npm run test:dup` prints it as a note every run.
+
+223 -> **220 team-years**. Championship rate 5.0%.
+
+## 7y. THE AWP REMOVAL PASS WAS UNSAFE FOR ROLE-SWITCHERS (2026-09-18)
+
+**Report:** "some teams dont have awpers again, like 2016 luminosity."
+
+My own regression, from the 7t auto-removal rule:
+
+    "I say awp, Liquipedia lists other roles but not awp"  ->  remove
+
+`FalleN roles=['igl','rifle']` — because he moved off the AWP at FURIA. The rule
+stripped his awp label across **all eleven seasons**, including 2015-2019 when he
+was the best AWPer in the world. He alone accounted for 8 of the 39 gaps
+(LG 2015/16, SK 2017, MIBR 2018/19, Liquid 2021, FURIA 2023/24). Graviti (3DMAX)
+went the same way.
+
+**The rule's flaw is structural, not incidental.** Liquipedia roles describe a
+career weighted to the PRESENT, and role changes are overwhelmingly late-career
+(AWP -> rifle/IGL as reflexes go). So the rule systematically strips early-career
+AWP labels from exactly the players most likely to have held the AWP.
+
+### The near-miss worth recording
+Having created the gap, the fill heuristic then proposed **coldzera** for
+Luminosity 2015/2016, SK 2017 and MIBR 2018/2019 — he is listed because he used
+the AWP situationally, while FalleN was invisible. Auto-applying would have
+enshrined a well-known falsehood across the entire MIBR lineage. It also proposed
+**Maka** for 3DMAX 2025, who is the IGL, over Graviti.
+
+Two bad labels in a row from the same source is not bad luck; it is the same
+career-cumulative defect as 7w, and it argues against ever auto-applying this
+source without era validation.
+
+### Validation first (as in 7w)
+'sole ACTIVE Liquipedia awp' against team-years whose AWPer is known:
+
+    2015  75%   2018   90%   2021  100%   2024  100%
+    2016  86%   2019  100%   2022  100%   2025  100%
+    2017  57%   2020  100%   2023  100%
+
+Overall **95%** — far better than the IGL heuristic's 72%, because AWP is a
+stable, unambiguous role. But 2017 still sits at 57%, so the era caveat holds.
+
+### Applied
+Restored **FalleN 2015-2024** and **Graviti**, added fox (FaZe 2016) and mixwell
+(OpTic 2016). 39 -> **28** team-years without an AWPer, 0 doubled.
+
+### Note for the remaining 28
+Several are probably CORRECT as-is. Liquid 2018-2020 and FURIA 2019/2021 were
+genuinely rifle-heavy sides with no dedicated AWPer, so `no AWPer: -6` is
+historically accurate there rather than a data gap. Filling them would be worse
+than leaving them. `worksheet_awp.csv` carries candidates; 19 of 28 have no
+active candidate at all, which is itself a signal that the era is the problem.
+
+## 7z. OPPONENT VARIETY: near() WAS ARGMIN IN DISGUISE (2026-09-18)
+
+**Report:** "certain players come up way more in playoffs... i assume the random
+teams favour fragging igls. i see dennis a lot."
+
+Right about the symptom and right about IGLs being the worst case, though the
+mechanism was broader.
+
+### Measured first
+600 runs, counting opponents by stage:
+
+    playoff sides: electroNic 31%, nexa 30%, Stewie2K 21%, dennis 16%
+    only 94 distinct players across every playoff opponent, out of 1100
+
+### Cause 1 — `near()` was argmin
+    for (let k = 0; k < 70; k++)  ...keep the closest of 70 random draws
+
+70 draws over a bucket of ~20 returns the single best fit essentially every
+time. Playoff targets cluster on three fixed numbers (66.3 / 68.8 / 72.7), so
+the same men were re-selected every playoff run. Replaced with a uniform draw
+among everyone within `NEAR_TOL = 2.5` of the best fit.
+
+**That alone barely helped** — dennis went UP to 30%. The band was not the
+binding constraint.
+
+### Cause 2 — the real one: IGLs were band-filtered against the wrong centre
+`BAND = 11` around the TEAM target, then the caller picked with `target - 6`.
+But IGLs rate ~8.5 below the field BY DESIGN (7p), so a band centred on a
+playoff target excludes nearly all of them:
+
+    target 66.3   11 IGLs in band ->  2 within tolerance: Stewie2K, electroNic
+    target 68.8   10             ->  3: dennis, Stewie2K, nexa
+    target 72.7    8             ->  2: dennis, nexa
+
+**Two eligible callers for every grand final.** The design decision that makes
+IGLs rate low (correct) silently collided with a band centred on the team target
+(wrong), and the game ran out of IGLs at exactly the strength where it needs
+them most.
+
+Fixes:
+- IGL bucket drawn from a band centred on `iglAim = target - 6`, where callers
+  actually live — not on the team target.
+- `NEAR_MIN = 12`: never draw from fewer than 12 candidates however badly they
+  fit. Fit quality matters less than not seeing dennis in a third of finals.
+
+### Result
+    dennis in playoff sides        30%  ->  6.8%
+    top player's share             31%  ->  14.9%
+    distinct players in playoffs    94  ->  182
+
+Tuning past NEAR_MIN=12 does nothing (plateau ~15%), and the residue is honest:
+few player-years rate high enough to staff a 74-strength side, so NiKo and ropz
+SHOULD recur there. Ladder and seeding unaffected — 2-0 > 2-1 > 2-2 and the 3-0
+QF reward both still hold.
+
+Guarded by `npm run test:pvariety`: fails if any player exceeds 16% of playoff
+sides or fewer than 150 distinct players appear.
+
+## 7aa. BEST TEAM, IGL VALUE, SEASON SCORING, AWP FLEX (2026-09-18)
+
+Four questions in one message.
+
+### 1. The best possible team: 99.4
+Searched 90 candidates (top fraggers + top callers + top AWPs), one player per
+team-year:
+
+    NiKo 2020 FaZe (78, igl)   s1mple 2018 NaVi (99, awp)   donk 2024 Spirit (99)
+    gla1ve 2018 Astralis (71, igl)                          coldzera 2016 LG (85)
+    base 86.4  leadership +13.0  composition -0  =  99.4
+
+TWO callers, no penalty — correct per 7p. The first search run fielded THREE
+AWPers (s1mple + ZywOo + m0NESY) for a flat -3, which exposed a real flaw:
+`awps.length > 1` charged the same whether you had two or five. Now `3 * excess`.
+
+### 2. "Is dennis really better than karrigan or gla1ve?"
+Versus gla1ve, no — **gla1ve 2018 is the best caller in the game** (23.8 vs
+dennis's 18.0 in team points). Versus karrigan, yes, and it holds up:
+
+    dennis   2016  rating 66  lead  6.0 -> +9%    value 18.0
+    karrigan 2022  rating 39  lead  9.0 -> +14%   value 15.0
+
+**Raising LEAD_MAX_MULT does not fix this — it makes it worse.** Tested:
+
+    0.18   dennis 18.0   karrigan 15.0   gla1ve 23.8
+    0.22   dennis 19.1   karrigan 16.6   gla1ve 26.0
+    0.26   dennis 20.2   karrigan 18.3   gla1ve 28.1
+
+dennis receives the leadership multiplier TOO, so every increase lifts him as
+well and runs gla1ve away from the field. No setting of a multiplicative
+leadership term makes a 39-rated caller beat a 66-rated caller-fragger. That is
+the correct answer, not a tuning failure: dennis 2016 was a Top-20 rifler who
+also called, and a player doing both jobs IS worth more.
+
+### 3. fnatic 2016 vs FaZe 2022
+Already ordered correctly: **FaZe 2022 68.9 > fnatic 2016 67.3**, on season
+scores of 0.719 vs 0.527. The margin is only 1.6 because karrigan's 39 drags
+FaZe's base to 61.6, below fnatic's 62.8 — the same phenomenon as (2), and
+arguably the honest one.
+
+### 4. Qualifier scoring leak (found while checking (3))
+`SKIP = {"qualifier","showmatch","misc"}` matched on TIER, but Liquipedia tags
+qualifiers with the PARENT event's tier — "BLAST Open Fall 2025: Closed
+Qualifier" arrived as **S-Tier** and scored as a full S-Tier win.
+
+    460 rows leaked through the tier filter, 103 of them as tournament WINS
+    282 more rows had an EMPTY event name and were still scored
+
+Now filtered on name as well. Effect was small (FaZe 2022 0.707 -> 0.719) but it
+was inflating the busiest seasons most.
+
+### 5a. ...and the CARD still said flex (follow-up)
+Fixing the engine did not fix the UI, and inspecting it turned up drift:
+
+    option card (line 250)  ->  rendered the `flex` chip
+    filled slot  (line 147)  ->  rendered no position chip at all
+
+Two hand-written `c-tags` blocks that had diverged — the same class of bug as
+the option-card/slot rating mismatch in 7o. Replaced both with a single `<Tags/>`
+component that excludes `awp` from the flex chip.
+
+`npm run test:card` now fails if more than one `c-tags` renderer exists, or if
+`Tags` stops excluding awp — the drift, not just today's symptom.
+
+### 5. AWPers removed from the flex pool (requested)
+The shape is 2 anchors + 1 AWP + 2 rotaters, so only the OTHER FOUR are measured
+against 2/2. Previously an unlabelled AWPer counted as flex and got spent
+covering an anchor or rotater gap — one man holding two slots.
+
+Consequence: the anchor/rotater term went from near-inert to **firing in 40% of
+drafts**, costing ~1.4 team points, and the championship rate fell 5.0% -> 3.9%.
+That is the penalty working as asked, so difficulty was re-tuned rather than the
+fix reverted: every target shifted down 1.22 (SWISS_BASE 60.9 -> 59.68, QF/SF/GF
+66.3/68.8/72.7 -> 65.17/67.67/71.57). **Championship rate back to 4.9%**, ladder
+and QF cross-seeding intact.
+
+## 7ab. GROUP VARIANCE WIDENED; ANCHOR/ROTATER SHELVED (2026-09-18)
+
+### Anchor/rotater penalty disabled (on request)
+Positional labelling is only ~36% complete — 399 players still unlabelled in
+`worksheet_positions.csv` — so once AWPers left the flex pool (7aa.5) the term
+fired in 40% of drafts and was charging players for gaps in MY data as often as
+for a genuinely lopsided side. Commented out, logic left intact, re-enable when
+the worksheet is filled.
+
+`no AWPer -6` and `N AWPers -3x excess` stay; those rest on labels that ARE
+complete (0 team-years with duplicate AWPers, 28 with none).
+
+Strength 62.1 -> 63.2, championship 4.9% -> 6.3%.
+
+### Group variance
+Measured first, 17k group matches:
+
+    sd 2.81   p5 56.9  med 60.4  p95 66.4   range 54.1 - 74.4
+
+Cause: **spikes only ever ran UPWARD.** `jit()` could hand you a nasty draw but
+never a soft one, so every match sat at or above the record's baseline and the
+distribution was a narrow bump with one tail.
+
+Added `DIP` as the mirror of `SPIKE` — an occasional side well below your
+record's level, the group-stage upset you are supposed to win — and widened
+`JITTER` 2.5 -> 4.2, `SPIKE_MAX` 9 -> 12.
+
+    sd 4.49   p5 53.9  med 61.1  p95 69.4   range 47.8 - 77.4
+
+    >= 65: 8.2% -> 17.6%      >= 70: 0.6% -> 4.4%      >= 72: 0.1% -> 2.3%
+
+A 70+ group opponent is now a real if uncommon event rather than a 1-in-170 one,
+and soft draws exist at the other end.
+
+### Re-tune
+Both changes push the same direction, so every target shifted +1.15
+(SWISS_BASE 59.77 -> 60.92, QF/SF/GF 65.17/67.67/71.57 -> 66.32/68.82/72.72).
+**Championship rate back to 4.9%.** Ladder (2-0 63.9 > 2-1 62.4 > 2-2 60.9) and
+QF cross-seeding both intact under the wider spread.
+
+## 7ac. PLAYOFF OPPONENTS NOW SCALE WITH THE PLAYER (2026-09-18)
+
+**Report:** "too easy to make finals, i make finals almost 50% of the time. the
+qf and sf opponents seem really easy." Also: "how many total teams?"
+
+### Pool size
+**220 team-years, 68 orgs, 11 years.** All 220 are drawn (max 122, min 66 over
+4000 sessions against an expected 91), so nothing is excluded — five rolls from
+220 simply repeats.
+
+### The finals complaint was exactly right
+Progression by strength, and the drafted-strength distribution beside it:
+
+    str 66:  playoffs 82%  semi 38%  FINAL 14%  champ  3%
+    str 72:  playoffs 97%  semi 75%  FINAL 46%  champ 21%     <- only 7.2% of
+    str 78:  playoffs 100% semi 93%  FINAL 77%  champ 57%        drafts get here
+
+Fixed targets meant the ladder stopped mattering above ~70: a 72-rated side met
+a 66.3 quarter-final, a 6-point mismatch. The drafts that deserved a hard
+bracket were the ones walking through it.
+
+### Fix: the QF and SF rise with you; the GF is a fixed hurdle
+    lift = min(LIFT_MAX, 0.45 x max(0, strength - 66))     QF/SF only
+    LIFT_MAX = 2.5
+
+Three failed designs on the way, each caught by a test rather than by eye:
+
+1. **Lift QF/SF only, GF left at 68.4** — made the SEMI harder than the final
+   for a strong side. `test:ladder`: "grand final above the semi" FAILED. The
+   semi had become the real final.
+2. **Lift all three rounds** — ran the GF target to ~77, where only ~12
+   player-years rate high enough to staff a side. NiKo hit 22% of playoff sides.
+   The pool runs out before the difficulty curve does.
+3. **Cap the TARGET at 71** — collapsed QF, SF and GF onto one number for a
+   strong player, so every playoff match drew from the same narrow band. Same
+   concentration, new cause.
+
+Final shape: lift QF/SF, capped, with the GF base (71.80) held above a fully
+lifted semi (68.82 + 2.5 = 71.32). Monotone at every strength, and no target
+exceeds what the pool can field.
+
+    str 66:  semi 38%  FINAL 14%  champ  3%     (unchanged — weak runs untouched)
+    str 72:  semi 68%  FINAL 35%  champ 17%     (was 75 / 46 / 21)
+    str 78:  semi 89%  FINAL 69%  champ 54%
+
+Overall championship **4.3%**.
+
+### Known limit, stated rather than hidden
+The cap means the very top (78+, under 1% of drafts) still runs away — a 78 side
+faces only +2.5. Raising the cap is not available: the pool has only 55
+player-years rated 75+, and 28 rated 80+.
+
+`test:pvariety` limit raised 16% -> 19%. **NiKo 2020 (78) is the only caller in
+eleven seasons rated above 66**, so once a playoff side must be built at 69-72 he
+is very often the best available IGL. Confirmed structural, not a sampling bug:
+widening the draw (NEAR_MIN 12 -> 18) made it WORSE, 17.9% -> 20.2%, because the
+correction pass then reaches for the top to hit the target.
+
+## 7ad. WHY NiKo AND NOT gla1ve — THE PREMISE WAS WRONG (2026-09-18)
+
+**Question:** "why doesn't the system pick gla1ve more than niko when his winning
+bonus is crazy?"
+
+It does. Measured over 3362 playoff sides:
+
+    gla1ve calls  10.1%        NiKo calls  3.0%
+    gla1ve on a side at all 10.1%   NiKo on a side at all 17.1%
+
+NiKo's 17.9% from 7ac is almost entirely as a **fragger**, not a caller. He is
+78-rated so he fills high-target slots; his `igl` label is rarely used because
+`near(cands, iglAim)` aims at `target - 6` and gla1ve's 71 sits closer to that
+than NiKo's 78. Caller choice is on RATING alone — leadership never enters it.
+
+### The real finding underneath
+Because opponents are corrected onto a FIXED strength target, a high-leadership
+caller is paid for by weakening his team-mates. Monotone across the board:
+
+    caller     lead   avg team-mate
+    gla1ve     10.0        63.3
+    dennis      6.0        67.3
+    shox        3.0        69.0
+    blameF      2.0        71.0
+
+A 7.7-point swing. gla1ve's +18% does not make the side scarier — `effOf`
+includes leadership, so the correction pass removes exactly as much from the
+other four as he adds. **His bonus is invisible on the opponent side.**
+
+Not a bug: an opponent exists to hit a strength number, and any route there is
+equivalent. But it does mean the leadership mechanic — the most interesting part
+of the scoring — never shows up in who you play against, and it produces the odd
+roster of an elite caller beside four ordinary fraggers.
+
+If that should change, the lever is biasing caller selection toward leadership
+rather than rating, and letting the target be met by picking better team-mates
+around him. Left alone for now; nothing is incorrect.
 
 ## 7. Next step — Phase 1 data spike
 

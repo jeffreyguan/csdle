@@ -14,7 +14,9 @@ for (let i = 0; i < 300; i++) {
   const picks: Player[] = makeRolls(snap, `n${i}`).map(r => r.options[0]);
   const res = simulate(evaluate(picks, snap).total, snap, `n${i}`);
   for (const m of res.matches) {
-    const nicks = m.opponent.roster.map(id => snap.players[id]?.nick).filter(Boolean);
+    const nicks = m.opponent.roster
+      .map(id => { const q = snap.players[id]; return q && `${q.nick} ('${String(q.year).slice(2)})`; })
+      .filter(Boolean) as string[];
     if (nicks.length !== 5) { console.log(`FAIL: ${nicks.length} nicks resolved`); bad++; }
     const s = nicks.join(", ");
     if (s.length > worst) { worst = s.length; worstS = s; }
@@ -23,7 +25,7 @@ for (let i = 0; i < 300; i++) {
 const px = Math.round(worst * 7.0);   // 13px sans, ~7px average advance
 console.log(`longest roster string: ${worst} chars (~${px}px) of a ~750px track`);
 console.log(`  ${worstS}`);
-console.log(px < 700 ? "fits without ellipsis" : "FAIL: would clip");
+console.log(px < 700 ? `fits without ellipsis (${700 - px}px headroom)` : "FAIL: would clip");
 if (px >= 700) bad++;
 console.log(bad ? `FAILING: ${bad}` : "all five names render");
 process.exit(bad ? 1 : 0);

@@ -39,3 +39,25 @@ console.log(`HLTV #1 of the year: ${n1.sort().join(", ")}`);
 // honours must agree with the underlying data
 const bad = P.filter(p => p.top20 !== null && (p.top20 < 1 || p.top20 > 20));
 console.log(`invalid top20 values: ${bad.length}`);
+
+// --- AWPers are never tagged `flex` -----------------------------------------
+// The AWP holds his own slot in the 2-anchor/1-AWP/2-rotater shape and is
+// excluded from the engine's flex pool, so a `flex` chip on an AWP card would
+// contradict the scoring. Also guards the renderer drift that caused this: the
+// option card rendered `flex`, the filled slot rendered nothing.
+{
+  const src = fs.readFileSync("src/App.tsx", "utf8");
+  let bad = 0;
+  const renderers = (src.match(/className="c-tags"/g) ?? []).length;
+  if (renderers !== 1) {
+    console.log(`FAIL: ${renderers} c-tags renderers — they drift apart; use <Tags/>`);
+    bad++;
+  }
+  const line = src.match(/const positioned = [^\n]*/)?.[0];
+  if (!line || !line.includes('"awp"')) {
+    console.log("FAIL: Tags does not exclude awp from the flex chip");
+    bad++;
+  }
+  console.log(bad ? `FAILING: ${bad}` : "one <Tags/> renderer; awpers are never flex");
+  if (bad) process.exit(1);
+}
