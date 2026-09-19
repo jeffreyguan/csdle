@@ -2546,6 +2546,89 @@ If that should change, the lever is biasing caller selection toward leadership
 rather than rating, and letting the target be met by picking better team-mates
 around him. Left alone for now; nothing is incorrect.
 
+## 7ae. PLAYOFF RECORDS WERE STATISTICALLY IMPOSSIBLE (2026-09-19)
+
+**Report:** "you can go 3-0 and face 2 3-0 teams in playoffs which is
+statistically impossible."
+
+Correct, and the cause was a placeholder that had never been revisited:
+
+    const oppRecord = st.stage === "Quarter-final"
+      ? `3-${2 - l}`                       // QF: cross-seeded, fine
+      : `3-${Math.floor(rng() * 3)}`;      // SF and GF: uniform, no memory
+
+Semi-final and grand-final records were drawn at random each round with no model
+of the field at all. A 16-team Swiss to 3 wins / 3 losses qualifies exactly
+**two 3-0, three 3-1 and three 3-2** sides, so a 3-0 run could meet three other
+3-0 teams when only ONE exists.
+
+Worse, the record was cosmetic: it was generated AFTER the opponent was built,
+so a side labelled 3-0 was no stronger than one labelled 3-2. Only the QF ever
+linked record to difficulty.
+
+### Fix: an actual eight-team bracket
+    SEED_LOSSES = [0,0,1,1,1,2,2,2]        seeds 1-2 are the 3-0s, 3-5 the
+    BRACKET = [[0,7],[3,4],[1,6],[2,5]]    3-1s, 6-8 the 3-2s; 1v8 2v7 3v6 4v5
+
+You take a seat matching your own record. The other three quarter-finals are
+resolved with the same `winProb` the player's matches use, then the semi-final
+opponent is whoever survived the other pair in your half and the finalist is
+whoever survived the far half. Nothing is drawn; it is played out.
+
+Opponent strength now follows the opponent's ACTUAL record every round
+(`RECORD_STEP * (1 - losses)`), so a 3-0 semi-finalist really is harder than a
+3-2 one. `QF_SEED_STEP` is gone — it was the special case this generalises.
+
+### Verified
+`npm run test:bracket`, over 7637 playoff runs, asserts the field is
+combinatorially possible — you can never meet more sides on a record than exist
+once your own seat is subtracted. Cross-seeding falls out of the bracket rather
+than being asserted separately:
+
+    3-0 -> 3-2 only          (2429 runs, no exceptions)
+    3-1 -> 3-1 or 3-2
+    3-2 -> 3-0 or 3-1
+
+Championship rate **4.2%**, ladder and variety unaffected.
+
+## 7af. SAME ORG, DIFFERENT YEAR — NOW ALLOWED (2026-09-19)
+
+Draft uniqueness was org-level; it is now TEAM-YEAR level. Spirit '24 can sit
+beside Spirit '25; Spirit '24 cannot sit beside Spirit '24.
+
+The org rule was added in 6m for variety — plain sampling dealt the same org
+twice in 21% of drafts and that felt repetitive. But it also removed a real
+decision: two seasons of one org is a choice between two donk years or two
+s1mple years, which is exactly the kind of call this game is about.
+
+Changed in three places, all of which had assumed org identity:
+- `makeRolls` draw filter and its `ensure()` repair pass
+- `rerollAt`, whose `inPlay` list now carries `team:year` keys
+- `App.tsx`, which was building that list from org names
+
+### Measured after
+    drafts with two seasons of one org : 21.8%   (matches the 21% from 6m)
+    drafts with a repeated TEAM-YEAR   : 0
+    org repeats from the previous draft: 0.0/45  (carry-over guard intact)
+
+The back-to-back guard (`avoid`) is deliberately still ORG-level: seeing
+Vitality twice running is the most noticeable kind of sameness, and that was the
+original complaint.
+
+### It moves the ceiling
+The theoretical best team was **101.35** (s1mple '18 / ZywOo '24 / donk '24 /
+coldzera '16 or NiKo '17 / gla1ve '18). It is now **104.66**:
+
+    s1mple '18 (99, awp)   s1mple '21 (99, awp)
+    donk '24 (99)          donk '25 (99)         gla1ve '18 (71, igl)
+
+Four 99s, because doubling donk and s1mple is now legal. Still only two AWPers,
+so still just the -3; gla1ve still calls. Three distinct orgs out of five slots.
+
+Note this is reachable only if the board deals NaVi twice AND Spirit twice in
+one draft — vanishingly rare. The practical ceiling barely moves; what changes
+is that the choice exists at all.
+
 ## 7. Next step — Phase 1 data spike
 
 Before any app code, answer these empirically against the live Liquipedia API:

@@ -4,7 +4,7 @@ import fs from "node:fs";
 const s = fs.readFileSync("src/sim/engine.ts", "utf8");
 const base = Number(/SWISS_BASE = ([\d.]+)/.exec(s)![1]);
 const per = Number(/SWISS_PER_DIFF = ([\d.]+)/.exec(s)![1]);
-const qfSeed = Number(/QF_SEED_STEP = ([\d.]+)/.exec(s)![1]);
+const qfSeed = Number(/RECORD_STEP = ([\d.]+)/.exec(s)![1]);
 const po = [...s.matchAll(/stage: "([^"]+)", target: ([\d.]+)/g)].map(m => [m[1], Number(m[2])] as const);
 
 // Swiss difficulty follows (wins - losses)

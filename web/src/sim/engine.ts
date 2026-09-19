@@ -33,9 +33,12 @@ export interface Roll {
  *  Sampling is uniform over TEAM-YEARS, with two guards added after the draft
  *  felt repetitive despite team-years being well distributed:
  *
- *  1. NO REPEATED ORG WITHIN A DRAFT. 223 team-years but only 69 orgs — G2,
- *     Liquid, MOUZ and NaVi have 11 seasons each — so plain sampling dealt the
- *     same org twice in 21% of drafts.
+ *  1. NO REPEATED TEAM-YEAR WITHIN A DRAFT. This was org-level until
+ *     2026-09-19 — two seasons of the same org could never appear together.
+ *     That also silently removed a real draft decision: Spirit '24 beside
+ *     Spirit '25 is a choice between two donk seasons, and NaVi '18 beside
+ *     NaVi '21 between two s1mple ones. Now only the exact same (team, year)
+ *     is blocked.
  *  2. NO ORG CARRIED OVER FROM THE PREVIOUS DRAFT (`avoid`, endless mode only).
  *     Back-to-back repeats are the most noticeable kind of sameness. Daily
  *     passes nothing, so it stays a pure function of the seed and remains
@@ -60,7 +63,8 @@ export function makeRolls(snap: Snapshot, seed: string, avoid: string[] = []): R
 
   const draw = (pool: TeamYear[], relax: boolean) => {
     const ok = pool.filter(
-      (t) => !chosen.some((c) => c.team === t.team) && (relax || !blocked.has(t.team))
+      (t) => !chosen.some((c) => c.team === t.team && c.year === t.year) &&
+             (relax || !blocked.has(t.team))
     );
     return ok.length ? ok[Math.floor(rng() * ok.length)] : null;
   };
@@ -79,7 +83,7 @@ export function makeRolls(snap: Snapshot, seed: string, avoid: string[] = []): R
       const alts = snap.teams.filter(
         (t) =>
           has(t, label) &&
-          !chosen.some((c, j) => j !== i && c.team === t.team)
+          !chosen.some((c, j) => j !== i && c.team === t.team && c.year === t.year)
       );
       if (alts.length) { chosen[i] = alts[Math.floor(rng() * alts.length)]; return; }
     }
@@ -108,7 +112,10 @@ export function rerollAt(
   inPlay: string[]
 ): Roll {
   const rng = mulberry32(hashSeed(`${seed}:r${round}:${attempt}`));
-  const pool = snap.teams.filter((t) => !inPlay.includes(t.team));
+  // inPlay carries `team:year` keys so a reroll can land on another season of
+  // an org already on the board, but never on the identical team-year
+  const pool = snap.teams.filter(
+    (t) => !inPlay.includes(`${t.team}:${t.year}`) && !inPlay.includes(t.team));
   const team = (pool.length ? pool : snap.teams)[
     Math.floor(rng() * (pool.length ? pool.length : snap.teams.length))
   ];
@@ -416,14 +423,24 @@ const DIP_CHANCE = 0.13;
 const DIP_MIN = 3.0;
 const DIP_MAX = 10.0;
 
-/** Quarter-final seeding. A real Major rewards a clean Swiss run: 3-0 teams are
- *  drawn against 3-2 teams, while a 3-2 qualifier meets a 3-0. So the QF target
- *  moves with how many losses you carried out of the group.
+
+/** The playoff field is a REAL eight-team bracket, not three independent draws.
  *
- *  The step has to be wide enough that a 3-0 QF is EASIER than that side's own
- *  last Swiss match (63.9) even after the QF base was raised — otherwise going
- *  unbeaten stops being a reward. 66.3 - 3.3 = 63.0 clears it. */
-const QF_SEED_STEP = 3.3;
+ *  A 16-team Swiss to 3 wins / 3 losses always qualifies exactly
+ *  **two 3-0, three 3-1 and three 3-2** sides. Records were previously drawn
+ *  per round as `3-${rng()*3|0}`, with no memory of the field, so a 3-0 run
+ *  could meet three separate 3-0 teams — one more than exists, and two more
+ *  than exists once you account for yourself.
+ *
+ *  Seeds 1-2 are the 3-0s, 3-5 the 3-1s, 6-8 the 3-2s, paired 1v8 / 2v7 / 3v6 /
+ *  4v5 as CS Majors do. You take a seat matching your own record; the other
+ *  seven are whatever is left. Who you meet in the semi and the final is
+ *  whoever actually survived the other side of the bracket. */
+const SEED_LOSSES = [0, 0, 1, 1, 1, 2, 2, 2];
+const BRACKET: [number, number][] = [[0, 7], [3, 4], [1, 6], [2, 5]];
+/** How much a better qualifying record is worth in opponent strength. Replaces
+ *  QF_SEED_STEP, which only ever applied to the quarter-final. */
+const RECORD_STEP = 3.3;
 
 /** Playoff opponents scale with YOU.
  *
@@ -478,33 +495,54 @@ export function simulate(strength: number, snap: Snapshot, seed: string): RunRes
   // ---- playoffs
   let playoffWins = 0;
   if (advanced) {
-    for (const st of PLAYOFFS) {
-      // only the QF is seeded — by the bracket you are drawn into 3-0 meets 3-2,
-      // 3-2 meets 3-0. After that the field has levelled out.
-      const seed = st.stage === "Quarter-final" ? (l - 1) * QF_SEED_STEP : 0;
+    // Seat yourself among the eight qualifiers, then let the bracket play out.
+    const seats = SEED_LOSSES.map((losses, seed) => ({ seed, losses }));
+    const mine = seats.filter((x) => x.losses === l);
+    const mySeat = mine.length ? mine[Math.floor(rng() * mine.length)].seed : 0;
+
+    // nominal strength of a seed, used only to resolve matches you are not in
+    const seedStrength = (seed: number) =>
+      PLAYOFFS[0].target + RECORD_STEP * (1 - SEED_LOSSES[seed]);
+
+    // resolve one side of the bracket without you in it
+    const winnerOf = (a: number, b: number): number =>
+      rng() < winProb(seedStrength(a), seedStrength(b)) ? a : b;
+
+    // quarter-final pairs, in bracket order; your pair is the one containing you
+    const qfWinners: number[] = BRACKET.map(([a, b]) =>
+      a === mySeat || b === mySeat ? mySeat : winnerOf(a, b));
+    const myPair = BRACKET.findIndex(([a, b]) => a === mySeat || b === mySeat);
+    const qfOpp = BRACKET[myPair][0] === mySeat ? BRACKET[myPair][1] : BRACKET[myPair][0];
+
+    // half A is pairs 0,1; half B is pairs 2,3
+    const sibling = myPair ^ 1;                       // the other pair in my half
+    const sfOpp = qfWinners[sibling];
+    const otherHalf = myPair < 2 ? [2, 3] : [0, 1];
+    const gfOpp = winnerOf(qfWinners[otherHalf[0]], qfWinners[otherHalf[1]]);
+
+    const opponents = [qfOpp, sfOpp, gfOpp];
+
+    for (let i = 0; i < PLAYOFFS.length; i++) {
+      const st = PLAYOFFS[i];
+      const oppSeed = opponents[i];
+      // strength now follows the opponent's ACTUAL record, every round — a 3-0
+      // semi-finalist is harder than a 3-2 one, which the old code only modelled
+      // in the quarter-final.
+      const seed = RECORD_STEP * (1 - SEED_LOSSES[oppSeed]);
       // The QF and SF rise with you; the GRAND FINAL is a fixed hurdle.
-      //
       // Lifting all three ran the target to ~77, where only a dozen player-years
-      // rate high enough to staff a side and NiKo appeared in 20% of them — the
-      // pool runs out before the curve does. Lifting only QF/SF made the semi
-      // HARDER than the final, which test:ladder caught. The fix is both: lift
-      // QF/SF, capped, and keep the GF base high enough to stay above a fully
-      // lifted semi (68.82 + 3.0 = 71.82 < 72.72). Monotone at every strength,
-      // and the final target never exceeds what the pool can field.
+      // rate high enough to staff a side. Lifting only QF/SF made the semi
+      // harder than the final, which test:ladder caught. Doing both — lift
+      // QF/SF, capped, GF base above a fully lifted semi — is monotone at every
+      // strength and never outruns the pool.
       const lift = st.bo === 5 ? 0
         : Math.min(LIFT_MAX, PLAYOFF_SCALE * Math.max(0, strength - PLAYOFF_REF));
       const aim = st.target + seed + lift;
       const opp = buildOpponent(snap, jit(aim), rng, pool);
       const r = series(rng, strength, opp.effective_strength, st.bo);
-      // QF is cross-seeded: you qualified 3-L, so you draw a 3-(2-L).
-      // Later rounds are whoever survived, so their record is drawn from the
-      // qualifying spread rather than mirrored.
-      const oppRecord = st.stage === "Quarter-final"
-        ? `3-${2 - l}`
-        : `3-${Math.floor(rng() * 3)}`;
       matches.push({ stage: st.stage, opponent: opp, scoreYou: r.you,
                      scoreThem: r.them, won: r.won, maps: r.maps, bo: st.bo,
-                     oppRecord });
+                     oppRecord: `3-${SEED_LOSSES[oppSeed]}` });
       if (!r.won) break;
       playoffWins++;
     }

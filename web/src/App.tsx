@@ -69,8 +69,9 @@ export default function App() {
     return baseRolls.map((r, i) => {
       const n = rerolls[i] ?? 0;
       if (!n) return r;
-      // exclude orgs already taken or currently on the board
-      const inPlay = baseRolls.map((x) => x.team.team).concat(picks.map(() => ""));
+      // exclude the exact team-years on the board — another SEASON of the same
+      // org is a legitimate reroll result (2026-09-19)
+      const inPlay = baseRolls.map((x) => `${x.team.team}:${x.team.year}`);
       return rerollAt(snap, seed, i, n, inPlay);
     });
   }, [snap, baseRolls, rerolls, seed, picks]);
