@@ -95,7 +95,7 @@ export default function App() {
 
   const run = () => {
     const b = evaluate(picks, snap);
-    setResult(simulate(b.total, snap, seed));
+    setResult(simulate(b.total, snap, seed, picks));
     setRevealed(0);
   };
 
@@ -306,6 +306,26 @@ export default function App() {
                 <h2 className={done && result.champion ? "champ" : ""}>
                   {done ? result.placement : next.stage}
                 </h2>
+                {/* reserved unconditionally: a row that appears only on a win
+                    would shift the whole results panel (the conditional-mount
+                    bug from 7u/7v). Empty when there is no MVP. */}
+                <div className="mvp-row">
+                  {done && result.champion && result.mvp && snap.players[result.mvp] && (
+                    <>
+                      <span className="mvp-tag">MVP</span>
+                      <PlayerAvatar
+                        player={snap.players[result.mvp]}
+                        size={26}
+                        logo={logos[snap.players[result.mvp].team]
+                          ? `/logos/${logos[snap.players[result.mvp].team]}` : undefined}
+                      />
+                      <b>{snap.players[result.mvp].nick}</b>
+                      <span className="mvp-yr">
+                        {snap.players[result.mvp].year} · {snap.players[result.mvp].team}
+                      </span>
+                    </>
+                  )}
+                </div>
 
                 <div className="matches">
                   {shown.map((m, i) => (
@@ -402,9 +422,9 @@ export default function App() {
                         {result.groupWins === 1 ? "" : "s"} from 3, two needed to advance.
                       </p>
                     )}
-                    <pre className="share">{shareText(result, seed)}</pre>
+                    <pre className="share">{shareText(result, seed, snap)}</pre>
                     <button className="go" onClick={() => {
-                      navigator.clipboard?.writeText(shareText(result, seed));
+                      navigator.clipboard?.writeText(shareText(result, seed, snap));
                       setCopied(true);
                     }}>{copied ? "Copied ✓" : "Copy result"}</button>
                     {mode === "endless" ? (

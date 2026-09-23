@@ -370,7 +370,23 @@ export interface RunResult {
   playoffWins: number;
   placement: string;
   champion: boolean;
+  /** Player id of the tournament MVP — set only when you win it. */
+  mvp: string | null;
 }
+
+/** MVP odds: a softmax on rating, relative to the best player on the side.
+ *
+ *  Softmax rather than `rating^k` because it is scale-free — it cares about the
+ *  GAP between team-mates, not their absolute numbers. A 99 beside a 71 should
+ *  dominate whether the roster averages 60 or 85; `rating^3` would have made
+ *  that same gap matter far less on a strong side than a weak one.
+ *
+ *  Deliberately NO extra penalty for callers. IGLs already rate ~8.5 below the
+ *  field BECAUSE they frag less, and MVP tracks fragging, so the rating carries
+ *  it — a separate IGL multiplier would double-count exactly the way the old
+ *  multi-caller penalty did (7p). A caller can still take it; he just needs to
+ *  have been the best player on the side. */
+const MVP_TEMP = 10;
 
 const SCALE = 7;
 const winProb = (a: number, b: number) => 1 / (1 + Math.exp(-(a - b) / SCALE));
@@ -465,7 +481,9 @@ const PLAYOFF_SCALE = 0.45;
  *  76+ side. */
 const LIFT_MAX = 2.5;
 
-export function simulate(strength: number, snap: Snapshot, seed: string): RunResult {
+export function simulate(
+  strength: number, snap: Snapshot, seed: string, roster?: Player[]
+): RunResult {
   const rng = mulberry32(hashSeed(seed + ":sim"));
   const pool = Object.values(snap.players);
   const matches: MatchResult[] = [];
@@ -549,17 +567,37 @@ export function simulate(strength: number, snap: Snapshot, seed: string): RunRes
   }
 
   const PLACE = ["Quarter-final", "Semi-final", "Grand Final", "CHAMPION"];
+  const champion = playoffWins === 3;
+
+  // Drawn from the same seeded stream as the rest of the run, so a given draft
+  // always produces the same MVP and the result stays reproducible from
+  // (picks, rerolls) alone.
+  let mvp: string | null = null;
+  if (champion && roster?.length) {
+    const top = Math.max(...roster.map((p) => p.rating));
+    const w8 = roster.map((p) => Math.exp((p.rating - top) / MVP_TEMP));
+    const sum = w8.reduce((a, b) => a + b, 0);
+    let x = rng() * sum;
+    mvp = roster[roster.length - 1].id;
+    for (let i = 0; i < roster.length; i++) {
+      x -= w8[i];
+      if (x <= 0) { mvp = roster[i].id; break; }
+    }
+  }
+
   return {
     matches, groupWins: w, groupLosses: l, advanced, playoffWins,
     placement: advanced ? PLACE[Math.min(playoffWins, 3)] : `Swiss stage (${w}-${l})`,
-    champion: playoffWins === 3,
+    champion, mvp,
   };
 }
 
-export function shareText(res: RunResult, seed: string): string {
+export function shareText(res: RunResult, seed: string, snap?: Snapshot): string {
   const n = res.groupWins + res.groupLosses;
   const grp = res.matches.slice(0, n).map((m) => (m.won ? "🟩" : "🟥")).join("");
   const po = res.matches.slice(n).map((m) => (m.won ? "🟩" : "🟥")).join("");
   const w = res.matches.filter((m) => m.won).length;
-  return `csdle ${seed}\n${grp}${po ? ` | ${po}` : ""}  ${w}-${res.matches.length - w}\n${res.placement}`;
+  const mvp = res.mvp && snap?.players[res.mvp];
+  const line = mvp ? `\nMVP ${mvp.nick} '${String(mvp.year).slice(2)}` : "";
+  return `csdle ${seed}\n${grp}${po ? ` | ${po}` : ""}  ${w}-${res.matches.length - w}\n${res.placement}${line}`;
 }

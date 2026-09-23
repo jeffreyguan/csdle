@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test:sim": "vite-node scripts/simtest.ts",
     "test:render": "vite-node scripts/rendertest.tsx",
-    "test": "npm run test:sim && npm run test:render && npm run test:avatar && npm run test:variety && npm run test:reroll && npm run test:lead && npm run test:place && npm run test:swiss && npm run test:bo && npm run test:card && npm run test:align && npm run test:ladder && npm run test:seed && npm run test:roles && npm run test:names && npm run test:dup && npm run test:pvariety && npm run test:bracket",
+    "test": "npm run test:sim && npm run test:render && npm run test:avatar && npm run test:variety && npm run test:reroll && npm run test:lead && npm run test:place && npm run test:swiss && npm run test:bo && npm run test:card && npm run test:align && npm run test:ladder && npm run test:seed && npm run test:roles && npm run test:names && npm run test:dup && npm run test:pvariety && npm run test:bracket && npm run test:mvp",
     "sync-data": "cp ../data/snapshot.json public/snapshot.json && cp ../data/logos.json public/logos.json",
     "test:avatar": "vite-node scripts/avatartest.ts",
     "test:variety": "vite-node scripts/orgtest.ts && vite-node scripts/ceilingtest.ts",
@@ -27,7 +27,8 @@
     "test:names": "vite-node scripts/namestest.ts",
     "test:dup": "vite-node scripts/duptest.ts",
     "test:pvariety": "vite-node scripts/varietytest.ts",
-    "test:bracket": "vite-node scripts/brackettest.ts"
+    "test:bracket": "vite-node scripts/brackettest.ts",
+    "test:mvp": "vite-node scripts/mvptest.ts"
   },
   "dependencies": {
     "react": "^19.2.8",

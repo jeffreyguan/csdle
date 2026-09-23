@@ -5,7 +5,7 @@ import fs from "node:fs";
 const src = fs.readFileSync("src/App.tsx", "utf8");
 
 // blocks that must render unconditionally (empty is fine) to hold their space
-const MUST_ALWAYS_RENDER = ["c-honours", "c-leads", "org-logo", "mode-new"];
+const MUST_ALWAYS_RENDER = ["c-honours", "c-leads", "org-logo", "mode-new", "mvp-row"];
 const bad: string[] = [];
 for (const cls of MUST_ALWAYS_RENDER) {
   // a conditional immediately preceding the class => guarded mount

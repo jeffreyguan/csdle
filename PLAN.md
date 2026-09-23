@@ -2629,6 +2629,51 @@ Note this is reachable only if the board deals NaVi twice AND Spirit twice in
 one draft — vanishingly rare. The practical ceiling barely moves; what changes
 is that the choice exists at all.
 
+## 7ag. MAJOR MVP (2026-09-23)
+
+Win the title and one of your five is named MVP.
+
+### Odds: softmax on rating, not rating^k
+    weight_i = exp((rating_i - best_on_the_side) / MVP_TEMP)     MVP_TEMP = 10
+
+Softmax because it is **scale-free** — it reads the GAP between team-mates, not
+their absolute numbers. A 99 beside a 71 should dominate whether the side
+averages 60 or 85; `rating^3` would have made that same gap matter much less on
+a strong roster than a weak one.
+
+Measured over 59,271 titles with a fixed side:
+
+    s1mple   '18   99   42.9%
+    donk     '24   99   43.3%
+    coldzera '16   85   10.5%
+    gla1ve   '18   71    2.6%
+    NAF      '22   58    0.7%
+
+### No extra penalty for callers — deliberately
+IGLs already rate ~8.5 below the field BECAUSE they frag less, and MVP tracks
+fragging, so the rating carries it. A separate IGL multiplier would double-count
+in exactly the way the old multi-caller penalty did (7p). gla1ve can still take
+it at 2.6%; he just has to have been the best man on the side.
+
+### Determinism preserved
+The MVP is drawn from the same seeded stream as the run, so a given draft always
+yields the same MVP and a result stays reproducible from (picks, rerolls) alone
+— the property the planned leaderboard depends on. `simulate()` takes the roster
+as an optional 4th argument, so the existing test scripts that call it with
+three still work.
+
+Also in `shareText`, as `MVP s1mple '18`.
+
+### Layout
+`.mvp-row` renders UNCONDITIONALLY with a reserved `min-height`, empty when
+there is no MVP — a row that appeared only on a win would shift the results
+panel, which is the conditional-mount bug from 7u/7v for the sixth time. Added
+to `alignlint`'s `MUST_ALWAYS_RENDER`.
+
+`npm run test:mvp` asserts: share is monotone in rating, MVP is set if and only
+if you won, the MVP is always one of your five, and the same seed gives the same
+MVP.
+
 ## 7. Next step — Phase 1 data spike
 
 Before any app code, answer these empirically against the live Liquipedia API:
