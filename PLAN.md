@@ -2629,6 +2629,24 @@ Note this is reachable only if the board deals NaVi twice AND Spirit twice in
 one draft — vanishingly rare. The practical ceiling barely moves; what changes
 is that the choice exists at all.
 
+## 7ah. THE TYPE CHECK WAS CHECKING NOTHING (2026-09-23)
+
+The MVP row shipped a bad prop (`player={...}` on a component taking
+`{id, nick, labels}`) and it reached Vercel, which failed the build.
+
+Root cause is worse than the typo. `web/tsconfig.json` is a SOLUTION file:
+
+    { "files": [], "references": [ ./tsconfig.app.json, ./tsconfig.node.json ] }
+
+so `tsc --noEmit -p .` — what I had been running after every edit — checks
+**zero files** and always exits 0. Every "compiles clean" in this log was
+vacuous. The build script uses `tsc -b`, which follows the references and does
+the real work, which is why only the deploy caught it.
+
+Fix: `test:types` = `tsc -b --force`, first in the `npm test` chain. Verified it
+actually bites by injecting a bogus prop and confirming it fails, then removing
+it. Nineteen behavioural suites and none of them had ever type-checked the app.
+
 ## 7ag. MAJOR MVP (2026-09-23)
 
 Win the title and one of your five is named MVP.

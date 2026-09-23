@@ -314,7 +314,9 @@ export default function App() {
                     <>
                       <span className="mvp-tag">MVP</span>
                       <PlayerAvatar
-                        player={snap.players[result.mvp]}
+                        id={snap.players[result.mvp].id}
+                        nick={snap.players[result.mvp].nick}
+                        labels={snap.players[result.mvp].labels}
                         size={26}
                         logo={logos[snap.players[result.mvp].team]
                           ? `/logos/${logos[snap.players[result.mvp].team]}` : undefined}
