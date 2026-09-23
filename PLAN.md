@@ -2692,6 +2692,132 @@ to `alignlint`'s `MUST_ALWAYS_RENDER`.
 if you won, the MVP is always one of your five, and the same seed gives the same
 MVP.
 
+## 7ai. GROUP LADDER INVISIBLE BEHIND THE NOISE; SWEEPS TOO COMMON (2026-09-23)
+
+**Two reports:** "group stage ratings are still weird, often low and the 0-0
+opponent is often stronger than the 2-0 opponent", then "playoffs should stay
+hard, just make going 3-1 and 3-2 more common than 3-0".
+
+### 1. The ladder was real but buried
+    Swiss 0-0   mean 61.05   sd 4.31
+    Swiss 2-0   mean 63.93   sd 4.32
+    0-0 opponent stronger than the 2-0 one: 23.8% of runs
+
+The means were ordered correctly. The problem was scale: widening group variance
+in 7ab took sd to ~4.3, while the whole 0-0 -> 2-0 gap was 2.9. **The spread was
+half again the entire ladder**, so record barely showed. Two of my own changes,
+each right on its own, fought each other.
+
+Fixed by raising separation and trimming the tail rather than choosing between
+them: `SWISS_PER_DIFF` 1.5 -> **2.6**, `JITTER` 4.2 -> 3.4, `DIP_CHANCE`
+0.13 -> 0.10, `DIP_MAX` 10 -> 7.
+
+    Swiss 0-0   mean 60.4   sd 3.7        inversions 23.8% -> 10.5%
+    Swiss 2-0   mean 65.1   sd 3.7        below 55:   7.6% -> ~5%
+
+`SWISS_PER_DIFF` is capped at 2.6, not the 3.0 that would have been better,
+because `test:ladder` requires each PLAYOFF round to ramp harder than a Swiss
+step — at 3.0 the group stage out-ramped the bracket.
+
+### 2. Sweeps: the average hid the problem completely
+Population split was 27/38/35, close to a real Major's 25/37.5/37.5 — looked
+healthy. By strength it was not:
+
+    str 66:  3-0 25%   3-1 42%   3-2 33%
+    str 72:  3-0 51%   3-1 36%   3-2 12%      <- a sweep is the NORMAL result
+    str 78:  3-0 75%   3-1 22%   3-2  3%
+
+Most drafts are weak, so the average was carried by teams that were never going
+to sweep. At the strength a good player actually reaches, 3-0 was the default.
+
+Fix: the group stage now rises with you too (`SWISS_SCALE = 0.65` above
+`SWISS_REF = 63`), same justification as the playoff lift — Swiss pairs on
+record, so a 2-0 side that is also the best team in the field meets good 2-0
+teams. Playoff targets restored to their harder values, untouched.
+
+    str 72:  3-0 25%   3-1 41%   3-2 34%
+    str 78:  3-0 33%   3-1 41%   3-2 26%
+
+`test:record` guards it at every strength: **3-0 must never be the most common
+way to qualify.** It deliberately allows 3-0 past 3-2 at 78 only — a side that
+strong dropping two group games SHOULD be rarer than sweeping, and forbidding
+that would mean elite teams gain nothing from the group stage.
+
+### Cost, stated plainly
+Championship rate **3.1%**, against the 5% originally set. Hard playoffs and a
+hard group stage multiply. The dial is `SWISS_SCALE`: 0.45 gives 3.5% with 33%
+sweeps at 72; 0.65 gives 3.1% with 25%. Chose the requested behaviour over the
+old number and flagged it rather than silently splitting the difference.
+
+### test:pvariety limit 19% -> 22%
+Cross-seeding means more losses -> better-seeded opponents -> higher targets, so
+a harder Swiss thins the playoff pool. NiKo holds **10 of the 94 player-years
+rated 70+** (s1mple 7, device 6) and carries an `igl` label, so 10.6% of
+everyone who can staff a high-target side is him. The concentration is mostly a
+real decade-long career, not a sampling fault.
+
+## 7aj. BACK TO A 5% TITLE, WITHOUT LOSING THE SHAPE (2026-09-23)
+
+**Request:** "i still want 5%. maybe decrease the difficulty of everything ever
+so slightly."
+
+A uniform shift alone does NOT work: lowering `SWISS_BASE` makes group games
+easier, sweeps creep back, and `test:record` fails (3-0 overtakes 3-2 again).
+Difficulty and the record split are coupled through the same constant.
+
+So the shift is paired with a steeper Swiss lift, which holds the sweep rate
+while the whole ladder comes down:
+
+    SWISS_BASE   59.90 -> 58.50        SWISS_SCALE  0.65 -> 0.85
+    QF           66.32 -> 64.52
+    SF           68.82 -> 67.02
+    GF           71.80 -> 70.00
+
+    champion   3.13%  ->  4.98%
+    playoffs   58.5%  ->  64.0%
+    72 split   25/41/34  ->  24/41/35     (3-0 still the rarest)
+
+Every invariant holds: ladder monotone (2-0 63.7 > 2-1 61.1 > 2-2 58.5), playoff
+rounds still ramp harder than Swiss steps, cross-seeding intact, sweep never the
+most common qualification.
+
+`test:pvariety` back from 22% to **19%** — the limit had been raised for pressure
+that no longer exists, since lower playoff targets draw from a deeper pool. Top
+player is 16.4% now. Tightened rather than left loose, so the guard keeps
+meaning something.
+
+### Process note
+The first two sweeps produced garbage (champion "9.4%") because each script read
+the engine file as its baseline AFTER a previous sweep had already written a
+shifted version to it — the deltas compounded silently. Fixed by copying a
+pristine baseline aside and substituting ABSOLUTE values into it every time,
+never relative shifts onto whatever was on disk.
+
+## 7ak. PICKS ARE FINAL (2026-09-23)
+
+Both "Change picks" controls removed — one under the strength panel, one on the
+results screen.
+
+Irreversibility turned out to rest on three things, only the first of which is
+visible:
+
+1. no reset control
+2. `setPicks` only ever APPENDS (`[...picks, p]`) or clears wholesale when the
+   seed changes — there was never a per-slot remove
+3. `round = picks.length`, so the board renders ONLY the uncommitted round;
+   a reroll therefore cannot reach a pick already made
+
+`reset` itself stays — `useEffect(reset, [seed])` still clears the board when
+the day rolls over or an endless draft advances. That is the only caller now.
+
+The pre-simulation button was replaced with a static "Picks are final" note
+rather than deleted outright, so the panel keeps its height (the
+conditional-mount reflow of 7u/7v) and the rule is stated rather than silently
+enforced.
+
+`npm run test:card` asserts all three conditions, not just the missing button —
+the guard would otherwise pass while a reroll quietly rewrote a committed round.
+
 ## 7. Next step — Phase 1 data spike
 
 Before any app code, answer these empirically against the live Liquipedia API:

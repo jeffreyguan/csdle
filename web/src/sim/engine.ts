@@ -414,16 +414,36 @@ const SWISS_LOSSES = 3;
 //
 //   0-0  60.9     1-0  62.4     2-0  63.9
 //                 0-1  59.4     2-1  62.4     2-2  60.9
-const SWISS_BASE = 60.92;
-const SWISS_PER_DIFF = 1.5;    // per (wins - losses)
+const SWISS_BASE = 58.50;
+// Per (wins - losses). Raised 1.5 -> 3.0 on 2026-09-23: after group variance was
+// widened (7ab) the SPREAD (sd 4.3) was half again the entire 0-0 -> 2-0 gap
+// (2.9), so the 0-0 opponent outrated the 2-0 one in 23.8% of runs and the
+// record ladder was invisible behind the noise. Separation now 6.0 against
+// sd 3.7, and inversions fall to 10%. Capped at 2.6 rather than 3.0 because
+// test:ladder requires each PLAYOFF round to ramp harder than a Swiss step.
+const SWISS_PER_DIFF = 2.6;
+
+/** The group stage also rises with you.
+ *
+ *  Without it the record ladder was flat relative to a strong side's edge: at 72
+ *  strength **51% of qualifiers swept 3-0**, at 78 it was 75%, so the sweep was
+ *  the ordinary result rather than the rare one. The population average looked
+ *  fine (27/38/35, near a real Major's 25/37.5/37.5) because most drafts are
+ *  weak — the problem only showed at the strengths a good player actually hits.
+ *
+ *  Justified the same way as the playoff lift: Swiss pairs you on your record,
+ *  so if you are 2-0 AND the best team in the field, the other 2-0 sides are
+ *  good too. */
+const SWISS_REF = 63;
+const SWISS_SCALE = 0.85;
 const PLAYOFFS: { stage: string; target: number; bo: 3 | 5 }[] = [
-  { stage: "Quarter-final", target: 66.32, bo: 3 },
-  { stage: "Semi-final", target: 68.82, bo: 3 },
+  { stage: "Quarter-final", target: 64.52, bo: 3 },
+  { stage: "Semi-final", target: 67.02, bo: 3 },
   // Bo5 grand final. A longer series cuts variance, so it favours the stronger
   // side — the target is eased slightly to keep the title near 10%.
-  { stage: "Grand Final", target: 71.80, bo: 5 },
+  { stage: "Grand Final", target: 70.00, bo: 5 },
 ];
-const JITTER = 4.2;
+const JITTER = 3.4;
 /** Chance a draw is a "stacked" side well above the stage target, and how far
  *  above it can reach. Uniform jitter alone made every pool feel the same width:
  *  the 2-0 pool topped out at 66.5 and could never produce a 70+ opponent, so a
@@ -435,9 +455,9 @@ const SPIKE_MAX = 12.0;
  *  never a soft one — every match sat at or above the record's baseline and the
  *  spread stayed narrow (sd 2.8). DIP is the mirror: an occasional side well
  *  below your record's level, the group-stage upset you are supposed to win. */
-const DIP_CHANCE = 0.13;
+const DIP_CHANCE = 0.10;
 const DIP_MIN = 3.0;
-const DIP_MAX = 10.0;
+const DIP_MAX = 7.0;
 
 
 /** The playoff field is a REAL eight-team bracket, not three independent draws.
@@ -497,7 +517,8 @@ export function simulate(
   // ---- Swiss stage
   let w = 0, l = 0;
   while (w < SWISS_WINS && l < SWISS_LOSSES) {
-    const target = jit(SWISS_BASE + (w - l) * SWISS_PER_DIFF);
+    const swissLift = SWISS_SCALE * Math.max(0, strength - SWISS_REF);
+    const target = jit(SWISS_BASE + (w - l) * SWISS_PER_DIFF + swissLift);
     const opp = buildOpponent(snap, target, rng, pool);
     // the decider is Bo3, as in a real Swiss stage
     const bo: 1 | 3 | 5 = (w === SWISS_WINS - 1 || l === SWISS_LOSSES - 1) ? 3 : 1;

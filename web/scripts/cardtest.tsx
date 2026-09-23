@@ -61,3 +61,27 @@ console.log(`invalid top20 values: ${bad.length}`);
   console.log(bad ? `FAILING: ${bad}` : "one <Tags/> renderer; awpers are never flex");
   if (bad) process.exit(1);
 }
+
+// --- picks are final --------------------------------------------------------
+// Removed 2026-09-23 on request. Three things have to stay true for a pick to
+// be irreversible, and only the first is obvious:
+//   1. no "Change picks" control
+//   2. setPicks only ever APPENDS (or clears wholesale on a new draft)
+//   3. the board only renders round === picks.length, so a reroll can never
+//      reach a round already committed
+{
+  const src = fs.readFileSync("src/App.tsx", "utf8");
+  let bad = 0;
+  if (/Change picks/.test(src)) { console.log("FAIL: a 'Change picks' control is back"); bad++; }
+  const mutations = [...src.matchAll(/setPicks\(([^)]*)\)/g)].map(m => m[1].trim());
+  for (const m of mutations) {
+    const ok = m === "[]" || /^\[\s*\.\.\.picks\s*,/.test(m);
+    if (!ok) { console.log(`FAIL: setPicks(${m}) is neither an append nor a full reset`); bad++; }
+  }
+  if (!/const round = picks\.length;/.test(src)) {
+    console.log("FAIL: the board no longer tracks round = picks.length — a reroll could reach a committed round");
+    bad++;
+  }
+  console.log(bad ? `FAILING: ${bad}` : `picks are final (${mutations.length} setPicks calls, all append-or-reset)`);
+  if (bad) process.exit(1);
+}

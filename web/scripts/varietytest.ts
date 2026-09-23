@@ -23,13 +23,17 @@ console.log("most frequent:");
 for (const [n, c] of rank.slice(0, 6))
   console.log(`   ${n.padEnd(14)} ${share(c).toFixed(1)}% of sides`);
 
-// Raised 16 -> 19 when QF/SF targets started scaling with the player (7ac).
-// Lifting those rounds pushes them into a genuinely shallow part of the pool:
-// NiKo 2020 (78) is the ONLY caller in eleven seasons rated above 66, so once a
-// playoff side must be built at 69-72 he is very often the best available IGL.
-// Verified this is structural, not a sampling bug — widening the draw
-// (NEAR_MIN 12 -> 18) made it WORSE, 17.9% -> 20.2%, because the correction
-// pass then reaches for the top to hit the target.
+// Limit is on a NICK, and a nick can legitimately own a lot of the elite pool:
+// NiKo holds 10 of the 94 player-years rated 70+ (s1mple 7, device 6), so 10.6%
+// of everyone who can staff a high-target side is him — and he carries an `igl`
+// label, so he fills the caller slot too. Raised 16 -> 19 when QF/SF began
+// scaling with the player (7ac), briefly 22 while playoff targets were at their
+// highest, back to 19 once 7aj lowered them (top player is 16.4% there).
+//
+// Verified structural, not a sampling bug: widening the draw (NEAR_MIN 12 -> 18)
+// made it WORSE, 17.9% -> 20.2%, because the correction pass then reaches for
+// the top to hit the target. The real ceiling is that the game contains one
+// decade-long elite career and only 44 people rated 70+ at all.
 const LIMIT = 19;
 const worst = rank[0];
 let bad = 0;

@@ -288,7 +288,9 @@ export default function App() {
           </ul>
           {bd.notes.length > 0 && <div className="notes">{bd.notes.map((n, i) => <div key={i}>· {n}</div>)}</div>}
           <button className="go" onClick={run}>Simulate the run →</button>
-          <button className="ghost" onClick={reset}>Change picks</button>
+          {/* Picks are final. This note occupies the row the old reset control
+              used to, so removing that control does not reflow the panel. */}
+          <div className="final-note">Picks are final</div>
           {mode === "endless" && (
             <button className="ghost" onClick={() => setNonce((n) => n + 1)}>↻ New teams</button>
           )}
@@ -432,10 +434,7 @@ export default function App() {
                     {mode === "endless" ? (
                       <button className="ghost" onClick={() => setNonce((n) => n + 1)}>↻ New draft</button>
                     ) : (
-                      <>
-                        <button className="ghost" onClick={reset}>Change picks</button>
-                        <button className="ghost" onClick={() => setMode("endless")}>Play endless →</button>
-                      </>
+                      <button className="ghost" onClick={() => setMode("endless")}>Play endless →</button>
                     )}
                   </>
                 )}
