@@ -412,8 +412,9 @@ const SWISS_LOSSES = 3;
 // stiff; 2-2 faces other 2-2 sides and is not. Scaling by wins alone made those
 // two identical, which is why the 2-x matches all felt the same.
 //
-//   0-0  60.9     1-0  62.4     2-0  63.9
-//                 0-1  59.4     2-1  62.4     2-2  60.9
+// These are now ABSOLUTE targets — the same field whoever you are:
+//   0-0  58.5     1-0  61.1     2-0  63.7
+//                 0-1  55.9     2-1  61.1     2-2  58.5
 const SWISS_BASE = 58.50;
 // Per (wins - losses). Raised 1.5 -> 3.0 on 2026-09-23: after group variance was
 // widened (7ab) the SPREAD (sd 4.3) was half again the entire 0-0 -> 2-0 gap
@@ -423,34 +424,50 @@ const SWISS_BASE = 58.50;
 // test:ladder requires each PLAYOFF round to ramp harder than a Swiss step.
 const SWISS_PER_DIFF = 2.6;
 
-/** The group stage also rises with you.
+/** The field is FIXED. Difficulty does not track your strength, at any stage.
  *
- *  Without it the record ladder was flat relative to a strong side's edge: at 72
- *  strength **51% of qualifiers swept 3-0**, at 78 it was 75%, so the sweep was
- *  the ordinary result rather than the rare one. The population average looked
- *  fine (27/38/35, near a real Major's 25/37.5/37.5) because most drafts are
- *  weak — the problem only showed at the strengths a good player actually hits.
+ *  It used to: the group target carried `0.85 * (strength - 63)` and the QF/SF a
+ *  capped `0.45 * (strength - 66)`. The Swiss term was the damaging one — it
+ *  handed back 85% of every rating point a draft earned, so qualification ran
+ *  79.6% at strength 64 and only 89.1% at 82. Eighteen points of drafting, worth
+ *  ten points of qualifying. The draft was very nearly cosmetic in the group
+ *  stage, which is the opposite of the point of a drafting game.
  *
- *  Justified the same way as the playoff lift: Swiss pairs you on your record,
- *  so if you are 2-0 AND the best team in the field, the other 2-0 sides are
- *  good too. */
-const SWISS_REF = 63;
-const SWISS_SCALE = 0.85;
+ *  A sixteen-team Major field does not re-rate itself around one entrant. So the
+ *  ladder below is absolute, and the only thing that still moves with you is WHO
+ *  IN THE FIELD you are paired against — by record, as Swiss actually does. A
+ *  strong side meets the same teams a weak one does and beats them more often.
+ *
+ *  The sweep problem the lift was defending against (51-75% of strong qualifiers
+ *  going 3-0) is now handled where it belongs: 3-0 IS common for a strong draft,
+ *  by design, and it is the spike below — not a strength-indexed target — that
+ *  stops it being automatic.
+ */
 const PLAYOFFS: { stage: string; target: number; bo: 3 | 5 }[] = [
-  { stage: "Quarter-final", target: 64.52, bo: 3 },
-  { stage: "Semi-final", target: 67.02, bo: 3 },
+  { stage: "Quarter-final", target: 65.52, bo: 3 },
+  { stage: "Semi-final", target: 68.02, bo: 3 },
   // Bo5 grand final. A longer series cuts variance, so it favours the stronger
-  // side — the target is eased slightly to keep the title near 10%.
-  { stage: "Grand Final", target: 70.00, bo: 5 },
+  // side — the target is eased slightly relative to a straight +3 step.
+  // The whole ladder sits 1.0 above where it did under the lift regime: with
+  // QF/SF no longer rising to meet a strong player, a flat ladder at the old
+  // targets put the title at 6.8% for a competent drafter. +1.0 returns it to
+  // ~5% without pushing the GF past 71, where the player pool thins out (only
+  // 49 player-years rate 76+, and the IGL ceiling is 78).
+  { stage: "Grand Final", target: 71.00, bo: 5 },
 ];
 const JITTER = 3.4;
-/** Chance a draw is a "stacked" side well above the stage target, and how far
- *  above it can reach. Uniform jitter alone made every pool feel the same width:
- *  the 2-0 pool topped out at 66.5 and could never produce a 70+ opponent, so a
- *  good group run never delivered a genuine scare. Rare, but possible. */
-const SPIKE_CHANCE = 0.13;
+/** The spike is the field's TOP END, and since the strength-tracking lift was
+ *  removed it is the only thing that can hand a strong draft a hard group match.
+ *  It therefore has to reach genuinely elite: SPIKE_MAX was 12, which off a 58.5
+ *  base topped out at 70.5 — a 77-rated side could not draw a peer in the group
+ *  stage at all, and swept 3-0 whenever it wanted to. At 20 the ceiling is ~78,
+ *  so the tournament favourite really can land on your side of the draw.
+ *
+ *  This is what keeps 3-0 common without making it automatic: 5.5% of group
+ *  matches are against a 75+ side, so roughly one run in five contains one. */
+const SPIKE_CHANCE = 0.16;
 const SPIKE_MIN = 2.5;
-const SPIKE_MAX = 12.0;
+const SPIKE_MAX = 20.0;
 /** Spikes only ever ran UPWARD, so a group stage could hand you a nasty draw but
  *  never a soft one — every match sat at or above the record's baseline and the
  *  spread stayed narrow (sd 2.8). DIP is the mirror: an occasional side well
@@ -478,29 +495,6 @@ const BRACKET: [number, number][] = [[0, 7], [3, 4], [1, 6], [2, 5]];
  *  QF_SEED_STEP, which only ever applied to the quarter-final. */
 const RECORD_STEP = 3.3;
 
-/** Playoff opponents scale with YOU.
- *
- *  Fixed targets meant the ladder stopped mattering above ~70: a 72-rated side
- *  met a 66.3 quarter-final, a 6-point mismatch, and reached the final 46% of
- *  the time. Only 7.2% of drafts get that strong, so the very drafts that
- *  deserve a hard bracket were the ones walking through it.
- *
- *  This is not rubber-banding the RESULT — it is who else survived. If you are
- *  the best side in the world, the other semi-finalist is the second best, not
- *  an average qualifier. Below the reference nothing changes, so weak runs are
- *  untouched. */
-const PLAYOFF_REF = 66.0;
-const PLAYOFF_SCALE = 0.45;
-/** Ceiling on the LIFT, not on the target.
- *
- *  Capping the target collapsed all three rounds onto one number for a strong
- *  side — QF, SF and GF every one a 71 — so every playoff match drew from the
- *  same narrow band and NiKo appeared in 20% of sides. Capping the lift keeps
- *  the three targets distinct and the ladder intact, while stopping the curve
- *  from outrunning the pool: only ~12 player-years rate high enough to staff a
- *  76+ side. */
-const LIFT_MAX = 2.5;
-
 export function simulate(
   strength: number, snap: Snapshot, seed: string, roster?: Player[]
 ): RunResult {
@@ -517,8 +511,7 @@ export function simulate(
   // ---- Swiss stage
   let w = 0, l = 0;
   while (w < SWISS_WINS && l < SWISS_LOSSES) {
-    const swissLift = SWISS_SCALE * Math.max(0, strength - SWISS_REF);
-    const target = jit(SWISS_BASE + (w - l) * SWISS_PER_DIFF + swissLift);
+    const target = jit(SWISS_BASE + (w - l) * SWISS_PER_DIFF);
     const opp = buildOpponent(snap, target, rng, pool);
     // the decider is Bo3, as in a real Swiss stage
     const bo: 1 | 3 | 5 = (w === SWISS_WINS - 1 || l === SWISS_LOSSES - 1) ? 3 : 1;
@@ -568,15 +561,7 @@ export function simulate(
       // semi-finalist is harder than a 3-2 one, which the old code only modelled
       // in the quarter-final.
       const seed = RECORD_STEP * (1 - SEED_LOSSES[oppSeed]);
-      // The QF and SF rise with you; the GRAND FINAL is a fixed hurdle.
-      // Lifting all three ran the target to ~77, where only a dozen player-years
-      // rate high enough to staff a side. Lifting only QF/SF made the semi
-      // harder than the final, which test:ladder caught. Doing both — lift
-      // QF/SF, capped, GF base above a fully lifted semi — is monotone at every
-      // strength and never outruns the pool.
-      const lift = st.bo === 5 ? 0
-        : Math.min(LIFT_MAX, PLAYOFF_SCALE * Math.max(0, strength - PLAYOFF_REF));
-      const aim = st.target + seed + lift;
+      const aim = st.target + seed;
       const opp = buildOpponent(snap, jit(aim), rng, pool);
       const r = series(rng, strength, opp.effective_strength, st.bo);
       matches.push({ stage: st.stage, opponent: opp, scoreYou: r.you,
