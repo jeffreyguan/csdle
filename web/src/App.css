@@ -158,9 +158,15 @@ h1 .sub { color: var(--acc); font-size: 13px; margin-left: 8px; text-transform: 
 .bd .tot b { color: var(--acc); }
 .notes { color: var(--dim); font-size: 12px; margin-bottom: 18px; }
 
-.go { background: var(--acc); color: #10131a; border: 0; padding: 11px 20px; border-radius: 9px;
-  font-weight: 700; cursor: pointer; font-size: 14px; margin-right: 8px; }
+/* Action buttons: chunkier vertically, tighter horizontally. The old 11px/20px
+   made them long ribbons — the label sets the width, so the horizontal padding
+   was pure stretch. .ghost sizing is split out from the .modes rule above so the
+   header chips keep their small size; its padding is 1px under .go's to offset
+   its 1px border, which keeps the two the same height side by side. */
+.go { background: var(--acc); color: #10131a; border: 0; padding: 14px 16px; border-radius: 10px;
+  font-weight: 700; cursor: pointer; font-size: 15px; margin-right: 8px; }
 .go:hover { filter: brightness(1.1); }
+.ghost { padding: 13px 14px; font-size: 14px; border-radius: 10px; font-weight: 600; }
 
 .matches { display: grid; gap: 7px; margin-bottom: 16px; }
 .match { display: grid; grid-template-columns: 110px minmax(0, 1fr) auto; gap: 10px; align-items: center;
