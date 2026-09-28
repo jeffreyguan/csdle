@@ -83,5 +83,41 @@ check(`field is strength-independent: match-1 opponent varies ${spread.toFixed(2
 const drift = Math.max(...oppMean) - Math.min(...oppMean);
 check(`all-match drift is record-ladder only: ${drift.toFixed(2)} (< 2.6)`, drift < 2.6);
 
+/* ---------------------------------------------------------------------------
+ * 5. A good group record buys a weaker QUARTER-FINAL and nothing beyond it.
+ *
+ * The seeding reward used to apply at every playoff round, so the group stage
+ * kept paying out all the way to the final (6.6 points end to end). It is now
+ * confined to the first round. Measured by grouping runs by the record they
+ * qualified on and comparing the opponent they actually drew at each stage.
+ * -------------------------------------------------------------------------*/
+console.log("\nopponent strength by the record you qualified on (strength 74):");
+console.log("  your record |      QF      SF      GF");
+const byRec: Record<number, { qf: number[]; sf: number[]; gf: number[] }> = {
+  0: { qf: [], sf: [], gf: [] }, 1: { qf: [], sf: [], gf: [] }, 2: { qf: [], sf: [], gf: [] } };
+for (let i = 0; i < 30000; i++) {
+  const r = simulate(74, snap, `seed${i}`);
+  if (!r.advanced) continue;
+  const b = byRec[r.groupLosses];
+  for (const m of r.matches) {
+    if (m.stage === "Quarter-final") b.qf.push(m.opponent.effective_strength);
+    else if (m.stage === "Semi-final") b.sf.push(m.opponent.effective_strength);
+    else if (m.stage === "Grand Final") b.gf.push(m.opponent.effective_strength);
+  }
+}
+const avg = (x: number[]) => x.reduce((a, c) => a + c, 0) / x.length;
+for (const L of [0, 1, 2]) {
+  const b = byRec[L];
+  console.log(`  3-${L}         | ${avg(b.qf).toFixed(1).padStart(7)} ${avg(b.sf).toFixed(1).padStart(7)} ${avg(b.gf).toFixed(1).padStart(7)}`);
+}
+// the QF must reward the record...
+check(`a 3-0 draws a weaker QF than a 3-2 (${avg(byRec[0].qf).toFixed(1)} vs ${avg(byRec[2].qf).toFixed(1)})`,
+  avg(byRec[0].qf) < avg(byRec[2].qf) - 2);
+// ...and the semi and final must not care at all
+const sfSpread = Math.max(...[0, 1, 2].map((L) => avg(byRec[L].sf))) - Math.min(...[0, 1, 2].map((L) => avg(byRec[L].sf)));
+const gfSpread = Math.max(...[0, 1, 2].map((L) => avg(byRec[L].gf))) - Math.min(...[0, 1, 2].map((L) => avg(byRec[L].gf)));
+check(`the SEMI ignores your group record (spread ${sfSpread.toFixed(2)} < 0.8)`, sfSpread < 0.8);
+check(`the FINAL ignores your group record (spread ${gfSpread.toFixed(2)} < 0.8)`, gfSpread < 0.8);
+
 console.log(bad ? `\nFAILING: ${bad}` : "\na strong draft is rewarded, and the field is the same for everyone");
 process.exit(bad ? 1 : 0);

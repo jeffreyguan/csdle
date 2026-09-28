@@ -444,16 +444,25 @@ const SWISS_PER_DIFF = 2.6;
  *  stops it being automatic.
  */
 const PLAYOFFS: { stage: string; target: number; bo: 3 | 5 }[] = [
-  { stage: "Quarter-final", target: 65.52, bo: 3 },
-  { stage: "Semi-final", target: 68.02, bo: 3 },
+  { stage: "Quarter-final", target: 69.27, bo: 3 },
+  { stage: "Semi-final", target: 71.77, bo: 3 },
   // Bo5 grand final. A longer series cuts variance, so it favours the stronger
   // side — the target is eased slightly relative to a straight +3 step.
-  // The whole ladder sits 1.0 above where it did under the lift regime: with
-  // QF/SF no longer rising to meet a strong player, a flat ladder at the old
-  // targets put the title at 6.8% for a competent drafter. +1.0 returns it to
-  // ~5% without pushing the GF past 71, where the player pool thins out (only
-  // 49 player-years rate 76+, and the IGL ceiling is 78).
-  { stage: "Grand Final", target: 71.00, bo: 5 },
+  //
+  // The ladder is anchored so that a ~70-strength side — a good draft, roughly
+  // the 88th percentile of competent play — takes the title about 5% of the
+  // time. That is the design target, and with no strength lift it has to be
+  // bought with an absolute ladder: QF 69.3 / SF 71.8 / GF 74.8. Consequences,
+  // both accepted deliberately:
+  //   - the bracket now sits ABOVE the hardest Swiss match (63.7) for every
+  //     seed, so entering the playoffs is a step up rather than a breather;
+  //   - a median 63 draft takes the title ~0.2% of the time. The title is meant
+  //     to be a trophy for a strong draft, not an occasional gift to an average
+  //     one, and qualifying (73%) is that player's achievement instead.
+  // The pool supports it: measured GF opponents land 0.5 above aim, so 74.8 is
+  // staffable, but much past ~76 it would not be (49 player-years rate 76+ and
+  // the IGL ceiling is 78).
+  { stage: "Grand Final", target: 74.75, bo: 5 },
 ];
 const JITTER = 3.4;
 /** The spike is the field's TOP END, and since the strength-tracking lift was
@@ -472,6 +481,18 @@ const SPIKE_MAX = 20.0;
  *  never a soft one — every match sat at or above the record's baseline and the
  *  spread stayed narrow (sd 2.8). DIP is the mirror: an occasional side well
  *  below your record's level, the group-stage upset you are supposed to win. */
+/** The playoffs get a MUCH narrower spike than the group stage.
+ *
+ *  The wide SPIKE_MAX exists so the group stage has a genuine top end — it is
+ *  the only thing that can hand a strong draft a hard Swiss match. jit() is
+ *  shared, though, so widening it to 20 silently widened the bracket too: the
+ *  Grand Final ran sd 5.7 with a tail to 93, and a 3-0 qualifier who had earned
+ *  the softest seed could still draw a 90.
+ *
+ *  A bracket does not need an unknown top end. Who you meet is already decided
+ *  by who survived, so a large random spike on top double-counts it. 8.0 keeps
+ *  an upset draw possible (sd ~3.4) without the bracket being a lottery. */
+const PO_SPIKE_MAX = 8.0;
 const DIP_CHANCE = 0.10;
 const DIP_MIN = 3.0;
 const DIP_MAX = 7.0;
@@ -501,9 +522,9 @@ export function simulate(
   const rng = mulberry32(hashSeed(seed + ":sim"));
   const pool = Object.values(snap.players);
   const matches: MatchResult[] = [];
-  const jit = (t: number) => {
+  const jit = (t: number, spike = SPIKE_MAX) => {
     const r = rng();
-    if (r < SPIKE_CHANCE) return t + SPIKE_MIN + rng() * (SPIKE_MAX - SPIKE_MIN);
+    if (r < SPIKE_CHANCE) return t + SPIKE_MIN + rng() * (spike - SPIKE_MIN);
     if (r < SPIKE_CHANCE + DIP_CHANCE) return t - DIP_MIN - rng() * (DIP_MAX - DIP_MIN);
     return t + (rng() - 0.5) * 2 * JITTER;
   };
@@ -557,12 +578,15 @@ export function simulate(
     for (let i = 0; i < PLAYOFFS.length; i++) {
       const st = PLAYOFFS[i];
       const oppSeed = opponents[i];
-      // strength now follows the opponent's ACTUAL record, every round — a 3-0
-      // semi-finalist is harder than a 3-2 one, which the old code only modelled
-      // in the quarter-final.
-      const seed = RECORD_STEP * (1 - SEED_LOSSES[oppSeed]);
+      // A good group record buys a weaker FIRST-ROUND opponent and nothing else.
+      // This had been widened to every round so that a 3-0 semi-finalist was
+      // harder than a 3-2 one — defensible, but it meant the group stage kept
+      // paying out (or charging) all the way to the final, worth 6.6 points end
+      // to end. The seeding reward belongs where a real bracket puts it: in the
+      // quarter-final draw. From the semi on, the target is the stage's alone.
+      const seed = i === 0 ? RECORD_STEP * (1 - SEED_LOSSES[oppSeed]) : 0;
       const aim = st.target + seed;
-      const opp = buildOpponent(snap, jit(aim), rng, pool);
+      const opp = buildOpponent(snap, jit(aim, PO_SPIKE_MAX), rng, pool);
       const r = series(rng, strength, opp.effective_strength, st.bo);
       matches.push({ stage: st.stage, opponent: opp, scoreYou: r.you,
                      scoreThem: r.them, won: r.won, maps: r.maps, bo: st.bo,

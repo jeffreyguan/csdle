@@ -22,9 +22,13 @@ for (const L of [0, 1, 2])
   console.log(`   qualified 3-${L}  ->  QF target ${(po[0][1] + (L - 1) * qfSeed).toFixed(1)}`);
 console.log(`   3-0 draws an easier QF than 3-2: ${qfSeed > 0}`);
 
-// A single monotonic ladder no longer applies: QF seeding deliberately gives a
-// 3-0 qualifier an EASIER quarter-final than their last Swiss match. That dip is
-// the reward. What must hold instead:
+// The old rule here was that a 3-0 qualifier draws an EASIER quarter-final than
+// their last Swiss match — the playoffs dipped, and the dip was the reward. That
+// cannot survive the 5%-at-70 anchor: buying that title rate without a strength
+// lift takes an absolute ladder of QF 69.3 / SF 71.8 / GF 74.8, which is above
+// the hardest Swiss match (63.7) for every seed. So the bracket is now a step UP
+// from the group stage, and the seeding reward is a discount WITHIN the bracket
+// rather than a dip below it. What must hold:
 const hardestSwiss = base + 2 * per;
 const qf = po[0][1], sf = po[1][1], gf = po[2][1];
 const qfEasy = qf - qfSeed, qfHard = qf + qfSeed;
@@ -32,7 +36,13 @@ const qfEasy = qf - qfSeed, qfHard = qf + qfSeed;
 console.log("\ninvariants:");
 const checks: [string, boolean][] = [
   ["Swiss rises with record (2-0 > 2-1 > 2-2)", base + 2*per > base + per && base + per > base],
-  ["a 3-0 run earns an easier QF than its last Swiss match", qfEasy < hardestSwiss],
+  // the seeding reward is monotone in the record, and is worth something real
+  ["a 3-0 run draws an easier QF than a 3-1, and 3-1 than a 3-2",
+    qfEasy < qf && qf < qfHard],
+  ["the QF seeding discount is worth at least a full Swiss step", qfSeed >= per],
+  // entering the bracket is a step up for EVERY seed, best one included
+  ["the quarter-final is above the hardest Swiss match, even for a 3-0",
+    qfEasy > hardestSwiss],
   ["a 3-2 run draws a harder QF than its last Swiss match", qfHard > base],
   // NOT "above the hardest QF draw": a 3-2 qualifier meeting a 3-0 team is meant
   // to be brutal, often the hardest match in the bracket, exactly as at a real
